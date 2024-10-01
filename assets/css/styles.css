@@ -39,22 +39,6 @@
 }
 
 
-[data-bs-theme="light"] {
-    --link-color: #24292e;
-    --link-active-color: #0366d6;
-    --border-color: #e1e4e8;
-    --border-color-light: #f6f8fa;
-    --scrollbar-track: #f1f3f5;
-    --scrollbar-thumb: #d1d5da;
-    --scrollbar-thumb-hover: #6a737d;
-    --dropdown-hover-bg: #f0f0f0;
-    --header1: #3B82F6;
-    --header2: #10B981;
-    --header3: #F87171;
-    --header4: #A855F7;
-    --header5: #FB923C;
-}
-
 body {
     font-family: "Inter", sans-serif;
 }
