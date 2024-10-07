@@ -39,6 +39,22 @@
 }
 
 
+[data-bs-theme="light"] {
+    --link-color: #24292e;
+    --link-active-color: #0366d6;
+    --border-color: #e1e4e8;
+    --border-color-light: #f6f8fa;
+    --scrollbar-track: #f1f3f5;
+    --scrollbar-thumb: #d1d5da;
+    --scrollbar-thumb-hover: #6a737d;
+    --dropdown-hover-bg: #f0f0f0;
+    --header1: #3B82F6;
+    --header2: #10B981;
+    --header3: #F87171;
+    --header4: #A855F7;
+    --header5: #FB923C;
+}
+
 body {
     font-family: "Inter", sans-serif;
 }
@@ -277,47 +293,20 @@ main .img-fluid img {
     height: auto;
 }
 
-#career-tree {
-    border: 1px solid transparent;
-    border-radius: 8px;
-    padding: 20px;
+.accordion-button:not(.collapsed) {
+    background-color: var(--bs-secondary-text);
 }
-#career-tree ul {
-    list-style-type: none;
+code, pre {
+    font-family: monospace;
+    padding: 2px 4px;
+    border-radius: 4px;
+
 }
 
-#career-tree .tree ul {
-
-    margin: 0;
-    padding-left: 1.5rem;
-}
-
-#career-tree .tree li {
-    margin: 0 0 10px 0;
-    position: relative;
-}
-
-#career-tree .caret {
-    cursor: pointer;
-    user-select: none;
-    font-weight: bold;
-}
-
-#career-tree .caret i {
-    margin-right: 6px;
-    transition: transform 0.3s ease;
-}
-.tree li {
-    margin: 0 0 10px 0;
-    position: relative;
-}
-
-#career-tree .nested {
-    display: none;
-}
-
-#career-tree .active {
-    display: block;
+pre {
+    padding: 15px;
+    overflow-x: auto;
+    border: 1px solid var(--scrollbar-thumb-hover);
 }
 
 ::-webkit-scrollbar {

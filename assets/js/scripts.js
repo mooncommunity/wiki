@@ -1,10 +1,13 @@
-//const URL = window.location.protocol + "//" + window.location.hostname;
+// const PATH_URL = "";
+// const URL = window.location.port && window.location.port !== "80" && window.location.port !== "443"
+//     ? `${window.location.protocol}//${window.location.hostname}:${window.location.port}${PATH_URL}`
+//     : `${window.location.protocol}//${window.location.hostname}${PATH_URL}`;
 const URL = "https://moonrp.com/wiki";
-const currentUrl = (URL + window.location.pathname).replace("/wiki", "");
+const currentUrl = URL + window.location.pathname;
 
 document.addEventListener('DOMContentLoaded', function () {
     const menuItems = [
-	{id: 'homehome', text: 'Anasayfa', href: `${URL}/`, icon: 'fas fa-home'},
+        {id: 'homehome', text: 'Anasayfa', href: `${URL}/`, icon: 'fas fa-home'},
         {type: 'category', text: 'DarkRP', icon: 'fa-solid fa-gun'},
         {id: 'darkrpnedir', text: 'DarkRP Nedir?', href: `${URL}/darkrp`, icon: 'fa-solid fa-gun'},
         {
@@ -91,9 +94,22 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
 
+        {
+            id: 'darkrpsss1',
+            text: 'Sıkça Sorulan Sorular',
+            href: `${URL}/darkrp-baslarken/sss`,
+            icon: 'fas fa-question'
+        },
+
         {type: 'category', text: 'Trouble in Terrorist Town', icon: 'fa-solid fa-user-secret'},
         {id: 'tttnedir', text: 'TTT Nedir?', href: `${URL}/ttt`, icon: 'fa-solid fa-user-secret'},
-        {id: 'tttkurallar', text: 'Oyun Kuralları', href: `https://moonrp.com/tttkurallar`, icon: 'fa-solid fa-book-skull', target: '_blank'},
+        {
+            id: 'tttkurallar',
+            text: 'Oyun Kuralları',
+            href: `https://moonrp.com/tttkurallar`,
+            icon: 'fa-solid fa-book-skull',
+            target: '_blank'
+        },
 
         {
             id: 'tttwelcome',
@@ -120,6 +136,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     icon: 'fas fa-question'
                 }
             ]
+        },
+        {
+            id: 'tttsss1',
+            text: 'Sıkça Sorulan Sorular',
+            href: `${URL}/ttt-baslarken/sss`,
+            icon: 'fas fa-question'
         },
         {type: 'category', text: 'Konu Dışı', icon: 'fa-solid fa-person-circle-question'},
         {
@@ -232,12 +254,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     const isVisible = dropdownDiv.classList.toggle('show');
                     dropdownBtn.setAttribute('aria-expanded', isVisible);
                     const icon = dropdownBtn.querySelector('i');
-                    if (isVisible) {
-                        icon.classList.remove('fa-chevron-right');
-                        icon.classList.add('fa-chevron-down');
-                    } else {
-                        icon.classList.remove('fa-chevron-down');
-                        icon.classList.add('fa-chevron-right');
+
+                    if (icon) {
+                        if (isVisible) {
+                            icon.classList.remove('fa-chevron-right');
+                            icon.classList.add('fa-chevron-down');
+                        } else {
+                            icon.classList.remove('fa-chevron-down');
+                            icon.classList.add('fa-chevron-right');
+                        }
                     }
                 });
 
@@ -251,6 +276,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 mobileDropdownBtn.addEventListener('click', function () {
                     const isVisible = mobileDropdownDiv.classList.toggle('show');
                     mobileDropdownBtn.setAttribute('aria-expanded', isVisible);
+                    const icon = mobileDropdownBtn.querySelector('i');
+
+                    if (icon) {
+                        if (isVisible) {
+                            icon.classList.remove('fa-chevron-right');
+                            icon.classList.add('fa-chevron-down');
+                        } else {
+                            icon.classList.remove('fa-chevron-down');
+                            icon.classList.add('fa-chevron-right');
+                        }
+                    }
                 });
             } else {
                 menuItem.appendChild(menuItemContainer);
@@ -318,32 +354,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function updateActiveClass() {
-
         const links = document.querySelectorAll('#mobileBookmarks .nav-link, #right-menu .nav-link');
         const allMenuLinks = document.querySelectorAll('#top-menu .nav-link, #left-menu .nav-link');
 
-
         links.forEach(link => link.classList.remove('active'));
         allMenuLinks.forEach(link => link.classList.remove('active'));
-
-        allMenuLinks.forEach(link => {
-            if (link.getAttribute('href') === currentUrl) {
-                link.classList.add('active');
-                const parentItem = link.closest('.dropdown-wrapper');
-                if (parentItem) {
-                    const dropdownDiv = parentItem.querySelector('.item-container');
-                    if (dropdownDiv) {
-                        dropdownDiv.classList.add('show');
-                        const dropdownBtn = parentItem.querySelector('.dropdownBtn');
-                        if (dropdownBtn) {
-                            const icon = dropdownBtn.querySelector('i');
-                            icon.classList.remove('fa-chevron-right');
-                            icon.classList.add('fa-chevron-down');
-                        }
-                    }
-                }
-            }
-        });
 
         links.forEach(link => {
             const targetId = link.getAttribute('href').substring(1);
@@ -353,14 +368,37 @@ document.addEventListener('DOMContentLoaded', function () {
                 link.classList.add('active');
             }
         });
+
+        allMenuLinks.forEach(link => {
+            const currentUrl1 = currentUrl.slice(0, -1);
+            if ((link.getAttribute('href') === currentUrl) || (link.getAttribute('href') === currentUrl1)) {
+                link.classList.add('active');
+                const parentItem = link.closest('.dropdown-wrapper');
+                if (parentItem) {
+                    const dropdownDiv = parentItem.querySelector('.item-container');
+                    if (dropdownDiv) {
+                        dropdownDiv.classList.add('show');
+                        const dropdownBtn = parentItem.querySelector('.dropdown-toggle-btn');
+                        if (dropdownBtn) {
+                            const icon = dropdownBtn.querySelector('i');
+                            if (icon) {
+                                icon.classList.remove('fa-chevron-right');
+                                icon.classList.add('fa-chevron-down');
+                            }
+                        }
+                    }
+                }
+            }
+        });
     }
+
 
     window.addEventListener('hashchange', updateActiveClass);
     updateActiveClass();
 
     var toggler = document.getElementsByClassName("caret");
     for (var i = 0; i < toggler.length; i++) {
-        toggler[i].addEventListener("click", function() {
+        toggler[i].addEventListener("click", function () {
             this.parentElement.querySelector(".nested").classList.toggle("active");
             this.querySelector("i").classList.toggle("fa-chevron-right");
             this.querySelector("i").classList.toggle("fa-chevron-down");
