@@ -1,4 +1,4 @@
-<br>
+<br> <br>
 <nav id="right-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
     <div class="position-sticky">
         <ul class="nav flex-column" id="right-menu"></ul>

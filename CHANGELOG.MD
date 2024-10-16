@@ -1,4 +1,41 @@
 <html><head><meta charset='utf-8'><title>Changelog</title></head><body><h1>Changelog</h1>
+<h2>Commit: 1.0.1-rc2 (Winfried, 2024-10-16)</h2>
+<h3>Değişiklikler:</h3><ul>
+<li style='color: blue;'>Değiştirilmiş: CHANGELOG.MD</li>
+<li style='color: blue;'>Değiştirilmiş: DEGISIKLIKLER.MD</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/nvidia_app_1.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/nvidia_app_2.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/nvidia_app_3.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/nvidia_app_4.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_1.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_2.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_3.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_4.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_5.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_6.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_7.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_linux_1.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_linux_2.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_linux_3.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_linux_4.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_linux_5.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_linux_6.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/obs_studio_linux_7.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/xbox_game_bar_1.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/xbox_game_bar_2.png</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/xbox_game_bar_3.png</li>
+<li style='color: blue;'>Değiştirilmiş: src/assets/js/scripts.js</li>
+<li style='color: green;'>Eklenmiş: src/ekrankaydi.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/chromium.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.illegal.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.legal.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-ttt.sss.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/footer.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/header.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/linux.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/ttt-baslarken.sss.php</li>
+<li style='color: green;'>Eklenmiş: src/layouts/videorecorder.php</li>
+</ul>
 <h2>Commit: 1.0.1-rc1 (Winfried, 2024-10-12)</h2>
 <h3>Değişiklikler:</h3><ul>
 <li style='color: green;'>Eklenmiş: .github/workflows/jekyll-gh-pages.yml</li>

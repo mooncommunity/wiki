@@ -145,16 +145,22 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {type: 'category', text: 'Konu Dışı', icon: 'fa-solid fa-person-circle-question'},
         {
+            id: 'gmodcontent',
+            text: 'CS:S Content Nasıl İndiririm?',
+            href: `${baseUrl}/content`,
+            icon: 'fa-solid fa-cubes'
+        },
+        {
             id: 'discordid',
             text: 'Discord ID nasıl öğrenebilirim?',
             href: `${baseUrl}/discordid`,
             icon: 'fa-brands fa-discord'
         },
         {
-            id: 'gmodcontent',
-            text: 'CS:S Content Nasıl İndiririm?',
-            href: `${baseUrl}/content`,
-            icon: 'fa-solid fa-cubes'
+            id: 'screenrecording',
+            text: 'Ekran Kaydı nasıl alabilirim?',
+            href: `${baseUrl}/ekrankaydi`,
+            icon: 'fa-solid fa-video'
         },
         {type: 'category', text: 'Faydalı Bağlantılar', icon: 'fa-solid fa-arrow-up-right-from-square'},
         {id: 'mg', text: 'MoonGaming', href: 'https://moonrp.com', icon: 'fa-solid fa-moon', target: '_blank'},

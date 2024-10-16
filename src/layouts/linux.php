@@ -82,32 +82,31 @@ rm -r openssl-1.0.1u*
 
         <h3>Garry's Mod uyumluluk moduna nasıl alırım?</h3>
 
-        <table class="table border-0">
-            <tr>
-                <td class="border-0 text-center" style="width: 50%;">
-                    <p><img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="" class="img-fluid"></p>
-                </td>
-                <td class="border-0">
-                    <ol>
-                        <li>İlk önce Steam kütüphanenize geliniz.</li>
-                        <li>Garry's Mod'u bulup sağ tıklayın.</li>
-                        <li>Özellikler...</li>
-                    </ol>
-                </td>
-            </tr>
-            <tr>
-                <td class="border-0 text-center" style="width: 50%;">
-                    <img src="<?= $baseUrl ?>/assets/image/steam_proton.png" alt="" class="img-fluid">
-                </td>
-                <td class="border-0">
-                    <ol start="4">
-                        <li>Uyumluluk</li>
-                        <li>"Belirli bir Steam Play uyumluluk aracının kullanılmasını zorla" işaretleyiniz.</li>
-                        <li>"Proton Experimental" veya "Proton 9.0" seçiniz.</li>
-                    </ol>
-                </td>
-            </tr>
-        </table>
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <p><img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="" class="img-fluid"></p>
+            </div>
+            <div class="col-md-6">
+                <ol>
+                    <li>İlk önce Steam kütüphanenize geliniz.</li>
+                    <li>Garry's Mod'u bulup sağ tıklayın.</li>
+                    <li>Özellikler...</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row align-items-center mt-4">
+            <div class="col-md-6 text-center">
+                <img src="<?= $baseUrl ?>/assets/image/steam_proton.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <ol start="4">
+                    <li>Uyumluluk</li>
+                    <li>"Belirli bir Steam Play uyumluluk aracının kullanılmasını zorla" işaretleyiniz.</li>
+                    <li>"Proton Experimental" veya "Proton 9.0" seçiniz.</li>
+                </ol>
+            </div>
+        </div>
+
 
         <h3 class="text-purple">Oyun içerisinde bazı simgeler [] şeklinde ne yapmalıyım?</h3>
         <p>Bu tamamen windows fontlarıyla alakalı windows fontların tamamına sahip olmadığınızdan kaynaklı.

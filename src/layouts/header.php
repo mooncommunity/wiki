@@ -5,6 +5,8 @@ $baseUrl = "https://moonrehber.com" . $baseUrl_Path;
 $PathExtName = basename($_SERVER['SCRIPT_NAME']);
 $PathName = ucfirst(str_replace('.php', '', $PathExtName));
 
+$DefaultOGImage = "/assets/image/og-image.png";
+
 if (isset($PAGE_TITLE)) {
     $header_title = $PAGE_TITLE . " - " . "MoonGaming Rehber";
 } else {
@@ -21,13 +23,13 @@ if (isset($PAGE_OG_IMAGE_LOCAL) && $PAGE_OG_IMAGE_LOCAL === true) {
     if (isset($PAGE_OG_IMAGE) && !empty($PAGE_OG_IMAGE)) {
         $header_og_image = $baseUrl . $PAGE_OG_IMAGE;
     } else {
-        $header_og_image = $PathName . "/assets/image/og-image.png";
+        $header_og_image = $PathName . $DefaultOGImage;
     }
 } else {
     if (isset($PAGE_OG_IMAGE)) {
         $header_og_image = $baseUrl . $PAGE_OG_IMAGE;
     } else {
-        $header_og_image = $PathName . "/assets/image/og-image.png";
+        $header_og_image = $PathName . $DefaultOGImage;
     }
 }
 

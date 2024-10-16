@@ -1,5 +1,5 @@
 <div>
-    <h4 id="error"><b>Etrafta her şey error, ne yapmalıyım?</b></h4>
+    <h4 id="error"><b>Etrafta her şey error, ne yapmalıyım? / Oyuna giremiyorum, ana menüye atıyor?</b></h4>
     <div class="alert alert-danger" role="alert">
         <strong>Missing Map</strong> Hatası alıyor iseniz <a href="#tab0" data-bs-toggle="tab"
                                                              role="tab"
@@ -17,19 +17,19 @@
     </div>
     <br>
     <p>Eğer workshopların <b class="text-primary-emphasis">hepsini indirmenize</b> rağmen <b
-                class="text-danger">error</b> alıyorsanız, deneyebileceğiniz
-        birkaç yol mevcut. Bunlar:</p>
+                class="text-danger">error</b> alıyorsanız veya ana menüye dönüyorsa, deneyebileceğiniz birkaç yöntem
+        bulunmaktadır. Bunlar şunlardır:</p>
 
     <div class="accordion" id="faqAccordion">
 
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button text-primary-emphasis" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed text-primary-emphasis" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
                     Özel İçerikleri indirme
                 </button>
             </h2>
-            <div id="collapse0" class="accordion-collapse collapse show" aria-labelledby="heading0"
+            <div id="collapse0" class="accordion-collapse collapse" aria-labelledby="heading0"
                  data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
                     <div class="row">
@@ -144,6 +144,11 @@
                  data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
                     <div class="row">
+                        <br>
+                        <div class="alert alert-danger" role="alert">
+                            Eğer ana menüye atıyor ve ya oyun aniden kapanıyor ise deneyiniz.
+                        </div>
+                        <br>
                         <div class="col-md-6 text-center">
                             <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
                                  class="img-fluid">
@@ -176,12 +181,90 @@
 
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed text-info-emphasis" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                    Fabrika Ayarlarına Sıfırlama
+                    İnternet bağlantınızı kontrol edin
                 </button>
             </h2>
             <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                 data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <div class="row">
+                        <br>
+                        <div class="alert alert-danger" role="alert">
+                            Eğer ana menüye atıyor ise deneyiniz.
+                        </div>
+                        <br>
+                        <div class="col">
+                            <p>Yavaş bağlantınız var ise sunucu ile iletişim kurmak uzun sürecektir bu yüzden oyunun ana
+                                menüsüne düşüyor olabilirsiniz bunu çözmek için </p>
+                            <ol>
+                                <li>Hızlı ve Stabil İnternet bağlantısına geçiniz</li>
+                                <li>VPN, Proxy kullanıyor iseniz bunlarda hızınızı yavaşlatıcaktır devre dışı
+                                    bırakınız
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    Fabrika Ayarlarına Sıfırlama
+                </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                 data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    <div class="row">
+                        <br>
+                        <div class="alert alert-warning" role="alert">
+                            Bu işlemi yaptığınızda tüm workshoplarınız, config dosyalarınız data dosyalarınız,
+                            workshop/server workshoplarınız cacheleri silinecektir. Workshoplar aboneliklerinize göre
+                            tekrar yüklenecektir.
+                        </div>
+                        <br>
+                        <div class="col-md-6 text-center">
+                            <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
+                                 class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <ol>
+                                <li>Steam kütüphanesine gelin ve Garry's Mod'a sağ tıklayın.</li>
+                                <li>Özellikler'den Yüklü Dosyalar sekmesine gidin.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6 text-center">
+                            <img src="<?= $baseUrl ?>/assets/image/steam_yuklu_dosyalar.png" alt="Steam Yüklü Dosyalar"
+                                 class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <ol start="4">
+                                <li>Yüklü Dosyalar</li>
+                                <li>"Göz at..." tıklayın.</li>
+                                <li>"FactoryReset-Gmod" dosyasına çift tıklayın.</li>
+                                <li>Y/N sorusuna "Y" yazınız.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-danger-emphasis" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    Garry's Mod silip tekrar yükleme
+                </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
                  data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
                     <div class="row">
@@ -205,8 +288,9 @@
                             <ol start="4">
                                 <li>Yüklü Dosyalar</li>
                                 <li>"Göz at..." tıklayın.</li>
-                                <li>"FactoryReset-Gmod" dosyasına çift tıklayın.</li>
-                                <li>Y/N sorusuna "Y" yazınız.</li>
+                                <li>Buradaki herşeyi siliniz</li>
+                                <li>Ardından Steam kütüphanesine gelin ve Garry's Mod'a sağ tıklayın.</li>
+                                <li>"Yönet" tıklayın ve "Kaldır" diyip oyunu tekrar yükleyiniz.</li>
                             </ol>
                         </div>
                     </div>

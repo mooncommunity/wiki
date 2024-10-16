@@ -7,7 +7,7 @@
         ?>
         <hr>
         <div>
-            <h4 id="csscontent">Pembe-Siyah Hatasını nasıl çözebilirim?</h4>
+            <h4 id="csscontent"><b>Pembe-Siyah Hatasını nasıl çözebilirim?</b></h4>
             <p>Workshoplarınız tamam ve düzgün ise büyük olasılıkla CS:S content'ten kaynaklı bir sorun çözmek için CS:S
                 indiriniz.</p>
             <div class="content-ref-box">
@@ -20,7 +20,7 @@
         </div>
         <hr>
         <div>
-            <h4 id="vapetoken">Vape Token Sahibiyim, Ne Yapmalıyım?</h4>
+            <h4 id="vapetoken"><b>Vape Token Sahibiyim, Ne Yapmalıyım?</b></h4>
             <p>Şu anda bu token devre dışıdır. Envanterinizde olduğunu gösteren bir ekran görüntüsü alarak Discord
                 sunucumuzda bir destek talebi oluşturmanız gerekmektedir. Genellikle eşya sizden alınıp IC kredi olarak
                 ödeme yapılmaktadır.</p>

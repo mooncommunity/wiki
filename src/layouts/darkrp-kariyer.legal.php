@@ -230,3 +230,153 @@
         </div>
         <br>
 </main>
+<script>
+    const jobs = [
+        {
+            title: "Zabıta",
+            description: "Şehir düzenini korumak ve halk sağlığını sağlamak için görev yapan önemli bir kuruluştur.",
+            req: ""
+        },
+        {
+            title: "Zabıta Amiri",
+            description: "Ekiplerini yöneterek şehirdeki düzenin sağlanmasında ve vatandaşların haklarının korunmasında kritik bir rol oynar.",
+            req: "İlk önce Zabıta Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Bekçi",
+            description: "Gece ve gündüz devriye atarak güvenliği sağlamak ve olası tehlikelere karşı önlem almakla görevli bir güvenlik görevlisidir. Asayiş Polis Amirini dinlemek zorunda.",
+            req: ""
+        },
+        {
+            title: "Trafik Polis Memuru",
+            description: "Şehir içinde, Yolların güvenliğini sağlamak, trafik akışını düzenlemek ve sürücülerin kurallara uymasını denetlemekle sorumludur. Trafik Polis Amirini dinlemek zorunda eğer yok ise Asayiş Polis Amirinin sözünü dinlemek zorunda.",
+            req: "İlk önce Bekçi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Trafik Polisi Amiri",
+            description: "Trafik düzenini sağlamak için ekipleri yöneterek, kazaların önlenmesi ve sürücülerin güvenliğinin artırılması konusunda stratejiler geliştirir.  Emniyet Genel Müdürünü dinlemek zorunda.",
+            req: "İlk önce Trafik Polis Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Polis Asayiş Memuru",
+            description: "Şehir içinde, Halkın güvenliğini sağlamak, suçları önlemek ve toplumsal düzeni korumak amacıyla aktif olarak devriye gezen bir güvenlik görevlisidir.",
+            req: "İlk önce Trafik Polis Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Polis Asayiş Amiri",
+            description: "Polis Asayiş ekiplerinin faaliyetlerini yöneterek, suç önleme stratejilerini geliştirmek ve toplumsal güvenliği artırmak için çalışmalar yürütür.  Emniyet Genel Müdürünü dinlemek zorunda.",
+            req: "İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Emniyet Genel Müdürü",
+            description: "MoonCity şehir içinde güvenlik stratejilerini belirleyerek, polis teşkilatının etkinliğini artırmak ve kamu güvenliğini sağlamakla sorumlu en üst düzey yetkilidir. Tüm polis birimleri sözünü dinlemek zorundadır.",
+            req: ""
+        },
+        {
+            title: "Acil Tıp Teknisyeni",
+            description: "MoonCity, bayılmış olan insanları hayata döndürmek için çaba gösterir.",
+            req: "İlk önce Belediye İşçisi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Doktor",
+            description: "MoonCity, bayılmış olan insanları hayata döndürmekle ve reçete yazmakla görevlidir.",
+            req: "İlk önce Acil Tıp Teknisyeni Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Jandarma Trafik",
+            description: "Şehir dışında, Yolların güvenliğini sağlamak, trafik akışını düzenlemek ve sürücülerin kurallara uymasını denetlemekle sorumludur.",
+            req: "İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Jandarma",
+            description: "Şehir dışında, Halkın güvenliğini sağlamak, suçları önlemek ve toplumsal düzeni korumak amacıyla aktif olarak devriye gezen bir güvenlik görevlisidir.",
+            req: "İlk önce Jandarma Trafik Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Jandarma Komutanı",
+            description: "Jandarma ve Jandarma trafik personellerin faaliyetlerini yöneterek, suç önleme stratejilerini geliştirmek ve toplumsal güvenliği artırmak için çalışmalar yürütür.",
+            req: "İlk önce Jandarma ve Polis Asayiş Amiri Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Belediye Başkanı Koruması",
+            description: "MoonCity, Belediye başkanı korumakla görevlidir.",
+            req: "İlk önce Jandarma Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Sivil Polis",
+            description: "EGM Bağlı olarak illegal bölgelere sızarak bilgi toplar. Polis Asayiş Amirini dinlemek zorundadır.",
+            req: ""
+        },
+        {
+            title: "MİT Personeli",
+            description: "Çeşitli birimlerinde görev alarak, ulusal güvenliği sağlamak amacıyla istihbarat toplama, analiz yapma ve operasyonel faaliyetlerde bulunan uzmanlardan oluşur.",
+            req: "İlk önce Sivil Polis Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "MİT Müşteşarı",
+            description: "Milli İstihbarat Teşkilatı'nın en üst düzey yöneticisi olup, teşkilatın stratejik hedeflerini belirler, operasyonlarını yönetir ve devletin güvenlik politikalarına yön vermekle sorumludur.",
+            req: ""
+        },
+        {
+            title: "Polis Özel Harekat Memuru",
+            description: "Yüksek riskli operasyonlarda görev alarak, terörle mücadele, narkotik operasyonları ve diğer güvenlik tehditlerine karşı müdahalede bulunan uzman bir güvenlik görevlisidir.",
+            req: "İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Polis Özel Harekat Doktoru",
+            description: "Polis özel harekat birimlerinde görev yapan personele tıbbi destek sağlamakla birlikte, acil durumlarda yaralıların tedavisini yaparak operasyon güvenliğini artırmaya katkıda bulunur.",
+            req: "İlk önce Doktor Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Polis Özel Harekat Bulldozer",
+            description: "Yüksek riskli operasyonlarda görev alarak, terörle mücadele, narkotik operasyonları ve diğer güvenlik tehditlerine karşı müdahalede bulunan uzman bir güvenlik görevlisidir.",
+            req: "İlk önce Polis Özel Harekat Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Polis Özel Harekat Amiri",
+            description: "Polis özel harekat ekiplerinin yönetimini üstlenerek, stratejik planlamalar yapar ve operasyonel başarıyı sağlamak için personelinin eğitim ve gelişiminden sorumludur.",
+            req: ""
+        },
+        {
+            title: "Jandarma Özel Harekat Komandosu",
+            description: "Yüksek riskli görevlerde uzmanlaşmış, terörle mücadele ve asayiş sağlama gibi kritik operasyonları gerçekleştirmek üzere eğitim almış bir askeri personeldir.",
+            req: "İlk önce Polis Özel Harekat Memuru ve ya Jandarma Komutanı Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Jandarma Özel Harekat Doktoru",
+            description: "Jandarma özel harekat birimlerinde görev yapan personele tıbbi hizmet sunarak, acil durumlarda yaralıların tedavisini gerçekleştirir ve operasyonlarda sağlık güvenliğini sağlar.",
+            req: "İlk önce Polis Özel Harekat Doktoru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        },
+        {
+            title: "Jandarma Özel Harekat Komutanı",
+            description: "Jandarma Özel harekat biriminin yönetiminden sorumlu olup, operasyonel stratejileri belirleyerek, ekibinin etkinliğini artırmak için liderlik yapar.",
+            req: ""
+        },
+    ];
+
+    const accordion = document.getElementById('accordionJobs');
+
+    jobs.forEach((job, index) => {
+        const card = document.createElement('div');
+        card.className = 'accordion-item';
+        const isEGM = job.title === "Emniyet Genel Müdürü";
+        const isSivil = job.title === "MİT Personeli" || job.title === "MİT Müşteşarı" | job.title === "Sivil Polis"
+
+        card.innerHTML = `
+                <h2 class="accordion-header">
+                    <button class="accordion-button ${index === 0 ? '' : 'collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="${index === 0}" aria-controls="collapse${index}">
+                        <span class="${isEGM ? 'text-primary-emphasis' : isSivil ? 'text-danger' : 'text-warning-emphasis'}">${job.title}</span>
+                    </button>
+                </h2>
+                <div id="collapse${index}" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}" aria-labelledby="heading${index}" data-bs-parent="#accordionJobs">
+                    <div class="accordion-body">
+                    <p>${job.description}</p>
+                    ${job.req ? `<h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5><p>${job.req}</p>` : ''}
+
+                    </div>
+                </div>
+            `;
+
+        accordion.appendChild(card);
+    });
+</script>

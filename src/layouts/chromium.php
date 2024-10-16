@@ -8,30 +8,28 @@
             değişiklikler, büyük modlar ve HTML tabanlı eklentilerle uyumluluğu artırıyor ve daha akıcı bir oyun
             deneyimi sunuyor. Genel olarak, modernleşme ve performans iyileştirme yapıyor. Chromium geçmek için
             aşağıdaki yöntemleri takip edebilirsiniz.</p>
-        <table class="table border-0">
-            <tr class="align-middle">
-                <td class="border-0 text-center" style="width: 50%;">
-                    <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları" class="img-fluid">
-                </td>
-                <td class="border-0">
-                    <ol class="">
-                        <li>İlk önce steam kütüphanenize geliniz.</li>
-                        <li>Garry's Mod bulup sağ tıklayın.</li>
-                        <li>Özellikler...</li>
-                    </ol>
-                </td>
-            </tr>
-            <tr class="align-middle">
-                <td class="border-0 text-center" style="width: 50%;">
-                    <img src="<?= $baseUrl ?>/assets/image/steam_beta.png" alt="Steam Beta" class="img-fluid">
-                </td>
-                <td class="border-0">
-                    <ol start="4">
-                        <li>Betalar.</li>
-                        <li>Beta katılımı olarak "x86-64 - Chromium + 64-bit binaries" seçiniz.</li>
-                    </ol>
-                </td>
-            </tr>
-        </table>
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <ol>
+                    <li>İlk önce steam kütüphanenize geliniz.</li>
+                    <li>Garry's Mod bulup sağ tıklayın.</li>
+                    <li>Özellikler...</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row align-items-center mt-4">
+            <div class="col-md-6 text-center">
+                <img src="<?= $baseUrl ?>/assets/image/steam_beta.png" alt="Steam Beta" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <ol start="4">
+                    <li>Betalar</li>
+                    <li>Beta katılımı olarak "x86-64 - Chromium + 64-bit binaries" seçiniz.</li>
+                </ol>
+            </div>
+        </div>
     </div>
 </main>

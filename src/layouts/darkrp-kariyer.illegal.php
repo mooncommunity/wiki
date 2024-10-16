@@ -348,7 +348,7 @@
                 <li>Aşiret Üyesi</li>
             </ul>
         </div>
-        <br>
+        <hr>
 
         <div>
             <h3 id="aile">Familya/Aile Nedir? Neden Bir Familya/Aileye Katılmalıyım?</h3>
@@ -376,9 +376,6 @@
                 </p>
             </div>
         </div>
-
-        <br>
-
     </div>
 </main>
 <script>

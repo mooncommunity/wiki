@@ -1,30 +1,36 @@
 # 1.0.1
 
+- "Ekran Kaydı nasıl alabilirim?" eklendi
+
+- DarkRP Başlarken > SSS
+  - "Etrafta her şey error, ne yapmalıyım?" Yeni tab eklendiğinde görüntü bozulduğundan accordion geçildi
+  - "Etrafta her şey error, ne yapmalıyım?" "GPUCache" eklendi.
+  - "Etrafta her şey error, ne yapmalıyım?" başlığı "Etrafta her şey error, ne yapmalıyım? / Oyuna giremiyorum, ana
+    menüye atıyor?" olarak güncellendi
+
+- DarkRP Başlarken
+  - "Sohbet ve İletişim" bölümüne /job komutu eklendi.
+
+- TTT Başlarken > SSS
+  - "Vape Token Sahibiyim, Ne Yapmalıyım?" sorusu eklendi.
+  - "Etrafta her şey error, ne yapmalıyım?" Yeni tab eklendiğinde görüntü bozulduğundan accordion geçildi
+  - "Etrafta her şey error, ne yapmalıyım?" "GPUCache" eklendi.
+  - "Etrafta her şey error, ne yapmalıyım?" başlığı "Etrafta her şey error, ne yapmalıyım? / Oyuna giremiyorum, ana
+    menüye atıyor?" olarak güncellendi
+  
+- TTT Başlarken
+  - "Kutu ve Silah Nasıl Elde Edebilirim?" bölümü eklendi.
+  - "Aynı Silahların Farklı Varyasyonları Nedir?" bölümü eklendi.
+  - "Mutator Nedir?" bölümü eklendi.
+  
 - Kaynak yapısı değiştirildi, artık kodlar PHP ile bölündü ve `php_to_html.sh` dosyası ile HTML'ye çevriliyor.
 - CSS dosyası düzenlendi:
     - Google Inter fontu eklendi.
     - `body` renginin tanımı kaldırıldı, bunun yerine `--bs-body-bg` ve `--bs-color-bg` değişkenleri eklendi.
     - Kullanılmayan CSS değerleri kaldırıldı.
     - `code` ve `pre` için renk düzeltmesi yapıldı.
-    
+
 - `noscript` için modal eklendi (JavaScript'in devre dışı bırakıldığı durumlarda görüntülenir).
-
-- TTT Başlarken
-    - "Kutu ve Silah Nasıl Elde Edebilirim?" bölümü eklendi.
-    - "Aynı Silahların Farklı Varyasyonları Nedir?" bölümü eklendi.
-    - "Mutator Nedir?" bölümü eklendi.
-
-- TTT Başlarken > SSS
-    - "Vape Token Sahibiyim, Ne Yapmalıyım?" sorusu eklendi.
-    - "Etrafta her şey error, ne yapmalıyım?" Yeni tab eklendiğinde görüntü bozulduğundan accordion geçildi
-    - "Etrafta her şey error, ne yapmalıyım?" "GPUCache" eklendi.
-
-- DarkRP Başlarken
-    - "Sohbet ve İletişim" bölümüne /job komutu eklendi.
-    
-- DarkRP Başlarken > SSS
-    - "Etrafta her şey error, ne yapmalıyım?" Yeni tab eklendiğinde görüntü bozulduğundan accordion geçildi
-    - "Etrafta her şey error, ne yapmalıyım?" "GPUCache" eklendi.
 
 # 1.0.0
 
@@ -43,7 +49,8 @@
 - CS:S içerik sayfası düzenlendi.
 
 - DarkRP Başlarken
-    - "Önemli Yerler" başlığı fareyle üzerine gelindiğinde kenarlık eklendi. Mobil tasarımda uyarı işareti görünür olacak şekilde düzenlendi.
+    - "Önemli Yerler" başlığı fareyle üzerine gelindiğinde kenarlık eklendi. Mobil tasarımda uyarı işareti görünür
+      olacak şekilde düzenlendi.
     - `detail/summary` etiketleri kullanılarak accordion yapısına geçirildi.
     - Daha fazla XP kazanma bölümündeki her bir `strong` etiketine renk atandı.
     - Eşyalar accordion yapısına geçirildi, her birine rastgele renk atandı ve yeni/eksik eşyalar eklendi.
@@ -52,7 +59,8 @@
 
 - DarkRP Başlarken > SSS
     - Eksik `div` etiketleri eklendi.
-    - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe geçmiş. Ne yapmalıyım?" sorusu eklendi.
+    - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe geçmiş. Ne yapmalıyım?" sorusu
+      eklendi.
     - "Oyunda yetkili yok ve bir oyuncudan şikayetçiyim. Ne yapmalıyım?" sorusu eklendi.
     - "Vergi levhası nasıl çıkarırım?" sorusu eklendi.
 
@@ -84,7 +92,8 @@
 
 - TTT Başlarken > SSS
     - Eksik `div` etiketleri eklendi.
-    - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe geçmiş. Ne yapmalıyım?" sorusu eklendi.
+    - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe geçmiş. Ne yapmalıyım?" sorusu
+      eklendi.
     - "Oyunda yetkili yok ve bir oyuncudan şikayetçiyim. Ne yapmalıyım?" sorusu eklendi.
     - Yetkili nasıl olunur? eklendi.
     - Pembe-siyah hatası eklendi.
