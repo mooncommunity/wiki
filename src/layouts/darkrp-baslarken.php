@@ -976,6 +976,9 @@
                                     <li><strong class="text-primary-emphasis">Balıkçılık Kitabı:</strong> Balık
                                         tutarken daha fazla balık alırsınız.
                                     </li>
+                                    <li><strong class="text-success-emphasis">Emir Din Kitabı:</strong> İlk yardım kiti
+                                        kullanırken +15 daha fazla verir.
+                                    </li>
                                     <li><strong class="text-secondary">Okunmuş Su:</strong> Zırh bastığınızda
                                         +50 ekler. Kutulardan çıkar.
                                     </li>

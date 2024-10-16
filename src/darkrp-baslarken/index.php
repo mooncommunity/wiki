@@ -1,8 +1,8 @@
 <?php
 $PAGE_TITLE = "DarkRP Başlarken";
 $PAGE_DESCRIPTION = "DarkRP Başlıyan herkesin bilmesi gerekenler";
-//$PAGE_OG_IMAGE_LOCAL = true;
-//$PAGE_OG_IMAGE = "/assets/image/og-image.png";
+$PAGE_OG_IMAGE_LOCAL = true;
+$PAGE_OG_IMAGE = "/assets/image/og-image-darkrp.png";
 
 include("./layouts/header.php");
 include("./layouts/nav.php");

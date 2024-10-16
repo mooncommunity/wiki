@@ -1,4 +1,25 @@
 <html><head><meta charset='utf-8'><title>Changelog</title></head><body><h1>Changelog</h1>
+<h2>Commit: 1.0.1 (Winfried, 2024-10-17)</h2>
+<h3>Değişiklikler:</h3><ul>
+<li style='color: blue;'>Değiştirilmiş: src/content.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/darkrp-baslarken/chromium.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/darkrp-baslarken/index.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/darkrp-baslarken/linux.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/darkrp-baslarken/sss.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/darkrp-kariyer/esnaf.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/darkrp-kariyer/illegal.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/darkrp-kariyer/index.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/darkrp-kariyer/legal.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/darkrp.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/discordid.php</li>
+<li style='color: red;'>Silinmiş: src/docker.sh</li>
+<li style='color: blue;'>Değiştirilmiş: src/ekrankaydi.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/ttt-baslarken/chromium.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/ttt-baslarken/index.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/ttt-baslarken/linux.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/ttt-baslarken/sss.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/ttt.php</li>
+</ul>
 <h2>Commit: 1.0.1-rc2 (Winfried, 2024-10-16)</h2>
 <h3>Değişiklikler:</h3><ul>
 <li style='color: blue;'>Değiştirilmiş: CHANGELOG.MD</li>

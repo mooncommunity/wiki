@@ -1,8 +1,8 @@
 <?php
 $PAGE_TITLE = "TTT Başlarken";
 $PAGE_DESCRIPTION = "TTT Başlıyan herkesin bilmesi gerekenler";
-//$PAGE_OG_IMAGE_LOCAL = true;
-//$PAGE_OG_IMAGE = "/assets/image/og-image.png";
+$PAGE_OG_IMAGE_LOCAL = true;
+$PAGE_OG_IMAGE = "/assets/image/og-image-ttt.png";
 
 include("./layouts/header.php");
 include("./layouts/nav.php");

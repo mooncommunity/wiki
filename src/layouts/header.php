@@ -23,13 +23,13 @@ if (isset($PAGE_OG_IMAGE_LOCAL) && $PAGE_OG_IMAGE_LOCAL === true) {
     if (isset($PAGE_OG_IMAGE) && !empty($PAGE_OG_IMAGE)) {
         $header_og_image = $baseUrl . $PAGE_OG_IMAGE;
     } else {
-        $header_og_image = $PathName . $DefaultOGImage;
+        $header_og_image = $DefaultOGImage;
     }
 } else {
     if (isset($PAGE_OG_IMAGE)) {
         $header_og_image = $baseUrl . $PAGE_OG_IMAGE;
     } else {
-        $header_og_image = $PathName . $DefaultOGImage;
+        $header_og_image = $DefaultOGImage;
     }
 }
 

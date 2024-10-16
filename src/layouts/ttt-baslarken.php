@@ -173,9 +173,8 @@
                     kadar fazlaysa, mermiler o kadar isabetli gider.
                 </p>
                 <p>
-                    <strong class="text-danger-emphasis">Kick/İktirme:</strong> Bir oyuncuya sıktığınızda,
-                    isabet eden mermilerin oyuncuyu
-                    geri itme derecesini belirler.
+                    <strong class="text-danger-emphasis">Kick/Sekme:</strong> Silahın sekme derecesini belirler ne kadar
+                    az (-) olursa silah o kadar az seker.
                 </p>
                 <p>
                     <strong class="text-primary-emphasis">Range/Menzil:</strong> Silahın atış menzilini
@@ -363,7 +362,8 @@
             <br>
             <div>
                 <h3 id="kutu">Kutu ve silah nasıl elde edebilirim?</h3>
-                <p><strong>Kutu ve Silah,</strong> IC krediniz, çekiliş, oyuncularla takas yaparak veya el sonu düşen rastgele droptan
+                <p><strong>Kutu ve Silah,</strong> IC krediniz, çekiliş, oyuncularla takas yaparak veya el sonu düşen
+                    rastgele droptan
                     elde edilebilir.</p>
             </div>
             <hr>
