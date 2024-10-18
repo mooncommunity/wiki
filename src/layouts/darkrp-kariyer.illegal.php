@@ -441,7 +441,7 @@
         {
             title: "Bilim Adamı",
             description: "Bilime adım atmaktan çekinmiyorsun. Sürekli yeni formüller deniyor ve sonunda Bitkinin kalitesini artıracak malzemeyi buluyorsun.",
-            req: "Baronla iletişime geçmeniz gerekiyor."
+            req: "İlk önce Yeni Faction lider(Tarikat, Kore, Motorcu Çetesi...) Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
             title: "Emekli Doktor",
