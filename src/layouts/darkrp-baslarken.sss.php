@@ -136,8 +136,8 @@
         </div>
         <hr>
         <div>
-            <h4 id="bilimadami"><b>Bilim Adamı nasıl olurum?</b></h4>
-            <p>Baron tarafından dağıtılan belgeye sahip olmalısınız.</p>
+            <h4 id="bilimadami"><b>Bilim İnsanı Nasıl Olunur?</b></h4>
+            <p>Saat Kulesi'ndeki NPC'den belge almalı ve gerekli meslekte deneyim kazanmalısınız.</p>
         </div>
         <hr>
         <div>
