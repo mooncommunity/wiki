@@ -129,7 +129,7 @@
                 </ul>
                 <br>
                 <h3 id="ticarivehizmetsektoru-eczaci">Eczacı Rehberi</h3>
-                <p>Sıradaki rehberimiz, DarkRP ve MoonGaming sunucularında hayati öneme sahip bir meslek olan
+                <p>Sıradaki rehberimiz, DarkRP ve MoonGaming™ sunucularında hayati öneme sahip bir meslek olan
                     Eczacıya ait. Eczacı, oyuncuların sağlık ihtiyaçlarını karşılayan önemli bir rol oynar.
                     Eczanede
                     satılan ürünler, oyuncuların sağlık değerlerini yükseltmesi için vazgeçilmezdir. Bu da
@@ -156,7 +156,7 @@
                 </ul>
                 <br>
                 <h3 id="ticarivehizmetsektoru-poligon">Poligon Rehberi</h3>
-                <p>Poligon mesleği, DarkRP ve MoonGaming sunucularında oyuncuların silah kullanma becerilerini
+                <p>Poligon mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların silah kullanma becerilerini
                     geliştirebilecekleri ve çeşitli silahlar ile mermiler satın alabilecekleri bir rolü temsil
                     eder.
                     Bu meslekte, basit tabancalardan hafif makineli tüfeklere kadar geniş bir yelpazede silahlar
@@ -180,7 +180,7 @@
                 </ul>
 
                 <h3 id="ticarivehizmetsektoru-ithalatci">İthalatçı Rehberi</h3>
-                <p>İthalatçı mesleği, DarkRP ve MoonGaming sunucularında oyunculara geniş bir silah yelpazesi
+                <p>İthalatçı mesleği, DarkRP ve MoonGaming™ sunucularında oyunculara geniş bir silah yelpazesi
                     sunan ve ağır silahlar temin edebilen özel bir rolü temsil eder. Bu meslek, oyuncuların daha
                     güçlü ve çeşitli silahları edinerek savaş yeteneklerini en üst düzeye çıkarmalarına yardımcı
                     olur. Ağır makineli tüfekler ve özel mühimmat seçenekleri ile daha stratejik savaşlara

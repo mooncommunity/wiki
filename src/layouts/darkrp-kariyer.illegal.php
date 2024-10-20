@@ -208,7 +208,7 @@
                         Sulama işi ilk başta biraz karışık görünebilir, ancak bazı püf noktaları vardır. Aslında
                         bitkiyi 2 kere sulamak yeterlidir. Birincisi, ilk ektiğiniz zaman su barını tamamlamak;
                         ikincisi, bu bar yarıya geldiğinde tekrar doldurmaktır. Sürekli sulamak gereksiz ve
-                        yorucu olacaktır, bu yüzden buna dikkat etmelisiniz. Saksıda "MoonGaming" yazısını
+                        yorucu olacaktır, bu yüzden buna dikkat etmelisiniz. Saksıda "MoonGaming™" yazısını
                         gördüğünüzde, tebrikler! Saksınız hasat edilmeye hazır.
                     </p>
                     <p>Ayrıca mühendis çağırarak saksınızın daha performanslı çalışmasını sağlayabilirsiniz.</p>
