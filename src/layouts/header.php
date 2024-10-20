@@ -8,9 +8,9 @@ $PathName = ucfirst(str_replace('.php', '', $PathExtName));
 $DefaultOGImage = "/assets/image/og-image.png";
 
 if (isset($PAGE_TITLE)) {
-    $header_title = $PAGE_TITLE . " - " . "MoonGaming Rehber";
+    $header_title = $PAGE_TITLE . " - " . "MoonGaming™ Rehber";
 } else {
-    $header_title = $PathName . " - " . "MoonGaming Rehber";
+    $header_title = $PathName . " - " . "MoonGaming™ Rehber";
 }
 
 if (isset($PAGE_DESCRIPTION)) {

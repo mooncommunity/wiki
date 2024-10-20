@@ -3,7 +3,7 @@
         <div class="navbar-brand">
             <a class="navbar-brand" href="<?= $baseUrl; ?>/"><img src="https://www.moonrp.com/images/aykafa.ico"
                                                                   height="32" width="32">
-                MoonGaming Rehber</a>
+                MoonGaming™ Rehber</a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
