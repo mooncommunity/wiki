@@ -1,5 +1,6 @@
 # 1.0.1
-
+- "Paralı Meslekler" Güncellendi
+- "Bilim Adamı" Tanımı Güncellendi
 - "Ekran Kaydı nasıl alabilirim?" eklendi
 
 - DarkRP Başlarken > SSS

@@ -8,9 +8,9 @@ $PathName = ucfirst(str_replace('.php', '', $PathExtName));
 $DefaultOGImage = "/assets/image/og-image.png";
 
 if (isset($PAGE_TITLE)) {
-    $header_title = $PAGE_TITLE . " - " . "MoonGaming Rehber";
+    $header_title = $PAGE_TITLE . " - " . "MoonGaming™ Rehber";
 } else {
-    $header_title = $PathName . " - " . "MoonGaming Rehber";
+    $header_title = $PathName . " - " . "MoonGaming™ Rehber";
 }
 
 if (isset($PAGE_DESCRIPTION)) {
@@ -44,7 +44,7 @@ if (isset($PAGE_OG_IMAGE_LOCAL) && $PAGE_OG_IMAGE_LOCAL === true) {
 
     <meta name="description"
           content="<?= $header_description ?>">
-    <meta name="keywords" content="MoonRP, MoonGaming, mg, DarkRP, TTT, DarkRolePlay, garrysmod, gmod">
+    <meta name="keywords" content="MoonRP, MoonGaming™, mg, DarkRP, TTT, DarkRolePlay, garrysmod, gmod">
 
     <meta property="og:title" content="<?= $header_title ?>">
     <meta property="og:description"

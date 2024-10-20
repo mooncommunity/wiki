@@ -28,13 +28,13 @@
         <hr>
         <div>
             <h4 id="adminyok"><b>Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?</b></h4>
-            <p>Gerekli delilleri toplayarak MoonGaming Discord sunucusuna gelip ticket açmanız
+            <p>Gerekli delilleri toplayarak MoonGaming™ Discord sunucusuna gelip ticket açmanız
                 gerekmektedir.</p>
         </div>
         <hr>
         <div>
             <h4 id="bantemyiz"><b>Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?</b></h4>
-            <p>MoonGaming Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
+            <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
         </div>
         <hr>
         <div>

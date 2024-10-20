@@ -13,12 +13,12 @@
         <hr>
         <div>
             <h4 id="ailepaylasimi"><b>Aile Paylaşımı ile sunucuya nasıl katılırım?</b></h4>
-            <p>MoonGaming Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
+            <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
         </div>
         <hr>
         <div>
             <h4 id="geforcenow"><b>GeForce Now ile sunucuya nasıl katılırım?</b></h4>
-            <p>MoonGaming Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
+            <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
         </div>
         <hr>
         <div>
@@ -76,7 +76,7 @@
         <hr>
         <div>
             <h4 id="bantemyiz"><b>Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?</b></h4>
-            <p>MoonGaming Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
+            <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
         </div>
         <hr>
         <div>
