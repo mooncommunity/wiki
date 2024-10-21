@@ -10,25 +10,25 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'DarkRP Nedir',
             url: `${baseUrl}/darkrp`,
             content: '',
-            tags: ['drp', 'rp', 'yeniyim']
+            tags: ['drp', 'rp', 'yeniyim', "darkrp yeniyim"]
         },
         {
             name: 'DarkRP Oyun Kuralları',
             url: `https://moonrp.com/oyunkurallari`,
             content: 'Mutlaka bilinmesi gereken oyun kuralları',
-            tags: ['drp', 'rp', 'kurallar', 'yeniyim']
+            tags: ['drp', 'rp', 'kurallar', 'yeniyim', "darkrp yeniyim"]
         },
         {
             name: 'DarkRP Başlarken',
             url: `${baseUrl}/darkrp-baslarken`,
             content: 'DarkRP Başlıyan herkesin bilmesi gerekenler',
-            tags: ['drp', 'rp', 'başlarken', 'yeniyim']
+            tags: ['drp', 'rp', 'başlarken', 'yeniyim', "darkrp yeniyim"]
         },
         {
             name: 'DarkRP - Chromium Nedir? Nasıl Chromium Geçerim?',
             url: `${baseUrl}/darkrp-baslarken/chromium`,
             content: 'Garry\'s Mod için Chromium güncellemesi, HTML panelleri ve medya içeriği için daha iyi performans ve uyumluluk sağlar, oyunculara daha akıcı bir deneyim sunar.',
-            tags: ['drp', 'rp', 'chrome', 'beta', 'steambeta', 'yeniyim']
+            tags: ['drp', 'rp', 'chrome', 'beta', 'steambeta', 'yeniyim', "darkrp yeniyim"]
         },
         {
             name: 'DarkRP - Linux distrosu kullanıyorum, nasıl sunucuya katılabilirim?',
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'DarkRP Başlarken - Gerekli Eklentiler ve Ayarlar',
             url: `${baseUrl}/darkrp-baslarken#gerekli-eklentiler-ve-ayarlar`,
             content: 'Oyuna girmeden önce yapılması gerekenler...',
-            tags: ['drp', 'rp', 'workshop', 'chromium', 'error', 'yeniyim']
+            tags: ['drp', 'rp', 'workshop', 'chromium', 'error', 'yeniyim', "darkrp yeniyim"]
         },
         {
             name: 'DarkRP Başlarken - Temel Kısayollar',
@@ -316,13 +316,13 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Devlet Çalışanı - Bekçi İken Ne Yapmalıyım?',
             url: `${baseUrl}/darkrp-kariyer/legal#bekci`,
             content: 'Bekçi mesleği, Emniyet Teşkilatı\'nın temel taşıdır.',
-            tags: ['drp', 'rp', 'bekçi', 'legal']
+            tags: ['drp', 'rp', 'bekçi', 'legal', 'yeniyim', "darkrp yeniyim"]
         },
         {
             name: 'Devlet Çalışanı - Belediye İşçisiyim, Nasıl Görevimi Yerine Getirebilirim?',
             url: `${baseUrl}/darkrp-kariyer/legal#belediyeisci`,
             content: 'Belediye işçisi ne yapıyor...',
-            tags: ['drp', 'rp', 'belediye', 'işçi', 'legal']
+            tags: ['drp', 'rp', 'belediye', 'işçi', 'legal', 'yeniyim', "darkrp yeniyim"]
         },
         {
             name: 'Devlet Çalışanı - Polis Sağlık Dolabı ve Teçhizat Dolabı Nedir?',
@@ -436,7 +436,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Yasadışı Organizasyonlar - Keko Mesleğinde...',
             url: `${baseUrl}/darkrp-kariyer/illegal#kekoyapabilcekleri`,
             content: 'İlk adımlar önemli...',
-            tags: ['drp', 'rp', 'illegal', 'yeniyim', 'keko']
+            tags: ['drp', 'rp', 'illegal', 'yeniyim', 'keko', "darkrp yeniyim"]
         },
         {
             name: 'Yasadışı Organizasyonlar - Nasıl Araba Çalabilirim?',
@@ -508,25 +508,25 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT Nedir',
             url: `${baseUrl}/ttt`,
             content: '',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'yeniyim']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'yeniyim', "ttt yeniyim"]
         },
         {
             name: 'TTT Oyun Kuralları',
             url: `https://moonrp.com/oyunkurallari`,
             content: 'Mutlaka bilinmesi gereken oyun kuralları',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'kurallar', 'yeniyim']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'kurallar', 'yeniyim', "ttt yeniyim"]
         },
         {
             name: 'TTT Başlarken',
             url: `${baseUrl}/ttt-baslarken`,
             content: 'TTT Başlıyan herkesin bilmesi gerekenler',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'başlarken', 'yeniyim']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'başlarken', 'yeniyim', "ttt yeniyim"]
         },
         {
             name: 'TTT - Chromium Nedir? Nasıl Chromium Geçerim?',
             url: `${baseUrl}/ttt-baslarken/chromium`,
             content: 'Garry\'s Mod için Chromium güncellemesi, HTML panelleri ve medya içeriği için daha iyi performans ve uyumluluk sağlar, oyunculara daha akıcı bir deneyim sunar.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'chrome', 'beta', 'steambeta', 'yeniyim']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'chrome', 'beta', 'steambeta', 'yeniyim', "ttt yeniyim"]
         },
         {
             name: 'TTT - Linux distrosu kullanıyorum, nasıl sunucuya katılabilirim?',
@@ -538,7 +538,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT Başlarken - Gerekli Eklentiler ve Ayarlar',
             url: `${baseUrl}/ttt-baslarken#gerekli-eklentiler-ve-ayarlar`,
             content: 'Oyuna girmeden önce yapılması gerekenler...',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'workshop', 'chromium', 'error', 'yeniyim']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'workshop', 'chromium', 'error', 'yeniyim', "ttt yeniyim"]
         },
         {
             name: 'TTT Başlarken - Temel Kısayollar',
@@ -562,7 +562,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT Başlarken - İzleyici modundayım, nasıl oyuna dönebilirim?',
             url: `${baseUrl}/ttt-baslarken#izleyici`,
             content: 'TTT Başlıyan herkesin bilmesi gerekenler',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'spectate', 'izleyici', "uçuyorum", "yeniyim"]
+            tags: ['ttt', 'Trouble in Terrorist Town', 'spectate', 'izleyici', "uçuyorum", "yeniyim", "ttt yeniyim"]
         },
         {
             name: 'TTT Başlarken - Mümkün olduğunca dedektif olmaktan kaçınmak istiyorum?',
@@ -574,7 +574,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT Başlarken - Test Odası nedir?',
             url: `${baseUrl}/ttt-baslarken#test`,
             content: 'TTT Başlıyan herkesin bilmesi gerekenler',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'tester', 'haintespit', "dedektif", "masum", "yeniyim"]
+            tags: ['ttt', 'Trouble in Terrorist Town', 'tester', 'haintespit', "dedektif", "masum", "yeniyim", "ttt yeniyim"]
         },
         {
             name: 'TTT Başlarken - Oyundaki tüm silahlarım nerede?',
@@ -622,7 +622,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT Başlarken - Envanter Kredisi ve C Menü Kredisi nasıl kazanırım?',
             url: `${baseUrl}/ttt-baslarken#kredi`,
             content: 'TTT Başlıyan herkesin bilmesi gerekenler',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'kredi', 'c menü kredi', 'hain', 'dedektif', 'yeniyim']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'kredi', 'c menü kredi', 'hain', 'dedektif', 'yeniyim', "ttt yeniyim"]
         },
         {
             name: 'TTT Başlarken - Dedektif/Hain iken hangi ekipmanları kullanabilirim?',
@@ -682,7 +682,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT SSS - Pembe-Siyah Hatasını nasıl çözebilirim?',
             url: `${baseUrl}/ttt-baslarken/sss#csscontent`,
             content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'css', 'pembe', 'kare', 'yeniyim']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'css', 'pembe', 'kare', 'yeniyim', "ttt yeniyim"]
         },
         {
             name: 'TTT SSS - Vape Token Sahibiyim, Ne Yapmalıyım?',
@@ -711,6 +711,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchIcon = document.getElementById('searchIcon');
     const closeModal = document.getElementById('closeModal');
 
+    const topMenu = document.getElementById('top-menu');
+    const navbarNav = document.getElementById('navbarNav');
+
+    function toggleSearchIcon() {
+        if (window.innerWidth < 767) {
+            topMenu.appendChild(searchIcon);
+        } else {
+            navbarNav.parentNode.insertBefore(searchIcon, navbarNav.nextSibling);
+        }
+    }
+
+    toggleSearchIcon();
+    window.addEventListener('resize', toggleSearchIcon);
 
     searchIcon.addEventListener('click', () => {
         const modal = new bootstrap.Modal(document.getElementById('searchModal'));
