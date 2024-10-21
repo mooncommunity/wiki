@@ -139,7 +139,7 @@
         <br>
         <div>
             <div class="row">
-                <h3 id="ot">Bitki Üretimi</h3>
+                <h3 id="bitki">Bitki Üretimi</h3>
                 <div class="col-md-8">
                     <p>Bitki üretebilmek için gerekli mesleklere erişiminiz olmalıdır. Bitki üretimi
                         için Keko ve Çete Üyesi mesleklerinde gerekli seviyeleri tamamladıktan sonra Mafya Üyesi
@@ -166,7 +166,7 @@
                          alt="Bitki Yükseltme">
                 </div>
                 <div class="col-md-8">
-                    <p>Bitkinuzun kalitesini artırmak için aşağıdaki mesleklerden birinde olmanız
+                    <p>Bitkinizin kalitesini artırmak için aşağıdaki mesleklerden birinde olmanız
                         gerekmektedir:</p>
                     <p>Bu meslekler F4 menüsünden "Varlıklar" bölümüne giderek, ardından "Bitki Paketleme"
                         adlı aracı çıkarak gerçekleştirmektedir.</p>
@@ -318,7 +318,7 @@
         <br>
 
         <div>
-            <h3 id="kacakesya" class="mb-4">Korsan ve Eşkiyada ürettiğim İthal eşyaları kime satabilirim?</h3>
+            <h3 id="ithalesya" class="mb-4">Korsan ve Eşkiyada ürettiğim İthal eşyaları kime satabilirim?</h3>
             <div class="alert alert-info" role="alert">
                 Meslek perm sahiplerinin kimler olduğunu öğrenmek için Discord sunucumuzda <strong>Meslek
                     Sahipleri</strong> kanalına göz atabilirsiniz.

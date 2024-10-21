@@ -330,6 +330,12 @@ pre {
 #cardContainer .card:hover img {
     filter: brightness(0.8);
 }
+.rounded-button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -397,9 +403,12 @@ pre {
         padding: 5px 10px;
         border-bottom: 0;
     }
-    
+
     .mobile-content {
         display: block;
+    }
+    .desktop-content {
+        display: none;
     }
 }
 
@@ -421,5 +430,8 @@ pre {
     }
     .mobile-content {
         display: none;
+    }
+    .desktop-content {
+        display: block;
     }
 }

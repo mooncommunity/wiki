@@ -1,6 +1,24 @@
 <html><head><meta charset='utf-8'><title>Changelog</title></head><body><h1>Changelog</h1>
+<h2>Commit: 1.0.2-rc1 (Winfried, 2024-10-21)</h2>
+<h3>Değişiklikler:</h3><ul>
+<li style='color: blue;'>Değiştirilmiş: CHANGELOG.MD</li>
+<li style='color: blue;'>Değiştirilmiş: DEGISIKLIKLER.MD</li>
+<li style='color: blue;'>Değiştirilmiş: src/assets/css/styles.css</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/aykafa.ico</li>
+<li style='color: green;'>Eklenmiş: src/assets/js/search.js</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-baslarken.sss.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.esnaf.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.illegal.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/footer.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/header.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/main.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/nav.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/ttt-baslarken.sss.php</li>
+</ul>
 <h2>Commit: 1.0.1 (Winfried, 2024-10-21)</h2>
 <h3>Değişiklikler:</h3><ul>
+<li style='color: blue;'>Değiştirilmiş: CHANGELOG.MD</li>
+<li style='color: blue;'>Değiştirilmiş: DEGISIKLIKLER.MD</li>
 <li style='color: green;'>Eklenmiş: src/assets/image/logo1.png</li>
 <li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-baslarken.sss.php</li>
 <li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.esnaf.php</li>

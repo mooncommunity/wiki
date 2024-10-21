@@ -1,6 +1,6 @@
 <?php
 $baseUrl_Path = "";
-$baseUrl = "https://moonrehber.com" . $baseUrl_Path;
+$baseUrl = "https://b0.moonrehber.com" . $baseUrl_Path;
 
 $PathExtName = basename($_SERVER['SCRIPT_NAME']);
 $PathName = ucfirst(str_replace('.php', '', $PathExtName));
@@ -62,4 +62,6 @@ if (isset($PAGE_OG_IMAGE_LOCAL) && $PAGE_OG_IMAGE_LOCAL === true) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?= $baseUrl; ?>/assets/js/scripts.js"></script>
+<script src="<?= $baseUrl; ?>/assets/js/search.js"></script>

@@ -68,29 +68,6 @@
                 gerekmektedir.</p>
         </div>
         <hr>
-
-        <div>
-            <h4 id="adminyok"><b>Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?</b></h4>
-            <p>Gerekli delilleri toplayarak Discord'da bir destek talebi (ticket) açabilirsiniz.</p>
-        </div>
-        <hr>
-        <div>
-            <h4 id="bantemyiz"><b>Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?</b></h4>
-            <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
-        </div>
-        <hr>
-        <div>
-            <h4 id="admin"><b>Yetkili nasıl olabilirim?</b></h4>
-            <p>Yetkili olabilmek için <a
-                        href="https://docs.google.com/forms/d/1kgbKiIb54meRI7L0ElfIY1dSmjcval3REOVcudYB_3k/viewform?pli=1&pli=1">başvuru</a>
-                yapmanız gerekmektedir. Başvurunuz olumlu sonuçlanırsa geri dönüş yapılacaktır.</p>
-
-            <h5><b>Red edildiğimi nereden öğrenebilirim?</b></h5>
-            <p>Başvuru sayısı fazla olduğundan dolayı maalesef red edilenlere dönüş yapılmamaktadır. 1 hafta
-                içinde
-                dönüş yapılmazsa başvurunuz red edilmiştir.</p>
-        </div>
-        <hr>
         <div>
             <h4 id="basvuru-poh"><b>Polis Özel Harekat Polisi ve Polis Özel Harekat Doktoru nasıl olurum?</b>
             </h4>
@@ -136,7 +113,7 @@
         </div>
         <hr>
         <div>
-            <h4 id="bilimadami"><b>Bilim İnsanı Nasıl Olunur?</b></h4>
+            <h4 id="bilimadami"><b>Bilim Adamı Nasıl Olunur?</b></h4>
             <p>Saat Kulesi'ndeki NPC'den belge almalı ve gerekli meslekte deneyim kazanmalısınız.</p>
         </div>
         <hr>
@@ -179,9 +156,11 @@ Familya Üyeleri:
             </p>
         </div>
     </div>
+    <br>
 </main>
 <script>
     document.getElementById("kariyerBox").href = baseUrl + "/darkrp-kariyer";
     document.getElementById("baslarkenBox").href = baseUrl + "/darkrp-baslarken#gerekli-eklentiler-ve-ayarlar";
     document.getElementById("baslarkenBox").innerHTML = '<i class="fa-regular fa-hand"></i> DarkRP Başlarken - Gerekli Eklentiler ve Ayarlar';
+    document.getElementById("adminbasvuru").href = "https://forms.gle/aThYDcDq2KCxbv1z8";
 </script>

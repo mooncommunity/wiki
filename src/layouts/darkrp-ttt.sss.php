@@ -349,3 +349,25 @@ exec config_default.cfg
         halde ses gitmiyorsa, Windows ayarlarınızdan kontrol etmeniz gerekebilir. Sanal mikrofon
         uygulamaları varsa bunları devre dışı bırakıp tekrar deneyiniz.</p>
 </div>
+<hr>
+<div>
+    <h4 id="adminyok"><b>Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?</b></h4>
+    <p>Gerekli delilleri toplayarak Discord'da bir destek talebi (ticket) açabilirsiniz.</p>
+</div>
+<hr>
+<div>
+    <h4 id="bantemyiz"><b>Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?</b></h4>
+    <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
+</div>
+<hr>
+<div>
+    <h4 id="admin"><b>Yetkili nasıl olabilirim?</b></h4>
+    <p>Yetkili olabilmek için <a id="adminbasvuru"
+                                 href="#">başvuru</a>
+        yapmanız gerekmektedir. Başvurunuz olumlu sonuçlanırsa geri dönüş yapılacaktır.</p>
+
+    <h5><b>Red edildiğimi nereden öğrenebilirim?</b></h5>
+    <p>Başvuru sayısı fazla olduğundan dolayı maalesef red edilenlere dönüş yapılmamaktadır. 1 hafta
+        içinde
+        dönüş yapılmazsa başvurunuz red edilmiştir.</p>
+</div>
