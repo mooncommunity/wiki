@@ -757,7 +757,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
     const searchIcon = document.getElementById('searchIcon');
-    const closeModal = document.getElementById('closeModal');
+    const clearSearch = document.getElementById('clearSearch');
 
     const topMenu = document.getElementById('top-menu');
     const navbarNav = document.getElementById('navbarNav');
@@ -779,11 +779,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    closeModal.addEventListener('click', () => {
-        const modal = new bootstrap.Modal(document.getElementById('searchModal'));
-        modal.hide();
+    clearSearch.addEventListener('click', () => {
         searchInput.value = '';
         searchResults.innerHTML = '';
+        clearSearch.style.display = 'none';
     });
 
     searchInput.addEventListener('input', () => {
@@ -791,6 +790,8 @@ document.addEventListener('DOMContentLoaded', function () {
         searchResults.innerHTML = '';
 
         if (query) {
+            clearSearch.style.display = 'block';
+
             const filteredData = searchData.filter(item => {
                 return item.name.toLowerCase().includes(query) ||
                     item.content.toLowerCase().includes(query) ||
@@ -801,13 +802,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 filteredData.forEach(item => {
                     const listItem = document.createElement('li');
                     listItem.className = 'list-group-item';
-                    listItem.innerHTML = `<a href="${item.url}">${item.name}</a>: ${item.content}`;
+                    listItem.innerHTML = `<a style="text-decoration: none" href="${item.url}"><b>${item.name}</b></a>${item.content ? ': ' + item.content : ''}`;
                     searchResults.appendChild(listItem);
                 });
             } else {
                 searchResults.innerHTML = '<li class="list-group-item">Sonuç bulunamadı.</li>';
             }
         } else {
+            clearSearch.style.display = 'none';
             searchResults.innerHTML = '';
         }
     });

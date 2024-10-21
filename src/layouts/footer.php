@@ -25,14 +25,17 @@
 </div>
 
 <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="searchModalLabel"><i class="fas fa-search"></i> Ara...</h5>
-                <button type="button" class="btn-close" id="closeModal" aria-label="Kapat"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <input type="text" class="form-control rounded-button" id="searchInput" placeholder="Aramak istediğini buraya yaz...">
+                <div class="d-flex align-items-center">
+                    <input type="text" class="form-control rounded-button me-2" id="searchInput" placeholder="Aramak istediğini buraya yaz...">
+                    <button class="btn btn-outline-danger rounded-button mt-2" id="clearSearch" style="display: none;"><i class="fa-solid fa-delete-left"></i></button> <!-- Başlangıçta gizli -->
+                </div>
                 <ul class="list-group mt-3" id="searchResults"></ul>
             </div>
         </div>
