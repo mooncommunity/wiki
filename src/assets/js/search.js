@@ -702,6 +702,54 @@ document.addEventListener('DOMContentLoaded', function () {
             content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
             tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'admin', 'mod']
         },
+        {
+            name: 'Counter-Strike: Source Content Nasıl İndiririm?',
+            url: `${baseUrl}/content`,
+            content: 'CS:S Content Nasıl İndiririm?',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'garry\'s mod', 'gmod', 'css', 'pembe-siyah']
+        },
+        {
+            name: 'Discord ID Nasıl Öğrenebilirim?',
+            url: `${baseUrl}/discordid`,
+            content: 'Discord ID Nasıl Öğrenebilirim?',
+            tags: ['dc', 'discord', 'id']
+        },
+        {
+            name: 'Ekran Kaydı nasıl alabilirim?',
+            url: `${baseUrl}/ekrankaydi`,
+            content: 'Ekran Kaydı nasıl alabilirim?',
+            tags: ['obs', 'nvidia', 'xbox', 'game', 'bar']
+        },
+        {
+            name: 'MoonGaming - Anasayfa',
+            url: `https://moonrp.com/`,
+            content: '',
+            tags: ['mg', 'moongaming', 'anasayfa']
+        },
+        {
+            name: 'MoonGaming - Discord',
+            url: `https://discord.gg/moongaming`,
+            content: '',
+            tags: ['mg', 'moongaming', 'discord', 'dc']
+        },
+        {
+            name: 'MoonGaming - Market',
+            url: `https://moonrp.com/market`,
+            content: 'VIP, VIP+ hakkında detaylı bilgi',
+            tags: ['mg', 'moongaming', 'xp', 'vip', 'vip+']
+        },
+        {
+            name: 'MoonGaming - Shopier',
+            url: `https://www.shopier.com/ShowProductNew/storefront.php?shop=MoonGamingTR`,
+            content: '',
+            tags: ['mg', 'moongaming', 'xp', 'vip', 'vip+', 'kutu', 'destekci', 'kredi']
+        },
+        {
+            name: 'Steam ID Bulucu',
+            url: `https://www.steamidfinder.com/`,
+            content: 'Steam ID öğrenin...',
+            tags: ['dc', 'steam', 'id', 'steam64', 'steamhex']
+        },
 
     ];
 
