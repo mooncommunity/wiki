@@ -69,6 +69,17 @@
         </div>
         <hr>
         <div>
+            <h4 id="guncolor"><b>Fizik Silahı Rengini Nasıl Değiştirebilirim?</b></h4>
+            <ol>
+                <li>Garry's Mod'u açın ve "Sandbox" oyun modunu seçip "Yeni Bir Oyun Başlat" (Tek oyunculu) seçeneğine tıklayın.</li>
+                <li>Bir harita seçin ve oyunu başlatın.</li>
+                <li>Oyuna girdikten sonra, C tuşuna basarak "Oyuncu Modeli" menüsünü açın.</li>
+                <li>Açılan menüde "Renkler" kısmına gelin ve silah renginizi seçin.</li>
+                <li>Konsolu açın ve <code>kill</code> komutunu yazın. Ardından, seçtiğiniz renk aktif olacaktır.</li>
+            </ol>
+        </div>
+        <hr>
+        <div>
             <h4 id="basvuru-poh"><b>Polis Özel Harekat Polisi ve Polis Özel Harekat Doktoru nasıl olurum?</b>
             </h4>
             <p>Polis Özel Harekat Polisi olmak için Polis Asayiş Memuru mesleğinde 5. seviyeye ulaşmanız

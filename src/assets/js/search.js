@@ -217,6 +217,12 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'sss', 'parti', 'benzinlik', 'soygun', 'baskın']
         },
         {
+            name: 'DarkRP SSS - Fizik Silahı Rengini Nasıl Değiştirebilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#guncolor`,
+            content: 'Physic Gun Rengini Nasıl Değiştirebilirim?',
+            tags: ['drp', 'rp', 'sss', 'Physic Gun', 'Fizik Gun', 'Gun', 'color', 'renk', 'sandbox']
+        },
+        {
             name: 'DarkRP SSS - Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?',
             url: `${baseUrl}/darkrp-baslarken/sss#adminyok`,
             content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
