@@ -7,6 +7,10 @@ $PathName = ucfirst(str_replace('.php', '', $PathExtName));
 
 $DefaultOGImage = "/assets/image/og-image.png";
 
+if (!isset($header_og_bool)) {
+    $header_og_bool = false;
+}
+
 if (isset($PAGE_TITLE)) {
     $header_title = $PAGE_TITLE . " - " . "MoonGaming™ Rehber";
 } else {
@@ -49,7 +53,9 @@ if (isset($PAGE_OG_IMAGE_LOCAL) && $PAGE_OG_IMAGE_LOCAL === true) {
     <meta property="og:title" content="<?= $header_title ?>">
     <meta property="og:description"
           content="<?= $header_description ?>">
-    <meta property="og:image" content="<?= $header_og_image ?>">
+    <?php if ($header_og_bool) { ?>
+        <meta property="og:image" content="<?= $header_og_image ?>">
+    <?php } ?>
     <meta property="og:url" content="<?= $baseUrl; ?>">
     <meta property="og:type" content="website">
 

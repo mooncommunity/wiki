@@ -520,12 +520,12 @@
         },
         {
             title: "Çeçen Mafya Üyesi",
-            description: "Çeçen mafyasının bir üyesi olarak, yüksek seviye printerlarla para üretimi yapma fırsatına sahipsin. Bitki üretiminde de aktif rol alarak, çetenin gücünü artırmaya yardımcı olabilirsin.",
+            description: "Çeçen mafyasının bir üyesi olarak, yüksek seviye printerlarla para üretimi yapma fırsatına sahipsin. Çetenin gücünü artırmaya yardımcı olabilirsin.",
             req: "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
             title: "Çeçen Mafya Lideri",
-            description: "Çeçen mafyasının lideri olarak, çetenin en üst düzey operasyonlarını yönetmek zorundasın. Yüksek seviye printerlarla para üretimi yapmanın yanı sıra, Bitki üretimini de kontrol etmelisin.",
+            description: "Çeçen mafyasının lideri olarak, çetenin en üst düzey operasyonlarını yönetmek zorundasın. Yüksek seviye printerlarla para üretimi yaparak da ailene yardımcı olabilirsin.",
             req: "İlk önce Çeçen Mafya Üyesi, Rus Mafya Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {

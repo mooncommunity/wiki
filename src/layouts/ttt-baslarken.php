@@ -575,6 +575,27 @@
             </div>
             <hr>
             <br>
+            <div>
+                <h3 id="event" class="mb-3">Etkinlik Düzenleniyor mu?</h3>
+                <p>Belli aralıklarla üstadlarımız tarafından etkinlik düzenlenmektedir.</p>
+                <p>Ödül değişmektedir. Genellikle IC kredi verilmektedir.</p>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item">
+                        <h5 class="text-success-emphasis">Boss Raund</h5>
+                        <p>Bir kişi dinozora dönüşür ve herkes o dinozora dönüşen kişiyi öldürmeye çalışır. Aynı zamanda hayatta kalmanız gerekir.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="text-primary-emphasis">Stalker Raund</h5>
+                        <p>Bir kişi görünmez olur ve herkes o görünmez kişiyi öldürmeye çalışır. Aynı zamanda hayatta kalmanız gerekir.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="text-danger-emphasis">Patlayan Tavuk</h5>
+                        <p>Silahlarınızı hiçbir şekilde kullanamazsınız ve etrafa tavuklar spamlanır. Bu tavuklar zıplayabilir. Hayatta kalmaya çalışmanız gerekir.</p>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <br>
         </div>
 
         <hr>

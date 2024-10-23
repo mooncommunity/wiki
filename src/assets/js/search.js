@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'DarkRP SSS - Etrafta her şey error, ne yapmalıyım? / Oyuna giremiyorum, ana menüye atıyor?',
             url: `${baseUrl}/darkrp-baslarken/sss#error`,
             content: 'Etrafımda herşey error...',
-            tags: ['drp', 'rp', 'sss', 'error']
+            tags: ['drp', 'rp', 'sss', 'error', 'yeniyim', 'darkrp yeniyim']
         },
         {
             name: 'DarkRP SSS - "This typically means you are running out of Video Memory on your GPU" hatası alıyorum?',
@@ -136,7 +136,13 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'DarkRP SSS - Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?',
             url: `${baseUrl}/darkrp-baslarken/sss#modeldetayi`,
             content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'error', 'engineerror', 'gpu', 'ekrankarti']
+            tags: ['drp', 'rp', 'sss', 'error', 'model', 'detay']
+        },
+        {
+            name: 'DarkRP SSS - Steam Garry\'s Mod indirirken "Bozuk İndirme" yazıyor nasıl çözebilirim?',
+            url: `${baseUrl}/ttt-baslarken/sss#brokendownload`,
+            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            tags: ['drp', 'rp', 'sss', 'broken download', 'bozuk indirme', 'steam', 'broken', 'bozuk']
         },
         {
             name: 'DarkRP SSS - Konsol/Console Nedir?',
@@ -166,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'DarkRP SSS - Aile Paylaşımı ile sunucuya nasıl katılırım?',
             url: `${baseUrl}/darkrp-baslarken/sss#ailepaylasimi`,
             content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'wh', 'sunucutuş']
+            tags: ['drp', 'rp', 'sss', 'wh', 'family', 'aile', 'steamaile']
         },
         {
             name: 'DarkRP SSS - GeForce Now ile sunucuya nasıl katılırım?',
@@ -193,6 +199,18 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'sss', 'kutu', 'moonshop']
         },
         {
+            name: 'DarkRP SSS - Araç Ehliyeti Nereden Alabilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#ehliyet`,
+            content: 'Ehliyet Almak İstiyorum',
+            tags: ['drp', 'rp', 'sss', 'ehliyet', 'driver', 'araba', 'araç ehliyeti', 'araba ehliyet']
+        },
+        {
+            name: 'DarkRP SSS - Silah Ruhsatı Nereden Alabilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#ehliyet`,
+            content: 'Ruhsat Almak İstiyorum',
+            tags: ['drp', 'rp', 'sss', 'ruhsat', 'tabanca', 'pompalı', 'silah']
+        },
+        {
             name: 'DarkRP SSS - Araç Nereden Satın Alabilirim?',
             url: `${baseUrl}/darkrp-baslarken/sss#arac`,
             content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
@@ -211,6 +229,12 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'sss', 'araba', 'yakıt', 'dizel', 'elektrik', 'benzin']
         },
         {
+            name: 'DarkRP SSS - Aracım hasarlı, nasıl tamir edebilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#aractamir`,
+            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            tags: ['drp', 'rp', 'sss', 'araba', 'mekanik', 'galeri', 'tamir', 'motor']
+        },
+        {
             name: 'DarkRP SSS - Parti belgesi nedir, parti ne işe yarar?',
             url: `${baseUrl}/darkrp-baslarken/sss#parti`,
             content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
@@ -221,6 +245,18 @@ document.addEventListener('DOMContentLoaded', function () {
             url: `${baseUrl}/darkrp-baslarken/sss#guncolor`,
             content: 'Physic Gun Rengini Nasıl Değiştirebilirim?',
             tags: ['drp', 'rp', 'sss', 'Physic Gun', 'Fizik Gun', 'Gun', 'color', 'renk', 'sandbox']
+        },
+        {
+            name: 'DarkRP SSS - İsmimi nasıl değiştireceğim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#isimdegistirme`,
+            content: 'İsmimi beğenmedim',
+            tags: ['drp', 'rp', 'sss', 'display name', 'IC', 'Karakter', 'Ad', 'Soyad']
+        },
+        {
+            name: 'DarkRP SSS - Döviz Nasıl Alırım?',
+            url: `${baseUrl}/darkrp-baslarken/sss#doviz`,
+            content: 'Dolar, Euro, Kripto para Nasıl Alırım?',
+            tags: ['drp', 'rp', 'sss', 'BTC', 'ETH', '€', '$']
         },
         {
             name: 'DarkRP SSS - Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?',
@@ -292,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'DarkRP SSS - Aile kurmak istiyorum, ne yapmam gerekiyor?',
             url: `${baseUrl}/darkrp-baslarken/sss#vergilev`,
             content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'aile', 'familya', 'baron', 'sefir']
+            tags: ['drp', 'rp', 'sss', 'aile', 'familya']
         },
         {
             name: 'DarkRP Kariyer',
@@ -329,6 +365,18 @@ document.addEventListener('DOMContentLoaded', function () {
             url: `${baseUrl}/darkrp-kariyer/legal#belediyeisci`,
             content: 'Belediye işçisi ne yapıyor...',
             tags: ['drp', 'rp', 'belediye', 'işçi', 'legal', 'yeniyim', "darkrp yeniyim"]
+        },
+        {
+            name: 'Devlet Çalışanı - Belediye Başkanı Nasıl Olacağım?',
+            url: `${baseUrl}/darkrp-kariyer/legal#baskanaday`,
+            content: 'Belediye Başkanı adayı nasıl olurum?',
+            tags: ['drp', 'rp', 'belediye', 'başkan', 'ysk', 'aday', 'legal']
+        },
+        {
+            name: 'Devlet Çalışanı - Belediye Başkan Yardımcısı Seçebiliyor muyum?',
+            url: `${baseUrl}/darkrp-kariyer/legal#baskanyardimcisi`,
+            content: 'Belediye Başkanı yardımcısı nasıl seçerim?',
+            tags: ['drp', 'rp', 'belediye', 'başkan yardımcısı', 'ysk', 'aday', 'legal']
         },
         {
             name: 'Devlet Çalışanı - Polis Sağlık Dolabı ve Teçhizat Dolabı Nedir?',
@@ -394,7 +442,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Esnaf ve Siviller - Yapı Market Ürünleri',
             url: `${baseUrl}/darkrp-kariyer/esnaf#ticarivehizmetsektoru-yapimarket-urunleri`,
             content: 'Yapı marketlerde satılan ürünler, Garry\'s Mod\'un temel eşyaları olan Physic Gun ve Tool Gun ile ilgilidir. Bu eşyalar, oyuncuların inşaat ve yapı işlemlerinde kullanmaları gereken olmazsa olmaz malzemelerdir. ',
-            tags: ['drp', 'rp', 'yapı market', 'Tool Gun', 'Physic Gun', 'Gravity Gun', 'Fotoğraf Makinesi', 'kask', 'ayakkabı', 'çelik yelek']
+            tags: ['drp', 'rp', 'yapı market', 'Tool Gun', 'Physic Gun', 'Fizik Gun', 'Gravity Gun', 'Fotoğraf Makinesi', 'kask', 'ayakkabı', 'çelik yelek']
         },
         {
             name: 'Esnaf ve Siviller - Eczanede Satılan Ürünler',
@@ -406,13 +454,13 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Esnaf ve Siviller - Poligon Satılan Ürünler',
             url: `${baseUrl}/darkrp-kariyer/esnaf#ticarivehizmetsektoru-poligon-urunler`,
             content: 'Poligon mesleği, DarkRP ve MoonGaming sunucularında oyuncuların silah kullanma becerilerini geliştirebilecekleri ve çeşitli silahlar ile mermiler satın alabilecekleri bir rolü temsil eder.',
-            tags: ['drp', 'rp', 'İthalatçı', 'Tabanca', 'Ateşli Silahlar', 'Makinalı Silahlar', 'Muhimmat Kutusu', 'Farklı Seviye Mermiler', 'x Kalite Çelik Yelek']
+            tags: ['drp', 'rp', 'İthalatçı', 'Tabanca', 'pompalı', 'Ateşli Silahlar', 'Makinalı Silahlar', 'Muhimmat Kutusu', 'Farklı Seviye Mermiler', 'x Kalite Çelik Yelek']
         },
         {
             name: 'Esnaf ve Siviller - İthalatçı Satılan Ürünler',
             url: `${baseUrl}/darkrp-kariyer/esnaf#ticarivehizmetsektoru-ithalatci-urunler`,
             content: 'İthalatçı mesleği, DarkRP ve MoonGaming sunucularında oyunculara geniş bir silah yelpazesi sunan ve ağır silahlar temin edebilen özel bir rolü temsil eder.',
-            tags: ['drp', 'rp', 'İthalatçı', 'Tabanca', 'Ateşli Silahlar', 'Ağır Silahlar', 'Muhimmat Kutusu', 'Farklı Seviye Mermiler', 'x Kalite Çelik Yelek']
+            tags: ['drp', 'rp', 'İthalatçı', 'Tabanca', 'pompalı', 'Ateşli Silahlar', 'Ağır Silahlar', 'Muhimmat Kutusu', 'Farklı Seviye Mermiler', 'x Kalite Çelik Yelek']
         },
         {
             name: 'Esnaf ve Siviller - POS Cihazı Hakkında',
@@ -574,7 +622,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT Başlarken - Mümkün olduğunca dedektif olmaktan kaçınmak istiyorum?',
             url: `${baseUrl}/ttt-baslarken#dedektifolmamak`,
             content: 'TTT Başlıyan herkesin bilmesi gerekenler',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'spectate', 'izleyici', "uçuyorum"]
+            tags: ['ttt', 'Trouble in Terrorist Town', 'spectate', 'izleyici', "dedektif", "dedective"]
         },
         {
             name: 'TTT Başlarken - Test Odası nedir?',
@@ -634,7 +682,13 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT Başlarken - Dedektif/Hain iken hangi ekipmanları kullanabilirim?',
             url: `${baseUrl}/ttt-baslarken#cmenu`,
             content: 'TTT Başlıyan herkesin bilmesi gerekenler',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'etüt', 'eczane', 'botanikçi', 'ithalci', 'gece']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'c menü', 'dedective', 'terrorist', 'dedektif', 'hain', 'katil']
+        },
+        {
+            name: 'TTT Başlarken - Etkinlik Düzenleniyor mu?',
+            url: `${baseUrl}/ttt-baslarken#event`,
+            content: 'Etkinlik ve Etkinlik...',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'event', 'etkinlik', 'IC Kredi', 'Envanter Kredisi', 'yeniyim', "ttt yeniyim"]
         },
         {
             name: 'TTT Başlarken - Envanter nedir? Burada ne yapabilirim?',
@@ -664,7 +718,13 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT SSS - Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?',
             url: `${baseUrl}/ttt-baslarken/sss#modeldetayi`,
             content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'engineerror', 'gpu', 'ekrankarti']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'model', 'detay']
+        },
+        {
+            name: 'TTT SSS - Steam Garry\'s Mod indirirken "Bozuk İndirme" yazıyor nasıl çözebilirim?',
+            url: `${baseUrl}/ttt-baslarken/sss#brokendownload`,
+            content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'broken download', 'bozuk indirme', 'steam', 'broken', 'bozuk']
         },
         {
             name: 'TTT SSS - Konsol/Console Nedir?',
@@ -747,7 +807,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             name: 'MoonGaming - Shopier',
             url: `https://www.shopier.com/ShowProductNew/storefront.php?shop=MoonGamingTR`,
-            content: '',
+            content: 'VIP, VIP+ , Kutular vb...',
             tags: ['mg', 'moongaming', 'xp', 'vip', 'vip+', 'kutu', 'destekci', 'kredi']
         },
         {

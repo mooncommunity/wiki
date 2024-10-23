@@ -1,3 +1,7 @@
+<?php
+$darkRPContent = false;
+$tttContent = true;
+?>
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
         <h1 class="mb-4">Sıkça Sorulan Sorular</h1>
