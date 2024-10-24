@@ -2,6 +2,9 @@
 
 ## Search için anahtar kelime "darkrp yeniyim" || "ttt yeniyim"
 
+- DarkRP Kariyer > Esnaf ve Siviller
+  - Mühendis eklendi
+  
 - TTT Başlarken
     - "Etkinlik düzenleniyor mu?" eklendi.
 
@@ -12,6 +15,7 @@
     - src/assets/image/steam_menu_ayarlar_indirmeler_1.png
 
 - DarkRP Başlarken > SSS
+    - "Nasıl Dans Edebilirim?" eklendi
     - "Döviz nasıl alırım?" eklendi
     - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?"
       içeriği güncellendi.
@@ -32,9 +36,11 @@
     - "Belediye Başkan Yardımcısı Seçebiliyor muyum?" eklendi
 
 - DarkRP Kariyer > Yasadışı Organizasyonlar
+    - "Bitkiları" "Bitkileri" olarak düzenlendi.
     - "Bitki üretiminin" ID si ot du bitki olarak güncellendi.
     - "Korsan ve Eşkiyada Ürettiğim İthal eşyaları kime satabilirim?" ID si değiştirildi kacakesya dı ithalesya yapıldı
     - Çeçen Mafya Üyesi ve Çeçen Mafya Lideri tanımında Bitki üretimi vardı kaldırıldı.
+
 - Meta etiketlerinden OG Image kaldırıldı (Resim yapılana kadar eklenmicek)
 
 - "scripts.js" dosyası düzenlendi

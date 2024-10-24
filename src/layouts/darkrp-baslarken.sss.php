@@ -109,7 +109,6 @@ $tttContent = false;
             <h4 id="doviz"><b>Döviz Nasıl Alırım?</b></h4>
             <p>Bankanın içindeki, doktor kıyafetli NPC'den döviz satın alabilirsiniz.</p>
         </div>
-
         <hr>
         <div>
             <h4 id="basvuru-poh"><b>Polis Özel Harekat Polisi ve Polis Özel Harekat Doktoru nasıl olurum?</b>
@@ -187,6 +186,11 @@ Familya Üyeleri:
                     Üstadı</b> etiketlemeniz gerekiyor.</p>
             <hr>
         </div>
+        <div>
+            <h4 id="dance"><b>Nasıl Dans Edebilirim?</b></h4>
+            <p>Oyunda elinize anahtarı alınız ve "R" tuşuna basınız ardından çıkan menüde dans seçiniz.</p>
+        </div>
+        <hr>
         <blockquote>
             Sıkça Sorulan Sorular başlangıç rehberimiz burada sonlanıyor. Daha fazlası için diğer rehberlerimize
             de göz atmayı unutmayın.

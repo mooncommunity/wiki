@@ -331,6 +331,12 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'sss', 'aile', 'familya']
         },
         {
+            name: 'DarkRP SSS - Nasıl Dans Edebilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#vergilev`,
+            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            tags: ['drp', 'rp', 'sss', 'dance', 'dans', '_DarkRP_AnimationMenu', 'animasyon menu']
+        },
+        {
             name: 'DarkRP Kariyer',
             url: `${baseUrl}/darkrp-kariyer`,
             content: 'Devlet Çalışanı, Esnaf, Siviller ve Yasadışı Organizasyonlar için roller, sorumluluklar ve oyun içi dinamikler hakkında bilgiler. Oyunculara en uygun kariyer seçimini yapmaları için ipuçları sunar.',
@@ -424,7 +430,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'DarkRP Kariyer - Esnaf ve Siviller',
             url: `${baseUrl}/darkrp-kariyer/esnaf`,
             content: 'Esnaf ve siviller, toplumun ekonomik ve sosyal yapı taşlarıdır. İşbirliği ve dayanışma ile yerel ekonomiyi destekleyerek toplumsal yaşamı güçlendirirler.',
-            tags: ['drp', 'rp', 'yemek', 'kafe', 'dönerci', 'hamburgerci', 'imam', 'yapı market', 'poligon sahibi', 'ithalatçı', 'pos', 'maden', 'elmas']
+            tags: ['drp', 'rp', 'yemek', 'kafe', 'dönerci', 'hamburgerci', 'imam', 'yapı market', 'mühendis', 'poligon sahibi', 'ithalatçı', 'pos', 'maden', 'elmas']
         },
         {
             name: 'Esnaf ve Siviller - Yiyecek ve İçecek Sektörü',
@@ -436,7 +442,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Esnaf ve Siviller - Ticari ve Hizmet Sektörü',
             url: `${baseUrl}/darkrp-kariyer/esnaf#yiyecekveicecek`,
             content: 'Esnaf ve siviller, toplumun ekonomik ve sosyal yapı taşlarıdır. İşbirliği ve dayanışma ile yerel ekonomiyi destekleyerek toplumsal yaşamı güçlendirirler.',
-            tags: ['drp', 'rp', 'yapı market', 'poligon sahibi', 'ithalatçı', 'pos']
+            tags: ['drp', 'rp', 'yapı market', 'mühendis', 'poligon sahibi', 'ithalatçı', 'pos']
         },
         {
             name: 'Esnaf ve Siviller - Yapı Market Ürünleri',
@@ -461,6 +467,12 @@ document.addEventListener('DOMContentLoaded', function () {
             url: `${baseUrl}/darkrp-kariyer/esnaf#ticarivehizmetsektoru-ithalatci-urunler`,
             content: 'İthalatçı mesleği, DarkRP ve MoonGaming sunucularında oyunculara geniş bir silah yelpazesi sunan ve ağır silahlar temin edebilen özel bir rolü temsil eder.',
             tags: ['drp', 'rp', 'İthalatçı', 'Tabanca', 'pompalı', 'Ateşli Silahlar', 'Ağır Silahlar', 'Muhimmat Kutusu', 'Farklı Seviye Mermiler', 'x Kalite Çelik Yelek']
+        },
+        {
+            name: 'Esnaf ve Siviller - Mühendis Ürünleri',
+            url: `${baseUrl}/darkrp-kariyer/esnaf#ticarivehizmetsektoru-muhendis-urunler`,
+            content: 'Mühendisin olmazsa olmaz eşyaları',
+            tags: ['drp', 'rp', 'mühendis', 'fan eklentisi', 'para yazılımı', 'zırh paketi', 'kit']
         },
         {
             name: 'Esnaf ve Siviller - POS Cihazı Hakkında',
