@@ -316,58 +316,157 @@
 <div>
     <h4 id="modeldetayi">Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe
         girmiş. Ne yapmam gerekiyor?</h4>
-    <p>ESC tuşuna basınız, ardından "Oyun Ayarları"na basınız. Görüntü kısmına gelerek "Gelişmiş"e
-        tıklayınız ve ardından "Model Detayları"nı yüksek seviyeye ayarlayınız. Ancak, bu değişikliği
-        yaptığınızda oyundan donup kapanabilir. O yüzden bu değişikliği yaparken üzerinde Bio-organ vb
-        kullanmamış olmanızı öneririz.</p>
+    <?php if ($darkRPContent) { ?>
+        <p>ESC tuşuna basınız, ardından "Oyun Ayarları"na basınız. "Görüntü" kısmına gelerek "Gelişmiş"e
+            tıklayınız ve ardından "Model Detayı"nı yüksek seviyeye ayarlayınız.
+        </p>
+        <p>Ancak, bu değişikliği
+            yaptığınızda oyundan donup kapanabilir. O yüzden bu değişikliği yaparken üzerinde Bio-organ vb
+            kullanmamış olmanızı öneririz.</p>
+    <?php } ?>
+    <?php if ($tttContent) { ?>
+        <p>ESC tuşuna basınız, ardından "Ayarlar" basınız. "Görüntü" kısmına gelerek "Gelişmiş"e
+            tıklayınız ve ardından "Model Detayı"nı yüksek seviyeye ayarlayınız.
+        </p>
+        <p>Ancak, bu değişikliği
+            yaptığınızda oyundan donup kapanabilir. O yüzden bu değişikliği yaparken round çıkmayı göze almanız
+            gerekmekte.</p>
+    <?php } ?>
 </div>
-
 <hr>
 <div>
-    <h4 id="console"><b>Konsol/Console Nedir?</b></h4>
-    <p>oyuncuların oyun içindeki komutları girerek çeşitli işlemler yapmalarını sağlayan bir araçtır. Bu
-        konsol sayesinde oyun ayarlarını değiştirmek, hata ayıklamak gibi işlemler
-        gerçekleştirilebilir.</p>
-</div>
-<hr>
+    <h4 id="brokendownload">Steam'de Garry's Mod indirirken 'Bozuk İndirme' hatası alıyorum, nasıl çözebilirim?</h4>
+    <div class="accordion" id="brokendownloadAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-success-emphasis" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#brokendownloadcollapse1" aria-expanded="false"
+                        aria-controls="brokendownloadcollapse1">
+                    Önbelleği Temizleme
+                </button>
+            </h2>
+            <div id="brokendownloadcollapse1" class="accordion-collapse collapse"
+                 aria-labelledby="brokendownloadheading1"
+                 data-bs-parent="#brokendownloadAccordion">
+                <div class="accordion-body">
+                    <div class="row">
+                        <br>
+                        <div class="col-md-6 text-center">
+                            <img src="<?= $baseUrl ?>/assets/image/steam_menu_ayarlar.png" alt="Steam Ayarları"
+                                 class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <ol>
+                                <li>Menüden "Steam" seçiniz.</li>
+                                <li>"Ayarlar" tıklayınız.</li>
+                            </ol>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 text-center">
+                                <img src="<?= $baseUrl ?>/assets/image/steam_menu_ayarlar_indirmeler.png"
+                                     alt="Steam Ayarlar - İndirmeler"
+                                     class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <ol start="4">
+                                    <li>İndirmeler sekmesine gidin.</li>
+                                    <li>"Önbelleği Temizle" basınız.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-primary-emphasis" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#brokendownloadcollapse2" aria-expanded="false"
+                        aria-controls="brokendownloadcollapse2">
+                    İndirme Bölgesi Değiştirme
+                </button>
+            </h2>
+            <div id="brokendownloadcollapse2" class="accordion-collapse collapse"
+                 aria-labelledby="brokendownloadheading2"
+                 data-bs-parent="#brokendownloadAccordion">
+                <div class="accordion-body">
+                    <div class="row">
+                        <br>
+                        <div class="col-md-6 text-center">
+                            <img src="<?= $baseUrl ?>/assets/image/steam_menu_ayarlar.png" alt="Steam Ayarları"
+                                 class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <ol>
+                                <li>Menüden "Steam" seçiniz.</li>
+                                <li>"Ayarlar" tıklayınız.</li>
+                            </ol>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 text-center">
+                                <img src="<?= $baseUrl ?>/assets/image/steam_menu_ayarlar_indirmeler_1.png"
+                                     alt="Steam Ayarlar - İndirmeler"
+                                     class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <ol start="4">
+                                    <li>İndirmeler sekmesine gidin.</li>
+                                    <li>"İndirme bölgesini" değiştiriniz</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div>
-    <h4 id="tus"><b>Tuşlarım çalışmıyor, neden?</b></h4>
-    <p>Bir problem oluşmuş olabilir, oyun ayarlarından klavye menüsüne gelerek varsayılan düzeye geçip
-        sorunu kontrol edebilirsiniz.</p>
-    <p>Eğer sorun çözülmez ise konsolu (é tuşu) açınız ve aşağıdaki komutları yazınız.</p>
-    <pre><code>unbindall
+    <hr>
+    <div>
+        <h4 id="console"><b>Konsol/Console Nedir?</b></h4>
+        <p>oyuncuların oyun içindeki komutları girerek çeşitli işlemler yapmalarını sağlayan bir araçtır. Bu
+            konsol sayesinde oyun ayarlarını değiştirmek, hata ayıklamak gibi işlemler
+            gerçekleştirilebilir.</p>
+    </div>
+    <hr>
+
+    <div>
+        <h4 id="tus"><b>Tuşlarım çalışmıyor, neden?</b></h4>
+        <p>Bir problem oluşmuş olabilir, oyun ayarlarından klavye menüsüne gelerek varsayılan düzeye geçip
+            sorunu kontrol edebilirsiniz.</p>
+        <p>Eğer sorun çözülmez ise konsolu (é tuşu) açınız ve aşağıdaki komutları yazınız.</p>
+        <pre><code>unbindall
 exec config_default.cfg
 </code></pre>
-</div>
-<hr>
-<div>
-    <h4 id="mikrofon"><b>Oyunda sesim diğer oyunculara gitmiyor, ne yapmalıyım?</b></h4>
-    <p>İlk önce oyun ayarlarından iletişim sekmesinden mikrofonunuzu test etmelisiniz. Ardından mikrofon
-        ayarlarına girip Steam arayüzüne yönlendirecek ve orada mikrofonunuzu seçmelisiniz. Test
-        yaptığınız
-        halde ses gitmiyorsa, Windows ayarlarınızdan kontrol etmeniz gerekebilir. Sanal mikrofon
-        uygulamaları varsa bunları devre dışı bırakıp tekrar deneyiniz.</p>
-</div>
-<hr>
-<div>
-    <h4 id="adminyok"><b>Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?</b></h4>
-    <p>Gerekli delilleri toplayarak Discord'da bir destek talebi (ticket) açabilirsiniz.</p>
-</div>
-<hr>
-<div>
-    <h4 id="bantemyiz"><b>Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?</b></h4>
-    <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
-</div>
-<hr>
-<div>
-    <h4 id="admin"><b>Yetkili nasıl olabilirim?</b></h4>
-    <p>Yetkili olabilmek için <a id="adminbasvuru"
-                                 href="#">başvuru</a>
-        yapmanız gerekmektedir. Başvurunuz olumlu sonuçlanırsa geri dönüş yapılacaktır.</p>
+    </div>
+    <hr>
+    <div>
+        <h4 id="mikrofon"><b>Oyunda sesim diğer oyunculara gitmiyor, ne yapmalıyım?</b></h4>
+        <p>İlk önce oyun ayarlarından iletişim sekmesinden mikrofonunuzu test etmelisiniz. Ardından mikrofon
+            ayarlarına girip Steam arayüzüne yönlendirecek ve orada mikrofonunuzu seçmelisiniz. Test
+            yaptığınız
+            halde ses gitmiyorsa, Windows ayarlarınızdan kontrol etmeniz gerekebilir. Sanal mikrofon
+            uygulamaları varsa bunları devre dışı bırakıp tekrar deneyiniz.</p>
+    </div>
+    <hr>
+    <div>
+        <h4 id="adminyok"><b>Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?</b></h4>
+        <p>Gerekli delilleri toplayarak Discord'da bir destek talebi (ticket) açabilirsiniz.</p>
+    </div>
+    <hr>
+    <div>
+        <h4 id="bantemyiz"><b>Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?</b></h4>
+        <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
+    </div>
+    <hr>
+    <div>
+        <h4 id="admin"><b>Yetkili nasıl olabilirim?</b></h4>
+        <p>Yetkili olabilmek için <a id="adminbasvuru"
+                                     href="#">başvuru</a>
+            yapmanız gerekmektedir. Başvurunuz olumlu sonuçlanırsa geri dönüş yapılacaktır.</p>
 
-    <h5><b>Red edildiğimi nereden öğrenebilirim?</b></h5>
-    <p>Başvuru sayısı fazla olduğundan dolayı maalesef red edilenlere dönüş yapılmamaktadır. 1 hafta
-        içinde
-        dönüş yapılmazsa başvurunuz red edilmiştir.</p>
-</div>
+        <h5><b>Red edildiğimi nereden öğrenebilirim?</b></h5>
+        <p>Başvuru sayısı fazla olduğundan dolayı maalesef red edilenlere dönüş yapılmamaktadır. 1 hafta
+            içinde
+            dönüş yapılmazsa başvurunuz red edilmiştir.</p>
+    </div>

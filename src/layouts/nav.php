@@ -1,7 +1,7 @@
 <nav id="mainmenu" class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-brand">
-            <a class="navbar-brand" href="<?= $baseUrl; ?>/"><img src="<?= $baseUrl; ?>/assets/image/aykafa.ico"
+            <a class="navbar-brand" href="<?= $baseUrl; ?>/"><img src="<?= $baseUrl; ?>/assets/image/favicon.ico"
                                                                   height="32" width="32">
                 MoonGaming™ Rehber</a>
         </div>

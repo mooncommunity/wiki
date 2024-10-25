@@ -32,10 +32,13 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="d-flex align-items-center">
-                    <input type="text" class="form-control rounded-button me-2" id="searchInput" placeholder="Aramak istediğini buraya yaz...">
-                    <button class="btn btn-outline-danger rounded-button mt-2" id="clearSearch" style="display: none;"><i class="fa-solid fa-delete-left"></i></button> <!-- Başlangıçta gizli -->
+                <div class="position-relative">
+                    <input type="text" class="form-control pe-5 rounded-button" id="searchInput"
+                           placeholder="Aramak istediğini buraya yaz...">
+                    <i class="text-danger fa-solid fa-delete-left position-absolute top-50 translate-middle-y"
+                       id="clearSearch" style="display: none; cursor: pointer; right: 30px;"></i>
                 </div>
+
                 <ul class="list-group mt-3" id="searchResults"></ul>
             </div>
         </div>

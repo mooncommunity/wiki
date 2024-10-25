@@ -19,8 +19,8 @@
         </ul>
         <hr>
         <h2>Oyun Süreci:</h2>
-        <p>Oyun başladığında herkes gizli rolünü öğrenir. Teröristler, masumları öldürmeden önce dedektifleri ve
-            diğer teröristleri ortadan kaldırmalıdır. Dedektifler, şüpheli oyuncuları tespit edip masumları
+        <p>Oyun başladığında herkes gizli rolünü öğrenir. Teröristler, masumları öldürmeden önce dedektifleri ortadan
+            kaldırmalıdır. Dedektifler, şüpheli oyuncuları tespit edip masumları
             korumalıdır.</p>
         <br>
         <h3>Stratejiler</h3>
