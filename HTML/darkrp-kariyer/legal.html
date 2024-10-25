@@ -8,28 +8,30 @@
 
     <meta name="description"
           content="Kamu düzenini sağlamak ve vatandaşlara hizmet etmek için sorumluluk taşır; güvenlik, vergi toplama ve yasaların uygulanmasında aktif rol oynar.">
-    <meta name="keywords" content="MoonRP, MoonGaming™, mg, DarkRP, TTT, DarkRolePlay, garrysmod, gmod">
+    <meta name="keywords" content="MoonRP, MoonGaming, mg, DarkRP, TTT, DarkRolePlay, garrysmod, gmod">
 
     <meta property="og:title" content="Devlet Çalışanı - DarkRP Kariyer - MoonGaming™ Rehber">
     <meta property="og:description"
           content="Kamu düzenini sağlamak ve vatandaşlara hizmet etmek için sorumluluk taşır; güvenlik, vergi toplama ve yasaların uygulanmasında aktif rol oynar.">
-    <meta property="og:image" content="https://moonrp.com/wiki/assets/image/og-image-darkrp.png">
-    <meta property="og:url" content="https://moonrp.com/wiki">
+        <meta property="og:url" content="https://moonrp.com/wiki">
     <meta property="og:type" content="website">
 
     <title>Devlet Çalışanı - DarkRP Kariyer - MoonGaming™ Rehber</title>
 
-    <link rel="icon" type="image/x-icon" href="https://www.moonrp.com/images/aykafa.ico">
+    <link rel="icon" type="image/x-icon" href="https://moonrp.com/wiki/assets/image/favicon.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://moonrp.com/wiki/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
-<script src="https://moonrp.com/wiki/assets/js/scripts.js"></script><nav id="mainmenu" class="navbar navbar-expand-lg">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
+<script src="https://moonrp.com/wiki/assets/js/search.js"></script>
+<nav id="mainmenu" class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-brand">
-            <a class="navbar-brand" href="https://moonrp.com/wiki/"><img src="https://www.moonrp.com/images/aykafa.ico"
+            <a class="navbar-brand" href="https://moonrp.com/wiki/"><img src="https://moonrp.com/wiki/assets/image/favicon.ico"
                                                                   height="32" width="32">
                 MoonGaming™ Rehber</a>
         </div>
@@ -42,6 +44,9 @@
 
             </ul>
         </div>
+        <button class="btn btn-outline-secondary rounded-button" id="searchIcon">
+            <i class="fas fa-search"></i> Ara...
+        </button>
     </div>
 </nav>
 
@@ -110,7 +115,17 @@
             </div>
             <hr>
             <br>
-
+            <div>
+                <h3 id="baskanaday" class="my-4">Belediye Başkanı Nasıl Olacağım?</h3>
+                <p>İlk önce Belediye binasın girişindeki "YSK Sorumlusu" adaylığınızı ortaya koymanız gerekmektedir.
+                    Daha sonra seçim süreci başlıcak seçim süreci bitince en çok oy alan aday Belediye başkanı
+                    olacaktır.</p>
+            </div>
+            <div>
+                <h3 id="baskanyardimcisi" class="my-4">Belediye Başkan Yardımcısı Seçebiliyor muyum?</h3>
+                <p>Evet, belediye başkan yardımcısı seçebiliyorsunuz. Belediye binasın girişindeki "YSK Sorumlusu" ile
+                    seçebilirsiniz.</p>
+            </div>
             <div>
                 <h3 id="dolap">Polis Sağlık Dolabı ve Teçhizat Dolabı Nedir?</h3><br>
                 <p>
@@ -458,7 +473,26 @@
     </button>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel"><i class="fas fa-search"></i> Ara...</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="position-relative">
+                    <input type="text" class="form-control pe-5 rounded-button" id="searchInput"
+                           placeholder="Aramak istediğini buraya yaz...">
+                    <i class="text-danger fa-solid fa-delete-left position-absolute top-50 translate-middle-y"
+                       id="clearSearch" style="display: none; cursor: pointer; right: 30px;"></i>
+                </div>
+
+                <ul class="list-group mt-3" id="searchResults"></ul>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <noscript>
     <style>

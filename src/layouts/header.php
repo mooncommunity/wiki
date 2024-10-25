@@ -7,6 +7,10 @@ $PathName = ucfirst(str_replace('.php', '', $PathExtName));
 
 $DefaultOGImage = "/assets/image/og-image.png";
 
+if (!isset($header_og_bool)) {
+    $header_og_bool = false;
+}
+
 if (isset($PAGE_TITLE)) {
     $header_title = $PAGE_TITLE . " - " . "MoonGaming™ Rehber";
 } else {
@@ -44,22 +48,26 @@ if (isset($PAGE_OG_IMAGE_LOCAL) && $PAGE_OG_IMAGE_LOCAL === true) {
 
     <meta name="description"
           content="<?= $header_description ?>">
-    <meta name="keywords" content="MoonRP, MoonGaming™, mg, DarkRP, TTT, DarkRolePlay, garrysmod, gmod">
+    <meta name="keywords" content="MoonRP, MoonGaming, mg, DarkRP, TTT, DarkRolePlay, garrysmod, gmod">
 
     <meta property="og:title" content="<?= $header_title ?>">
     <meta property="og:description"
           content="<?= $header_description ?>">
-    <meta property="og:image" content="<?= $header_og_image ?>">
+    <?php if ($header_og_bool) { ?>
+        <meta property="og:image" content="<?= $header_og_image ?>">
+    <?php } ?>
     <meta property="og:url" content="<?= $baseUrl; ?>">
     <meta property="og:type" content="website">
 
     <title><?= $header_title ?></title>
 
-    <link rel="icon" type="image/x-icon" href="https://www.moonrp.com/images/aykafa.ico">
+    <link rel="icon" type="image/x-icon" href="<?= $baseUrl; ?>/assets/image/favicon.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= $baseUrl; ?>/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?= $baseUrl; ?>/assets/js/scripts.js"></script>
+<script src="<?= $baseUrl; ?>/assets/js/search.js"></script>

@@ -24,7 +24,26 @@
     </button>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel"><i class="fas fa-search"></i> Ara...</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="position-relative">
+                    <input type="text" class="form-control pe-5 rounded-button" id="searchInput"
+                           placeholder="Aramak istediğini buraya yaz...">
+                    <i class="text-danger fa-solid fa-delete-left position-absolute top-50 translate-middle-y"
+                       id="clearSearch" style="display: none; cursor: pointer; right: 30px;"></i>
+                </div>
+
+                <ul class="list-group mt-3" id="searchResults"></ul>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <noscript>
     <style>

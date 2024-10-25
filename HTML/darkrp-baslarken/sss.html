@@ -8,28 +8,30 @@
 
     <meta name="description"
           content="DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.">
-    <meta name="keywords" content="MoonRP, MoonGaming™, mg, DarkRP, TTT, DarkRolePlay, garrysmod, gmod">
+    <meta name="keywords" content="MoonRP, MoonGaming, mg, DarkRP, TTT, DarkRolePlay, garrysmod, gmod">
 
     <meta property="og:title" content="DarkRP Sıkça Sorulan Sorular - MoonGaming™ Rehber">
     <meta property="og:description"
           content="DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.">
-    <meta property="og:image" content="https://moonrp.com/wiki/assets/image/og-image-darkrp.png">
-    <meta property="og:url" content="https://moonrp.com/wiki">
+        <meta property="og:url" content="https://moonrp.com/wiki">
     <meta property="og:type" content="website">
 
     <title>DarkRP Sıkça Sorulan Sorular - MoonGaming™ Rehber</title>
 
-    <link rel="icon" type="image/x-icon" href="https://www.moonrp.com/images/aykafa.ico">
+    <link rel="icon" type="image/x-icon" href="https://moonrp.com/wiki/assets/image/favicon.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://moonrp.com/wiki/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
-<script src="https://moonrp.com/wiki/assets/js/scripts.js"></script><nav id="mainmenu" class="navbar navbar-expand-lg">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
+<script src="https://moonrp.com/wiki/assets/js/search.js"></script>
+<nav id="mainmenu" class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-brand">
-            <a class="navbar-brand" href="https://moonrp.com/wiki/"><img src="https://www.moonrp.com/images/aykafa.ico"
+            <a class="navbar-brand" href="https://moonrp.com/wiki/"><img src="https://moonrp.com/wiki/assets/image/favicon.ico"
                                                                   height="32" width="32">
                 MoonGaming™ Rehber</a>
         </div>
@@ -42,6 +44,9 @@
 
             </ul>
         </div>
+        <button class="btn btn-outline-secondary rounded-button" id="searchIcon">
+            <i class="fas fa-search"></i> Ara...
+        </button>
     </div>
 </nav>
 
@@ -373,39 +378,150 @@
 <div>
     <h4 id="modeldetayi">Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe
         girmiş. Ne yapmam gerekiyor?</h4>
-    <p>ESC tuşuna basınız, ardından "Oyun Ayarları"na basınız. Görüntü kısmına gelerek "Gelişmiş"e
-        tıklayınız ve ardından "Model Detayları"nı yüksek seviyeye ayarlayınız. Ancak, bu değişikliği
-        yaptığınızda oyundan donup kapanabilir. O yüzden bu değişikliği yaparken üzerinde Bio-organ vb
-        kullanmamış olmanızı öneririz.</p>
-</div>
-
+            <p>ESC tuşuna basınız, ardından "Oyun Ayarları"na basınız. "Görüntü" kısmına gelerek "Gelişmiş"e
+            tıklayınız ve ardından "Model Detayı"nı yüksek seviyeye ayarlayınız.
+        </p>
+        <p>Ancak, bu değişikliği
+            yaptığınızda oyundan donup kapanabilir. O yüzden bu değişikliği yaparken üzerinde Bio-organ vb
+            kullanmamış olmanızı öneririz.</p>
+        </div>
 <hr>
 <div>
-    <h4 id="console"><b>Konsol/Console Nedir?</b></h4>
-    <p>oyuncuların oyun içindeki komutları girerek çeşitli işlemler yapmalarını sağlayan bir araçtır. Bu
-        konsol sayesinde oyun ayarlarını değiştirmek, hata ayıklamak gibi işlemler
-        gerçekleştirilebilir.</p>
-</div>
-<hr>
+    <h4 id="brokendownload">Steam'de Garry's Mod indirirken 'Bozuk İndirme' hatası alıyorum, nasıl çözebilirim?</h4>
+    <div class="accordion" id="brokendownloadAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-success-emphasis" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#brokendownloadcollapse1" aria-expanded="false"
+                        aria-controls="brokendownloadcollapse1">
+                    Önbelleği Temizleme
+                </button>
+            </h2>
+            <div id="brokendownloadcollapse1" class="accordion-collapse collapse"
+                 aria-labelledby="brokendownloadheading1"
+                 data-bs-parent="#brokendownloadAccordion">
+                <div class="accordion-body">
+                    <div class="row">
+                        <br>
+                        <div class="col-md-6 text-center">
+                            <img src="https://moonrp.com/wiki/assets/image/steam_menu_ayarlar.png" alt="Steam Ayarları"
+                                 class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <ol>
+                                <li>Menüden "Steam" seçiniz.</li>
+                                <li>"Ayarlar" tıklayınız.</li>
+                            </ol>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 text-center">
+                                <img src="https://moonrp.com/wiki/assets/image/steam_menu_ayarlar_indirmeler.png"
+                                     alt="Steam Ayarlar - İndirmeler"
+                                     class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <ol start="4">
+                                    <li>İndirmeler sekmesine gidin.</li>
+                                    <li>"Önbelleği Temizle" basınız.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-primary-emphasis" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#brokendownloadcollapse2" aria-expanded="false"
+                        aria-controls="brokendownloadcollapse2">
+                    İndirme Bölgesi Değiştirme
+                </button>
+            </h2>
+            <div id="brokendownloadcollapse2" class="accordion-collapse collapse"
+                 aria-labelledby="brokendownloadheading2"
+                 data-bs-parent="#brokendownloadAccordion">
+                <div class="accordion-body">
+                    <div class="row">
+                        <br>
+                        <div class="col-md-6 text-center">
+                            <img src="https://moonrp.com/wiki/assets/image/steam_menu_ayarlar.png" alt="Steam Ayarları"
+                                 class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <ol>
+                                <li>Menüden "Steam" seçiniz.</li>
+                                <li>"Ayarlar" tıklayınız.</li>
+                            </ol>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 text-center">
+                                <img src="https://moonrp.com/wiki/assets/image/steam_menu_ayarlar_indirmeler_1.png"
+                                     alt="Steam Ayarlar - İndirmeler"
+                                     class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <ol start="4">
+                                    <li>İndirmeler sekmesine gidin.</li>
+                                    <li>"İndirme bölgesini" değiştiriniz</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div>
-    <h4 id="tus"><b>Tuşlarım çalışmıyor, neden?</b></h4>
-    <p>Bir problem oluşmuş olabilir, oyun ayarlarından klavye menüsüne gelerek varsayılan düzeye geçip
-        sorunu kontrol edebilirsiniz.</p>
-    <p>Eğer sorun çözülmez ise konsolu (é tuşu) açınız ve aşağıdaki komutları yazınız.</p>
-    <pre><code>unbindall
+    <hr>
+    <div>
+        <h4 id="console"><b>Konsol/Console Nedir?</b></h4>
+        <p>oyuncuların oyun içindeki komutları girerek çeşitli işlemler yapmalarını sağlayan bir araçtır. Bu
+            konsol sayesinde oyun ayarlarını değiştirmek, hata ayıklamak gibi işlemler
+            gerçekleştirilebilir.</p>
+    </div>
+    <hr>
+
+    <div>
+        <h4 id="tus"><b>Tuşlarım çalışmıyor, neden?</b></h4>
+        <p>Bir problem oluşmuş olabilir, oyun ayarlarından klavye menüsüne gelerek varsayılan düzeye geçip
+            sorunu kontrol edebilirsiniz.</p>
+        <p>Eğer sorun çözülmez ise konsolu (é tuşu) açınız ve aşağıdaki komutları yazınız.</p>
+        <pre><code>unbindall
 exec config_default.cfg
 </code></pre>
-</div>
-<hr>
-<div>
-    <h4 id="mikrofon"><b>Oyunda sesim diğer oyunculara gitmiyor, ne yapmalıyım?</b></h4>
-    <p>İlk önce oyun ayarlarından iletişim sekmesinden mikrofonunuzu test etmelisiniz. Ardından mikrofon
-        ayarlarına girip Steam arayüzüne yönlendirecek ve orada mikrofonunuzu seçmelisiniz. Test
-        yaptığınız
-        halde ses gitmiyorsa, Windows ayarlarınızdan kontrol etmeniz gerekebilir. Sanal mikrofon
-        uygulamaları varsa bunları devre dışı bırakıp tekrar deneyiniz.</p>
-</div>        <hr>
+    </div>
+    <hr>
+    <div>
+        <h4 id="mikrofon"><b>Oyunda sesim diğer oyunculara gitmiyor, ne yapmalıyım?</b></h4>
+        <p>İlk önce oyun ayarlarından iletişim sekmesinden mikrofonunuzu test etmelisiniz. Ardından mikrofon
+            ayarlarına girip Steam arayüzüne yönlendirecek ve orada mikrofonunuzu seçmelisiniz. Test
+            yaptığınız
+            halde ses gitmiyorsa, Windows ayarlarınızdan kontrol etmeniz gerekebilir. Sanal mikrofon
+            uygulamaları varsa bunları devre dışı bırakıp tekrar deneyiniz.</p>
+    </div>
+    <hr>
+    <div>
+        <h4 id="adminyok"><b>Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?</b></h4>
+        <p>Gerekli delilleri toplayarak Discord'da bir destek talebi (ticket) açabilirsiniz.</p>
+    </div>
+    <hr>
+    <div>
+        <h4 id="bantemyiz"><b>Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?</b></h4>
+        <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
+    </div>
+    <hr>
+    <div>
+        <h4 id="admin"><b>Yetkili nasıl olabilirim?</b></h4>
+        <p>Yetkili olabilmek için <a id="adminbasvuru"
+                                     href="#">başvuru</a>
+            yapmanız gerekmektedir. Başvurunuz olumlu sonuçlanırsa geri dönüş yapılacaktır.</p>
+
+        <h5><b>Red edildiğimi nereden öğrenebilirim?</b></h5>
+        <p>Başvuru sayısı fazla olduğundan dolayı maalesef red edilenlere dönüş yapılmamaktadır. 1 hafta
+            içinde
+            dönüş yapılmazsa başvurunuz red edilmiştir.</p>
+    </div>        <hr>
         <div>
             <h4 id="sunucutus"><b>F1, F2, F3, F4, M, T gibi tuşları başka tuşa atayabilir miyim?</b></h4>
             <p>Sunucumuza özel tuş atamaları olduğu için değiştiremezsiniz.</p>
@@ -440,11 +556,21 @@ exec config_default.cfg
         </div>
         <hr>
         <div>
+            <h4 id="ehliyet"><b>Araç Ehliyeti Nereden Alabilirim?</b></h4>
+            <p>Polis karakolunun içindeki "Ehliyet Sorumlusu" npc doğru yanıtlar vererek ehliyet sahibi
+                olabilirsiniz.</p>
+        </div>
+        <hr>
+        <div>
+            <h4 id="ruhsat"><b>Silah Ruhsatı Nereden Alabilirim?</b></h4>
+            <p>Belediye Başkanından Cuzi fiyata kendine özel silah ruhsatı bastırabilirsin.</p>
+        </div>
+        <hr>
+        <div>
             <h4 id="arac"><b>Araç Nereden Satın Alabilirim?</b></h4>
             <p>Araç satın almak için galeriye gidip NPC'lerden satın alabilirsiniz.</p>
         </div>
         <hr>
-
         <div>
             <h4 id="araccikarma"><b>Aracım NPC'de yok, aracımı nasıl çıkartacağım?</b></h4>
             <p>Araba satın aldığınızda, ilk olarak araç envanterinize eklenir. Envanterinizi açıp "Kullan"
@@ -460,6 +586,11 @@ exec config_default.cfg
         </div>
         <hr>
         <div>
+            <h4 id="aractamir"><b>Aracım hasarlı, nasıl tamir edebilirim?</b></h4>
+            <p>Mekanik ve ya Galeri gidip aracınızı tamir ettirebilirsiniz.</p>
+        </div>
+        <hr>
+        <div>
             <h4 id="parti"><b>Parti belgesi nedir, parti ne işe yarar?</b></h4>
             <p>Parti oluşturmanızı sağlayan bir belgedir. Parti oluşturarak, aynı parti içerisinde bulunduğunuz
                 arkadaşlarınıza zarar vermenin önüne geçebilirsiniz. Daha da önemlisi, eğer yasa dışı bir
@@ -468,27 +599,27 @@ exec config_default.cfg
                 gerekmektedir.</p>
         </div>
         <hr>
-
         <div>
-            <h4 id="adminyok"><b>Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?</b></h4>
-            <p>Gerekli delilleri toplayarak Discord'da bir destek talebi (ticket) açabilirsiniz.</p>
+            <h4 id="guncolor"><b>Fizik Silahı Rengini Nasıl Değiştirebilirim?</b></h4>
+            <ol>
+                <li>Garry's Mod'u açın ve "Sandbox" oyun modunu seçip "Yeni Bir Oyun Başlat" (Tek oyunculu) seçeneğine
+                    tıklayın.
+                </li>
+                <li>Bir harita seçin ve oyunu başlatın.</li>
+                <li>Oyuna girdikten sonra, C tuşuna basarak "Oyuncu Modeli" menüsünü açın.</li>
+                <li>Açılan menüde "Renkler" kısmına gelin ve silah renginizi seçin.</li>
+                <li>Konsolu açın ve <code>kill</code> komutunu yazın. Ardından, seçtiğiniz renk aktif olacaktır.</li>
+            </ol>
         </div>
         <hr>
         <div>
-            <h4 id="bantemyiz"><b>Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?</b></h4>
-            <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
+            <h4 id="isimdegistirme"><b>İsmimi nasıl değiştireceğim?</b></h4>
+            <p>Belediye binasın girişindeki doktor kıyafetli NPC ile isminizi değiştirebilirsiniz. </p>
         </div>
         <hr>
         <div>
-            <h4 id="admin"><b>Yetkili nasıl olabilirim?</b></h4>
-            <p>Yetkili olabilmek için <a
-                        href="https://docs.google.com/forms/d/1kgbKiIb54meRI7L0ElfIY1dSmjcval3REOVcudYB_3k/viewform?pli=1&pli=1">başvuru</a>
-                yapmanız gerekmektedir. Başvurunuz olumlu sonuçlanırsa geri dönüş yapılacaktır.</p>
-
-            <h5><b>Red edildiğimi nereden öğrenebilirim?</b></h5>
-            <p>Başvuru sayısı fazla olduğundan dolayı maalesef red edilenlere dönüş yapılmamaktadır. 1 hafta
-                içinde
-                dönüş yapılmazsa başvurunuz red edilmiştir.</p>
+            <h4 id="doviz"><b>Döviz Nasıl Alırım?</b></h4>
+            <p>Bankanın içindeki, doktor kıyafetli NPC'den döviz satın alabilirsiniz.</p>
         </div>
         <hr>
         <div>
@@ -536,7 +667,7 @@ exec config_default.cfg
         </div>
         <hr>
         <div>
-            <h4 id="bilimadami"><b>Bilim İnsanı Nasıl Olunur?</b></h4>
+            <h4 id="bilimadami"><b>Bilim Adamı Nasıl Olunur?</b></h4>
             <p>Saat Kulesi'ndeki NPC'den belge almalı ve gerekli meslekte deneyim kazanmalısınız.</p>
         </div>
         <hr>
@@ -567,6 +698,11 @@ Familya Üyeleri:
                     Üstadı</b> etiketlemeniz gerekiyor.</p>
             <hr>
         </div>
+        <div>
+            <h4 id="dance"><b>Nasıl Dans Edebilirim?</b></h4>
+            <p>Oyunda elinize anahtarı alınız ve "R" tuşuna basınız ardından çıkan menüde dans seçiniz.</p>
+        </div>
+        <hr>
         <blockquote>
             Sıkça Sorulan Sorular başlangıç rehberimiz burada sonlanıyor. Daha fazlası için diğer rehberlerimize
             de göz atmayı unutmayın.
@@ -579,11 +715,13 @@ Familya Üyeleri:
             </p>
         </div>
     </div>
+    <br>
 </main>
 <script>
     document.getElementById("kariyerBox").href = baseUrl + "/darkrp-kariyer";
     document.getElementById("baslarkenBox").href = baseUrl + "/darkrp-baslarken#gerekli-eklentiler-ve-ayarlar";
     document.getElementById("baslarkenBox").innerHTML = '<i class="fa-regular fa-hand"></i> DarkRP Başlarken - Gerekli Eklentiler ve Ayarlar';
+    document.getElementById("adminbasvuru").href = "https://forms.gle/aThYDcDq2KCxbv1z8";
 </script><br> <br>
 <nav id="right-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
     <div class="position-sticky">
@@ -610,7 +748,26 @@ Familya Üyeleri:
     </button>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel"><i class="fas fa-search"></i> Ara...</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="position-relative">
+                    <input type="text" class="form-control pe-5 rounded-button" id="searchInput"
+                           placeholder="Aramak istediğini buraya yaz...">
+                    <i class="text-danger fa-solid fa-delete-left position-absolute top-50 translate-middle-y"
+                       id="clearSearch" style="display: none; cursor: pointer; right: 30px;"></i>
+                </div>
+
+                <ul class="list-group mt-3" id="searchResults"></ul>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <noscript>
     <style>

@@ -8,28 +8,30 @@
 
     <meta name="description"
           content="TTT Başlıyan herkesin bilmesi gerekenler">
-    <meta name="keywords" content="MoonRP, MoonGaming™, mg, DarkRP, TTT, DarkRolePlay, garrysmod, gmod">
+    <meta name="keywords" content="MoonRP, MoonGaming, mg, DarkRP, TTT, DarkRolePlay, garrysmod, gmod">
 
     <meta property="og:title" content="TTT Başlarken - MoonGaming™ Rehber">
     <meta property="og:description"
           content="TTT Başlıyan herkesin bilmesi gerekenler">
-    <meta property="og:image" content="https://moonrp.com/wiki/assets/image/og-image-ttt.png">
-    <meta property="og:url" content="https://moonrp.com/wiki">
+        <meta property="og:url" content="https://moonrp.com/wiki">
     <meta property="og:type" content="website">
 
     <title>TTT Başlarken - MoonGaming™ Rehber</title>
 
-    <link rel="icon" type="image/x-icon" href="https://www.moonrp.com/images/aykafa.ico">
+    <link rel="icon" type="image/x-icon" href="https://moonrp.com/wiki/assets/image/favicon.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://moonrp.com/wiki/assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
-<script src="https://moonrp.com/wiki/assets/js/scripts.js"></script><nav id="mainmenu" class="navbar navbar-expand-lg">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
+<script src="https://moonrp.com/wiki/assets/js/search.js"></script>
+<nav id="mainmenu" class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-brand">
-            <a class="navbar-brand" href="https://moonrp.com/wiki/"><img src="https://www.moonrp.com/images/aykafa.ico"
+            <a class="navbar-brand" href="https://moonrp.com/wiki/"><img src="https://moonrp.com/wiki/assets/image/favicon.ico"
                                                                   height="32" width="32">
                 MoonGaming™ Rehber</a>
         </div>
@@ -42,6 +44,9 @@
 
             </ul>
         </div>
+        <button class="btn btn-outline-secondary rounded-button" id="searchIcon">
+            <i class="fas fa-search"></i> Ara...
+        </button>
     </div>
 </nav>
 
@@ -121,7 +126,7 @@
                 <h3 id="chat">Sohbet ve İletişim</h3>
                 <div style="margin-left: 15px">
                     <li><strong>/PM &lt;İsim&gt;:</strong> Belirli bir kullanıcıya özel mesaj atmanızı
-                        sağlar.<br><em>Örnek:</em><br><code>/pm Ozgur Sunucu hakkında bir şey sorabilir
+                        sağlar.<br><em>Örnek:</em><br><code>/PM Ozgur Sunucu hakkında bir şey sorabilir
                             miyim?</code></li>
                     <hr>
                     <li><strong>@&lt;Mesaj&gt;:
@@ -628,6 +633,30 @@
             </div>
             <hr>
             <br>
+            <div>
+                <h3 id="event" class="mb-3">Etkinlik Düzenleniyor mu?</h3>
+                <p>Belli aralıklarla üstadlarımız tarafından etkinlik düzenlenmektedir.</p>
+                <p>Ödül değişmektedir. Genellikle IC kredi verilmektedir.</p>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item">
+                        <h5 class="text-success-emphasis">Boss Raund</h5>
+                        <p>Bir kişi dinozora dönüşür ve herkes o dinozora dönüşen kişiyi öldürmeye çalışır. Aynı zamanda
+                            hayatta kalmanız gerekir.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="text-primary-emphasis">Stalker Raund</h5>
+                        <p>Bir kişi görünmez olur ve herkes o görünmez kişiyi öldürmeye çalışır. Aynı zamanda hayatta
+                            kalmanız gerekir.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5 class="text-danger-emphasis">Patlayan Tavuk</h5>
+                        <p>Silahlarınızı hiçbir şekilde kullanamazsınız ve etrafa tavuklar spamlanır. Bu tavuklar
+                            zıplayabilir. Hayatta kalmaya çalışmanız gerekir.</p>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <br>
         </div>
 
         <hr>
@@ -834,7 +863,26 @@
     </button>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel"><i class="fas fa-search"></i> Ara...</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="position-relative">
+                    <input type="text" class="form-control pe-5 rounded-button" id="searchInput"
+                           placeholder="Aramak istediğini buraya yaz...">
+                    <i class="text-danger fa-solid fa-delete-left position-absolute top-50 translate-middle-y"
+                       id="clearSearch" style="display: none; cursor: pointer; right: 30px;"></i>
+                </div>
+
+                <ul class="list-group mt-3" id="searchResults"></ul>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <noscript>
     <style>

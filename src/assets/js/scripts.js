@@ -396,8 +396,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         });
+        MarkSelector();
     }
 
+    function MarkSelector() {
+        contentHeaders.forEach(header => {
+            header.classList.remove('highlighted');
+        });
+        const currentHash = window.location.hash;
+        if (currentHash) {
+            const targetHeader = document.querySelector(`.content ${currentHash}`);
+            if (targetHeader) {
+                targetHeader.classList.add('highlighted');
+            }
+        }
+    }
 
     window.addEventListener('hashchange', updateActiveClass);
     updateActiveClass();

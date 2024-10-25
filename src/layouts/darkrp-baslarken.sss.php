@@ -1,3 +1,7 @@
+<?php
+$darkRPContent = true;
+$tttContent = false;
+?>
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
         <h1 class="mb-4">Sıkça Sorulan Sorular</h1>
@@ -40,11 +44,21 @@
         </div>
         <hr>
         <div>
+            <h4 id="ehliyet"><b>Araç Ehliyeti Nereden Alabilirim?</b></h4>
+            <p>Polis karakolunun içindeki "Ehliyet Sorumlusu" npc doğru yanıtlar vererek ehliyet sahibi
+                olabilirsiniz.</p>
+        </div>
+        <hr>
+        <div>
+            <h4 id="ruhsat"><b>Silah Ruhsatı Nereden Alabilirim?</b></h4>
+            <p>Belediye Başkanından Cuzi fiyata kendine özel silah ruhsatı bastırabilirsin.</p>
+        </div>
+        <hr>
+        <div>
             <h4 id="arac"><b>Araç Nereden Satın Alabilirim?</b></h4>
             <p>Araç satın almak için galeriye gidip NPC'lerden satın alabilirsiniz.</p>
         </div>
         <hr>
-
         <div>
             <h4 id="araccikarma"><b>Aracım NPC'de yok, aracımı nasıl çıkartacağım?</b></h4>
             <p>Araba satın aldığınızda, ilk olarak araç envanterinize eklenir. Envanterinizi açıp "Kullan"
@@ -60,6 +74,11 @@
         </div>
         <hr>
         <div>
+            <h4 id="aractamir"><b>Aracım hasarlı, nasıl tamir edebilirim?</b></h4>
+            <p>Mekanik ve ya Galeri gidip aracınızı tamir ettirebilirsiniz.</p>
+        </div>
+        <hr>
+        <div>
             <h4 id="parti"><b>Parti belgesi nedir, parti ne işe yarar?</b></h4>
             <p>Parti oluşturmanızı sağlayan bir belgedir. Parti oluşturarak, aynı parti içerisinde bulunduğunuz
                 arkadaşlarınıza zarar vermenin önüne geçebilirsiniz. Daha da önemlisi, eğer yasa dışı bir
@@ -68,27 +87,27 @@
                 gerekmektedir.</p>
         </div>
         <hr>
-
         <div>
-            <h4 id="adminyok"><b>Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?</b></h4>
-            <p>Gerekli delilleri toplayarak Discord'da bir destek talebi (ticket) açabilirsiniz.</p>
+            <h4 id="guncolor"><b>Fizik Silahı Rengini Nasıl Değiştirebilirim?</b></h4>
+            <ol>
+                <li>Garry's Mod'u açın ve "Sandbox" oyun modunu seçip "Yeni Bir Oyun Başlat" (Tek oyunculu) seçeneğine
+                    tıklayın.
+                </li>
+                <li>Bir harita seçin ve oyunu başlatın.</li>
+                <li>Oyuna girdikten sonra, C tuşuna basarak "Oyuncu Modeli" menüsünü açın.</li>
+                <li>Açılan menüde "Renkler" kısmına gelin ve silah renginizi seçin.</li>
+                <li>Konsolu açın ve <code>kill</code> komutunu yazın. Ardından, seçtiğiniz renk aktif olacaktır.</li>
+            </ol>
         </div>
         <hr>
         <div>
-            <h4 id="bantemyiz"><b>Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?</b></h4>
-            <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
+            <h4 id="isimdegistirme"><b>İsmimi nasıl değiştireceğim?</b></h4>
+            <p>Belediye binasın girişindeki doktor kıyafetli NPC ile isminizi değiştirebilirsiniz. </p>
         </div>
         <hr>
         <div>
-            <h4 id="admin"><b>Yetkili nasıl olabilirim?</b></h4>
-            <p>Yetkili olabilmek için <a
-                        href="https://docs.google.com/forms/d/1kgbKiIb54meRI7L0ElfIY1dSmjcval3REOVcudYB_3k/viewform?pli=1&pli=1">başvuru</a>
-                yapmanız gerekmektedir. Başvurunuz olumlu sonuçlanırsa geri dönüş yapılacaktır.</p>
-
-            <h5><b>Red edildiğimi nereden öğrenebilirim?</b></h5>
-            <p>Başvuru sayısı fazla olduğundan dolayı maalesef red edilenlere dönüş yapılmamaktadır. 1 hafta
-                içinde
-                dönüş yapılmazsa başvurunuz red edilmiştir.</p>
+            <h4 id="doviz"><b>Döviz Nasıl Alırım?</b></h4>
+            <p>Bankanın içindeki, doktor kıyafetli NPC'den döviz satın alabilirsiniz.</p>
         </div>
         <hr>
         <div>
@@ -136,7 +155,7 @@
         </div>
         <hr>
         <div>
-            <h4 id="bilimadami"><b>Bilim İnsanı Nasıl Olunur?</b></h4>
+            <h4 id="bilimadami"><b>Bilim Adamı Nasıl Olunur?</b></h4>
             <p>Saat Kulesi'ndeki NPC'den belge almalı ve gerekli meslekte deneyim kazanmalısınız.</p>
         </div>
         <hr>
@@ -167,6 +186,11 @@ Familya Üyeleri:
                     Üstadı</b> etiketlemeniz gerekiyor.</p>
             <hr>
         </div>
+        <div>
+            <h4 id="dance"><b>Nasıl Dans Edebilirim?</b></h4>
+            <p>Oyunda elinize anahtarı alınız ve "R" tuşuna basınız ardından çıkan menüde dans seçiniz.</p>
+        </div>
+        <hr>
         <blockquote>
             Sıkça Sorulan Sorular başlangıç rehberimiz burada sonlanıyor. Daha fazlası için diğer rehberlerimize
             de göz atmayı unutmayın.
@@ -179,9 +203,11 @@ Familya Üyeleri:
             </p>
         </div>
     </div>
+    <br>
 </main>
 <script>
     document.getElementById("kariyerBox").href = baseUrl + "/darkrp-kariyer";
     document.getElementById("baslarkenBox").href = baseUrl + "/darkrp-baslarken#gerekli-eklentiler-ve-ayarlar";
     document.getElementById("baslarkenBox").innerHTML = '<i class="fa-regular fa-hand"></i> DarkRP Başlarken - Gerekli Eklentiler ve Ayarlar';
+    document.getElementById("adminbasvuru").href = "https://forms.gle/aThYDcDq2KCxbv1z8";
 </script>
