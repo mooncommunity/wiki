@@ -202,6 +202,33 @@
                     <li><strong>Çelik Yelek (1. , 2. ve 3. Kalite)</strong>: Zırh sağlamaktadır.</li>
                 </ul>
 
+                <h3 id="ticarivehizmetsektoru-muhendis">Mühendis Rehberi</h3>
+                <p>Mühendis mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların Bitki üretme ve para basma
+                    makineleri için donanım
+                    yükseltme katkı sağlıyabilceği bir rolü temsil
+                    eder.
+                    Bu meslekte, İnsanların Bitki üretimine katkıda bulunabilir ve ya para basma makinelerine katkıda
+                    bulunabilirsiniz..</p>
+
+                <h4 id="ticarivehizmetsektoru-muhendis-urunler">Mühendis Ürünleri</h4>
+                <ul>
+                    <li><strong>Mühendis Kiti</strong>: Bitki Üretimine ve ya Para basma makinesini yükseltmenizi
+                        sağlar. Sadece Mühendisin silah itemlerinde bulunur.
+                    </li>
+                    <li><strong>Fan Eklentisi</strong>: Para basma makinesinin sıcaklığını kontrol altına almak için
+                        kullanılır
+                    </li>
+                    <li><strong>Para Yazılımı</strong>: Para basma makinesinin para miktarı artırmak için kullanılır.
+                    </li>
+                    <li><strong>Zırh Paketi</strong>: Para basma makinesinin yanlışlıkla isabet eden kurşunlarda
+                        canını korumayı sağlar. Fakat yine canı azalır.
+                    </li>
+                </ul>
+                <h3 id="ticarivehizmetsektoru-imam">İmam Rehberi</h3>
+                <p>İmam mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların XP Kazanmasını sağlarlar.
+                    Bu meslekte, İnsanlara belli ücret karşılığında üfleyerek daha fazla XP Kazanmasını
+                    sağlıyabilirsiniz.</p>
+
                 <h3 class="text-warning">Sonuç</h3>
                 <p>Yiyecek ve içecek sektörü ile ticari ve hizmet sektöründe bulunan esnaf meslekleri, DarkRP
                     sunucularında rol yapma deneyiminizi zenginleştiren ve oyunculara etkileşim fırsatları sunan

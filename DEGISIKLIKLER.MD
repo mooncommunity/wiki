@@ -1,29 +1,104 @@
-# 1.0.1
-- "Paralı Meslekler" Güncellendi
-- "Bilim Adamı" Tanımı Güncellendi
-- "Ekran Kaydı nasıl alabilirim?" eklendi
+# 1.0.2
+
+## Search için anahtar kelime "darkrp yeniyim" || "ttt yeniyim"
+
+- TTT Nedir?
+    - "... Teröristler, masumları öldürmeden önce dedektifleri ve diğer
+      teröristleri ortadan kaldırmalıdır. Dedektifler, şüpheli oyuncuları tespit edip ..." yazısı "
+      ... Teröristler, masumları öldürmeden önce dedektifleri ortadan
+      kaldırmalıdır. Dedektifler, şüpheli oyuncuları tespit edip ..." olarak güncellendi
+- DarkRP Kariyer > Esnaf ve Siviller
+    - Mühendis eklendi
+    - İmam eklendi
+
+- TTT Başlarken
+    - "Etkinlik düzenleniyor mu?" eklendi.
+    - "Sohbet ve İletişim" deki "pm" harfleri büyütüldü ("PM")
+
+- Resim eklendi
+    - /assets/image/favicon.ico
+    - /assets/image/steam_menu_ayarlar.png
+    - /assets/image/steam_menu_ayarlar_indirmeler.png
+    - /assets/image/steam_menu_ayarlar_indirmeler_1.png
 
 - DarkRP Başlarken > SSS
+    - "Nasıl Dans Edebilirim?" eklendi
+    - "Döviz nasıl alırım?" eklendi
+    - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?"
+      içeriği güncellendi.
+    - "Fizik Silahı Rengini Nasıl Değiştirebilirim?" eklendi.
+    - "Araç Ehliyeti Nereden Alabilirim?" eklendi
+    - "Silah Ruhsatı Nereden Alabilirim?" eklendi
+    - "Aracım hasarlı, nasıl tamir edebilirim?" eklendi
+    - "İsmimi nasıl değiştireceğim?" eklendi
+    - "Bilim İnsanı" yazıyordu "Bilim Adamı" olarak değiştirildi
+
+- TTT Başlarken > SSS
+    - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?"
+      içeriği güncellendi.
+    - Başvuru kısmı güncellendi.
+
+- DarkRP Kariyer > Devlet Çalışanı
+    - "Belediye Başkanı Nasıl Olacağım?" eklendi
+    - "Belediye Başkan Yardımcısı Seçebiliyor muyum?" eklendi
+
+- DarkRP Kariyer > Yasadışı Organizasyonlar
+    - "Bitkiları" "Bitkileri" olarak düzenlendi.
+    - "Bitki üretiminin" ID si ot du bitki olarak güncellendi.
+    - "Korsan ve Eşkiyada Ürettiğim İthal eşyaları kime satabilirim?" ID si değiştirildi kacakesya dı ithalesya yapıldı
+    - Çeçen Mafya Üyesi ve Çeçen Mafya Lideri tanımında Bitki üretimi vardı kaldırıldı.
+
+- Meta etiketlerinden OG Image kaldırıldı (Resim yapılana kadar eklenmicek)
+- aykafa.ico lokal dosyaya taşındı ve ismi favicon.ico oldu.
+
+- "scripts.js" dosyası düzenlendi
+    - H1, H2, H3, H4, H5 etiketlerinde ID varsa ve bu ID gidilirse artık sarı border gözükücek H etiketlerin
+      çerçevesinde.
+
+- "style.css" dosyası düzenlendi
+    - `.highlighted` class eklendi.
+    - `.Rounded-button` class eklendi.
+    - `.desktop-content` class eklendi.
+
+- "search.js" dosyası eklendi.
+- Index sayfasında img classları ile oynandı.
+
+# 1.0.1 - moonrp değişiklikleri
+
+- Index güncellendi.
+- /assets/image/logo1.png eklendi
+- MoonGaming yazan herşey MoonGaming™ olarak düzenlendi
+
+# 1.0.1
+
+- "Ekran Kaydı nasıl alabilirim?" eklendi
+
+- DarkRP Başlarken > Yasadışı Organizasyonlar
+  - "Bilim Adamı" Tanımı Güncellendi
+  
+- DarkRP Başlarken > SSS
+  - "Bilim Adamı" Tanımı Güncellendi
   - "Etrafta her şey error, ne yapmalıyım?" Yeni tab eklendiğinde görüntü bozulduğundan accordion geçildi
   - "Etrafta her şey error, ne yapmalıyım?" "GPUCache" eklendi.
   - "Etrafta her şey error, ne yapmalıyım?" başlığı "Etrafta her şey error, ne yapmalıyım? / Oyuna giremiyorum, ana
     menüye atıyor?" olarak güncellendi
 
 - DarkRP Başlarken
-  - "Sohbet ve İletişim" bölümüne /job komutu eklendi.
+    - "Sohbet ve İletişim" bölümüne /job komutu eklendi.
+    - "Paralı Meslekler" Güncellendi
 
 - TTT Başlarken > SSS
-  - "Vape Token Sahibiyim, Ne Yapmalıyım?" sorusu eklendi.
-  - "Etrafta her şey error, ne yapmalıyım?" Yeni tab eklendiğinde görüntü bozulduğundan accordion geçildi
-  - "Etrafta her şey error, ne yapmalıyım?" "GPUCache" eklendi.
-  - "Etrafta her şey error, ne yapmalıyım?" başlığı "Etrafta her şey error, ne yapmalıyım? / Oyuna giremiyorum, ana
-    menüye atıyor?" olarak güncellendi
-  
+    - "Vape Token Sahibiyim, Ne Yapmalıyım?" sorusu eklendi.
+    - "Etrafta her şey error, ne yapmalıyım?" Yeni tab eklendiğinde görüntü bozulduğundan accordion geçildi
+    - "Etrafta her şey error, ne yapmalıyım?" "GPUCache" eklendi.
+    - "Etrafta her şey error, ne yapmalıyım?" başlığı "Etrafta her şey error, ne yapmalıyım? / Oyuna giremiyorum, ana
+      menüye atıyor?" olarak güncellendi
+
 - TTT Başlarken
-  - "Kutu ve Silah Nasıl Elde Edebilirim?" bölümü eklendi.
-  - "Aynı Silahların Farklı Varyasyonları Nedir?" bölümü eklendi.
-  - "Mutator Nedir?" bölümü eklendi.
-  
+    - "Kutu ve Silah Nasıl Elde Edebilirim?" bölümü eklendi.
+    - "Aynı Silahların Farklı Varyasyonları Nedir?" bölümü eklendi.
+    - "Mutator Nedir?" bölümü eklendi.
+
 - Kaynak yapısı değiştirildi, artık kodlar PHP ile bölündü ve `php_to_html.sh` dosyası ile HTML'ye çevriliyor.
 - CSS dosyası düzenlendi:
     - Google Inter fontu eklendi.

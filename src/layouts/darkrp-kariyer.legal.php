@@ -57,7 +57,17 @@
             </div>
             <hr>
             <br>
-
+            <div>
+                <h3 id="baskanaday" class="my-4">Belediye Başkanı Nasıl Olacağım?</h3>
+                <p>İlk önce Belediye binasın girişindeki "YSK Sorumlusu" adaylığınızı ortaya koymanız gerekmektedir.
+                    Daha sonra seçim süreci başlıcak seçim süreci bitince en çok oy alan aday Belediye başkanı
+                    olacaktır.</p>
+            </div>
+            <div>
+                <h3 id="baskanyardimcisi" class="my-4">Belediye Başkan Yardımcısı Seçebiliyor muyum?</h3>
+                <p>Evet, belediye başkan yardımcısı seçebiliyorsunuz. Belediye binasın girişindeki "YSK Sorumlusu" ile
+                    seçebilirsiniz.</p>
+            </div>
             <div>
                 <h3 id="dolap">Polis Sağlık Dolabı ve Teçhizat Dolabı Nedir?</h3><br>
                 <p>

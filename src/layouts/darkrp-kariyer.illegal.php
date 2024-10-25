@@ -116,7 +116,7 @@
                             makinenizin
                             can barıdır. Tamir kiti ile canını yenileyebilirsiniz.
                         </li>
-                        <li><strong>Mürekkep:</strong> Dikey eksende solf tarafta yer alan mürekkep barı,
+                        <li><strong>Mürekkep:</strong> Dikey eksende sol tarafta yer alan mürekkep barı,
                             makinenizin
                             mürekkep yenilemenizi sağlar
                         </li>
@@ -139,7 +139,7 @@
         <br>
         <div>
             <div class="row">
-                <h3 id="ot">Bitki Üretimi</h3>
+                <h3 id="bitki">Bitki Üretimi</h3>
                 <div class="col-md-8">
                     <p>Bitki üretebilmek için gerekli mesleklere erişiminiz olmalıdır. Bitki üretimi
                         için Keko ve Çete Üyesi mesleklerinde gerekli seviyeleri tamamladıktan sonra Mafya Üyesi
@@ -166,7 +166,7 @@
                          alt="Bitki Yükseltme">
                 </div>
                 <div class="col-md-8">
-                    <p>Bitkinuzun kalitesini artırmak için aşağıdaki mesleklerden birinde olmanız
+                    <p>Bitkinizin kalitesini artırmak için aşağıdaki mesleklerden birinde olmanız
                         gerekmektedir:</p>
                     <p>Bu meslekler F4 menüsünden "Varlıklar" bölümüne giderek, ardından "Bitki Paketleme"
                         adlı aracı çıkarak gerçekleştirmektedir.</p>
@@ -318,7 +318,7 @@
         <br>
 
         <div>
-            <h3 id="kacakesya" class="mb-4">Korsan ve Eşkiyada ürettiğim İthal eşyaları kime satabilirim?</h3>
+            <h3 id="ithalesya" class="mb-4">Korsan ve Eşkiyada ürettiğim İthal eşyaları kime satabilirim?</h3>
             <div class="alert alert-info" role="alert">
                 Meslek perm sahiplerinin kimler olduğunu öğrenmek için Discord sunucumuzda <strong>Meslek
                     Sahipleri</strong> kanalına göz atabilirsiniz.
@@ -495,22 +495,22 @@
         },
         {
             title: "Çingene Çetesi Lideri",
-            description: "Çingene çetesinin lideri olarak, Bitki üretim sürecini yönetmek ve çeteni en iyi şekilde yönlendirmek zorundasın. Bitkiları yükseltmek, seni diğer çetelerden ayıracak önemli bir özellik olacaktır.",
+            description: "Çingene çetesinin lideri olarak, Bitki üretim sürecini yönetmek ve çeteni en iyi şekilde yönlendirmek zorundasın. Bitkileri yükseltmek, seni diğer çetelerden ayıracak önemli bir özellik olacaktır.",
             req: "İlk önce Çingene Çetesi Üyesi, riads Mafye Lideri ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
             title: "Kore Mafyası Üyesi",
-            description: "Kore mafyası, Triadslardan sonra Asya'dan gelen bir güç olarak, şehirde Bitki üretimi yapmaktadır. Bitkiları yükseltme yeteneğinle, bu güçlü gruba katılmanın avantajlarını kullanabilirsin.",
+            description: "Kore mafyası, Triadslardan sonra Asya'dan gelen bir güç olarak, şehirde Bitki üretimi yapmaktadır. Bitkileri yükseltme yeteneğinle, bu güçlü gruba katılmanın avantajlarını kullanabilirsin.",
             req: "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
             title: "Kore Mafyası Lideri",
-            description: "Kore mafyasının lideri olarak, çetenin işlerini yürütmek ve düşmanlarına karşı güçlü bir duruş sergilemek senin sorumluluğundadır. Bitkiları yükseltme yeteneğin, seni diğer çetelerden ayıran en büyük özelliğin olacaktır.",
+            description: "Kore mafyasının lideri olarak, çetenin işlerini yürütmek ve düşmanlarına karşı güçlü bir duruş sergilemek senin sorumluluğundadır. Bitkileri yükseltme yeteneğin, seni diğer çetelerden ayıran en büyük özelliğin olacaktır.",
             req: "İlk önce Kore Mafyası Üyesi, Rus Mafyası Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
             title: "Haydut Çetesi Üyesi",
-            description: "Keke Köyü’nün yeni ferdi olarak, artık KEKE Köyünde Bitki üretimi yapma şansına sahipsin. Bitkiları yükseltme becerinle, şehirdeki diğer çetelerle rekabet edebilirsin.",
+            description: "Keke Köyü’nün yeni ferdi olarak, artık KEKE Köyünde Bitki üretimi yapma şansına sahipsin. Bitkileri yükseltme becerinle, şehirdeki diğer çetelerle rekabet edebilirsin.",
             req: "İlk önce İtalyan Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
@@ -520,12 +520,12 @@
         },
         {
             title: "Çeçen Mafya Üyesi",
-            description: "Çeçen mafyasının bir üyesi olarak, yüksek seviye printerlarla para üretimi yapma fırsatına sahipsin. Bitki üretiminde de aktif rol alarak, çetenin gücünü artırmaya yardımcı olabilirsin.",
+            description: "Çeçen mafyasının bir üyesi olarak, yüksek seviye printerlarla para üretimi yapma fırsatına sahipsin. Çetenin gücünü artırmaya yardımcı olabilirsin.",
             req: "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
             title: "Çeçen Mafya Lideri",
-            description: "Çeçen mafyasının lideri olarak, çetenin en üst düzey operasyonlarını yönetmek zorundasın. Yüksek seviye printerlarla para üretimi yapmanın yanı sıra, Bitki üretimini de kontrol etmelisin.",
+            description: "Çeçen mafyasının lideri olarak, çetenin en üst düzey operasyonlarını yönetmek zorundasın. Yüksek seviye printerlarla para üretimi yaparak da ailene yardımcı olabilirsin.",
             req: "İlk önce Çeçen Mafya Üyesi, Rus Mafya Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
@@ -540,22 +540,22 @@
         },
         {
             title: "Güney Kartel Üyesi",
-            description: "Güney Karteli’nin bir üyesi olarak, şehirde Bitki üretimini üstleniyorsun. Bitkiları yükseltme yeteneğinle, kartelin gücüne katkıda bulunabilirsin.",
+            description: "Güney Karteli’nin bir üyesi olarak, şehirde Bitki üretimini üstleniyorsun. Bitkileri yükseltme yeteneğinle, kartelin gücüne katkıda bulunabilirsin.",
             req: "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
             title: "Güney Kartel Lideri",
-            description: "Güney Karteli’nin lideri olarak, tüm operasyonları yönetmek senin sorumluluğundadır. Bitkiları yükseltme ve üretim süreçlerini kontrol ederek, kartelin gücünü artırmalısın.",
+            description: "Güney Karteli’nin lideri olarak, tüm operasyonları yönetmek senin sorumluluğundadır. Bitkileri yükseltme ve üretim süreçlerini kontrol ederek, kartelin gücünü artırmalısın.",
             req: "İlk önce Güney Kartel Üyesi, Rus Mafya Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
             title: "Kuzey Kartel Üyesi",
-            description: "Kuzey Karteli’nin bir üyesi olarak, şehirde Bitki üretimini üstleniyorsun. Bitkiları yükseltme becerinle, kartelin etkisini artırmak için mücadele edebilirsin.",
+            description: "Kuzey Karteli’nin bir üyesi olarak, şehirde Bitki üretimini üstleniyorsun. Bitkileri yükseltme becerinle, kartelin etkisini artırmak için mücadele edebilirsin.",
             req: "İlk önce İtalyan Mafye Üyesi ve Triads Mafye Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
             title: "Kuzey Kartel Lideri",
-            description: "Kuzey Karteli’nin lideri olarak, tüm kartelin işlerini yönetmek zorundasın. Bitkiları yükseltme ve üretim süreçlerini kontrol ederek, kartelin en güçlü gücü haline gelmesini sağlamalısın.",
+            description: "Kuzey Karteli’nin lideri olarak, tüm kartelin işlerini yönetmek zorundasın. Bitkileri yükseltme ve üretim süreçlerini kontrol ederek, kartelin en güçlü gücü haline gelmesini sağlamalısın.",
             req: "İlk önce Kuzey Kartel Üyesi, İtalyan Mafye Babası ve Triads Mafye Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
         },
         {
