@@ -37,7 +37,7 @@
 
         <div class="content-ref-box">
             <p>
-                <a id="drpBox" href="#">
+                <a id="drpBox" href="<?= $baseUrl; ?>/darkrp-baslarken">
                     <i class="fa-regular fa-hand"></i> DarkRP Başlarken
                 </a>
             </p>
@@ -45,6 +45,3 @@
         <br>
     </div>
 </main>
-<script>
-    document.getElementById("drpBox").href = baseUrl + "/darkrp-baslarken";
-</script>

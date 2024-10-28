@@ -1,5 +1,6 @@
 stages:
   - convert
+  - convert_scss
   - build
   - deploy
 
@@ -7,7 +8,8 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 before_script:
-  - apt-get update && apt-get install -y php ruby-full
+  - apt-get update && apt-get install -y php ruby-full nodejs npm
+  - npm -g install sass
 
 convert_to_html:
   stage: convert
@@ -18,13 +20,13 @@ convert_to_html:
     - mkdir -p HTML
     - echo "Converting PHP files to HTML..."
     - find . -type f -name "*.php" -not -path "*include*" -exec sh -c '
-        for php_file; do
-          echo "Processing $php_file";
-          relative_path="${php_file#./}";
-          html_file="HTML/${relative_path%.php}.html";
-          mkdir -p "$(dirname "$html_file")";
-          php "$php_file" > "$html_file";
-        done
+      for php_file; do
+      echo "Processing $php_file";
+      relative_path="${php_file#./}";
+      html_file="HTML/${relative_path%.php}.html";
+      mkdir -p "$(dirname "$html_file")";
+      php "$php_file" > "$html_file";
+      done
       ' sh {} +
     - if [ -d assets ]; then cp -rf ./assets ./HTML; fi
     - if [ -f ./_config.yml ]; then cp -f ./_config.yml ./HTML; fi
@@ -37,10 +39,27 @@ convert_to_html:
       - HTML
     expire_in: 1 hour
 
+build_sass:
+  stage: convert_scss
+  dependencies:
+    - convert_to_html
+  script:
+    - echo "Building Sass files..."
+    - cd ./HTML/assets/scss
+    - sass styles.scss ../css/styles.css
+    - cd ..
+    - rm -rf scss
+
+  artifacts:
+    paths:
+      - HTML
+    expire_in: 1 hour
+
 build_jekyll:
   stage: build
   dependencies:
     - convert_to_html
+    - build_sass
   script:
     - echo "Installing Jekyll..."
     - gem install bundler jekyll

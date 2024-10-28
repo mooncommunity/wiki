@@ -1,4 +1,35 @@
 <html><head><meta charset='utf-8'><title>Changelog</title></head><body><h1>Changelog</h1>
+<h2>Commit: 1.0.2-rc6 (Winfried, 2024-10-28)</h2>
+<h3>Değişiklikler:</h3><ul>
+<li style='color: blue;'>Değiştirilmiş: .github/workflows/jekyll-gh-pages.yml</li>
+<li style='color: blue;'>Değiştirilmiş: .gitignore</li>
+<li style='color: blue;'>Değiştirilmiş: .gitlab/.gitlab-ci.yml</li>
+<li style='color: blue;'>Değiştirilmiş: CHANGELOG.MD</li>
+<li style='color: blue;'>Değiştirilmiş: DEGISIKLIKLER.MD</li>
+<li style='color: blue;'>Değiştirilmiş: src/assets/css/styles.css</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/darkrp_ada_bilim.jpg</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/darkrp_ada_heybeli.jpg</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/darkrp_ada_sivri.jpg</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/darkrp_sirket1.jpg</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/darkrp_sirket2.jpg</li>
+<li style='color: blue;'>Değiştirilmiş: src/assets/js/scripts.js</li>
+<li style='color: blue;'>Değiştirilmiş: src/assets/js/search.js</li>
+<li style='color: green;'>Eklenmiş: src/assets/scss/styles.scss</li>
+<li style='color: green;'>Eklenmiş: src/convert.Dockerfile</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-baslarken.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-baslarken.sss.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.esnaf.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.illegal.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.legal.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-ttt.sss.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/ttt-baslarken.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/ttt-baslarken.sss.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/ttt.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/php_to_html.sh</li>
+<li style='color: blue;'>Değiştirilmiş: src/podman.sh</li>
+</ul>
 <h2>Commit: 1.0.2-rc5 (Winfried, 2024-10-25)</h2>
 <h3>Değişiklikler:</h3><ul>
 <li style='color: blue;'>Değiştirilmiş: CHANGELOG.MD</li>

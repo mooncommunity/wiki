@@ -1,3 +1,157 @@
+<?php
+$places = [
+    [
+        "image" => "$baseUrl/assets/image/darkrp_belediye.jpg",
+        "title" => "Belediye Binası",
+        "description" => "Belediye binamızda, belediye başkanının odası, savcı ve hâkim odaları, Yargı Salonu ve MİT karakolu bulunmaktadır. Ayrıca kimlik değiştirme ve başkan adayı olma işlemleri için gerekli NPC'ler de burada mevcuttur."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_pd.jpg",
+        "title" => "Polis Karakolu",
+        "description" => "Polis karakolumuz, güvenliğin sağlandığı ve suçla mücadele için önemli bir merkezdir. Karakol binamızda, alt katta bulunan hapishane ve sorgu odası ile birlikte suçluların tutulduğu ve sorgulandığı alanlar mevcuttur. Bu birimlerde, adaletin sağlanması için gerekli işlemler titizlikle gerçekleştirilmektedir. Ayrıca Teçhizat Dolabını kullanma belgesi buradaki NPC ile alınabilir."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_etut.jpg",
+        "title" => "Etüt Merkezi",
+        "description" => "Geçici olarak öğrenme becerilerinizi artıracak unsurlar tam da burada; bir göz atmalısınız."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_sirket1.jpg",
+        "title" => "Şirket #1",
+        "description" => "Genellikle baron ve sefirin toplu aktiviteler yürüttüğü mekandır."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_nobetcieczane.jpg",
+        "title" => "Nöbetçi Eczane",
+        "description" => "Şehirde eczacı bulunmadığında, 7/24 hizmet veren bio-organ ve seviyeli ilaç temin edebileceğiniz bir noktadır."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_banka.jpg",
+        "title" => "Banka",
+        "description" => "Oyuncuların para işlemlerini gerçekleştirebileceği, para yatırma ve çekme işlemlerini yapabileceği ve deponuza eşyalarınızı koyabileceğiniz mekandır. Dikkatli olun, içeride bankadan para çalanlar olabilir."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_npc_yemek.jpg",
+        "title" => "Restoran",
+        "description" => "Restoran, açlığınızı ve susuzluğunuzu gidermek için gerekli yiyecek ve içecekleri temin edebileceğiniz bir mekandır. Burada NPC'ler aracılığıyla sipariş vererek lezzetli yemeklerin tadını çıkarabilirsiniz."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_plaza.jpg",
+        "title" => "Plaza/Gazino",
+        "description" => "Burada oda kiralayıp Bitki yetiştiriciliği gibi aktiviteler gerçekleştirebilirsiniz. Ayrıca girişte bir gazino bulunmaktadır.",
+        "basealert" => true
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_mekanik.jpg",
+        "title" => "Mekanik",
+        "description" => "Araçların tamir ve modifikasyon işlemlerinin yapıldığı bir mekandır. Burada, oyuncular araçlarını tamir ettirip, çeşitli parçaları değiştirerek performanslarını artırabilirler. Ayrıca, aracın hasar durumunu kontrol etmek ve gerektiğinde bakım yapmak için de hizmet vermektedir."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_sirket2.jpg",
+        "title" => "Şirket #2",
+        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
+        "basealert" => true
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_saatkulesi.jpg",
+        "title" => "Saat Kulesi",
+        "description" => "Genellikle baron ve sefirin toplu aktiviteler yürüttüğü mekandır."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_sevgiapartmanı.jpg",
+        "title" => "Sevgi Apartmanı",
+        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
+        "basealert" => true
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_galeri.jpg",
+        "title" => "Galeri",
+        "description" => "Burada her seviyeye uygun arabalar bulunmaktadır. Ayrıca biraz daha ilerisinde aracınızı çıkartabileceğiniz NPC mevcuttur."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_ormanalani.jpg",
+        "title" => "Orman Bölgesi/Maden Alanı",
+        "description" => "Buradaki evleri kiralayıp bitki yetiştirme vb. aktiviteler yürütebilirsiniz. Ayrıca maden alanı da burada yer almaktadır.",
+        "basealert" => true
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_poh.jpg",
+        "title" => "Polis Özel Harekat Karakolu",
+        "description" => "Polis Özel Harekat birimlerinin görev yaptığı, suçla mücadele ve güvenlik sağlama amacıyla faaliyet gösterdiği önemli bir merkezdir. Burada, özel eğitimli ekipler, acil durumlar için hazırlıklı olarak görev yapmaktadır."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_hastane.jpg",
+        "title" => "Hastane",
+        "description" => "ATT ve doktorun bulunduğu alan. Ayrıca buradaki NPC ile reçeteli/reçetesiz ilaç temin edebilirsiniz."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_luksgaleri.jpg",
+        "title" => "Lüks Galeri",
+        "description" => "Üst segment arabaların yer aldığı galeridir."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_fabrikalar.jpg",
+        "title" => "Fabrikalar",
+        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
+        "basealert" => true
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_benzinlik.jpg",
+        "title" => "Benzinlik",
+        "description" => "Buradan benzin alabilir, deponuza eşya koyabilir veya benzin soygunu yapabilirsiniz. Biraz ilerisinde ganyan bayii bulunmaktadır, orayı da göz atmayı unutmayın."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_jandarmakarakol.jpg",
+        "title" => "Jandarma Karakolu",
+        "description" => "Jandarma Genel Komutanlığı'na bağlı birimlerin faaliyet gösterdiği, asayişin sağlandığı ve suçların önlenmesi için görev yapan önemli bir merkezdir. Burada, jandarma ekipleri, kırsal alanlarda güvenlik hizmeti sunmakta ve vatandaşların güvenliğini sağlamaktadır."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_gol.jpg",
+        "title" => "Göl",
+        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır. Ayrıca balıkçı mesleğine geçip burada balık tutabilirsiniz.",
+        "basealert" => true
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_keke.jpg",
+        "title" => "KEKE Köyü",
+        "description" => "Yasadışı işler yapanların ortak noktasıdır. Dikkatli olun, her an kendinizi bayılmış bir vaziyette bulabilirsiniz."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_avm.jpg",
+        "title" => "AVM",
+        "description" => "MoonCity simgesi olan AVM'de yapabileceğiniz bir şey yok maalesef."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_nisantasi.jpg",
+        "title" => "Nişantaşı",
+        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
+        "basealert" => true
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_ada_sivri.jpg",
+        "title" => "Sivri Ada",
+        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
+        "basealert" => true
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_ada_heybeli.jpg",
+        "title" => "Heybeli Ada",
+        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
+        "basealert" => true
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_korsan.jpg",
+        "title" => "Korsan Bölgesi",
+        "description" => "Yasadışı işler yapanların ortak noktasıdır. Dikkatli olun, her an kendinizi bayılmış bir vaziyette bulabilirsiniz."
+    ],
+    [
+        "image" => "$baseUrl/assets/image/darkrp_ada_bilim.jpg",
+        "title" => "Bilim Adası",
+        "description" => "Bilim adamına aittir. Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
+        "basealert" => true
+    ]
+];
+?>
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
         <h1 class="mb-4">DarkRP Başlarken</h1>
@@ -26,7 +180,7 @@
 
             <div class="content-ref-box">
                 <p>
-                    <a id="chromeBox" href="#" target="_blank">
+                    <a id="chromeBox" href="<?= $baseUrl; ?>/darkrp-baslarken/chromium" target="_blank">
                         <i class="fa-brands fa-chrome"></i> Chromium Nedir? Nasıl Chromium Geçerim?
                     </a>
                 </p>
@@ -446,22 +600,46 @@
                 <p>Resimlerin üzerine tıklarsanız kısa yazımızı görebilirsiniz.</p>
                 <br>
             </div>
-            <div class="row" id="cardContainer"></div>
-            <div class="modal fade" id="modalTemplate" tabindex="-1" aria-labelledby="modalLabel"
-                 aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <small class="modal-title" id="modalLabel">Başlığı</small>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="" class="img-fluid" alt="">
-                            <p>...</p>
+            <div class="row" id="cardContainer">
+                <?php foreach ($places as $index => $place): ?>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="<?php echo htmlspecialchars($place['image']); ?>" class="card-img-top"
+                                 alt="<?php echo htmlspecialchars($place['title']); ?>"
+                                 data-bs-toggle="modal"
+                                 data-bs-target="#modal<?php echo $index; ?>">
+                            <div class="card-body">
+                                <small class="card-title"><?php echo htmlspecialchars($place['title']); ?></small>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="modal fade" id="modal<?php echo $index; ?>" tabindex="-1"
+                         aria-labelledby="modalLabel<?php echo $index; ?>" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">
+                                        <?php echo htmlspecialchars($place['title']); ?>
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="<?php echo htmlspecialchars($place['image']); ?>" class="img-fluid"
+                                         alt="<?php echo htmlspecialchars($place['title']); ?>">
+                                    <hr style="border: none">
+                                    <p><?php echo htmlspecialchars($place['description']); ?></p>
+                                    <?php if (isset($place["basealert"]) && $place["basealert"]) { ?>
+                                        <div class="alert alert-warning" role="alert">
+                                            Size ait olmıyan Daireler/Binalarda bitki yetiştiriciliği vb. eylemler yapamazsınız.
+                                        </div>
+                                    <?php } ?>
+                                    <hr style="border: none">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
 
@@ -902,8 +1080,8 @@
                                     <li><strong class="text-primary-emphasis">3. Seviye Saat:</strong> %50 XP
                                         bonusu sağlar. Kutulardan çıkar.
                                     </li>
-                                    <li><strong class="text-success-emphasis">Kaliteli Viski:</strong> Sahip
-                                        olduğunuz tüm saatlerin çalışmasını sağlar. Kutulardan çıkmaz.
+                                    <li><strong class="text-success-emphasis">Kaliteli Viski:</strong> %25 XP bonusu
+                                        sağlar. Kutulardan çıkmaz.
                                     </li>
                                     <li><strong class="text-secondary">1. Seviye Özel Eşya Toplama XP
                                             Artışı:</strong> Kirli dolar ve bitki üretimini tamamladığınızda (E
@@ -947,6 +1125,9 @@
                                     <li><strong class="text-primary-emphasis">Beylik Tabancası:</strong> Para
                                         basma makinelerini ve bitkileri yok ettiğinizde kazandığınız XP'yi %??
                                         artırır. Kutulardan çıkar. <span class="text-primary-emphasis">(Devlet çalışanları için geçerlidir)</span>
+                                    </li>
+                                    <li><strong class="text-danger-emphasis">Türk Bayrağı:</strong> %50 XP bonusu
+                                        sağlar. Kutulardan çıkmaz.
                                     </li>
                                 </ul>
                             </div>
@@ -1030,7 +1211,7 @@
 
             <div class="content-ref-box">
                 <p>
-                    <a id="sssBox" href="#">
+                    <a id="sssBox" href="<?= $baseUrl; ?>/darkrp-baslarken/sss">
                         <i class="fas fa-question"></i> Sıkça Sorulan Sorular
                     </a>
                 </p>
@@ -1040,167 +1221,3 @@
     </div>
 
 </main>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const places = [
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_belediye.jpg",
-                title: "Belediye Binası",
-                description: "Belediye binamızda, belediye başkanının odası, savcı ve hâkim odaları, Yargı Salonu ve MİT karakolu bulunmaktadır. Ayrıca kimlik değiştirme ve başkan adayı olma işlemleri için gerekli NPC'ler de burada mevcuttur."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_pd.jpg",
-                title: "Polis Karakolu",
-                description: "Polis karakolumuz, güvenliğin sağlandığı ve suçla mücadele için önemli bir merkezdir. Karakol binamızda, alt katta bulunan hapishane ve sorgu odası ile birlikte suçluların tutulduğu ve sorgulandığı alanlar mevcuttur. Bu birimlerde, adaletin sağlanması için gerekli işlemler titizlikle gerçekleştirilmektedir. Ayrıca Teçhizat Dolabını kullanma belgesi buradaki NPC ile alınabilir."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_etut.jpg",
-                title: "Etüt Merkezi",
-                description: "Geçici olarak öğrenme becerilerinizi artıracak unsurlar tam da burada; bir göz atmalısınız."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_nobetcieczane.jpg",
-                title: "Nöbetçi Eczane",
-                description: "Şehirde eczacı bulunmadığında, 7/24 hizmet veren bio-organ ve seviyeli ilaç temin edebileceğiniz bir noktadır."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_banka.jpg",
-                title: "Banka",
-                description: "Oyuncuların para işlemlerini gerçekleştirebileceği, para yatırma ve çekme işlemlerini yapabileceği ve deponuza eşyalarınızı koyabilceğiniz mekandır. Dikkatli olun, içeride bankadan para çalanlar olabilir."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_npc_yemek.jpg",
-                title: "Restoran",
-                description: "Restoran, açlığınızı ve susuzluğunuzu gidermek için gerekli yiyecek ve içecekleri temin edebileceğiniz bir mekandır. Burada NPC'ler aracılığıyla sipariş vererek lezzetli yemeklerin tadını çıkarabilirsiniz."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_plaza.jpg",
-                title: "Plaza/Gazino",
-                description: "Burada oda kiralayıp Bitki yetiştiriciliği gibi aktiviteler gerçekleştirebilirsiniz. Ayrıca girişte bir gazino bulunmaktadır."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_mekanik.jpg",
-                title: "Mekanik",
-                description: "Araçların tamir ve modifikasyon işlemlerinin yapıldığı bir mekandır. Burada, oyuncular araçlarını tamir ettirip, çeşitli parçaları değiştirerek performanslarını artırabilirler. Ayrıca, aracın hasar durumunu kontrol etmek ve gerektiğinde bakım yapmak için de hizmet vermektedir."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_saatkulesi.jpg",
-                title: "Saat Kulesi",
-                description: "Genellikle baron ve sefirin toplu aktiviteler yürüttüğü mekandır."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_sevgiapartmanı.jpg",
-                title: "Sevgi Apartmanı",
-                description: "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_galeri.jpg",
-                title: "Galeri",
-                description: "Burada her seviyeye uygun arabalar bulunmaktadır. Ayrıca biraz daha ilerisinde aracınızı çıkartabileceğiniz NPC mevcuttur."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_ormanalani.jpg",
-                title: "Orman Bölgesi/Maden Alanı",
-                description: "Buradaki evleri kiralayıp illegal aktivite yürütebilirsiniz. Ayrıca maden alanı da burada yer almaktadır."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_poh.jpg",
-                title: "Polis Özel Harekat Karakolu",
-                description: "Polis Özel Harekat birimlerinin görev yaptığı, suçla mücadele ve güvenlik sağlama amacıyla faaliyet gösterdiği önemli bir merkezdir. Burada, özel eğitimli ekipler, acil durumlar için hazırlıklı olarak görev yapmaktadır."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_hastane.jpg",
-                title: "Hastane",
-                description: "ATT ve doktorun bulunduğu alan. Ayrıca buradaki NPC ile reçeteli/reçetesiz ilaç temin edebilirsiniz."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_luksgaleri.jpg",
-                title: "Lüks Galeri",
-                description: "Üst segment arabaların yer aldığı galeridir."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_fabrikalar.jpg",
-                title: "Fabrikalar",
-                description: "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_benzinlik.jpg",
-                title: "Benzinlik",
-                description: "Buradan benzin alabilir, deponuza eşya koyabilir veya benzin soygunu yapabilirsiniz. Biraz ilerisinde ganyan bayii bulunmaktadır, orayı da göz atmayı unutmayın."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_jandarmakarakol.jpg",
-                title: "Jandarma Karakolu",
-                description: "Jandarma Genel Komutanlığı'na bağlı birimlerin faaliyet gösterdiği, asayişin sağlandığı ve suçların önlenmesi için görev yapan önemli bir merkezdir. Burada, jandarma ekipleri, kırsal alanlarda güvenlik hizmeti sunmakta ve vatandaşların güvenliğini sağlamaktadır."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_gol.jpg",
-                title: "Göl",
-                description: "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır. Ayrıca balıkçı mesleğine geçip burada balık tutabilirsiniz."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_keke.jpg",
-                title: "KEKE Köyü",
-                description: "Yasadışı işler yapanların ortak noktasıdır. Dikkatli olun, her an kendinizi bayılmış bir vaziyette bulabilirsiniz."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_avm.jpg",
-                title: "AVM",
-                description: "MoonCity simgesi olan AVM'de yapabileceğiniz bir şey yok maalesef."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_nisantasi.jpg",
-                title: "Nişantaşı",
-                description: "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır."
-            },
-            {
-                image: "<?= $baseUrl ?>/assets/image/darkrp_korsan.jpg",
-                title: "Korsan Bölgesi",
-                description: "Yasadışı işler yapanların ortak noktasıdır. Dikkatli olun, her an kendinizi bayılmış bir vaziyette bulabilirsiniz."
-            }
-        ];
-
-
-        const cardContainer = document.getElementById("cardContainer");
-        places.forEach((place, index) => {
-            const card = document.createElement("div");
-            card.className = "col-md-4";
-            card.innerHTML = `
-    <div class="card">
-    <img src="${place.image}" class="card-img-top" alt="${place.title}" data-bs-toggle="modal" data-bs-target="#modal${index}">
-    <div class="card-body">
-    <small class="card-title">${place.title}</small>
-    </div>
-    </div>
-    `;
-            cardContainer.appendChild(card);
-            const modal = document.createElement("div");
-            modal.className = "modal fade";
-            modal.id = `modal${index}`;
-            modal.tabIndex = -1;
-            modal.setAttribute("aria-labelledby", `modalLabel${index}`);
-            modal.setAttribute("aria-hidden", "true");
-            modal.innerHTML = `
-    <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-    <div class="modal-header">
-    <h5 class="modal-title" id="modalLabel${index}">${place.title}</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-    <img src="${place.image}" class="img-fluid" alt="${place.title}"><hr style="border: none">
-    <p>${place.description}</p><hr style="border: none">
-    </div>
-    </div>
-    </div>
-    `;
-            document.body.appendChild(modal);
-        });
-    });
-
-</script>
-<script>
-    document.getElementById("chromeBox").href = baseUrl + "/darkrp-baslarken/chromium";
-    document.getElementById("sssBox").href = baseUrl + "/darkrp-baslarken/sss";
-</script>

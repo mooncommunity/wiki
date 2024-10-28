@@ -16,7 +16,7 @@ $tttContent = true;
                 indiriniz.</p>
             <div class="content-ref-box">
                 <p>
-                    <a id="cssBox" href="#">
+                    <a id="cssBox" href="<?= $baseUrl; ?>/content">
                         <i class="fa-solid fa-cubes"></i> CS:S Content Nasıl İndiririm?
                     </a>
                 </p>
@@ -31,9 +31,3 @@ $tttContent = true;
         </div>
         <br>
 </main>
-<script>
-    document.getElementById("baslarkenBox").href = baseUrl + "/ttt-baslarken#gerekli-eklentiler-ve-ayarlar";
-    document.getElementById("baslarkenBox").innerHTML = '<i class="fa-solid fa-graduation-cap"></i> TTT Başlarken - Gerekli Eklentiler ve Ayarlar';
-    document.getElementById("cssBox").href = baseUrl + "/content";
-    document.getElementById("adminbasvuru").href = "https://forms.gle/Z5mZFT4sBVbQ49Yi6";
-</script>

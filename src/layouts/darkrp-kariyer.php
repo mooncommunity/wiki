@@ -16,7 +16,7 @@
                 etmeye hazırsanız, bu rol tam size göre.</p>
             <div class="content-ref-box">
                 <p>
-                    <a id="legalBox" href="#">
+                    <a id="legalBox" href="<?= $baseUrl; ?>/darkrp-kariyer/legal">
                         <i class="fa-solid fa-walkie-talkie"></i> Devlet Çalışanı
                     </a>
                 </p>
@@ -37,7 +37,7 @@
                 sağlamak istiyorsanız, bu role mutlaka göz atmalısınız!</p>
             <div class="content-ref-box">
                 <p>
-                    <a id="esnafBox" href="#">
+                    <a id="esnafBox" href="<?= $baseUrl; ?>/darkrp-kariyer/esnaf">
                         <i class="fa-solid fa-scale-balanced"></i> Esnaf ve Siviller
                     </a>
                 </p>
@@ -60,7 +60,7 @@
 
             <div class="content-ref-box">
                 <p>
-                    <a id="illegalBox" href="#">
+                    <a id="illegalBox" href="<?= $baseUrl; ?>/darkrp-kariyer/illegal">
                         <i class="fa-solid fa-user-tie"></i> Yasadışı Organizasyonlar
                     </a>
                 </p>
@@ -91,8 +91,3 @@
 
     </div>
 </main>
-<script>
-    document.getElementById("legalBox").href = baseUrl + "/darkrp-kariyer/legal";
-    document.getElementById("esnafBox").href = baseUrl + "/darkrp-kariyer/esnaf";
-    document.getElementById("illegalBox").href = baseUrl + "/darkrp-kariyer/illegal";
-</script>

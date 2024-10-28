@@ -76,7 +76,7 @@
 
         <div class="content-ref-box">
             <p>
-                <a id="tttBox" href="#">
+                <a id="tttBox" href="<?= $baseUrl; ?>/ttt-baslarken">
                     <i class="fa-solid fa-graduation-cap"></i> TTT Başlarken
                 </a>
             </p>
@@ -84,6 +84,3 @@
         <br>
     </div>
 </main>
-<script>
-    document.getElementById("tttBox").href = baseUrl + "/ttt-baslarken";
-</script>

@@ -1,17 +1,25 @@
+<?php
+if ($darkRPContent) {
+    $AdminBasvuru = "https://forms.gle/aThYDcDq2KCxbv1z8";
+} elseif ($tttContent) {
+    $AdminBasvuru = "https://forms.gle/Z5mZFT4sBVbQ49Yi6";
+}
+?>
 <div>
     <h4 id="error"><b>Etrafta her şey error, ne yapmalıyım? / Oyuna giremiyorum, ana menüye atıyor?</b></h4>
     <div class="alert alert-danger" role="alert">
-        <strong>Missing Map</strong> Hatası alıyor iseniz <a href="#tab0" data-bs-toggle="tab"
-                                                             role="tab"
-                                                             aria-controls="tab4">Özel içerik
-            indirme</a>
+        <strong>Missing Map</strong> Hatası alıyor iseniz <span class="text-primary-emphasis">Özel içerik indirme</span>
         göz atınız.
     </div>
     <p>Gerekli workshopları indirdiğinizden emin olunuz.</p>
     <div class="content-ref-box">
         <p>
-            <a id="baslarkenBox" href="#" target="_blank">
-                <i class="fa-regular fa-hand"></i> DarkRP Başlarken - Gerekli Eklentiler ve Ayarlar
+            <a id="baslarkenBox"
+               href="<?= $baseUrl ?>/<?= $darkRPContent ? 'darkrp-baslarken' : ($tttContent ? 'ttt-baslarken' : '') ?>#gerekli-eklentiler-ve-ayarlar"
+               target="_blank">
+                <i class="<?= $darkRPContent ? 'fa-regular fa-hand' : ($tttContent ? 'fa-solid fa-graduation-cap' : '') ?>"></i>
+                <?= $darkRPContent ? 'DarkRP' : ($tttContent ? 'TTT' : '') ?>
+                Başlarken - Gerekli Eklentiler ve Ayarlar
             </a>
         </p>
     </div>
@@ -461,8 +469,7 @@ exec config_default.cfg
     <hr>
     <div>
         <h4 id="admin"><b>Yetkili nasıl olabilirim?</b></h4>
-        <p>Yetkili olabilmek için <a id="adminbasvuru"
-                                     href="#">başvuru</a>
+        <p>Yetkili olabilmek için <a href="<?= $AdminBasvuru ?>">başvuru</a>
             yapmanız gerekmektedir. Başvurunuz olumlu sonuçlanırsa geri dönüş yapılacaktır.</p>
 
         <h5><b>Red edildiğimi nereden öğrenebilirim?</b></h5>

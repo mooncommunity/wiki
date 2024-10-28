@@ -2,3 +2,5 @@
 _site
 .jekyll-cache
 HTML
+assets/scss/*.css*
+assets/css/*.css.map

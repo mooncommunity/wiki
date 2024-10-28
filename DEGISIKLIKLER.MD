@@ -2,36 +2,62 @@
 
 ## Search için anahtar kelime "darkrp yeniyim" || "ttt yeniyim"
 
+- Source Aşaması
+    - javascript ile URL değiştirmek yerine php tarafında mümkün olduğunca dinamik olarak yapılarak HTML çevriliyor.
+    - CSS Okunabilirliği düşük olduğu için SCSS geçildi. Dönüştürme aşamasında CSS çevriliyor.
+
+- DarkRP Başlarken
+    - "Önemli yerler" Sivri ada, Heybeli Ada, Bilim Adası, Şirket #1, Şirket #2 eklendi.
+    - Önemli yerler javascript ile ekleniyordu onun yerine source aşamasında artık php'den HTML çevirirken ekliyor.
+    - "Eşyalar # XP Eşyaları" da "Kalite Viski" tanımı güncellendi.
+    - "Eşyalar # XP Eşyaları" da "Türk Bayrağı" eklendi.
+
 - TTT Nedir?
     - "Oyun başladığında herkes gizli rolünü öğrenir. Teröristler, masumları öldürmeden önce dedektifleri ve diğer
       teröristleri ortadan kaldırmalıdır. Dedektifler, şüpheli oyuncuları tespit edip masumları korumalıdır." yazısı "
       Oyun başladığında herkes gizli rolünü öğrenir. Teröristler, masumları öldürmeden önce dedektifleri ortadan
       kaldırmalıdır. Dedektifler, şüpheli oyuncuları tespit edip masumları korumalıdır." olarak güncellendi
+
 - DarkRP Kariyer > Esnaf ve Siviller
+    - F4 deki tüm meslekler eklendi, vip,vip+ bilinen meslekler artık meslek başlığında gözüküyor.
     - Mühendis eklendi
     - İmam eklendi
 
 - TTT Başlarken
+    - C menü javascript ile ekleniyordu onun yerine source aşamasında artık php'den HTML çevirirken ekliyor.
     - "Etkinlik düzenleniyor mu?" eklendi.
     - "Sohbet ve İletişim" deki "pm" harfleri büyütüldü ("PM")
 
 - Resim eklendi
+    - src/assets/image/darkrp_ada_bilim.jpg
+    - src/assets/image/darkrp_ada_heybeli.jpg
+    - src/assets/image/darkrp_ada_sivri.jpg
+    - src/assets/image/darkrp_sirket1.jpg
+    - src/assets/image/darkrp_sirket2.jpg
     - src/assets/image/favicon.ico
     - src/assets/image/steam_menu_ayarlar.png
     - src/assets/image/steam_menu_ayarlar_indirmeler.png
     - src/assets/image/steam_menu_ayarlar_indirmeler_1.png
 
+
 - DarkRP Başlarken > SSS
-    - "Nasıl Dans Edebilirim?" eklendi
-    - "Döviz nasıl alırım?" eklendi
-    - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?"
-      içeriği güncellendi.
-    - "Fizik Silahı Rengini Nasıl Değiştirebilirim?" eklendi.
-    - "Araç Ehliyeti Nereden Alabilirim?" eklendi
-    - "Silah Ruhsatı Nereden Alabilirim?" eklendi
-    - "Aracım hasarlı, nasıl tamir edebilirim?" eklendi
-    - "İsmimi nasıl değiştireceğim?" eklendi
-    - "Bilim İnsanı" yazıyordu "Bilim Adamı" olarak değiştirildi
+    - "Nasıl 500 can olunur?" eklendi
+    - "Nasıl 300 zırh olunur?" eklendi
+    - "Polis Özel Harekat Polisi ve Polis Özel Harekat Doktoru nasıl olurum?" başlığı "Polis Özel Harekât Polisi, Polis
+      Özel
+      Harekât Keskin Nişancısı ve Polis Özel Harekât
+      Doktoru nasıl olurum?
+      " olarak güncellendi ve içerik güncellendi
+        - "Nasıl Dans Edebilirim?" eklendi
+        - "Döviz nasıl alırım?" eklendi
+        - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?"
+          içeriği güncellendi.
+        - "Fizik Silahı Rengini Nasıl Değiştirebilirim?" eklendi.
+        - "Araç Ehliyeti Nereden Alabilirim?" eklendi
+        - "Silah Ruhsatı Nereden Alabilirim?" eklendi
+        - "Aracım hasarlı, nasıl tamir edebilirim?" eklendi
+        - "İsmimi nasıl değiştireceğim?" eklendi
+        - "Bilim İnsanı" yazıyordu "Bilim Adamı" olarak değiştirildi
 
 - TTT Başlarken > SSS
     - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?"
@@ -39,10 +65,16 @@
     - Başvuru kısmı güncellendi.
 
 - DarkRP Kariyer > Devlet Çalışanı
+    - F4 deki tüm meslekler eklendi, vip,vip+ bilinen meslekler artık meslek başlığında gözüküyor.
+    - Meslekler javascript ile ekleniyordu onun yerine source aşamasında artık php'den HTML çevirirken ekliyor.
+    - PÖH Keskin Nişancısı mesleği eklendi
     - "Belediye Başkanı Nasıl Olacağım?" eklendi
     - "Belediye Başkan Yardımcısı Seçebiliyor muyum?" eklendi
 
 - DarkRP Kariyer > Yasadışı Organizasyonlar
+    - F4 deki tüm meslekler eklendi, vip,vip+ bilinen meslekler artık meslek başlığında gözüküyor. (Eskort ve Menejer
+      hariç)
+    - Meslekler javascript ile ekleniyordu onun yerine source aşamasında artık php'den HTML çevirirken ekliyor.
     - "Bitkiları" "Bitkileri" olarak düzenlendi.
     - "Bitki üretiminin" ID si ot du bitki olarak güncellendi.
     - "Korsan ve Eşkiyada Ürettiğim İthal eşyaları kime satabilirim?" ID si değiştirildi kacakesya dı ithalesya yapıldı
@@ -56,6 +88,7 @@
       çerçevesinde.
 
 - "style.css" dosyası düzenlendi
+    - Kod bloklarında artık "Fira code, monospace" kullanılıyor.
     - `.highlighted` class eklendi.
     - `.Rounded-button` class eklendi.
     - `.desktop-content` class eklendi.

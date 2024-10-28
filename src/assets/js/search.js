@@ -326,15 +326,27 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'DarkRP SSS - Aile kurmak istiyorum, ne yapmam gerekiyor?',
-            url: `${baseUrl}/darkrp-baslarken/sss#vergilev`,
+            url: `${baseUrl}/darkrp-baslarken/sss#family`,
             content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
             tags: ['drp', 'rp', 'sss', 'aile', 'familya']
         },
         {
             name: 'DarkRP SSS - Nasıl Dans Edebilirim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#vergilev`,
+            url: `${baseUrl}/darkrp-baslarken/sss#dance`,
             content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
             tags: ['drp', 'rp', 'sss', 'dance', 'dans', '_DarkRP_AnimationMenu', 'animasyon menu']
+        },
+        {
+            name: 'DarkRP SSS - Nasıl 500 can olunur?',
+            url: `${baseUrl}/darkrp-baslarken/sss#bioorgan`,
+            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            tags: ['drp', 'rp', 'sss', 'polis bio-organ', '500', 'bio-organ', 'organ']
+        },
+        {
+            name: 'DarkRP SSS - Nasıl 300 zırh olunur??',
+            url: `${baseUrl}/darkrp-baslarken/sss#zirh`,
+            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            tags: ['drp', 'rp', 'sss', 'polis çelik yelek', '300', '1 kalite çelik yelek', 'çelik yelek']
         },
         {
             name: 'DarkRP Kariyer',
@@ -584,7 +596,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'TTT Oyun Kuralları',
-            url: `https://moonrp.com/oyunkurallari`,
+            url: `https://moonrp.com/tttkurallar`,
             content: 'Mutlaka bilinmesi gereken oyun kuralları',
             tags: ['ttt', 'Trouble in Terrorist Town', 'kurallar', 'yeniyim', "ttt yeniyim"]
         },

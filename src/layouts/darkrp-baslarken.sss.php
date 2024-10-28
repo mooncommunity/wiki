@@ -111,11 +111,18 @@ $tttContent = false;
         </div>
         <hr>
         <div>
-            <h4 id="basvuru-poh"><b>Polis Özel Harekat Polisi ve Polis Özel Harekat Doktoru nasıl olurum?</b>
-            </h4>
-            <p>Polis Özel Harekat Polisi olmak için Polis Asayiş Memuru mesleğinde 5. seviyeye ulaşmanız
-                gerekmektedir. Discord sunucumuzda başvuru yapabilirsiniz.</p>
-            <p>Polis Özel Harekat Doktoru olmak için Doktor mesleğinde 5. seviyeye ulaşmanız gerekmektedir.</p>
+            <h4 id="basvuru-poh"><b>Polis Özel Harekât Polisi, Polis Özel Harekât Keskin Nişancısı ve Polis Özel Harekât
+                    Doktoru nasıl olurum?</b></h4>
+            <p>Polis Özel Harekât Polisi olmak için Polis Asayiş Memuru mesleğinde 5. seviyeye ulaşmanız ulaştığınızda,
+                Discord sunucumuzda başvuru odasına gelip
+                başvurabilirsiniz.</p>
+            <p>Polis Özel Harekât Keskin Nişancısı olmak için Polis Asayiş Memuru mesleğinde 5. seviyeye ulaşmanız ve
+                keskin nişancı tecrübesine sahip olmanız gerekmektedir. Ayrıca, takım çalışmasına yatkınlık şarttır.
+                Eğer bunları karşılıyor iseniz , Discord sunucumuzda başvuru odasına gelip
+                başvurabilirsiniz.</p>
+            <p>Polis Özel Harekât Doktoru olmak için Doktor mesleğinde 5. seviyeye ulaştığınızda, Discord sunucumuzda
+                başvuru odasına gelip
+                başvurabilirsiniz.</p>
         </div>
         <hr>
         <div>
@@ -184,11 +191,23 @@ Familya Üyeleri:
 </pre>
             <p>Her şey tamam ise Discord sunucumuzda <b>destek odasına</b> gidip mesajınızın altına <b>DarkRP
                     Üstadı</b> etiketlemeniz gerekiyor.</p>
-            <hr>
         </div>
+        <hr>
         <div>
             <h4 id="dance"><b>Nasıl Dans Edebilirim?</b></h4>
             <p>Oyunda elinize anahtarı alınız ve "R" tuşuna basınız ardından çıkan menüde dans seçiniz.</p>
+        </div>
+        <hr>
+        <div>
+            <h4 id="bioorgan"><b>Nasıl 500 can olunur?</b></h4>
+            <p>Öncelikle 3. seviye, ardından 5. seviye biyo-organ kullanmanız gerekmektedir.</p>
+            <p>Sonrasında reçeteli ya da reçetesiz ilaç içmeniz gerekir.</p>
+        </div>
+        <hr>
+        <div>
+            <h4 id="zirh"><b>Nasıl 300 zırh olunur?</b></h4>
+            <p>"Okunmuş Su" adlı eşyayı bulmanız gerekmektedir. Eşya envanterinizde bulunduğunda ve 1. kalite çelik
+                yelek kullandığınızda zırhınız 300 olacaktır.</p>
         </div>
         <hr>
         <blockquote>
@@ -197,7 +216,7 @@ Familya Üyeleri:
         </blockquote>
         <div class="content-ref-box">
             <p>
-                <a id="kariyerBox" href="#">
+                <a id="kariyerBox" href="<?= $baseUrl ?>/darkrp-kariyer">
                     <i class="fa-solid fa-user-graduate"></i> DarkRP Kariyer
                 </a>
             </p>
@@ -205,9 +224,3 @@ Familya Üyeleri:
     </div>
     <br>
 </main>
-<script>
-    document.getElementById("kariyerBox").href = baseUrl + "/darkrp-kariyer";
-    document.getElementById("baslarkenBox").href = baseUrl + "/darkrp-baslarken#gerekli-eklentiler-ve-ayarlar";
-    document.getElementById("baslarkenBox").innerHTML = '<i class="fa-regular fa-hand"></i> DarkRP Başlarken - Gerekli Eklentiler ve Ayarlar';
-    document.getElementById("adminbasvuru").href = "https://forms.gle/aThYDcDq2KCxbv1z8";
-</script>

@@ -321,26 +321,9 @@ document.addEventListener('DOMContentLoaded', function () {
             rightMenuItem.classList.add('nav-item');
 
             let sizeClass;
-            switch (header.tagName) {
-                case 'H1':
-                    sizeClass = 'size-1';
-                    break;
-                case 'H2':
-                    sizeClass = 'size-2';
-                    break;
-                case 'H3':
-                    sizeClass = 'size-3';
-                    break;
-                case 'H4':
-                    sizeClass = 'size-4';
-                    break;
-                case 'H5':
-                    sizeClass = 'size-5';
-                    break;
-                default:
-                    sizeClass = '';
-                    break;
-            }
+            const headerLevel = parseInt(header.tagName.charAt(1), 10);
+            sizeClass = headerLevel >= 1 && headerLevel <= 5 ? `bookmark-header-${headerLevel}` : '';
+
 
             rightMenuItem.innerHTML = `<a class="nav-link ${sizeClass}" href="#${id}">${text}</a>`;
             rightMenu.appendChild(rightMenuItem);

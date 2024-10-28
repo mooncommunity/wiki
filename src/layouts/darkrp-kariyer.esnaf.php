@@ -1,9 +1,346 @@
+<?php
+$jobs = [
+    [
+        'title' => "Güvenlik Görevlisi",
+        'description' => "Görev yaptığı alanda güvenliği sağlamak, potansiyel tehlikeleri önceden tespit etmek ve olaylara müdahale etmekle sorumlu olan profesyoneldir. İnsanların ve mülklerin güvenliğini koruma amacı güder.",
+        'req' => null
+    ],
+    [
+        'title' => "Yapı Market Sahibi",
+        'description' => "Physic Gun ve Tool Gun gibi özel araçların yanı sıra fotoğraf makinesi, araç alarmı, çelik yelek, kulaklık ve kask gibi malzemeleri satarak para kazanan kişidir. İnşaat ve güvenlik sektörüne yönelik ürün yelpazesini genişleterek müşteri ihtiyaçlarını karşılamayı hedefler.",
+        'req' => null
+    ],
+    [
+        'title' => "Poligon Sahibi",
+        'description' => "Atış eğitimi ve pratikleri sunan bir poligonun sahibi olan kişidir. Tabanca gibi çeşitli silahların satışını yaparak ve güvenli bir atış ortamı sağlayarak para kazanır. Ayrıca, atış kursları düzenleyerek bireylerin becerilerini geliştirmelerine yardımcı olur.",
+        'req' => null
+    ],
+    [
+        'title' => "Çiğköfte Salonu Sahibi",
+        'description' => "Çiğköfte satışına yönelik bir işletmenin sahibi olan kişidir. Lezzetli çiğköfteleri hazırlayarak ve sunarak, müşterilerine hijyenik bir ortamda hizmet vermeyi hedefler.",
+        'req' => null
+    ],
+    [
+        'title' => "Garson",
+        'description' => "Restoran veya kafe gibi mekanlarda müşterilere hizmet veren, sipariş alıp servis yapan ve misafirlerin memnuniyetini sağlamaya yönelik çalışan kişidir. Gıda güvenliği ve hijyen kurallarına uygun olarak hizmet verir.",
+        'req' => null
+    ],
+    [
+        'title' => "İtalyan Restoranı Sahibi",
+        'description' => "İtalyan mutfağına yönelik lezzetler sunan bir restoranın sahibi olan kişidir. Müşterilere kaliteli yemek deneyimi sağlamak için geleneksel İtalyan tariflerini kullanarak menü oluşturur ve işletmenin yönetimini üstlenir.",
+        'req' => null
+    ],
+    [
+        'title' => "AVM Sahibi",
+        'description' => "Alışveriş merkezi işleten ve yöneten kişidir. Farklı mağaza ve restoranların yer aldığı bir alan sunarak, ziyaretçilere çeşitli alışveriş ve eğlence imkanları sağlar. AVM'nin genel yönetimi, pazarlaması ve müşteri memnuniyetinin sağlanmasında önemli rol oynar.",
+        'req' => null
+    ],
+    [
+        'title' => "Eczacı",
+        'description' => "İlaçların dağıtımını yapan, hastaların sağlık ihtiyaçlarını karşılamak üzere Bio-organ ve Recoil gibi ilaçları satan sağlık profesyonelidir.",
+        'req' => null
+    ],
+    [
+        'title' => "Simitçi",
+        'description' => "Geleneksel simit ve diğer unlu mamulleri üreterek satan esnaftır. Müşterilerine taze simitler sunarak, sokak lezzetlerinin keyfini çıkarmalarına yardımcı olur.",
+        'req' => null
+    ],
+    [
+        'title' => "Tavuk Pilavcı",
+        'description' => "Taze pişirilmiş tavuk ve pilav sunarak, misafirlere lezzetli ve doyurucu bir yemek deneyimi sağlayan kişidir. Müşterilerin ihtiyaçlarına göre hızlı ve kaliteli hizmet verir.",
+        'req' => null
+    ],
+    [
+        'title' => "Kebapçı",
+        'description' => "Çeşitli kebap çeşitleri hazırlayıp sunan bir esnaftır. Müşterilerine lezzetli et yemekleri ve mezeler sunarak, geleneksel Türk mutfağının tadını çıkarma fırsatı verir.",
+        'req' => null
+    ],
+    [
+        'title' => "Kafe Sahibi",
+        'description' => "Müşterilere kahve, çay, atıştırmalıklar ve çeşitli içecekler sunan bir kafenin sahibidir. Sıcak ve samimi bir ortam yaratarak, sosyal bir alan sağlamayı amaçlar.",
+        'req' => null
+    ],
+    [
+        'title' => "Hamburgerci",
+        'description' => "Çeşitli hamburger çeşitleri hazırlayıp satan esnaftır. Taze malzemeler kullanarak, müşterilerine lezzetli ve doyurucu burgerler sunar.",
+        'req' => null
+    ],
+    [
+        'title' => "Dönerci",
+        'description' => "Döner kebap hazırlayıp satan esnaftır. Müşterilerine lezzetli dönerler ve yan ürünler sunarak, hızlı ve doyurucu bir yemek deneyimi sağlar.",
+        'req' => null
+    ],
+    [
+        'title' => "Dondurmacı",
+        'description' => "Farklı dondurma çeşitleri sunarak serinletici lezzetler sağlayan esnaftır. Yaz aylarında taze ve doğal dondurmalarla müşteri memnuniyetini hedefler.",
+        'req' => null
+    ],
+    [
+        'title' => "Çorba & Paça Salonu Sahibi",
+        'description' => "Lezzetli çorba ve paça yemekleri sunan bir işletmenin sahibidir. Müşterilere sıcak ve besleyici yemekler sunarak, geleneksel tatları yaşatmayı amaçlar.",
+        'req' => null
+    ],
+    [
+        'title' => "Büfe Sahibi",
+        'description' => "Atıştırmalıklar, içecekler ve çeşitli günlük ihtiyaç maddeleri satan küçük bir işletmenin sahibidir. Hızlı hizmet sunarak, müşterilerin temel ihtiyaçlarını karşılamayı hedefler.",
+        'req' => null
+    ],
+    [
+        'title' => "Dövüş Sanatları Öğretmeni",
+        'description' => "Öğrencilere dövüş sanatları tekniklerini, savunma yöntemlerini ve disiplinini öğretmekle görevli olan kişidir. Fiziksel ve zihinsel gelişimi destekleyerek, öğrencilerin kendine güven kazanmalarına yardımcı olur.",
+        'req' => null
+    ],
+    [
+        'title' => "Mekanik",
+        'description' => "Araç mekanik sistemlerin bakım, onarım ve işletilmesi ile ilgilenen meslek grubudur. Mekanik bilgi ve becerilerini kullanarak, çeşitli takılabilir parçaları sunar.",
+        'req' => null,
+        'vip' => 2
+    ],
+    [
+        'title' => "Mühendis",
+        'description' => "Mühendisler, para basma makineleri, saksı gibi çeşitli ürünlerin tasarım ve üretim süreçlerinde çalışarak teknik çözümler geliştirirler. Farklı alanlarda sahip oldukları problem çözme yetenekleri ile yenilikçi projeler üretirler.",
+        'req' => "İlk önce Yapı market sahibi ve Poligon Sahibi Mesleğinde Deneyim Kazanmanız gerekiyor.",
+        'vip' => 2
+    ],
+    [
+        'title' => "Taksici",
+        'description' => "Müşterileri belirli bir noktadan alarak istedikleri yere ulaştıran, taksi hizmeti sunan kişidir. Güvenli ve konforlu bir ulaşım sağlamak için trafiği ve güzergahları iyi bilmelidir.",
+        'req' => null
+    ],
+    [
+        'title' => "Dolmuş Şoförü",
+        'description' => "Belirli bir rota üzerinde yolcu taşımakla görevli olan şofördür. Müşterilere uygun fiyatlarla ulaşım imkanı sunarak, toplu taşıma hizmetine katkı sağlar.",
+        'req' => null
+    ],
+    [
+        'title' => "Kargocu",
+        'description' => "Kargoculuk, yapı market sahipleri, poligon sahipleri, ithalatçılar ve eczacılar gibi çeşitli yerlerden gelen paketlerin alıcılara ulaştırılmasını sağlamakla görevli olan bir meslektir. Kargo teslimatı ve takip işlemlerine odaklanarak, müşteri memnuniyetini ön planda tutar.",
+        'req' => null
+    ],
+    [
+        'title' => "Maden İşçisi",
+        'description' => "Maden ocaklarında çalışarak, madenlerin çıkarılması, işlenmesi ve taşınması işlemlerini gerçekleştiren kişidir. İş güvenliği kurallarına uyarak, zorlu şartlar altında çalışır.",
+        'req' => null
+    ],
+    [
+        'title' => "Kereste İşçisi",
+        'description' => "Ağaçları kesip işleyerek kereste haline getiren kişidir. Kereste üretiminde çeşitli makineleri kullanarak, kaliteli ahşap ürünler elde eder.",
+        'req' => null
+    ],
+    [
+        'title' => "Doğal Kaynaklar Mühendisi",
+        'description' => "Doğal kaynakların verimli ve sürdürülebilir kullanımını sağlamak amacıyla, maden ocaklarında ve ormanlık alanlarda çalışarak modern alet ve ekipmanlar kullanır. Madenci veya keresteci olarak, iş süreçlerini optimize eder ve çevresel etkileri minimize eder.",
+        'req' => "İlk önce Maden İşçisi ve Kereste İşçisi Mesleğinde Deneyim Kazanmanız gerekiyor."
+    ],
+    [
+        'title' => "Doğal Kaynaklar Yüksek Mühendisi",
+        'description' => "Doğal kaynakların verimli ve sürdürülebilir kullanımını sağlamak amacıyla, maden ocaklarında ve ormanlık alanlarda çalışarak modern alet ve ekipmanlar kullanır. Madenci veya keresteci olarak, iş süreçlerini optimize eder ve çevresel etkileri minimize eder.",
+        'req' => "İlk önce Maden İşçisi ve Kereste İşçisi Mesleğinde Deneyim Kazanmanız gerekiyor.",
+        'vip' => 2
+    ],
+    [
+        'title' => "Ganyan Bayi Sahibi",
+        'description' => "At yarışları üzerine bahis alarak gelir elde eden bir işletme sahibidir. Yarışların takibini yapar ve müşterilere bahis olanakları sunar.",
+        'req' => null
+    ],
+    [
+        'title' => "Banka Sorumlusu",
+        'description' => "Moon Bank'ta çalışan ve bankanın kasasını koruyarak finansal işlemleri yöneten bir uzmandır. Müşteri taleplerine yanıt verir, hesapları yönetir ve güvenliği sağlamak için gerekli önlemleri alır.",
+        'req' => null
+    ],
+    [
+        'title' => "İthalatçı",
+        'description' => "Yurtdışından ürün veya hizmetlerin ithalatını yapan bir iş insanıdır. Poligon sahibine göre ürün yelpazesi daha fazladır.",
+        'req' => "İlk önce Poligon Sahibi Mesleğinde Deneyim Kazanmanız gerekiyor.",
+        'vip' => 2
+    ],
+    [
+        'title' => "Müzisyen",
+        'description' => "Müzik besteleme, icra etme ve sahne performanslarıyla müzik dünyasında yer alan bir sanatçıdır. Farklı müzik tarzlarında eserler üretir ve dinleyicilere müzik deneyimi sunar.",
+        'req' => null
+    ],
+    [
+        'title' => "Dilenci",
+        'description' => "Geçim sağlamak amacıyla toplumda çeşitli yerlerde para veya yiyecek talep eden kişidir. Genellikle sokaklarda veya kalabalık yerlerde bulunurlar.",
+        'req' => null
+    ],
+    [
+        'title' => "Kimsesiz Çocuk",
+        'description' => "Ailesi olmayan ve bir bakım kurumunda veya sokakta yaşayan çocuklardır. Genellikle sevgi ve destek arayışında olurlar.",
+        'req' => null
+    ],
+    [
+        'title' => "DJ",
+        'description' => "Müzik seti veya bilgisayar kullanarak müzikleri miksleyen ve partilerde veya etkinliklerde performans sergileyen kişidir. Farklı müzik türlerini harmanlayarak dinleyicilere eğlenceli bir deneyim sunar.",
+        'req' => null
+    ],
+    [
+        'title' => "Din Adamı",
+        'description' => "Bir dinin inançlarını, öğretilerini ve ritüellerini yürüten ve bu konuda toplumu bilgilendiren kişidir. Genellikle ibadetlerin yönetimi ve dini konularda rehberlik yapar.",
+        'req' => null
+    ],
+    [
+        'title' => "Kaykaycı",
+        'description' => "Kaykay kullanarak çeşitli hareketler ve stiller geliştiren, bu sporla ilgilenen kişidir. Genellikle sokaklarda, park veya özel kaykay alanlarında kayar.",
+        'req' => null
+    ],
+    [
+        'title' => "Oto Kurtarıcı",
+        'description' => "Araçların yolda kalması durumunda yardım sağlayarak onları güvenli bir yere taşıyan profesyoneldir. Acil durumlarda 24 saat hizmet vererek sürücülere destek olur.",
+        'req' => null,
+        'close' => true
+    ],
+    [
+        'title' => "Sokak Köpeği",
+        'description' => "Sokaklarda yaşayan, genellikle insanlardan bağımsız olarak hayatta kalmaya çalışan köpeklerdir. İnsanlara karşı genellikle dostça bir tutum sergileyebilirler.",
+        'req' => null
+    ],
+    [
+        'title' => "Sokak Kedisi",
+        'description' => "Sokaklarda yaşayan, beslenme ve barınma ihtiyaçlarını genellikle kendi başına karşılayan kedilerdir. İnsanlarla sınırlı bir ilişki kurarak hayatlarını sürdürürler.",
+        'req' => null
+    ],
+    [
+        'title' => "Belıkçı",
+        'description' => "Küçük bir gölde, balık tutarak geçimini sağlar.",
+        'req' => null
+    ],
+    [
+        'title' => "Piyangocu",
+        'description' => "Piyango biletleri satan ve kazananları belirleyen kişidir. Müşterilere bilet satışı yaparak, şans oyunları ile kazanç sağlamaya çalışır.",
+        'req' => null
+    ],
+    [
+        'title' => "Kurye",
+        'description' => "Yapı market sahipleri, poligon sahipleri, ithalatçılar ve eczacılar gibi çeşitli yerlerden gelen paketlerin alıcılara ulaştırılmasını sağlamakla görevli olan bir meslektir. Kargo teslimatı ve takip işlemlerine odaklanarak, müşteri memnuniyetini ön planda tutar. Paketlerin veya belgelerin belirli bir adrese hızlı bir şekilde ulaştırılmasını sağlar. Genellikle zaman baskısı altında çalışır ve müşteri memnuniyetine odaklanır.",
+        'req' => null
+    ],
+    [
+        'title' => "MoonTV Çalışanı",
+        'description' => "MoonTV kanalı için içerik üreten veya yayın sürecine katkı sağlayan kişidir. Programların düzenlenmesi, çekimlerin yapılması ve yayın öncesi hazırlıklarda yer alır.",
+        'req' => null,
+        'vip' => 1
+    ],
+    [
+        'title' => "İmam",
+        'description' => "Toplumda dini liderlik yapan, vaazlar vererek insanlara rehberlik eden, inanç ve ahlak konularında eğitim veren bir kişidir. İmam, camide veya topluluk içinde dini görevlerini yerine getirirken, insanları bir araya getirir ve toplumsal dayanışmayı güçlendirir.",
+        'req' => null
+    ],
+    [
+        'title' => "Avukat",
+        'description' => "Hukuk alanında uzmanlaşmış, müvekkillerine yasal danışmanlık ve savunma hizmeti sunan kişidir. Mahkeme süreçlerinde müvekkillerini temsil eder.",
+        'req' => null
+    ],
+    [
+        'title' => "Tekel Bayi Sahibi",
+        'description' => "Alkol ve diğer ürünlerin satışını yapan bir dükkânın sahibi ve işletmecisidir. Müşterilerine çeşitli ürünler sunarak gelir elde eder.",
+        'req' => null
+    ],
+    [
+        'title' => "Parkurcu",
+        'description' => "Farklı zeminlerde ve engeller arasında akrobatik hareketler yaparak hızlı bir şekilde ilerleyen kişidir. Fiziksel yetenekleri ve çevikliği ile dikkat çeker.",
+        'req' => null
+    ],
+    [
+        'title' => "Grafitici",
+        'description' => "Grafiti sanatıyla sokaklara renk katan ve mesajlar ileten bir sanatçıdır. Duvarlar veya çeşitli yüzeyler üzerinde yaratıcılığını sergiler.",
+        'req' => null
+    ],
+    [
+        'title' => "Sokak Sanatçısı",
+        'description' => "Sokaklarda performans sergileyerek ya da eserler yaratarak insanlara eğlence sunan sanatçıdır. Genellikle bağışlarla geçimlerini sağlar.",
+        'req' => null
+    ],
+    [
+        'title' => "Motel Sahibi",
+        'description' => "Misafirlerine konaklama hizmeti sunan küçük otel veya motelin işletmecisidir. Konukların rahat bir konaklama deneyimi yaşamasını sağlamak için çalışır.",
+        'req' => null
+    ],
+    [
+        'title' => "Palyaço",
+        'description' => "Eğlence ve gösteri amaçlı kostüm giyen, çocuklara ve yetişkinlere neşe katmak için mizah ve yetenek sergileyen kişidir. Partilerde ve etkinliklerde performans gösterir.",
+        'req' => null
+    ],
+    [
+        'title' => "Piyanist",
+        'description' => "Piyano çalarak müzik yapan, konserler veren veya çeşitli etkinliklerde performans sergileyen müzisyendir. Melodiler ve armonilerle dinleyicilere duygusal bir deneyim sunar.",
+        'req' => null
+    ],
+    [
+        'title' => "Deve",
+        'description' => "Sahibinden kaçan bu deve şehirde gezer tıpki sokak köpeği, sokak kedisi gibi.",
+        'req' => null
+    ],
+    [
+        'title' => "Ağır Yaşamlar Vakfı Başkanı",
+        'description' => "Aşırı kilolu ve tembel bir yaşam tarzına sahip olan, toplumdaki sorunlara duyarsız kalabilen kişidir. Vakfın başkanı olarak, iyi niyetle hareket etse de, genellikle hareketsiz bir yaşam sürmekte ve bu nedenle kendisi için sağlıklı çözümler üretmekte zorlanmaktadır.",
+        'req' => null
+    ],
+    [
+        'title' => "Ramazan Davulcusu",
+        'description' => "Ramazan ayı boyunca sahur vaktinde insanları uyandırmak için davul çalan kişidir. Geleneksel bir rol üstlenerek topluma hizmet eder.",
+        'req' => null
+    ],
+    [
+        'title' => "Sihirbaz",
+        'description' => "İlginç ve eğlenceli gösterilerle izleyicileri şaşırtan, illüzyon teknikleri kullanarak performans sergileyen sanatçıdır. Eğlence dünyasında dikkat çeker.",
+        'req' => null
+    ],
+]
+?>
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
         <div class="content pt-3">
             <h1 class="mb-4">Esnaf ve Siviller</h1>
             <hr>
             <br>
+            <div>
+                <h2 class="text-success" id="meslek">Meslekler</h2>
+                <div class="accordion" id="accordionJobs">
+                    <?php foreach ($jobs as $index => $job): ?>
+                        <?php
+                        $isVip = (isset($job['vip']) && $job['vip'] === 1);
+                        $isVipPlus = (isset($job['vip']) && $job['vip'] === 2);
+                        ?>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button <?= $index === 0 ? '' : 'collapsed' ?>" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse<?= $index ?>"
+                                        aria-expanded="<?= $index === 0 ? 'true' : 'false' ?>"
+                                        aria-controls="collapse<?= $index ?>">
+                                    <span class="text-warning-emphasis"><?= htmlspecialchars($job['title']) ?></span>
+                                    <?php if ($isVip) {
+                                        ?>
+                                        <span style="padding-left: 1%; color: #16bb00">[VIP]</span>
+                                        <span style="padding-left: 1%; color: #19d100">[VIP+]</span>
+                                    <?php } ?>
+                                    <?php if ($isVipPlus) {
+                                        ?>
+                                        <span style="padding-left: 1%; color: #16bb00">[VIP+]</span>
+                                    <?php } ?>
+                                </button>
+                            </h2>
+                            <div id="collapse<?= $index ?>"
+                                 class="accordion-collapse collapse <?= $index === 0 ? 'show' : '' ?>"
+                                 aria-labelledby="heading<?= $index ?>" data-bs-parent="#accordionJobs">
+                                <div class="accordion-body">
+                                    <?php if (isset($job["close"]) && $job["close"]) { ?>
+                                        <div class="alert alert-danger" role="alert">
+                                            Bu meslek şu anda kullanılmamaktadır. Yani bu mesleğe geçemezsiniz.
+                                        </div>
+                                    <?php } ?>
+                                    <p><?= htmlspecialchars($job['description']) ?></p>
+                                    <?php if (!empty($job['req'])): ?>
+                                        <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
+                                        <p><?= htmlspecialchars($job['req']) ?></p>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            <hr>
             <div>
                 <h2 id="yiyecekveicecek">1. Yiyecek ve İçecek Sektörü</h2>
                 <br>
@@ -178,7 +515,7 @@
                     <li><strong>Farklı Seviye Mermiler</strong>: Merminin gücünü artırmaktadır.</li>
                     <li><strong>Çelik Yelek (2. ve 3. Kalite)</strong>: Zırh sağlamaktadır.</li>
                 </ul>
-
+                <br>
                 <h3 id="ticarivehizmetsektoru-ithalatci">İthalatçı Rehberi</h3>
                 <p>İthalatçı mesleği, DarkRP ve MoonGaming™ sunucularında oyunculara geniş bir silah yelpazesi
                     sunan ve ağır silahlar temin edebilen özel bir rolü temsil eder. Bu meslek, oyuncuların daha
@@ -201,7 +538,7 @@
                     <li><strong>Farklı Seviye Mermiler</strong>: Merminin gücünü artırmaktadır.</li>
                     <li><strong>Çelik Yelek (1. , 2. ve 3. Kalite)</strong>: Zırh sağlamaktadır.</li>
                 </ul>
-
+                <br>
                 <h3 id="ticarivehizmetsektoru-muhendis">Mühendis Rehberi</h3>
                 <p>Mühendis mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların Bitki üretme ve para basma
                     makineleri için donanım
@@ -224,11 +561,12 @@
                         canını korumayı sağlar. Fakat yine canı azalır.
                     </li>
                 </ul>
+                <br>
                 <h3 id="ticarivehizmetsektoru-imam">İmam Rehberi</h3>
                 <p>İmam mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların XP Kazanmasını sağlarlar.
                     Bu meslekte, İnsanlara belli ücret karşılığında üfleyerek daha fazla XP Kazanmasını
                     sağlıyabilirsiniz.</p>
-
+                <br>
                 <h3 class="text-warning">Sonuç</h3>
                 <p>Yiyecek ve içecek sektörü ile ticari ve hizmet sektöründe bulunan esnaf meslekleri, DarkRP
                     sunucularında rol yapma deneyiminizi zenginleştiren ve oyunculara etkileşim fırsatları sunan
