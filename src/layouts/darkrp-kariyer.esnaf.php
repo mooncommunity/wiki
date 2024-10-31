@@ -1,293 +1,3 @@
-<?php
-$jobs = [
-    [
-        'title' => "Güvenlik Görevlisi",
-        'description' => "Görev yaptığı alanda güvenliği sağlamak, potansiyel tehlikeleri önceden tespit etmek ve olaylara müdahale etmekle sorumlu olan profesyoneldir. İnsanların ve mülklerin güvenliğini koruma amacı güder.",
-        'req' => null
-    ],
-    [
-        'title' => "Yapı Market Sahibi",
-        'description' => "Physic Gun ve Tool Gun gibi özel araçların yanı sıra fotoğraf makinesi, araç alarmı, çelik yelek, kulaklık ve kask gibi malzemeleri satarak para kazanan kişidir. İnşaat ve güvenlik sektörüne yönelik ürün yelpazesini genişleterek müşteri ihtiyaçlarını karşılamayı hedefler.",
-        'req' => null
-    ],
-    [
-        'title' => "Poligon Sahibi",
-        'description' => "Atış eğitimi ve pratikleri sunan bir poligonun sahibi olan kişidir. Tabanca gibi çeşitli silahların satışını yaparak ve güvenli bir atış ortamı sağlayarak para kazanır. Ayrıca, atış kursları düzenleyerek bireylerin becerilerini geliştirmelerine yardımcı olur.",
-        'req' => null
-    ],
-    [
-        'title' => "Çiğköfte Salonu Sahibi",
-        'description' => "Çiğköfte satışına yönelik bir işletmenin sahibi olan kişidir. Lezzetli çiğköfteleri hazırlayarak ve sunarak, müşterilerine hijyenik bir ortamda hizmet vermeyi hedefler.",
-        'req' => null
-    ],
-    [
-        'title' => "Garson",
-        'description' => "Restoran veya kafe gibi mekanlarda müşterilere hizmet veren, sipariş alıp servis yapan ve misafirlerin memnuniyetini sağlamaya yönelik çalışan kişidir. Gıda güvenliği ve hijyen kurallarına uygun olarak hizmet verir.",
-        'req' => null
-    ],
-    [
-        'title' => "İtalyan Restoranı Sahibi",
-        'description' => "İtalyan mutfağına yönelik lezzetler sunan bir restoranın sahibi olan kişidir. Müşterilere kaliteli yemek deneyimi sağlamak için geleneksel İtalyan tariflerini kullanarak menü oluşturur ve işletmenin yönetimini üstlenir.",
-        'req' => null
-    ],
-    [
-        'title' => "AVM Sahibi",
-        'description' => "Alışveriş merkezi işleten ve yöneten kişidir. Farklı mağaza ve restoranların yer aldığı bir alan sunarak, ziyaretçilere çeşitli alışveriş ve eğlence imkanları sağlar. AVM'nin genel yönetimi, pazarlaması ve müşteri memnuniyetinin sağlanmasında önemli rol oynar.",
-        'req' => null
-    ],
-    [
-        'title' => "Eczacı",
-        'description' => "İlaçların dağıtımını yapan, hastaların sağlık ihtiyaçlarını karşılamak üzere Bio-organ ve Recoil gibi ilaçları satan sağlık profesyonelidir.",
-        'req' => null
-    ],
-    [
-        'title' => "Simitçi",
-        'description' => "Geleneksel simit ve diğer unlu mamulleri üreterek satan esnaftır. Müşterilerine taze simitler sunarak, sokak lezzetlerinin keyfini çıkarmalarına yardımcı olur.",
-        'req' => null
-    ],
-    [
-        'title' => "Tavuk Pilavcı",
-        'description' => "Taze pişirilmiş tavuk ve pilav sunarak, misafirlere lezzetli ve doyurucu bir yemek deneyimi sağlayan kişidir. Müşterilerin ihtiyaçlarına göre hızlı ve kaliteli hizmet verir.",
-        'req' => null
-    ],
-    [
-        'title' => "Kebapçı",
-        'description' => "Çeşitli kebap çeşitleri hazırlayıp sunan bir esnaftır. Müşterilerine lezzetli et yemekleri ve mezeler sunarak, geleneksel Türk mutfağının tadını çıkarma fırsatı verir.",
-        'req' => null
-    ],
-    [
-        'title' => "Kafe Sahibi",
-        'description' => "Müşterilere kahve, çay, atıştırmalıklar ve çeşitli içecekler sunan bir kafenin sahibidir. Sıcak ve samimi bir ortam yaratarak, sosyal bir alan sağlamayı amaçlar.",
-        'req' => null
-    ],
-    [
-        'title' => "Hamburgerci",
-        'description' => "Çeşitli hamburger çeşitleri hazırlayıp satan esnaftır. Taze malzemeler kullanarak, müşterilerine lezzetli ve doyurucu burgerler sunar.",
-        'req' => null
-    ],
-    [
-        'title' => "Dönerci",
-        'description' => "Döner kebap hazırlayıp satan esnaftır. Müşterilerine lezzetli dönerler ve yan ürünler sunarak, hızlı ve doyurucu bir yemek deneyimi sağlar.",
-        'req' => null
-    ],
-    [
-        'title' => "Dondurmacı",
-        'description' => "Farklı dondurma çeşitleri sunarak serinletici lezzetler sağlayan esnaftır. Yaz aylarında taze ve doğal dondurmalarla müşteri memnuniyetini hedefler.",
-        'req' => null
-    ],
-    [
-        'title' => "Çorba & Paça Salonu Sahibi",
-        'description' => "Lezzetli çorba ve paça yemekleri sunan bir işletmenin sahibidir. Müşterilere sıcak ve besleyici yemekler sunarak, geleneksel tatları yaşatmayı amaçlar.",
-        'req' => null
-    ],
-    [
-        'title' => "Büfe Sahibi",
-        'description' => "Atıştırmalıklar, içecekler ve çeşitli günlük ihtiyaç maddeleri satan küçük bir işletmenin sahibidir. Hızlı hizmet sunarak, müşterilerin temel ihtiyaçlarını karşılamayı hedefler.",
-        'req' => null
-    ],
-    [
-        'title' => "Dövüş Sanatları Öğretmeni",
-        'description' => "Öğrencilere dövüş sanatları tekniklerini, savunma yöntemlerini ve disiplinini öğretmekle görevli olan kişidir. Fiziksel ve zihinsel gelişimi destekleyerek, öğrencilerin kendine güven kazanmalarına yardımcı olur.",
-        'req' => null
-    ],
-    [
-        'title' => "Mekanik",
-        'description' => "Araç mekanik sistemlerin bakım, onarım ve işletilmesi ile ilgilenen meslek grubudur. Mekanik bilgi ve becerilerini kullanarak, çeşitli takılabilir parçaları sunar.",
-        'req' => null,
-        'vip' => 2
-    ],
-    [
-        'title' => "Mühendis",
-        'description' => "Mühendisler, para basma makineleri, saksı gibi çeşitli ürünlerin tasarım ve üretim süreçlerinde çalışarak teknik çözümler geliştirirler. Farklı alanlarda sahip oldukları problem çözme yetenekleri ile yenilikçi projeler üretirler.",
-        'req' => "İlk önce Yapı market sahibi ve Poligon Sahibi Mesleğinde Deneyim Kazanmanız gerekiyor.",
-        'vip' => 2
-    ],
-    [
-        'title' => "Taksici",
-        'description' => "Müşterileri belirli bir noktadan alarak istedikleri yere ulaştıran, taksi hizmeti sunan kişidir. Güvenli ve konforlu bir ulaşım sağlamak için trafiği ve güzergahları iyi bilmelidir.",
-        'req' => null
-    ],
-    [
-        'title' => "Dolmuş Şoförü",
-        'description' => "Belirli bir rota üzerinde yolcu taşımakla görevli olan şofördür. Müşterilere uygun fiyatlarla ulaşım imkanı sunarak, toplu taşıma hizmetine katkı sağlar.",
-        'req' => null
-    ],
-    [
-        'title' => "Kargocu",
-        'description' => "Kargoculuk, yapı market sahipleri, poligon sahipleri, ithalatçılar ve eczacılar gibi çeşitli yerlerden gelen paketlerin alıcılara ulaştırılmasını sağlamakla görevli olan bir meslektir. Kargo teslimatı ve takip işlemlerine odaklanarak, müşteri memnuniyetini ön planda tutar.",
-        'req' => null
-    ],
-    [
-        'title' => "Maden İşçisi",
-        'description' => "Maden ocaklarında çalışarak, madenlerin çıkarılması, işlenmesi ve taşınması işlemlerini gerçekleştiren kişidir. İş güvenliği kurallarına uyarak, zorlu şartlar altında çalışır.",
-        'req' => null
-    ],
-    [
-        'title' => "Kereste İşçisi",
-        'description' => "Ağaçları kesip işleyerek kereste haline getiren kişidir. Kereste üretiminde çeşitli makineleri kullanarak, kaliteli ahşap ürünler elde eder.",
-        'req' => null
-    ],
-    [
-        'title' => "Doğal Kaynaklar Mühendisi",
-        'description' => "Doğal kaynakların verimli ve sürdürülebilir kullanımını sağlamak amacıyla, maden ocaklarında ve ormanlık alanlarda çalışarak modern alet ve ekipmanlar kullanır. Madenci veya keresteci olarak, iş süreçlerini optimize eder ve çevresel etkileri minimize eder.",
-        'req' => "İlk önce Maden İşçisi ve Kereste İşçisi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Doğal Kaynaklar Yüksek Mühendisi",
-        'description' => "Doğal kaynakların verimli ve sürdürülebilir kullanımını sağlamak amacıyla, maden ocaklarında ve ormanlık alanlarda çalışarak modern alet ve ekipmanlar kullanır. Madenci veya keresteci olarak, iş süreçlerini optimize eder ve çevresel etkileri minimize eder.",
-        'req' => "İlk önce Maden İşçisi ve Kereste İşçisi Mesleğinde Deneyim Kazanmanız gerekiyor.",
-        'vip' => 2
-    ],
-    [
-        'title' => "Ganyan Bayi Sahibi",
-        'description' => "At yarışları üzerine bahis alarak gelir elde eden bir işletme sahibidir. Yarışların takibini yapar ve müşterilere bahis olanakları sunar.",
-        'req' => null
-    ],
-    [
-        'title' => "Banka Sorumlusu",
-        'description' => "Moon Bank'ta çalışan ve bankanın kasasını koruyarak finansal işlemleri yöneten bir uzmandır. Müşteri taleplerine yanıt verir, hesapları yönetir ve güvenliği sağlamak için gerekli önlemleri alır.",
-        'req' => null
-    ],
-    [
-        'title' => "İthalatçı",
-        'description' => "Yurtdışından ürün veya hizmetlerin ithalatını yapan bir iş insanıdır. Poligon sahibine göre ürün yelpazesi daha fazladır.",
-        'req' => "İlk önce Poligon Sahibi Mesleğinde Deneyim Kazanmanız gerekiyor.",
-        'vip' => 2
-    ],
-    [
-        'title' => "Müzisyen",
-        'description' => "Müzik besteleme, icra etme ve sahne performanslarıyla müzik dünyasında yer alan bir sanatçıdır. Farklı müzik tarzlarında eserler üretir ve dinleyicilere müzik deneyimi sunar.",
-        'req' => null
-    ],
-    [
-        'title' => "Dilenci",
-        'description' => "Geçim sağlamak amacıyla toplumda çeşitli yerlerde para veya yiyecek talep eden kişidir. Genellikle sokaklarda veya kalabalık yerlerde bulunurlar.",
-        'req' => null
-    ],
-    [
-        'title' => "Kimsesiz Çocuk",
-        'description' => "Ailesi olmayan ve bir bakım kurumunda veya sokakta yaşayan çocuklardır. Genellikle sevgi ve destek arayışında olurlar.",
-        'req' => null
-    ],
-    [
-        'title' => "DJ",
-        'description' => "Müzik seti veya bilgisayar kullanarak müzikleri miksleyen ve partilerde veya etkinliklerde performans sergileyen kişidir. Farklı müzik türlerini harmanlayarak dinleyicilere eğlenceli bir deneyim sunar.",
-        'req' => null
-    ],
-    [
-        'title' => "Din Adamı",
-        'description' => "Bir dinin inançlarını, öğretilerini ve ritüellerini yürüten ve bu konuda toplumu bilgilendiren kişidir. Genellikle ibadetlerin yönetimi ve dini konularda rehberlik yapar.",
-        'req' => null
-    ],
-    [
-        'title' => "Kaykaycı",
-        'description' => "Kaykay kullanarak çeşitli hareketler ve stiller geliştiren, bu sporla ilgilenen kişidir. Genellikle sokaklarda, park veya özel kaykay alanlarında kayar.",
-        'req' => null
-    ],
-    [
-        'title' => "Oto Kurtarıcı",
-        'description' => "Araçların yolda kalması durumunda yardım sağlayarak onları güvenli bir yere taşıyan profesyoneldir. Acil durumlarda 24 saat hizmet vererek sürücülere destek olur.",
-        'req' => null,
-        'close' => true
-    ],
-    [
-        'title' => "Sokak Köpeği",
-        'description' => "Sokaklarda yaşayan, genellikle insanlardan bağımsız olarak hayatta kalmaya çalışan köpeklerdir. İnsanlara karşı genellikle dostça bir tutum sergileyebilirler.",
-        'req' => null
-    ],
-    [
-        'title' => "Sokak Kedisi",
-        'description' => "Sokaklarda yaşayan, beslenme ve barınma ihtiyaçlarını genellikle kendi başına karşılayan kedilerdir. İnsanlarla sınırlı bir ilişki kurarak hayatlarını sürdürürler.",
-        'req' => null
-    ],
-    [
-        'title' => "Belıkçı",
-        'description' => "Küçük bir gölde, balık tutarak geçimini sağlar.",
-        'req' => null
-    ],
-    [
-        'title' => "Piyangocu",
-        'description' => "Piyango biletleri satan ve kazananları belirleyen kişidir. Müşterilere bilet satışı yaparak, şans oyunları ile kazanç sağlamaya çalışır.",
-        'req' => null
-    ],
-    [
-        'title' => "Kurye",
-        'description' => "Yapı market sahipleri, poligon sahipleri, ithalatçılar ve eczacılar gibi çeşitli yerlerden gelen paketlerin alıcılara ulaştırılmasını sağlamakla görevli olan bir meslektir. Kargo teslimatı ve takip işlemlerine odaklanarak, müşteri memnuniyetini ön planda tutar. Paketlerin veya belgelerin belirli bir adrese hızlı bir şekilde ulaştırılmasını sağlar. Genellikle zaman baskısı altında çalışır ve müşteri memnuniyetine odaklanır.",
-        'req' => null
-    ],
-    [
-        'title' => "MoonTV Çalışanı",
-        'description' => "MoonTV kanalı için içerik üreten veya yayın sürecine katkı sağlayan kişidir. Programların düzenlenmesi, çekimlerin yapılması ve yayın öncesi hazırlıklarda yer alır.",
-        'req' => null,
-        'vip' => 1
-    ],
-    [
-        'title' => "İmam",
-        'description' => "Toplumda dini liderlik yapan, vaazlar vererek insanlara rehberlik eden, inanç ve ahlak konularında eğitim veren bir kişidir. İmam, camide veya topluluk içinde dini görevlerini yerine getirirken, insanları bir araya getirir ve toplumsal dayanışmayı güçlendirir.",
-        'req' => null
-    ],
-    [
-        'title' => "Avukat",
-        'description' => "Hukuk alanında uzmanlaşmış, müvekkillerine yasal danışmanlık ve savunma hizmeti sunan kişidir. Mahkeme süreçlerinde müvekkillerini temsil eder.",
-        'req' => null
-    ],
-    [
-        'title' => "Tekel Bayi Sahibi",
-        'description' => "Alkol ve diğer ürünlerin satışını yapan bir dükkânın sahibi ve işletmecisidir. Müşterilerine çeşitli ürünler sunarak gelir elde eder.",
-        'req' => null
-    ],
-    [
-        'title' => "Parkurcu",
-        'description' => "Farklı zeminlerde ve engeller arasında akrobatik hareketler yaparak hızlı bir şekilde ilerleyen kişidir. Fiziksel yetenekleri ve çevikliği ile dikkat çeker.",
-        'req' => null
-    ],
-    [
-        'title' => "Grafitici",
-        'description' => "Grafiti sanatıyla sokaklara renk katan ve mesajlar ileten bir sanatçıdır. Duvarlar veya çeşitli yüzeyler üzerinde yaratıcılığını sergiler.",
-        'req' => null
-    ],
-    [
-        'title' => "Sokak Sanatçısı",
-        'description' => "Sokaklarda performans sergileyerek ya da eserler yaratarak insanlara eğlence sunan sanatçıdır. Genellikle bağışlarla geçimlerini sağlar.",
-        'req' => null
-    ],
-    [
-        'title' => "Motel Sahibi",
-        'description' => "Misafirlerine konaklama hizmeti sunan küçük otel veya motelin işletmecisidir. Konukların rahat bir konaklama deneyimi yaşamasını sağlamak için çalışır.",
-        'req' => null
-    ],
-    [
-        'title' => "Palyaço",
-        'description' => "Eğlence ve gösteri amaçlı kostüm giyen, çocuklara ve yetişkinlere neşe katmak için mizah ve yetenek sergileyen kişidir. Partilerde ve etkinliklerde performans gösterir.",
-        'req' => null
-    ],
-    [
-        'title' => "Piyanist",
-        'description' => "Piyano çalarak müzik yapan, konserler veren veya çeşitli etkinliklerde performans sergileyen müzisyendir. Melodiler ve armonilerle dinleyicilere duygusal bir deneyim sunar.",
-        'req' => null
-    ],
-    [
-        'title' => "Deve",
-        'description' => "Sahibinden kaçan bu deve şehirde gezer tıpki sokak köpeği, sokak kedisi gibi.",
-        'req' => null
-    ],
-    [
-        'title' => "Ağır Yaşamlar Vakfı Başkanı",
-        'description' => "Aşırı kilolu ve tembel bir yaşam tarzına sahip olan, toplumdaki sorunlara duyarsız kalabilen kişidir. Vakfın başkanı olarak, iyi niyetle hareket etse de, genellikle hareketsiz bir yaşam sürmekte ve bu nedenle kendisi için sağlıklı çözümler üretmekte zorlanmaktadır.",
-        'req' => null
-    ],
-    [
-        'title' => "Ramazan Davulcusu",
-        'description' => "Ramazan ayı boyunca sahur vaktinde insanları uyandırmak için davul çalan kişidir. Geleneksel bir rol üstlenerek topluma hizmet eder.",
-        'req' => null
-    ],
-    [
-        'title' => "Sihirbaz",
-        'description' => "İlginç ve eğlenceli gösterilerle izleyicileri şaşırtan, illüzyon teknikleri kullanarak performans sergileyen sanatçıdır. Eğlence dünyasında dikkat çeker.",
-        'req' => null
-    ],
-]
-?>
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
         <div class="content pt-3">
@@ -297,7 +7,7 @@ $jobs = [
             <div>
                 <h2 class="text-success" id="meslek">Meslekler</h2>
                 <div class="accordion" id="accordionJobs">
-                    <?php foreach ($jobs as $index => $job): ?>
+                    <?php foreach ($esnafJobs as $index => $job): ?>
                         <?php
                         $isVip = (isset($job['vip']) && $job['vip'] === 1);
                         $isVipPlus = (isset($job['vip']) && $job['vip'] === 2);
@@ -364,7 +74,7 @@ $jobs = [
                 <table class="table">
                     <thead>
                     <tr>
-                        <th scope="col">Esnaf Meslekleri</th>
+                        <th scope="col"></th>
                         <th scope="col"></th>
                     </tr>
                     </thead>
@@ -427,43 +137,62 @@ $jobs = [
                     karşılayabilecek
                     ürünler satılmaktadır. İşte yapı markette bulabileceğiniz ürünlerin listesi ve kısa
                     açıklamaları:</p>
-                <ul>
-                    <li><strong>Tool Gun</strong>, <strong>Physic Gun</strong>, <strong>Gravity Gun</strong>:
-                        Oyunun
-                        temel araçlarıdır ve inşaat, nesne manipülasyonu gibi işlevler için kullanılır.
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(0) ?>">Tool Gun, Physic Gun, Gravity Gun</strong>:
+                        <span>Oyunun temel araçlarıdır ve inşaat, nesne manipülasyonu gibi işlevler için kullanılır.</span>
                     </li>
-                    <li><strong>Fotoğraf Makinesi</strong>: Oyun arayüzlerini görünmez hale getirerek, gerçek
-                        bir
-                        kamera açısıyla fotoğraf çekme imkanı sağlar.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(1) ?>">Fotoğraf Makinesi</strong>:
+                        <span>Oyun arayüzlerini görünmez hale getirerek, gerçek bir kamera açısıyla fotoğraf çekme imkanı sağlar.</span>
                     </li>
-                    <li><strong>Kapı Alarmı</strong>: Evinizin kapısına yetkisiz giriş olduğunda alarm devreye
-                        girer.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(2) ?>">Kapı Alarmı</strong>:
+                        <span>Evinizin kapısına yetkisiz giriş olduğunda alarm devreye girer.</span>
                     </li>
-                    <li><strong>Kapı Patlatıcı</strong>: Kilitli kapıları patlatarak açmanızı sağlar.</li>
-                    <li><strong>Maymuncuk</strong>: Kilitli araç ve ev kapılarını zorla açmak için kullanılır.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(3) ?>">Kapı Patlatıcı</strong>:
+                        <span>Kilitli kapıları patlatarak açmanızı sağlar.</span>
                     </li>
-                    <li><strong>Portatif Keypad Kırıcı</strong>: Tool Gun ile yapılan keypad’leri açar.</li>
-                    <li><strong>İlk Yardım Kiti</strong>: Sağlık değerlerinizi yükseltir, sağlık yenilemek için
-                        kullanılır.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(4) ?>">Maymuncuk</strong>:
+                        <span>Kilitli araç ve ev kapılarını zorla açmak için kullanılır.</span>
                     </li>
-                    <li><strong>Araç Alarmı</strong>: Aracınıza takıldığında, çalınma girişimlerinde alarm
-                        devreye
-                        girer.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(5) ?>">Portatif Keypad Kırıcı</strong>:
+                        <span>Tool Gun ile yapılan keypad’leri açar.</span>
                     </li>
-                    <li><strong>Araç Takip Cihazı</strong>: Aracınızı haritada görmenizi sağlar, araç takibi
-                        için
-                        kullanılır.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(0) ?>">İlk Yardım Kiti</strong>:
+                        <span>Sağlık değerlerinizi yükseltir, sağlık yenilemek için kullanılır.</span>
                     </li>
-                    <li><strong>Ayakkabı (Seviye 1-5)</strong>: Seviyesine göre daha hızlı hareket etmenizi
-                        sağlar.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(1) ?>">Araç Alarmı</strong>:
+                        <span>Aracınıza takıldığında, çalınma girişimlerinde alarm devreye girer.</span>
                     </li>
-                    <li><strong>Kask (Seviye 1-5)</strong>: Kafadan alınan hasarı azaltır.</li>
-                    <li><strong>Kulaklık (Seviye 1-5)</strong>: Daha yükseğe zıplamanızı sağlar.</li>
-                    <li><strong>Çelik Yelek (Seviye 1-5)</strong>: Vücudunuza gelen hasarı seviyesine bağlı
-                        olarak
-                        azaltır.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(2) ?>">Araç Takip Cihazı</strong>:
+                        <span>Aracınızı haritada görmenizi sağlar, araç takibi için kullanılır.</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(3) ?>">Ayakkabı (Seviye 1-5)</strong>:
+                        <span>Seviyesine göre daha hızlı hareket etmenizi sağlar.</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(4) ?>">Kask (Seviye 1-5)</strong>:
+                        <span>Kafadan alınan hasarı azaltır.</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(5) ?>">Kulaklık (Seviye 1-5)</strong>:
+                        <span>Daha yükseğe zıplamanızı sağlar.</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(0) ?>">Çelik Yelek (Seviye 1-5)</strong>:
+                        <span>Vücudunuza gelen hasarı seviyesine bağlı olarak azaltır.</span>
                     </li>
                 </ul>
+
+
                 <br>
                 <h3 id="ticarivehizmetsektoru-eczaci">Eczacı Rehberi</h3>
                 <p>Sıradaki rehberimiz, DarkRP ve MoonGaming™ sunucularında hayati öneme sahip bir meslek olan
@@ -474,23 +203,21 @@ $jobs = [
                     sürekli etkileşim halinde olduğu bir meslek olduğunu gösterir.</p>
 
                 <h4 id="ticarivehizmetsektoru-eczaci-urunler">Eczanede Satılan Ürünler</h4>
-                <ul>
-                    <li><strong>Bio-Organ (Seviye 1-5)</strong>: Maksimum HP değerinin artmasını sağlar.
-                        Örneğin,
-                        bir adet Bio-Organ 3 ve Bio-Organ 5 tüketirseniz, maksimum sağlık değeriniz 500'e
-                        ulaşabilir.
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(1) ?>">Bio-Organ (Seviye 1-5)</strong>:
+                        <span>Maksimum HP değerinin artmasını sağlar. Örneğin, bir adet Bio-Organ 3 ve Bio-Organ 5 tüketirseniz, maksimum sağlık değeriniz 500'e ulaşabilir.</span>
                     </li>
-                    <li><strong>Polis Bio-Organ (Seviye 1-5)</strong>: Normal Bio-Organ ile aynı işlevi görür,
-                        ancak
-                        sadece polisler tarafından kullanılabilir. Maksimum HP artışı sağlar. Örneğin, bir adet
-                        Bio-Organ 3 ve Bio-Organ 5 kullanan bir polis, maksimum sağlık değerini 500’e
-                        çıkarabilir.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(2) ?>">Polis Bio-Organ (Seviye 1-5)</strong>:
+                        <span>Normal Bio-Organ ile aynı işlevi görür ancak sadece polisler tarafından kullanılabilir. Maksimum HP artışı sağlar. Örneğin, bir adet Bio-Organ 3 ve Bio-Organ 5 kullanan bir polis, maksimum sağlık değerini 500’e çıkarabilir.</span>
                     </li>
-                    <li><strong>İlaç (Seviye 1-5)</strong>: Mermilerin sekmesini (recoil) azaltır, ateşli
-                        silahlarla
-                        yapılan atışlarda daha isabetli olmanızı sağlar.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(3) ?>">İlaç (Seviye 1-5)</strong>:
+                        <span>Mermilerin sekmesini (recoil) azaltır, ateşli silahlarla yapılan atışlarda daha isabetli olmanızı sağlar.</span>
                     </li>
                 </ul>
+
                 <br>
                 <h3 id="ticarivehizmetsektoru-poligon">Poligon Rehberi</h3>
                 <p>Poligon mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların silah kullanma becerilerini
@@ -505,16 +232,33 @@ $jobs = [
                     bulunabilirsiniz.</p>
 
                 <h4 id="ticarivehizmetsektoru-poligon-urunler">Poligon Ürünleri</h4>
-                <ul>
-                    <li><strong>Tabanca (Seviye 1-5)</strong>: Her seviyede farklı özelliklere sahip tabancalar.
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(0) ?>">Tabanca (Seviye 1-5)</strong>:
+                        <span>Her seviyede farklı özelliklere sahip tabancalar.</span>
                     </li>
-                    <li><strong>Ateşli Silahlar (Seviye 1-5)</strong>: Her seviyede farklı ateşli silahlar.</li>
-                    <li><strong>Makinalı Tüfekler (Seviye 1-5)</strong>: Her seviyede farklı makineli tüfekler.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(1) ?>">Ateşli Silahlar (Seviye 1-5)</strong>:
+                        <span>Her seviyede farklı ateşli silahlar.</span>
                     </li>
-                    <li><strong>Muhimmat Kutusu</strong>: Silahınıza şarjör sağlamaktadır.</li>
-                    <li><strong>Farklı Seviye Mermiler</strong>: Merminin gücünü artırmaktadır.</li>
-                    <li><strong>Çelik Yelek (2. ve 3. Kalite)</strong>: Zırh sağlamaktadır.</li>
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(2) ?>">Makinalı Tüfekler (Seviye 1-5)</strong>:
+                        <span>Her seviyede farklı makineli tüfekler.</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(3) ?>">Muhimmat Kutusu</strong>:
+                        <span>Silahınıza şarjör sağlamaktadır.</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(4) ?>">Farklı Seviye Mermiler</strong>:
+                        <span>Merminin gücünü artırmaktadır.</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(5) ?>">Çelik Yelek (2. ve 3. Kalite)</strong>:
+                        <span>Zırh sağlamaktadır.</span>
+                    </li>
                 </ul>
+
                 <br>
                 <h3 id="ticarivehizmetsektoru-ithalatci">İthalatçı Rehberi</h3>
                 <p>İthalatçı mesleği, DarkRP ve MoonGaming™ sunucularında oyunculara geniş bir silah yelpazesi
@@ -526,18 +270,33 @@ $jobs = [
                     becerileri kazanmalarına katkıda bulunabilirsiniz.</p>
 
                 <h4 id="ticarivehizmetsektoru-ithalatci-urunler">İthalatçı Ürünleri</h4>
-                <ul>
-                    <li><strong>Tabanca (Seviye 1-5)</strong>: Her seviyede farklı özelliklere sahip tabancalar.
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(0) ?>">Tabanca (Seviye 1-5)</strong>:
+                        <span>Her seviyede farklı özelliklere sahip tabancalar.</span>
                     </li>
-                    <li><strong>Ateşli Silahlar (Seviye 1-5)</strong>: Farklı seviyelerde çeşitli ateşli
-                        silahlar.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(1) ?>">Ateşli Silahlar (Seviye 1-5)</strong>:
+                        <span>Farklı seviyelerde çeşitli ateşli silahlar.</span>
                     </li>
-                    <li><strong>Ağır Silahlar (Seviye 1-5)</strong>: Ağır makineli tüfekler gibi güçlü silahlar.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(2) ?>">Ağır Silahlar (Seviye 1-5)</strong>:
+                        <span>Ağır makineli tüfekler gibi güçlü silahlar.</span>
                     </li>
-                    <li><strong>Muhimmat Kutusu</strong>: Silahınıza şarjör sağlamaktadır.</li>
-                    <li><strong>Farklı Seviye Mermiler</strong>: Merminin gücünü artırmaktadır.</li>
-                    <li><strong>Çelik Yelek (1. , 2. ve 3. Kalite)</strong>: Zırh sağlamaktadır.</li>
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(3) ?>">Muhimmat Kutusu</strong>:
+                        <span>Silahınıza şarjör sağlamaktadır.</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(4) ?>">Farklı Seviye Mermiler</strong>:
+                        <span>Merminin gücünü artırmaktadır.</span>
+                    </li>
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(5) ?>">Çelik Yelek (1. , 2. ve 3. Kalite)</strong>:
+                        <span>Zırh sağlamaktadır.</span>
+                    </li>
                 </ul>
+
                 <br>
                 <h3 id="ticarivehizmetsektoru-muhendis">Mühendis Rehberi</h3>
                 <p>Mühendis mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların Bitki üretme ve para basma
@@ -548,19 +307,25 @@ $jobs = [
                     bulunabilirsiniz..</p>
 
                 <h4 id="ticarivehizmetsektoru-muhendis-urunler">Mühendis Ürünleri</h4>
-                <ul>
-                    <li><strong>Mühendis Kiti</strong>: Bitki Üretimine ve ya Para basma makinesini yükseltmenizi
-                        sağlar. Sadece Mühendisin silah itemlerinde bulunur.
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(5) ?>">Mühendis Kiti</strong>:
+                        <span>Bitki Üretimine ve ya Para basma makinesini yükseltmenizi sağlar. Sadece Mühendisin silah itemlerinde bulunur.</span>
                     </li>
-                    <li><strong>Fan Eklentisi</strong>: Para basma makinesinin sıcaklığını kontrol altına almak için
-                        kullanılır
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(4) ?>">Fan Eklentisi</strong>:
+                        <span>Para basma makinesinin sıcaklığını kontrol altına almak için kullanılır.</span>
                     </li>
-                    <li><strong>Para Yazılımı</strong>: Para basma makinesinin para miktarı artırmak için kullanılır.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(3) ?>">Para Yazılımı</strong>:
+                        <span>Para basma makinesinin para miktarını artırmak için kullanılır.</span>
                     </li>
-                    <li><strong>Zırh Paketi</strong>: Para basma makinesinin yanlışlıkla isabet eden kurşunlarda
-                        canını korumayı sağlar. Fakat yine canı azalır.
+                    <li class="list-group-item">
+                        <strong class="<?= randomBSColor(2) ?>">Zırh Paketi</strong>:
+                        <span>Para basma makinesinin yanlışlıkla isabet eden kurşunlarda canını korumayı sağlar. Fakat yine canı azalır.</span>
                     </li>
                 </ul>
+
                 <br>
                 <h3 id="ticarivehizmetsektoru-imam">İmam Rehberi</h3>
                 <p>İmam mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların XP Kazanmasını sağlarlar.
@@ -605,6 +370,21 @@ $jobs = [
                         satarak gelir elde edebilirsiniz.</p>
                 </div>
             </div>
+
+        </div>
+        <hr>
+        <blockquote>
+            DarkRP Kariyer Esnaf ve Siviller için bilmeniz gerekenler serimiz burada son bulmaktadır. Daha fazlası için
+            diğer
+            rehberlerimize de göz atmayı unutmayın.
+        </blockquote>
+
+        <div class="content-ref-box">
+            <p>
+                <a id="sssBox" href="<?= $baseUrl; ?>/darkrp-kariyer/illegal">
+                    <i class="fa-solid fa-user-tie"></i> Yasadışı Organizasyonlar
+                </a>
+            </p>
         </div>
     </div>
 </main>

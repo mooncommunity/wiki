@@ -1,209 +1,23 @@
 <?php
-$jobs = [
-    [
-        'title' => "Keko",
-        'description' => "Şehirde yeni olan ve yüksek hedefleri bulunan kişilerin başlangıç noktasıdır. Arabalar, yatlar ve villalar hayal değil, birer hedeftir. Unutma ki, tüm suçlar ufak bir şekilde başlar.",
-        'req' => null
-    ],
-    [
-        'title' => "Çete Üyesi",
-        'description' => "Şehirde biraz zaman geçirip temelleri kavradıktan sonra, tebrikler! Artık ufak çetelerle gizli yerlerde kirli dolar kazanmanın tam zamanı.",
-        'req' => "İlk önce Keko Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Çete Lideri",
-        'description' => "Artık arka sokakları tamamen tanıdın. Eskiden senin gibi tecrübesiz gençleri toplayarak bir çete kurmanın tam zamanı. Ne kadar toplu gezmek güvenli hissettirse de, diğer çetelerin ve polislerin dikkatini çekmemeye özen göster.",
-        'req' => "İlk önce Çete Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Mülteci",
-        'description' => "Savaş, zulüm veya diğer zorlayıcı koşullar nedeniyle yaşadıkları yerden kaçan ve güvenli bir yaşam arayan bireylerdir. Yeni bir topluma uyum sağlama çabası içindedirler ve destek arayışındadırlar. Ayrıca kirli dolar üreterek hayatta kalmaya çalışırlar.",
-        'req' => null
-    ],
-    [
-        'title' => "Mülteci Haklarını Koruma Derneği Başkanı",
-        'description' => "Mültecilerin haklarını savunmak ve ihtiyaç duydukları desteği sağlamakla görevli olan, derneğin faaliyetlerini yöneten liderdir. Mültecilerin topluma entegrasyonu ve haklarının korunması için çeşitli projeler geliştirmektedir.",
-        'req' => "İlk önce Mülteci mesleğinde deneyim kazanmanız gerekiyor."
-    ],
+$bitkiCount = 0;
+$dolarCount = 0;
+$ithalCount = 0;
+foreach ($darkrpPaidJobs as $paidjob) {
+    if (!empty($paidjob["bitki"])) {
+        $bitkiCount++;
+    }
+    if (!empty($paidjob["dolar"])) {
+        $dolarCount++;
+    }
+}
+$paidjob_dolarbitki_difference = abs($bitkiCount - $dolarCount);
 
-    [
-        'title' => "Mafya Üyesi",
-        'description' => "Sonunda biraz yaşlandın ve büyüklerin ligine adım attın. Artık basit suçlar ilgini çekmiyor; yeni açılan saksılardan güzel paralar kazanmaya başlayabilirsin.",
-        'req' => "İlk önce Çete Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Mafya Babası",
-        'description' => "Adı bile yeterli. Bu şehirde mafya babası olmak kolay olmasa da, olduğunda saygınlık beraberinde gelecektir.",
-        'req' => "İlk önce Mafya Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Korsan",
-        'description' => "Artık şehirde değilsin. Burada kendi kuralların var. Gerçek bir korsan ol ve korsan gibi yaşa.",
-        'req' => "İlk önce Mafya Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Kaptan",
-        'description' => "Korsanların başısın. Lüks bir yaşam sürmesen de, kaçak mallarla şehirdekilerden daha rahat bir yaşam sürdüğün kesin.",
-        'req' => "İlk önce Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Eşkiya",
-        'description' => "Dağa çıkmak kolay olmasa da, burada çok sayıda saksılarınla ürettiğin mahsuller sana iyi bir kazanç sağlayacaktır. Sokağa çıkma yasağında devlete karşı gelerek şehri dar edebilirsin.",
-        'req' => "İlk önce Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Elebaşı",
-        'description' => "Köyün ağası sensin. Eşkiyaların emirlerine uymak zorundadır. Eğer biri emrine uymuyorsa, ona ceza vermek senin elindedir. Eşkiyalarınla beraber devlete kafa tutmanın eğlenceli bir yolunu keşfet!",
-        'req' => "İlk önce Eşkiya Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Sefir",
-        'description' => "MoonCity'nin Sefiri, Baron adına şehirdeki illegal eylemleri yürütmekten sorumludur. İllegaller ona saygı göstermek zorundadır.",
-        'req' => null
-    ],
-    [
-        'title' => "Baron",
-        'description' => "Baron illegalin en tepesindeki kişidir. Tüm mafya, çete ve familyalar ona bağlı çalışmaktadır. İllegaller ona saygı göstermek zorundadır.",
-        'req' => null
-    ],
-    [
-        'title' => "Aşiret Üyesi",
-        'description' => "Aşiretinin bir üyesi olarak, geçmişin ve geleneklerinle gurur duyuyorsun. Bitki üretimi ve kirli dolar üretimi yaparak, aşiretinin güçlenmesine katkıda bulunuyorsun. Ancak, bu yolda birçok tehlikeyle karşılaşacağının farkındasın.",
-        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Aşiret Lideri",
-        'description' => "Aşiretin artık senin liderliğinde. Bitki ve kirli dolar üretimi konusundaki deneyimlerinle, diğer aşiretlerle mücadele etmelisin. Sadece gücünü korumakla kalmayacak, aynı zamanda aşiretini de daha ileriye taşımalısın.",
-        'req' => "İlk önce Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "İtalyan Mafya Üyesi",
-        'description' => "İtalyan mafyası, gelenekleri ve aile bağlarıyla tanınır. Artık ailenin bir parçasısın ve yeraltı dünyasının sırlarını öğrenmeye başladın. Bitki üretimi ve kirli dolar üretimi yaparak, bu dünyanın tehlikeleriyle yüzleşmeyi öğreniyorsun.",
-        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "İtalyan Mafya Babası",
-        'description' => "Bir mafya babası olarak, gücünü ve otoriteni kanıtlaman gerekecek. Artık sadece Bitki üretmekle kalmayacak, aynı zamanda kirli dolar üretimiyle de ilgileneceksin. Düşmanların her köşede seni bekliyor; bu yüzden dikkatli olmalısın.",
-        'req' => "İlk önce İtalyan Mafya Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Rus Mafya Üyesi",
-        'description' => "Şehirdeki en güçlü güçlerden birinin parçası olmanın gururunu yaşıyorsun. Rus mafyası, gizlilik ve sadakat üzerine kuruludur. Bitki üretimi yaparak ve kirli dolar basma konusunda yeteneklerinle dikkat çekmeye başladın; artık seni tanıyorlar ve saygı gösteriyorlar.",
-        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Rus Mafya Babası",
-        'description' => "Bu şehirde Rus mafyasının lideri olmak, büyük bir sorumluluktur. Kendi çeteni kurduktan sonra, düşmanlarınla yüzleşmek zorunda kalacaksın. Bitki üretimi ve kirli dolar üretimi konularında söz sahibi olmanın yanı sıra, düşmanlarına karşı güç gösterileri yapmayı da öğrenmelisin.",
-        'req' => "İlk önce Rus Mafya Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Triads Mafya Üyesi",
-        'description' => "Triads, tarih ve geleneklerle dolu bir kültüre sahip. Artık bu kültürün bir parçası olarak Bitki üretimi ve kirli dolar üretimi yapıyorsun. Gizli bağlantılarınla, bu karanlık dünyada kendine bir yer edinmeye çalışıyorsun.",
-        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Triads Mafya Lideri",
-        'description' => "Triads'ın lideri olmak, büyük bir sorumluluktur. Artık sadece kendi çeteni değil, tüm örgütü yönetmek zorundasın. Bitki ve kirli dolar üretimi konusunda uzmanlaşarak, düşmanlarına karşı güçlü bir lider olmalısın. Her kararın, hem seni hem de çetenin kaderini belirleyecek.",
-        'req' => "İlk önce Triads Mafya Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Ninja",
-        'description' => "Gizli görevlerde uzmanlaşmış, yüksek seviyede dövüş becerilerine sahip bir savaşçıdır. Katana ustasıdır ve bu kılıcıyla hızlı ve etkili saldırılar gerçekleştirebilir. Ayrıca, kirli dolar üretimi yaparak kendi kaynaklarını yaratma konusunda da beceriklidir.",
-        'req' => null,
-        'vip' => 2
-    ],
-    [
-        'title' => "Bilim Adamı",
-        'description' => "Bilime adım atmaktan çekinmiyorsun. Sürekli yeni formüller deniyor ve sonunda Bitkinin kalitesini artıracak malzemeyi buluyorsun.",
-        'req' => "İlk önce Yeni Faction lider(Tarikat, Kore, Motorcu Çetesi...) Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Emekli Doktor",
-        'description' => "Artık yaşını almışsın. Yıllardır çalıştığın hastaneden emekli oldun; paran anca borçlarını kapatmaya yetiyor. Bu durumdan müzdaripsin ve karanlık tarafa geçmeyi kendine hak görüyorsun; bu da en büyük hakkındır.",
-        'req' => "İlk önce Belediye İşçisi, ATT ve Doktor Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-
-    [
-        'title' => "Çingene Çetesi Üyesi",
-        'description' => "Çingeneler, şehirde Bitki üretiminde söz sahibidir. Bitkiları yükseltebilme yeteneğine sahip olarak bu karanlık dünyada yer alabilirsin.",
-        'req' => "İlk önce Triads Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Çingene Çetesi Lideri",
-        'description' => "Çingene çetesinin lideri olarak, Bitki üretim sürecini yönetmek ve çeteni en iyi şekilde yönlendirmek zorundasın. Bitkileri yükseltmek, seni diğer çetelerden ayıracak önemli bir özellik olacaktır.",
-        'req' => "İlk önce Çingene Çetesi Üyesi, riads Mafye Lideri ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Kore Mafyası Üyesi",
-        'description' => "Kore mafyası, Triadslardan sonra Asya'dan gelen bir güç olarak, şehirde Bitki üretimi yapmaktadır. Bitkileri yükseltme yeteneğinle, bu güçlü gruba katılmanın avantajlarını kullanabilirsin.",
-        'req' => "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Kore Mafyası Lideri",
-        'description' => "Kore mafyasının lideri olarak, çetenin işlerini yürütmek ve düşmanlarına karşı güçlü bir duruş sergilemek senin sorumluluğundadır. Bitkileri yükseltme yeteneğin, seni diğer çetelerden ayıran en büyük özelliğin olacaktır.",
-        'req' => "İlk önce Kore Mafyası Üyesi, Rus Mafyası Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Haydut Çetesi Üyesi",
-        'description' => "Keke Köyü’nün yeni ferdi olarak, artık KEKE Köyünde Bitki üretimi yapma şansına sahipsin. Bitkileri yükseltme becerinle, şehirdeki diğer çetelerle rekabet edebilirsin.",
-        'req' => "İlk önce İtalyan Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Haydut Çetesi Lideri",
-        'description' => "Haydut çetesinin lideri olarak, çetenin tüm operasyonlarını yönetmek senin sorumluluğundadır. Bitki üretimi ve yükseltme süreçlerini kontrol ederek, düşmanlarına karşı sağlam bir duruş sergilemelisin.",
-        'req' => "İlk önce Haydut Çetesi Üyesi, İtalyan Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Çeçen Mafya Üyesi",
-        'description' => "Çeçen mafyasının bir üyesi olarak, yüksek seviye printerlarla para üretimi yapma fırsatına sahipsin. Çetenin gücünü artırmaya yardımcı olabilirsin.",
-        'req' => "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Çeçen Mafya Lideri",
-        'description' => "Çeçen mafyasının lideri olarak, çetenin en üst düzey operasyonlarını yönetmek zorundasın. Yüksek seviye printerlarla para üretimi yaparak da ailene yardımcı olabilirsin.",
-        'req' => "İlk önce Çeçen Mafya Üyesi, Rus Mafya Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Tarikat Üyesi",
-        'description' => "Dini bir yapı olan tarikatın bir üyesi olarak, yeni para basma makineleriyle para üretimi yapıyorsun. Ek olarak, liderinin önderliğinde ritüel rolleri yaparak tarikatın gizemli dünyasına adım atıyorsun.",
-        'req' => "İlk önce İtalyan Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Tarikat Lideri",
-        'description' => "Tarikatın lideri olarak, tüm üyeleri yönetmek ve yeni para basma makineleriyle para üretimini kontrol etmek senin sorumluluğundadır. Ayrıca, ritüel rolleri organize ederek, tarikatın gücünü artırmalısın.",
-        'req' => "İlk önce Tarikat Üyesi, İtalyan Mafye Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Güney Kartel Üyesi",
-        'description' => "Güney Karteli’nin bir üyesi olarak, şehirde Bitki üretimini üstleniyorsun. Bitkileri yükseltme yeteneğinle, kartelin gücüne katkıda bulunabilirsin.",
-        'req' => "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Güney Kartel Lideri",
-        'description' => "Güney Karteli’nin lideri olarak, tüm operasyonları yönetmek senin sorumluluğundadır. Bitkileri yükseltme ve üretim süreçlerini kontrol ederek, kartelin gücünü artırmalısın.",
-        'req' => "İlk önce Güney Kartel Üyesi, Rus Mafya Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Kuzey Kartel Üyesi",
-        'description' => "Kuzey Karteli’nin bir üyesi olarak, şehirde Bitki üretimini üstleniyorsun. Bitkileri yükseltme becerinle, kartelin etkisini artırmak için mücadele edebilirsin.",
-        'req' => "İlk önce İtalyan Mafye Üyesi ve Triads Mafye Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Kuzey Kartel Lideri",
-        'description' => "Kuzey Karteli’nin lideri olarak, tüm kartelin işlerini yönetmek zorundasın. Bitkileri yükseltme ve üretim süreçlerini kontrol ederek, kartelin en güçlü gücü haline gelmesini sağlamalısın.",
-        'req' => "İlk önce Kuzey Kartel Üyesi, İtalyan Mafye Babası ve Triads Mafye Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Motor Çetesi Üyesi",
-        'description' => "Motor çetesinin bir üyesi olarak, sahip olduğun motorlarla şehirde illegal roller yapma fırsatına sahipsin. Ayrıca, yeni para basma makineleriyle para basma işlemlerine de katılabilirsin.",
-        'req' => "İlk önce İtalyan Mafye Üyesi ve Triads Mafye Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ],
-    [
-        'title' => "Motor Çetesi Lideri",
-        'description' => "Motor çetesinin lideri olarak, çeteni yönetmek ve yeni para basma makineleriyle para üretimini kontrol etmek zorundasın. Aynı zamanda, motorlarınla gerçekleştireceğin illegal eylemleri organize etmelisin.",
-        'req' => "İlk önce Motor Çetesi Üyesi, İtalyan Mafye Babası ve Triads Mafye Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
-    ]
-];
+foreach ($darkrpPaidJobs as $paidjob) {
+    $ithalCount = 0;
+    if (!empty($paidjob["ithal"])) {
+        $ithalCount++;
+    }
+}
 ?>
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
@@ -213,7 +27,7 @@ $jobs = [
         <div>
             <h2 class="text-danger" id="meslek">Meslekler</h2>
             <div class="accordion" id="accordionJobs">
-                <?php foreach ($jobs as $index => $job): ?>
+                <?php foreach ($illegalJobs as $index => $job): ?>
                     <?php $isBaronOrSefir = ($job['title'] === 'Baron' || $job['title'] === 'Sefir');
                     $isVip = (isset($job['vip']) && $job['vip'] === 1);
                     $isVipPlus = (isset($job['vip']) && $job['vip'] === 2); ?>
@@ -496,14 +310,24 @@ $jobs = [
                                 temizletmek, diğeri ise uygun meslek permine sahip kişileri bularak onlara daha
                                 düşük komisyonla temizletmektir.
                             </p>
-                            <h6 style="color: green;" class="mt-3">Meslek Perm</h6>
+                            <h6 style="color: green;" class="mt-3">Meslekler</h6>
                             <ul>
-                                <li>Emlakçı</li>
-                                <li>Gece Kulübü Sahibi</li>
-                                <li>Yatırım Danışmanı</li>
-                                <li>İhaleci</li>
-                                <li>Sigortacı</li>
-                                <li>Güzellik Salonu Sahibi</li>
+                                <?php
+                                foreach ($darkrpPaidJobs as $paidjobName => $paidjobData) {
+                                    if (!empty($paidjobData["dolar"])) {
+                                        ?>
+                                        <li><?= $paidjobName ?></li>
+                                        <?php
+                                    }
+                                }
+                                if ($dolarCount < $bitkiCount) {
+                                    for ($i = 0; $i < $paidjob_dolarbitki_difference; $i++) {
+                                        ?>
+                                        <li style="visibility: hidden;">&nbsp;</li>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </ul>
 
                             <h6 class="text-primary-emphasis">Örnek Satış Diyalogu</h6>
@@ -533,15 +357,27 @@ $jobs = [
                                 düşük komisyonla satmaktır.
 
                             </p>
-                            <h6 style="color: green;" class="mt-3">Meslek Perm</h6>
+                            <h6 style="color: green;" class="mt-3">Meslekler</h6>
                             <ul>
-                                <li>Botanikçi</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <?php
+                                foreach ($darkrpPaidJobs as $paidjobName => $paidjobData) {
+                                    if (!empty($paidjobData["bitki"])) {
+                                        ?>
+                                        <li><?= $paidjobName ?></li>
+                                        <?php
+                                    }
+                                }
+                                if ($bitkiCount < $dolarCount) {
+                                    for ($i = 0; $i < $paidjob_dolarbitki_difference; $i++) {
+                                        ?>
+                                        <li style="visibility: hidden;">&nbsp;</li>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </ul>
+
+
                             <h6 class="text-primary-emphasis">Örnek Satış Diyalogu</h6>
                             <p>+ Papatya tohumu ve bitki satın alıcak var mı?</p>
                             <p>- Tabii, Ercan Botanikçilik Olarak Bitkinizi Satın Alabiliriz.</p>
@@ -562,14 +398,24 @@ $jobs = [
 
         <hr>
         <br>
-
         <div>
             <h3 id="ithalesya" class="mb-4">Korsan ve Eşkiyada ürettiğim İthal eşyaları kime satabilirim?</h3>
             <div class="alert alert-info" role="alert">
                 Meslek perm sahiplerinin kimler olduğunu öğrenmek için Discord sunucumuzda <strong>Meslek
                     Sahipleri</strong> kanalına göz atabilirsiniz.
             </div>
-            <p>İthalatçı meslek perm sahip kişilere satabilirsiniz.</p>
+            <ul>
+                <?php
+                foreach ($darkrpPaidJobs as $paidjobName => $paidjobData) {
+                    if (!empty($paidjobData["ithal"])) {
+                        ?>
+                        <li><?= $paidjobName ?></li>
+                        <?php
+                    }
+                }
+                ?>
+            </ul>
+            <p>Mesleklerine sahip kişilere satabilirsiniz.</p>
         </div>
 
         <hr>
@@ -623,6 +469,6 @@ $jobs = [
                 </a>
             </p>
         </div>
-
+<br>
     </div>
 </main>

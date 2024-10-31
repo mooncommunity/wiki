@@ -1,4 +1,22 @@
 <html><head><meta charset='utf-8'><title>Changelog</title></head><body><h1>Changelog</h1>
+<h2>Commit: 1.0.2-rc7 (Winfried, 2024-10-31)</h2>
+<h3>Değişiklikler:</h3><ul>
+<li style='color: blue;'>Değiştirilmiş: CHANGELOG.MD</li>
+<li style='color: blue;'>Değiştirilmiş: DEGISIKLIKLER.MD</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/darkrp_aileapartmani.jpg</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/darkrp_ciftlik.jpg</li>
+<li style='color: green;'>Eklenmiş: src/assets/image/darkrp_koltuk_alte.gif</li>
+<li style='color: blue;'>Değiştirilmiş: src/assets/js/search.js</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-baslarken.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-baslarken.sss.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.esnaf.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.illegal.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-kariyer.legal.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/darkrp-ttt.sss.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/header.php</li>
+<li style='color: blue;'>Değiştirilmiş: src/layouts/ttt-baslarken.php</li>
+<li style='color: green;'>Eklenmiş: src/layouts/variable.php</li>
+</ul>
 <h2>Commit: 1.0.2-rc6 (Winfried, 2024-10-28)</h2>
 <h3>Değişiklikler:</h3><ul>
 <li style='color: blue;'>Değiştirilmiş: .github/workflows/jekyll-gh-pages.yml</li>
@@ -7,6 +25,7 @@
 <li style='color: blue;'>Değiştirilmiş: CHANGELOG.MD</li>
 <li style='color: blue;'>Değiştirilmiş: DEGISIKLIKLER.MD</li>
 <li style='color: blue;'>Değiştirilmiş: src/assets/css/styles.css</li>
+<li style='color: green;'>Eklenmiş: src/assets/css/styles.css.map</li>
 <li style='color: green;'>Eklenmiş: src/assets/image/darkrp_ada_bilim.jpg</li>
 <li style='color: green;'>Eklenmiş: src/assets/image/darkrp_ada_heybeli.jpg</li>
 <li style='color: green;'>Eklenmiş: src/assets/image/darkrp_ada_sivri.jpg</li>

@@ -3,10 +3,15 @@
 ## Search için anahtar kelime "darkrp yeniyim" || "ttt yeniyim"
 
 - Source Aşaması
+    - DarkRP Başlarken > SSS 'deki VIP ve VIP+ Meslekler DarkRP Meslekler Bağlandı.
+    - Kirli dolar temizleme ve bitki satma DarkRP Paralı mesleklere bağlandı.
+    - TTT C-menü , DarkRP Paralı meslekler, DarkRP Itemler , DarkRP Meslekler, DarkRP-TTT Server IP, Workshop URL, Admin başvuru tek bir PHP değişkenine toplandı.
     - javascript ile URL değiştirmek yerine php tarafında mümkün olduğunca dinamik olarak yapılarak HTML çevriliyor.
     - CSS Okunabilirliği düşük olduğu için SCSS geçildi. Dönüştürme aşamasında CSS çevriliyor.
 
 - DarkRP Başlarken
+    - Ücretli meslekler boostrap list taşındı
+    - Eşyalar bootstrap list taşındı.
     - "Önemli yerler" Sivri ada, Heybeli Ada, Bilim Adası, Şirket #1, Şirket #2 eklendi.
     - Önemli yerler javascript ile ekleniyordu onun yerine source aşamasında artık php'den HTML çevirirken ekliyor.
     - "Eşyalar # XP Eşyaları" da "Kalite Viski" tanımı güncellendi.
@@ -19,6 +24,8 @@
       kaldırmalıdır. Dedektifler, şüpheli oyuncuları tespit edip masumları korumalıdır." olarak güncellendi
 
 - DarkRP Kariyer > Esnaf ve Siviller
+    - yasadışı organizasyonlara giden bir box eklendi sayfa sonuna
+    - meslek eşyaları bootstrap list taşındı.
     - F4 deki tüm meslekler eklendi, vip,vip+ bilinen meslekler artık meslek başlığında gözüküyor.
     - Mühendis eklendi
     - İmam eklendi
@@ -29,6 +36,10 @@
     - "Sohbet ve İletişim" deki "pm" harfleri büyütüldü ("PM")
 
 - Resim eklendi
+    - src/assets/image/darkrp_koltuk_alte.gif
+    - src/assets/image/darkrp_ciftlik.jpg
+    - src/assets/image/darkrp_aileapartmani.jpg
+    - `src/assets/image/darkrp_sevgiapartmanı.jpg` `src/assets/image/darkrp_sevgiapartmani.jpg` olarak değiştirildi.
     - src/assets/image/darkrp_ada_bilim.jpg
     - src/assets/image/darkrp_ada_heybeli.jpg
     - src/assets/image/darkrp_ada_sivri.jpg
@@ -41,6 +52,10 @@
 
 
 - DarkRP Başlarken > SSS
+    - "Susuzluğumu ve açlığımı nasıl gidereceğim?" eklendi.
+    - "Koltuğa nasıl oturacağım?" eklendi.
+    - "Nasıl canımı artırabilirim?" eklendi.
+    - "VIP ve VIP+ Meslekler Neler?" eklendi.
     - "Nasıl 500 can olunur?" eklendi
     - "Nasıl 300 zırh olunur?" eklendi
     - "Polis Özel Harekat Polisi ve Polis Özel Harekat Doktoru nasıl olurum?" başlığı "Polis Özel Harekât Polisi, Polis
@@ -65,6 +80,7 @@
     - Başvuru kısmı güncellendi.
 
 - DarkRP Kariyer > Devlet Çalışanı
+    - Esnaf ve siviller giden bir box eklendi sayfa sonuna
     - F4 deki tüm meslekler eklendi, vip,vip+ bilinen meslekler artık meslek başlığında gözüküyor.
     - Meslekler javascript ile ekleniyordu onun yerine source aşamasında artık php'den HTML çevirirken ekliyor.
     - PÖH Keskin Nişancısı mesleği eklendi

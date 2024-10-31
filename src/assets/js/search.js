@@ -343,10 +343,34 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'sss', 'polis bio-organ', '500', 'bio-organ', 'organ']
         },
         {
-            name: 'DarkRP SSS - Nasıl 300 zırh olunur??',
+            name: 'DarkRP SSS - Nasıl 300 zırh olunur?',
             url: `${baseUrl}/darkrp-baslarken/sss#zirh`,
             content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
             tags: ['drp', 'rp', 'sss', 'polis çelik yelek', '300', '1 kalite çelik yelek', 'çelik yelek']
+        },
+        {
+            name: 'DarkRP SSS - VIP ve VIP+ Meslekler Neler?',
+            url: `${baseUrl}/darkrp-baslarken/sss#vip`,
+            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            tags: ['drp', 'rp', 'sss', 'vip plus', 'sivil polis', 'mit', 'mühendis']
+        },
+        {
+            name: 'DarkRP SSS - Nasıl canımı artırabilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#recete`,
+            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            tags: ['drp', 'rp', 'sss', 'ağrı kesici', 'reçete', 'reçetesiz', 'doktor', 'ilaç']
+        },
+        {
+            name: 'DarkRP SSS - Susuzluğumu ve açlığımı nasıl gidereceğim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#yemek`,
+            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            tags: ['drp', 'rp', 'sss', 'açım', 'yemek', 'açlıktan ölcem', 'su', 'hamburger', 'döner', 'pilav', 'ayran', 'kola', 'fanta']
+        },
+        {
+            name: 'DarkRP SSS - Koltuğa nasıl oturacağım?',
+            url: `${baseUrl}/darkrp-baslarken/sss#alte`,
+            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            tags: ['drp', 'rp', 'sss', 'koltuk', 'alt+e', 'alt', 'otur']
         },
         {
             name: 'DarkRP Kariyer',

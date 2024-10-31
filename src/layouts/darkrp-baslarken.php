@@ -1,157 +1,3 @@
-<?php
-$places = [
-    [
-        "image" => "$baseUrl/assets/image/darkrp_belediye.jpg",
-        "title" => "Belediye Binası",
-        "description" => "Belediye binamızda, belediye başkanının odası, savcı ve hâkim odaları, Yargı Salonu ve MİT karakolu bulunmaktadır. Ayrıca kimlik değiştirme ve başkan adayı olma işlemleri için gerekli NPC'ler de burada mevcuttur."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_pd.jpg",
-        "title" => "Polis Karakolu",
-        "description" => "Polis karakolumuz, güvenliğin sağlandığı ve suçla mücadele için önemli bir merkezdir. Karakol binamızda, alt katta bulunan hapishane ve sorgu odası ile birlikte suçluların tutulduğu ve sorgulandığı alanlar mevcuttur. Bu birimlerde, adaletin sağlanması için gerekli işlemler titizlikle gerçekleştirilmektedir. Ayrıca Teçhizat Dolabını kullanma belgesi buradaki NPC ile alınabilir."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_etut.jpg",
-        "title" => "Etüt Merkezi",
-        "description" => "Geçici olarak öğrenme becerilerinizi artıracak unsurlar tam da burada; bir göz atmalısınız."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_sirket1.jpg",
-        "title" => "Şirket #1",
-        "description" => "Genellikle baron ve sefirin toplu aktiviteler yürüttüğü mekandır."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_nobetcieczane.jpg",
-        "title" => "Nöbetçi Eczane",
-        "description" => "Şehirde eczacı bulunmadığında, 7/24 hizmet veren bio-organ ve seviyeli ilaç temin edebileceğiniz bir noktadır."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_banka.jpg",
-        "title" => "Banka",
-        "description" => "Oyuncuların para işlemlerini gerçekleştirebileceği, para yatırma ve çekme işlemlerini yapabileceği ve deponuza eşyalarınızı koyabileceğiniz mekandır. Dikkatli olun, içeride bankadan para çalanlar olabilir."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_npc_yemek.jpg",
-        "title" => "Restoran",
-        "description" => "Restoran, açlığınızı ve susuzluğunuzu gidermek için gerekli yiyecek ve içecekleri temin edebileceğiniz bir mekandır. Burada NPC'ler aracılığıyla sipariş vererek lezzetli yemeklerin tadını çıkarabilirsiniz."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_plaza.jpg",
-        "title" => "Plaza/Gazino",
-        "description" => "Burada oda kiralayıp Bitki yetiştiriciliği gibi aktiviteler gerçekleştirebilirsiniz. Ayrıca girişte bir gazino bulunmaktadır.",
-        "basealert" => true
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_mekanik.jpg",
-        "title" => "Mekanik",
-        "description" => "Araçların tamir ve modifikasyon işlemlerinin yapıldığı bir mekandır. Burada, oyuncular araçlarını tamir ettirip, çeşitli parçaları değiştirerek performanslarını artırabilirler. Ayrıca, aracın hasar durumunu kontrol etmek ve gerektiğinde bakım yapmak için de hizmet vermektedir."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_sirket2.jpg",
-        "title" => "Şirket #2",
-        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
-        "basealert" => true
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_saatkulesi.jpg",
-        "title" => "Saat Kulesi",
-        "description" => "Genellikle baron ve sefirin toplu aktiviteler yürüttüğü mekandır."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_sevgiapartmanı.jpg",
-        "title" => "Sevgi Apartmanı",
-        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
-        "basealert" => true
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_galeri.jpg",
-        "title" => "Galeri",
-        "description" => "Burada her seviyeye uygun arabalar bulunmaktadır. Ayrıca biraz daha ilerisinde aracınızı çıkartabileceğiniz NPC mevcuttur."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_ormanalani.jpg",
-        "title" => "Orman Bölgesi/Maden Alanı",
-        "description" => "Buradaki evleri kiralayıp bitki yetiştirme vb. aktiviteler yürütebilirsiniz. Ayrıca maden alanı da burada yer almaktadır.",
-        "basealert" => true
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_poh.jpg",
-        "title" => "Polis Özel Harekat Karakolu",
-        "description" => "Polis Özel Harekat birimlerinin görev yaptığı, suçla mücadele ve güvenlik sağlama amacıyla faaliyet gösterdiği önemli bir merkezdir. Burada, özel eğitimli ekipler, acil durumlar için hazırlıklı olarak görev yapmaktadır."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_hastane.jpg",
-        "title" => "Hastane",
-        "description" => "ATT ve doktorun bulunduğu alan. Ayrıca buradaki NPC ile reçeteli/reçetesiz ilaç temin edebilirsiniz."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_luksgaleri.jpg",
-        "title" => "Lüks Galeri",
-        "description" => "Üst segment arabaların yer aldığı galeridir."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_fabrikalar.jpg",
-        "title" => "Fabrikalar",
-        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
-        "basealert" => true
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_benzinlik.jpg",
-        "title" => "Benzinlik",
-        "description" => "Buradan benzin alabilir, deponuza eşya koyabilir veya benzin soygunu yapabilirsiniz. Biraz ilerisinde ganyan bayii bulunmaktadır, orayı da göz atmayı unutmayın."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_jandarmakarakol.jpg",
-        "title" => "Jandarma Karakolu",
-        "description" => "Jandarma Genel Komutanlığı'na bağlı birimlerin faaliyet gösterdiği, asayişin sağlandığı ve suçların önlenmesi için görev yapan önemli bir merkezdir. Burada, jandarma ekipleri, kırsal alanlarda güvenlik hizmeti sunmakta ve vatandaşların güvenliğini sağlamaktadır."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_gol.jpg",
-        "title" => "Göl",
-        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır. Ayrıca balıkçı mesleğine geçip burada balık tutabilirsiniz.",
-        "basealert" => true
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_keke.jpg",
-        "title" => "KEKE Köyü",
-        "description" => "Yasadışı işler yapanların ortak noktasıdır. Dikkatli olun, her an kendinizi bayılmış bir vaziyette bulabilirsiniz."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_avm.jpg",
-        "title" => "AVM",
-        "description" => "MoonCity simgesi olan AVM'de yapabileceğiniz bir şey yok maalesef."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_nisantasi.jpg",
-        "title" => "Nişantaşı",
-        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
-        "basealert" => true
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_ada_sivri.jpg",
-        "title" => "Sivri Ada",
-        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
-        "basealert" => true
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_ada_heybeli.jpg",
-        "title" => "Heybeli Ada",
-        "description" => "Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
-        "basealert" => true
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_korsan.jpg",
-        "title" => "Korsan Bölgesi",
-        "description" => "Yasadışı işler yapanların ortak noktasıdır. Dikkatli olun, her an kendinizi bayılmış bir vaziyette bulabilirsiniz."
-    ],
-    [
-        "image" => "$baseUrl/assets/image/darkrp_ada_bilim.jpg",
-        "title" => "Bilim Adası",
-        "description" => "Bilim adamına aittir. Bitki yetiştirme vb. aktiviteler yürütebileceğiniz yeni bir alandır.",
-        "basealert" => true
-    ]
-];
-?>
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
         <h1 class="mb-4">DarkRP Başlarken</h1>
@@ -161,15 +7,15 @@ $places = [
             <h3 id="gerekli-eklentiler-ve-ayarlar">Gerekli Eklentiler ve Ayarlar</h3>
             <br>
             <div class="alert alert-info" role="alert">
-                <a href="https://steamcommunity.com/workshop/filedetails/?id=1545171095" target="_blank">
-                    https://steamcommunity.com/workshop/filedetails/?id=1545171095
+                <a href="<?= $darkrp_workshop ?>" target="_blank">
+                    <?= $darkrp_workshop ?>
                 </a> hepsine tek tek abone olmalısınız.
             </div>
 
             <ul>
-                <li><b>Workshop Eklentileri</b>: <a href="https://moonrp.com/darkrpconnect" target="_blank">DarkRP
+                <li><b>Workshop Eklentileri</b>: <a href="<?= $darkrp_ip ?>" target="_blank">DarkRP
                         sunucumuza</a> katılmadan önce, <a
-                            href="https://steamcommunity.com/workshop/filedetails/?id=1545171095" target="_blank">workshop</a>
+                            href="<?= $darkrp_workshop ?>" target="_blank">workshop</a>
                     indirin. Eğer oyunda iseniz indirme işlemi sonrası Garry's mod komple kapatıp açınız.
                 </li>
                 <li><b>Chromium Betası</b>: Daha iyi performans ve özellikler için <b>Chromium</b> betasına
@@ -601,15 +447,15 @@ $places = [
                 <br>
             </div>
             <div class="row" id="cardContainer">
-                <?php foreach ($places as $index => $place): ?>
+                <?php foreach ($darkrpCity as $index => $city): ?>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="<?php echo htmlspecialchars($place['image']); ?>" class="card-img-top"
-                                 alt="<?php echo htmlspecialchars($place['title']); ?>"
+                            <img src="<?php echo htmlspecialchars($city['image']); ?>" class="card-img-top"
+                                 alt="<?php echo htmlspecialchars($city['title']); ?>"
                                  data-bs-toggle="modal"
                                  data-bs-target="#modal<?php echo $index; ?>">
                             <div class="card-body">
-                                <small class="card-title"><?php echo htmlspecialchars($place['title']); ?></small>
+                                <small class="card-title"><?php echo htmlspecialchars($city['title']); ?></small>
                             </div>
                         </div>
                     </div>
@@ -619,19 +465,20 @@ $places = [
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title">
-                                        <?php echo htmlspecialchars($place['title']); ?>
+                                        <?php echo htmlspecialchars($city['title']); ?>
                                     </h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="<?php echo htmlspecialchars($place['image']); ?>" class="img-fluid"
-                                         alt="<?php echo htmlspecialchars($place['title']); ?>">
+                                    <img src="<?php echo htmlspecialchars($city['image']); ?>" class="img-fluid"
+                                         alt="<?php echo htmlspecialchars($city['title']); ?>">
                                     <hr style="border: none">
-                                    <p><?php echo htmlspecialchars($place['description']); ?></p>
-                                    <?php if (isset($place["basealert"]) && $place["basealert"]) { ?>
+                                    <p><?php echo htmlspecialchars($city['description']); ?></p>
+                                    <?php if (isset($city["basealert"]) && $city["basealert"]) { ?>
                                         <div class="alert alert-warning" role="alert">
-                                            Size ait olmıyan Daireler/Binalarda bitki yetiştiriciliği vb. eylemler yapamazsınız.
+                                            Size ait olmıyan Daireler/Binalarda bitki yetiştiriciliği vb. eylemler
+                                            yapamazsınız.
                                         </div>
                                     <?php } ?>
                                     <hr style="border: none">
@@ -894,330 +741,100 @@ $places = [
 
             <div>
                 <h3 id="meslekperm">Ücretli Meslekler neler?</h3>
-
-                <ul style='list-style-type: "— ";'>
-                    <li><strong class="text-primary-emphasis">Komisyoncu:</strong> Bilim adamı olmak için sınava giren
-                        vatandaşlardan komisyon alıyorsun. Bu sayede, gelirini artırabilirsin.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Vergi Rekortmeni:</strong> Vergi ödenen her şeyden
-                        komisyon alıyorsun. Bu sayede, gelirini artırabilirsin.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Premium Galeri Sahibi:</strong> Premium araç
-                        galerisindeki NPC'lerden komisyon alarak para kazanıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Etüt Merkezi Sahibi:</strong> Etüt Merkezindeki
-                        NPC'lerden komisyon alarak öğrenim sürecine katkıda bulunuyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Eczane Sahibi:</strong> Nöbetçi eczanedeki NPC'den
-                        komisyon alarak sağlık sektöründe yer alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Garaj Sahibi:</strong> Galeride araç çıkarma
-                        sırasında kesilen vergiden komisyon alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Galeri Sahibi:</strong> Galerideki NPC'lerden
-                        komisyon alarak aracını satıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Gazino Sahibi:</strong> Gazinodaki faaliyetlerden
-                        komisyon alıyorsun ve eğlence dünyasında yer alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Kuyumcu:</strong> Kendi Döviz NPC'sinden yapılan
-                        alım/satım işlemlerinde komisyon kazanıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Moonexchange Sahibi:</strong> Bankadaki döviz
-                        NPC'sinden yapılan alım/satım işlemlerinden komisyon alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-danger-emphasis">İhaleci:</strong> Kendi NPC aracılığıyla Kirli
-                        dolarları temizleyerek kazanç elde ediyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-danger-emphasis">Gece Kulübü Sahibi:</strong> Gece kulübündeki
-                        NPC'lerden komisyon alıyor ve aynı zamanda Kirli dolarları temizliyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Hastane Sahibi:</strong> Doktor NPC'den komisyon
-                        alarak
-                        sağlık sektöründe yer ediniyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-danger-emphasis">Emlakçı:</strong> Kiralardan komisyon alıyor ve
-                        Kirli dolarları temizliyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-danger-emphasis">Sigortacı:</strong> Kirli dolarları temizleyerek
-                        sigorta sektöründe iş yapıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-danger-emphasis">Lojistik:</strong> Kirli dolarları temizleyerek
-                        tedarik
-                        zincirinde yer alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-danger-emphasis">Ekspertiz:</strong> Kirli dolarları temizleyerek
-                        değerleme yapıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Balıkçı:</strong> Balık NPC'den komisyon alarak
-                        deniz ürünleri ticareti yapıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Doğal Kaynaklar İşletmesi Sahibi:</strong>
-                        Madenlerdeki
-                        NPC'lerden komisyon alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Moonshop Dükkanı Sahibi:</strong> Moonshop
-                        içindeki NPC'den ve dolaptan komisyon alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Restoran Sahibi:</strong> Yemek NPC'lerinden
-                        komisyon alarak gıda sektöründe yer alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-danger-emphasis">İthalci:</strong> İthal malları alıp yurtdışına
-                        gönderiyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-danger-emphasis">Botanikçi:</strong> Bitkileri alıp yurtdışına
-                        pazarla
-                        para kazanıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Sosyal Medya Sahibi:</strong> Sosyal medyada
-                        paylaşım yaparken ödenen vergiden komisyon alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Benzinlik Sahibi:</strong> Benzinlikteki NPC'den
-                        komisyon alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Reklamcı:</strong> /reklam komutunu
-                        kullanıldığında
-                        ödenen vergiden komisyon alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Mekanik Sahibi:</strong> Mekanikteki NPC'den
-                        komisyon alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-danger-emphasis">Güzellik Salonu Sahibi:</strong> Kirli dolarları
-                        temizleyerek güzellik sektöründe yer alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-danger-emphasis">Yatırım Danışmanı:</strong> Kirli dolarları
-                        temizleyerek
-                        yatırım fırsatları sağlıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Polis Tedarikçisi:</strong> Polis karakolundaki
-                        NPC'den komisyon alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Taksi Durağı Sahibi:</strong> Taksi NPC'den
-                        komisyon alıyor ve taksi durağının sahibi oluyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-primary-emphasis">Depo Sahibi:</strong> Envanterden depoya eşya
-                        atıldığında vergiden komisyon alıyorsun.
-                    </li>
-                    <br>
-                    <li><strong class="text-danger-emphasis">Muhasebeci:</strong> Kirli dolarları temizleyerek
-                        finans
-                        sektöründe yer alıyorsun.
-                    </li>
+                <ul class="list-group mb-3">
+                    <div class="alert alert-info" role="alert">
+                        Satın alım için discord sunucumuzda ticket açmanız gerekmektedir.
+                    </div>
+                    <?php
+                    foreach ($darkrpPaidJobs as $jobName => $jobDetails) {
+                        $titleClass = "text-primary-emphasis";
+                        if (isset($jobDetails['dolar']) && $jobDetails['dolar']) {
+                            $titleClass = "text-success-emphasis";
+                        } elseif (isset($jobDetails['ithal']) && $jobDetails['ithal']) {
+                            $titleClass = "text-warning-emphasis";
+                        } elseif (isset($jobDetails['bitki']) && $jobDetails['bitki']) {
+                            $titleClass = "text-danger-emphasis";
+                        }
+                        ?>
+                        <li class="list-group-item">
+                            <h5 class="<?= $titleClass; ?>"><?= $jobName; ?></h5>
+                            <p><?= $jobDetails['description']; ?></p>
+                        </li>
+                        <?php
+                    }
+                    ?>
                 </ul>
-
-
             </div>
-
             <hr>
             <br>
-
             <div>
                 <h3 id="item">Eşyalar</h3>
                 <p>Oyun içerisinde gelişiminize katkı sağlayacak birçok eşya mevcuttur:</p>
                 <div class="alert alert-warning" role="alert">
                     Aksi belirtilmedikçe katkı sağladıkları XP, 15 dakikada gelen XP'dir.
                 </div>
+
                 <div class="accordion" id="accordionItems">
+                    <?php foreach ($darkrpItems as $category => $categoryData): ?>
+                        <?php
+                        $categoryId = str_replace(' ', '', strtolower($category));
+                        $categoryClass = $categoryData['class'];
+                        $itemType = $categoryData['list-style-type'] . " ";
+                        $items = $categoryData[0];
+                        ?>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed text-warning-emphasis" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#xpItemsCollapse"
-                                    aria-expanded="true" aria-controls="xpItemsCollapse">
-                                XP Eşyaları
-                            </button>
-                        </h2>
-                        <div id="xpItemsCollapse" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                <div class="alert alert-info" role="alert">
-                                    Hem 1. Seviye Saat hem de 2. Seviye Saat olması durumunda sadece 2. Seviye
-                                    Saat çalışmaktadır.
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed <?= $categoryClass ?>" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse<?= $categoryId ?>"
+                                        aria-expanded="false" aria-controls="collapse<?= $categoryId ?>">
+                                    <?= $category ?>
+                                </button>
+                            </h2>
+
+                            <div id="collapse<?= $categoryId ?>" class="accordion-collapse collapse"
+                                 aria-labelledby="heading<?= $categoryId ?>" data-bs-parent="#accordionItems">
+                                <div class="accordion-body">
+                                    <?php
+                                    if (isset($categoryData['alert-message']) && $categoryData['alert-message']) {
+                                        ?>
+                                        <div class="alert alert-<?= $categoryData['alert-color'] ? $categoryData['alert-color'] : 'info' ?>"
+                                             role="alert">
+                                            <?= $categoryData['alert-message'] ?>
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
+                                    <ul class="list-group">
+                                        <?php foreach ($items as $item): ?>
+                                            <li class="list-group-item">
+                                                <strong class="<?= $item['class'] ?>"><?= $item['name'] ?>
+                                                    :</strong> <?= $item['description'] ?>
+                                            </li>
+                                        <?php endforeach; ?>
+                                    </ul>
                                 </div>
-                                <ul style="list-style-type: '- '">
-                                    <li><strong class="text-primary-emphasis">XP Bileti:</strong> 1 saat boyunca
-                                        2x XP bonusu sağlar. Kutulardan çıkmaz.
-                                    </li>
-                                    <li><strong class="text-success-emphasis">Just'un Kutsanmış Bebeği:</strong>
-                                        %50 XP bonusu sağlar. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-secondary">1. Seviye Saat:</strong> %10 XP bonusu
-                                        sağlar. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-danger-emphasis">2. Seviye Saat:</strong> %25 XP
-                                        bonusu sağlar. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-primary-emphasis">3. Seviye Saat:</strong> %50 XP
-                                        bonusu sağlar. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-success-emphasis">Kaliteli Viski:</strong> %25 XP bonusu
-                                        sağlar. Kutulardan çıkmaz.
-                                    </li>
-                                    <li><strong class="text-secondary">1. Seviye Özel Eşya Toplama XP
-                                            Artışı:</strong> Kirli dolar ve bitki üretimini tamamladığınızda (E
-                                        tuşuna basarken) %10 XP bonusu sağlar. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-danger-emphasis">2. Seviye Özel Eşya Toplama XP
-                                            Artışı:</strong> Kirli dolar ve bitki üretimini tamamladığınızda (E
-                                        tuşuna basarken) %15 XP bonusu sağlar. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-primary-emphasis">3. Seviye Özel Eşya Toplama XP
-                                            Artışı:</strong> Kirli dolar ve bitki üretimini tamamladığınızda (E
-                                        tuşuna basarken) %20 XP bonusu sağlar. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-secondary">Baronun Prosu:</strong> %10 XP bonusu
-                                        sağlar. Kutulardan çıkmaz. <strong>Barona hizmet edenler tarafından elde
-                                            edilir.</strong></li>
-                                    <li><strong class="text-danger-emphasis">Baronun Emaneti:</strong> %50 XP
-                                        bonusu sağlar. Kutulardan çıkmaz. <strong>Baronun en sadık adamlarına
-                                            verilir.</strong></li>
-                                    <li><strong class="text-success-emphasis">Çakmak:</strong> %10 XP bonusu
-                                        sağlar. Kutulardan çıkmaz.
-                                    </li>
-                                    <li><strong class="text-secondary">Dambıl:</strong> %20 XP bonusu sağlar.
-                                        Kutulardan çıkmaz.
-                                    </li>
-                                    <li><strong class="text-primary-emphasis">Baston Şeker:</strong> %30 XP
-                                        bonusu sağlar. Kutulardan çıkmaz.
-                                    </li>
-                                    <li><strong class="text-danger-emphasis">Defibrilatör:</strong> Baygın
-                                        birini kaldırdığınızda %15 daha fazla XP verir. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-primary-emphasis">İngiliz Anahtarı:</strong>
-                                        Belediye işlerinde %?? daha fazla XP sağlar.
-                                    </li>
-                                    <li><strong class="text-success-emphasis">İmamın Abdest Suyu:</strong>
-                                        İmamdan aldığınız XP bonusunu %?? oranında artırır. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-secondary">Fileto Bıçağı:</strong> Balıklardan elde
-                                        edilen tecrübeyle kazandığınız XP'yi %?? artırır. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-primary-emphasis">Beylik Tabancası:</strong> Para
-                                        basma makinelerini ve bitkileri yok ettiğinizde kazandığınız XP'yi %??
-                                        artırır. Kutulardan çıkar. <span class="text-primary-emphasis">(Devlet çalışanları için geçerlidir)</span>
-                                    </li>
-                                    <li><strong class="text-danger-emphasis">Türk Bayrağı:</strong> %50 XP bonusu
-                                        sağlar. Kutulardan çıkmaz.
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed text-info-emphasis" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#otherItemsCollapse"
-                                    aria-expanded="false" aria-controls="otherItemsCollapse">
-                                Diğer Eşyalar
-                            </button>
-                        </h2>
-                        <div id="otherItemsCollapse" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                <ul style="list-style-type: '* '">
-                                    <li><strong class="text-secondary">Ay Taşı (Tek seferlik kullanım):</strong>
-                                        Ölünce envanterinizdeki shipment, silah vb. düşebilen eşyalarınızın
-                                        düşmesini önler. Madencideki NPC'den üretilebilir.
-                                    </li>
-                                    <li><strong class="text-primary-emphasis">Torpil kağıdı:</strong> %50 daha
-                                        fazla maaş almanı sağlar.
-                                    </li>
-                                    <li><strong class="text-danger-emphasis">Madenci Kitabı:</strong> Maden
-                                        toplarken daha fazla maden alırsınız.
-                                    </li>
-                                    <li><strong class="text-success-emphasis">Odunculuk Kitabı:</strong> Odun
-                                        keserken daha fazla odun alırsınız.
-                                    </li>
-                                    <li><strong class="text-primary-emphasis">Balıkçılık Kitabı:</strong> Balık
-                                        tutarken daha fazla balık alırsınız.
-                                    </li>
-                                    <li><strong class="text-success-emphasis">Emir Din Kitabı:</strong> İlk yardım kiti
-                                        kullanırken +15 daha fazla verir.
-                                    </li>
-                                    <li><strong class="text-secondary">Okunmuş Su:</strong> Zırh bastığınızda
-                                        +50 ekler. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-primary-emphasis">Zırhlı Kasa:</strong> Deponuza 1
-                                        sayfa daha ekler. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-secondary">Deri Çanta:</strong> Envanterinize 1
-                                        sayfa daha ekler. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-danger-emphasis">İlk Yardım Çantası:</strong> Mevcut
-                                        canınıza +100 can daha ekler. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-primary-emphasis">Just'ın İndirim Kuponu:</strong>
-                                        Galeri vb. yerlerde %10 indirimli satın alabilirsiniz. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-success-emphasis">Cesaret Hapı (Tek seferlik
-                                            kullanım):</strong> 2 dakikalığına vücudun yüksek miktarda adrenalin
-                                        (HP) salgılar. Sonrasında aşırı adrenalin nedeniyle kalp krizi
-                                        geçirirsiniz. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-secondary">İthal Gübre:</strong> Bitki üretimini
-                                        tamamlarken +1 bitki verir.
-                                    </li>
-                                    <li><strong class="text-danger-emphasis">Çek Defteri:</strong> Kirli dolar
-                                        temizlerken %?? NPC'ye daha az komisyon ödersiniz. Kutulardan çıkar.
-                                    </li>
-                                    <li><strong class="text-success-emphasis">Tüccarın Cüzdanı:</strong> Para
-                                        basma makinesindeki parayı %?? artırır. Kutulardan çıkar.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
+                    <?php endforeach; ?>
                 </div>
 
 
+                <hr>
+                <blockquote>
+                    Başlarken bilmeniz gerekenler serimiz burada son bulmaktadır. Daha fazlası için diğer
+                    rehberlerimize de göz atmayı unutmayın.
+                </blockquote>
+
+                <div class="content-ref-box">
+                    <p>
+                        <a id="sssBox" href="<?= $baseUrl; ?>/darkrp-baslarken/sss">
+                            <i class="fas fa-question"></i> Sıkça Sorulan Sorular
+                        </a>
+                    </p>
+                </div>
             </div>
 
-            <hr>
-            <blockquote>
-                Başlarken bilmeniz gerekenler serimiz burada son bulmaktadır. Daha fazlası için diğer
-                rehberlerimize de göz atmayı unutmayın.
-            </blockquote>
-
-            <div class="content-ref-box">
-                <p>
-                    <a id="sssBox" href="<?= $baseUrl; ?>/darkrp-baslarken/sss">
-                        <i class="fas fa-question"></i> Sıkça Sorulan Sorular
-                    </a>
-                </p>
-            </div>
         </div>
-
-    </div>
 
 </main>

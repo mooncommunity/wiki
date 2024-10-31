@@ -45,7 +45,7 @@ $tttContent = false;
         <hr>
         <div>
             <h4 id="ehliyet"><b>Araç Ehliyeti Nereden Alabilirim?</b></h4>
-            <p>Polis karakolunun içindeki "Ehliyet Sorumlusu" npc doğru yanıtlar vererek ehliyet sahibi
+            <p>Polis karakolunun içindeki "Ehliyet Sorumlusu" NPC doğru yanıtlar vererek ehliyet sahibi
                 olabilirsiniz.</p>
         </div>
         <hr>
@@ -179,7 +179,7 @@ $tttContent = false;
                             href="https://discord.com/channels/308530419748306944/1133035250562367570/1243927571175833611"
                             target="_blank"><i class="fa-brands fa-discord"></i></a>)
                 </li>
-                <li>Discord sunucumuzda aile üyeleriniz bulunmalıdır.</li>
+                <li>Discord sunucumuzda tüm aile üyeleriniz bulunmalıdır.</li>
                 <li>Aşağıdaki formata göre doldurmalısınız.</li>
                 <li>Aile üyelerinizi ve kendinizi Discord etiketi ile belirtmelisiniz.</li>
             </ul>
@@ -200,7 +200,7 @@ Familya Üyeleri:
         <hr>
         <div>
             <h4 id="bioorgan"><b>Nasıl 500 can olunur?</b></h4>
-            <p>Öncelikle 3. seviye, ardından 5. seviye biyo-organ kullanmanız gerekmektedir.</p>
+            <p>Öncelikle 3. seviye, ardından 5. seviye bio-organ kullanmanız gerekmektedir.</p>
             <p>Sonrasında reçeteli ya da reçetesiz ilaç içmeniz gerekir.</p>
         </div>
         <hr>
@@ -210,6 +210,112 @@ Familya Üyeleri:
                 yelek kullandığınızda zırhınız 300 olacaktır.</p>
         </div>
         <hr>
+        <div>
+            <h4 id="vip"><b>VIP ve VIP+ Meslekler Neler?</b></h4>
+            <ul style="list-style-type: '— '">
+                <?php foreach ($legalJobs as $index => $job): ?>
+                    <?php
+                    $isVip = (isset($job['vip']) && $job['vip'] === 1);
+                    $isVipPlus = (isset($job['vip']) && $job['vip'] === 2);
+                    if ($isVip || $isVipPlus) {
+                        ?>
+                        <li class="text-primary-emphasis"><?= htmlspecialchars($job['title']) ?>
+                        <?php if ($isVip) {
+                            ?>
+                            <span style="color: #16bb00">[VIP]</span>
+                            <span style="color: #19d100">[VIP+]</span>
+                        <?php } ?>
+                        <?php if ($isVipPlus) {
+                            ?>
+                            <span style="color: #16bb00">[VIP+]</span>
+                            </li>
+                        <?php }
+                    } ?>
+                <?php endforeach; ?>
+                <?php foreach ($esnafJobs as $index => $job): ?>
+                    <?php
+                    $isVip = (isset($job['vip']) && $job['vip'] === 1);
+                    $isVipPlus = (isset($job['vip']) && $job['vip'] === 2);
+                    if ($isVip || $isVipPlus) {
+                        ?>
+                        <li class="text-success"><?= htmlspecialchars($job['title']) ?>
+                        <?php if ($isVip) {
+                            ?>
+                            <span style="color: #16bb00">[VIP]</span>
+                            <span style="color: #19d100">[VIP+]</span>
+                        <?php } ?>
+                        <?php if ($isVipPlus) {
+                            ?>
+                            <span style="color: #16bb00">[VIP+]</span>
+                            </li>
+                        <?php }
+                    } ?>
+                <?php endforeach; ?>
+                <?php foreach ($illegalJobs as $index => $job): ?>
+                    <?php
+                    $isVip = (isset($job['vip']) && $job['vip'] === 1);
+                    $isVipPlus = (isset($job['vip']) && $job['vip'] === 2);
+                    if ($isVip || $isVipPlus) {
+                        ?>
+                        <li class="text-danger"><?= htmlspecialchars($job['title']) ?>
+                        <?php if ($isVip) {
+                            ?>
+                            <span style="color: #16bb00">[VIP]</span>
+                            <span style="color: #19d100">[VIP+]</span>
+                        <?php } ?>
+                        <?php if ($isVipPlus) {
+                            ?>
+                            <span style="color: #16bb00">[VIP+]</span>
+                            </li>
+                        <?php }
+                    } ?>
+                <?php endforeach; ?>
+            </ul>
+            <p>Diğer VIP ve VIP+ Ayrıcalıklarını MoonGaming - Market Sayfasından bakabilirsiniz.</p>
+            <div class="content-ref-box">
+                <p>
+                    <a id="mgmarketBox" href="https://moonrp.com/market" target="_blank">
+                        <i class="fa-solid fa-shop"></i> MoonGaming - Market
+                    </a>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h4 id="recete"><b>Nasıl canımı artırabilirim?</b></h4>
+            <p>Reçeteli ve ya reçetesiz ilaç alarak canınızı artırabilirsiniz.</p>
+            <p>Reçeteli ilaç almak için doktor mesleğinde kişilerden reçete almanız daha sonra ise hastanedeki NPC gidip
+                ilaç almanız gerekmekte.</p>
+            <p>Reçetesiz ilaç almak için hastanedeki NPC gidip ilaç almanız gerekmekte.</p>
+        </div>
+        <hr>
+        <div>
+            <h4 id="yemek"><b>Susuzluğumu ve açlığımı nasıl gidereceğim?</b></h4>
+            <p>Yemek NPC Giderek susuzluğunuzu ve açlığınızı giderebilirsiniz.</p>
+            <p>NPC nerede bulucağınız bilmiyor iseniz <a href="<?= $baseUrl ?>/darkrp-baslarken#city">DarkRP Başlarken - #Önemli Yerler göz atınız.</a></p>
+        </div>
+        <hr>
+        <div>
+            <h4 id="alte"><b>Koltuğa nasıl oturacağım?</b></h4>
+            <div class="row">
+                <div class="col-md-8">
+                    <ul>
+                        <li>İlk önce FPS modunda iken koltuğun üstüne çıkın. Koltukla aynı seviyede olmalısınız
+                            çapraz,yüksekte veya alçakta kalmanız durumunda olmaz.
+                        </li>
+                        <li>Üstüne çıktıktan sonra uygun pozisyonu arayınız</li>
+                        <li>Pozisyonu bulduktan sonra ALT tuşu ile birlikte E basınız.</li>
+                        <li>Kalmak isterseniz E tuşuna basınız.</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_koltuk_alte.gif" class="img-fluid float-end">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
         <blockquote>
             Sıkça Sorulan Sorular başlangıç rehberimiz burada sonlanıyor. Daha fazlası için diğer rehberlerimize
             de göz atmayı unutmayın.

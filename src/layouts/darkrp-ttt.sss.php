@@ -1,8 +1,8 @@
 <?php
 if ($darkRPContent) {
-    $AdminBasvuru = "https://forms.gle/aThYDcDq2KCxbv1z8";
+    $AdminBasvuru = $darkrp_AdminBasvuru;
 } elseif ($tttContent) {
-    $AdminBasvuru = "https://forms.gle/Z5mZFT4sBVbQ49Yi6";
+    $AdminBasvuru = $ttt_AdminBasvuru;
 }
 ?>
 <div>
@@ -469,7 +469,7 @@ exec config_default.cfg
     <hr>
     <div>
         <h4 id="admin"><b>Yetkili nasıl olabilirim?</b></h4>
-        <p>Yetkili olabilmek için <a href="<?= $AdminBasvuru ?>">başvuru</a>
+        <p>Yetkili olabilmek için <a href="<?= $AdminBasvuru ?>" target="_blank">başvuru</a>
             yapmanız gerekmektedir. Başvurunuz olumlu sonuçlanırsa geri dönüş yapılacaktır.</p>
 
         <h5><b>Red edildiğimi nereden öğrenebilirim?</b></h5>
