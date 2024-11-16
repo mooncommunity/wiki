@@ -1,11 +1,7 @@
 <?php
-$baseUrl_Path = "/wiki";
-$baseUrl = "https://moonrp.com" . $baseUrl_Path;
-
+require("variable.php");
 $PathExtName = basename($_SERVER['SCRIPT_NAME']);
 $PathName = ucfirst(str_replace('.php', '', $PathExtName));
-
-$DefaultOGImage = "/assets/image/og-image.png";
 
 if (!isset($header_og_bool)) {
     $header_og_bool = false;

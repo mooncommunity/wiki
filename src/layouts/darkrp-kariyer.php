@@ -1,10 +1,9 @@
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
-        <h1 class="mb-4">Kariyer Yolculuğu</h1>
-        <hr>
+        <h1 class="standartcolor mb-4">Kariyer Yolculuğu</h1>
         <br>
         <div>
-            <h2 class="text-primary-emphasis" id="legalrol"><strong>1. Devlet Çalışanı</strong></h2>
+            <h2 class="darkrplegal" id="legalrol"><strong>1. Devlet Çalışanı</strong></h2>
             <p>Devlet çalışanları, şehirdeki kamu hizmetlerini sağlamak ve toplumsal düzeni korumakla
                 görevlidir. Bu meslek grubunda yer alan polis memurları, acil sağlık hizmetleri çalışanları ve
                 belediye görevlileri gibi roller, halkın güvenliği ve refahı için çalışır. Oyuncular, bu rolde
@@ -16,17 +15,15 @@
                 etmeye hazırsanız, bu rol tam size göre.</p>
             <div class="content-ref-box">
                 <p>
-                    <a id="legalBox" href="#">
+                    <a id="legalBox" href="<?= $baseUrl; ?>/darkrp-kariyer/legal">
                         <i class="fa-solid fa-walkie-talkie"></i> Devlet Çalışanı
                     </a>
                 </p>
             </div>
         </div>
-        <hr>
         <br>
-
         <div>
-            <h2 class="text-success-emphasis" id="esnafrol"><strong>2. Esnaf ve Siviller</strong></h2>
+            <h2 class="darkrpesnaf" id="esnafrol"><strong>2. Esnaf ve Siviller</strong></h2>
             <p>Şehrin kalbinde yer alan esnaf ve siviller, ekonomik canlılığı sağlayan ve sosyal etkileşimleri
                 canlandıran bireylerdir. Bu kategoride dükkan sahipleri, taksi şoförleri ve diğer hizmet sektörü
                 çalışanları yer alır. Oyuncular, bu rolde kendi işlerini kurabilir, ürünler satabilir ve
@@ -37,19 +34,15 @@
                 sağlamak istiyorsanız, bu role mutlaka göz atmalısınız!</p>
             <div class="content-ref-box">
                 <p>
-                    <a id="esnafBox" href="#">
+                    <a id="esnafBox" href="<?= $baseUrl; ?>/darkrp-kariyer/esnaf">
                         <i class="fa-solid fa-scale-balanced"></i> Esnaf ve Siviller
                     </a>
                 </p>
             </div>
         </div>
-
-
-        <hr>
         <br>
-
         <div>
-            <h2 class="text-danger-emphasis" id="illegalrol"><strong>3. Yasadışı Organizasyonlar</strong></h2>
+            <h2 class="darkrpillegal" id="illegalrol"><strong>3. Yasadışı Organizasyonlar</strong></h2>
             <p>Yasadışı organizasyonlar, suç dünyasında var olmayı seçen ve şehrin karanlık tarafında faaliyet
                 gösteren gruplardan oluşur. Botanikçilik, ithal eşya üretimi gibi şeyler yapmak istiyorsanız. Bu
                 kategorinin temelini oluşturur. Bu rolde oyuncular, büyük riskler alarak, şehirde tehlikeli ama
@@ -60,19 +53,16 @@
 
             <div class="content-ref-box">
                 <p>
-                    <a id="illegalBox" href="#">
+                    <a id="illegalBox" href="<?= $baseUrl; ?>/darkrp-kariyer/illegal">
                         <i class="fa-solid fa-user-tie"></i> Yasadışı Organizasyonlar
                     </a>
                 </p>
             </div>
         </div>
-
-
-        <hr>
         <br>
 
         <div>
-            <h2 class="text-secondary" id="adminn"><strong>4. Görevli Yetkili</strong></h2>
+            <h2 class="darkrpgenel" id="adminn"><strong>4. Görevli Yetkili</strong></h2>
             <p>Görevli yetkililer, oyun içindeki düzenin korunmasında hayati bir rol oynar. Bu kişiler,
                 sunucunun kurallarını uygulamak, oyuncuların yaşadığı sorunları çözmek ve genel oyuncu
                 deneyimini iyileştirmek amacıyla gönüllü olarak görev alırlar. Adaletin sağlanması ve hile veya
@@ -83,7 +73,6 @@
 
 
         <hr>
-        <br>
 
         <p>DarkRP dünyasında oyunculara farklı roller ve deneyimler sunarak çeşitli oyun dinamiklerini
             keşfetmelerini sağlar. Hangi kariyeri seçecekleri tamamen oyunculara bağlıdır; her birinin kendine
@@ -91,8 +80,3 @@
 
     </div>
 </main>
-<script>
-    document.getElementById("legalBox").href = baseUrl + "/darkrp-kariyer/legal";
-    document.getElementById("esnafBox").href = baseUrl + "/darkrp-kariyer/esnaf";
-    document.getElementById("illegalBox").href = baseUrl + "/darkrp-kariyer/illegal";
-</script>

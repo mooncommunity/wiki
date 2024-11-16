@@ -2,4 +2,5 @@
 _site
 .jekyll-cache
 src/HTML
-HTML/layouts
+assets/scss/*.css*
+assets/css/*.css.map

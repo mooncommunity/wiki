@@ -2,7 +2,7 @@ name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
   push:
-    branches: ["latest"]
+    branches: [ "latest" ]
   workflow_dispatch:
 
 permissions:
@@ -20,10 +20,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Run PHP to HTML conversion
         run: |
           docker run --rm -v "${{ github.workspace }}:/app" php:8.1-cli sh -c '
+            apt-get update && \
+            apt-get install -y curl && \
+            curl -fsSL https://deb.nodesource.com/setup_23.x | bash - && \
+            apt-get install -y nodejs && \
+            npm install -g sass && \
             cd /app/src && \
             if [ -d HTML ]; then rm -rf HTML; fi && \
             echo "Starting PHP to HTML conversion..." && \
@@ -36,6 +40,8 @@ jobs:
                     php \"\$php_file\" > \"\$html_file\"; \
                 done" sh {} + && \
             if [ -d assets ]; then cp -rf ./assets ./HTML; fi && \
+            if [ -d HTML/assets/scss ]; then rm -rf ./HTML/assets/scss; fi && \
+            sass ./assets/scss/styles.scss ./assets/css/styles.css && \
             if [ -f ./_config.yml ]; then cp -f ./_config.yml ./HTML; fi && \
             if [ -d ../HTML ]; then rm -rf ../HTML; fi && mv -f ./HTML ..
           '
