@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['anasayfa']
         },
         {
-            name: 'DarkRP Nedir',
+            name: 'DarkRP Nedir?',
             url: `${baseUrl}/darkrp`,
             content: '',
             tags: ['drp', 'rp', 'yeniyim', "darkrp yeniyim"]
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'DarkRP Başlarken - Gerekli Eklentiler ve Ayarlar',
-            url: `${baseUrl}/darkrp-baslarken#gerekli-eklentiler-ve-ayarlar`,
+            url: `${baseUrl}/darkrp-baslarken#workshop`,
             content: 'Oyuna girmeden önce yapılması gerekenler...',
             tags: ['drp', 'rp', 'workshop', 'chromium', 'error', 'yeniyim', "darkrp yeniyim"]
         },
@@ -56,21 +56,57 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'DarkRP Başlarken - Oyundaki tüm silahlarım nerede?',
-            url: `${baseUrl}/darkrp-baslarken#weapon`,
+            url: `${baseUrl}/darkrp-baslarken#weaponslot`,
             content: 'Silah slotlarım nerede?',
             tags: ['drp', 'rp', 'weapon', 'silah']
         },
         {
-            name: 'DarkRP Başlarken - Telefon nasıl kullanırım?',
-            url: `${baseUrl}/darkrp-baslarken#phone`,
-            content: 'Telefon kullanımını öğren...',
-            tags: ['drp', 'rp', 'telefon', 'arama', 'mesaj', 'para', 'kamera', 'borsa']
+            name: 'DarkRP Başlarken - Build',
+            url: `${baseUrl}/darkrp-baslarken#build`,
+            content: 'Eşya nasıl çıkartırım?',
+            tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun']
+        },
+        {
+            name: 'DarkRP Başlarken - Physhic Gun ile Tool Gun Hakkında',
+            url: `${baseUrl}/darkrp-baslarken#toolgun`,
+            content: 'Tool Gun için bazı ipuçları',
+            tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun']
+        },
+        {
+            name: 'DarkRP Başlarken - Bazı Tool Gun özellikleri',
+            url: `${baseUrl}/darkrp-baslarken#toolgun-ozellikleri`,
+            content: '',
+            tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun', 'materyal', 'renk', 'açı-matik', 'görünmez kapı', 'istifleyici', 'kopyalayıcı', 'buddies']
+        },
+        {
+            name: 'DarkRP Başlarken - Düğmeli Görünmez Kapı Nasıl Yapılır?',
+            url: `${baseUrl}/darkrp-baslarken#toolgun-dugme`,
+            content: '',
+            tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun', 'button', 'Düğme', 'Görünmez Kapı']
+        },
+        {
+            name: 'DarkRP Başlarken - Keypad/Parola Görünmez Kapı Nasıl Yapılır?',
+            url: `${baseUrl}/darkrp-baslarken#toolgun-keypad`,
+            content: '',
+            tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun', 'keypad', 'Parola', 'Görünmez Kapı']
+        },
+        {
+            name: 'DarkRP Başlarken - Işık Nasıl Koyarım?',
+            url: `${baseUrl}/darkrp-baslarken#toolgun-isik`,
+            content: '',
+            tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun', 'lamba', 'aydınlatma', 'ışık']
         },
         {
             name: 'DarkRP Başlarken - Önemli yerler',
             url: `${baseUrl}/darkrp-baslarken#city`,
             content: 'Bilmen gereken lokasyonlar...',
             tags: ['drp', 'rp', 'city', 'şehir']
+        },
+        {
+            name: 'DarkRP Başlarken - Telefon nasıl kullanırım?',
+            url: `${baseUrl}/darkrp-baslarken#phone`,
+            content: 'Telefon kullanımını öğren...',
+            tags: ['drp', 'rp', 'telefon', 'arama', 'mesaj', 'para', 'kamera', 'borsa']
         },
         {
             name: 'DarkRP Başlarken - Depoya eşyamı nasıl koyabilirim?',
@@ -83,18 +119,6 @@ document.addEventListener('DOMContentLoaded', function () {
             url: `${baseUrl}/darkrp-baslarken#atm`,
             content: 'DarkRP Başlıyan herkesin bilmesi gerekenler',
             tags: ['drp', 'rp', 'atm', 'banka']
-        },
-        {
-            name: 'DarkRP Başlarken - build',
-            url: `${baseUrl}/darkrp-baslarken#build`,
-            content: 'Eşya nasıl çıkartırım?',
-            tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun']
-        },
-        {
-            name: 'DarkRP Başlarken - Physhic Gun ile Tool Gun Hakkında',
-            url: `${baseUrl}/darkrp-baslarken#toolgun`,
-            content: 'Tool Gun için bazı ipuçları',
-            tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun']
         },
         {
             name: 'DarkRP Başlarken - Daha Fazla XP Nasıl Kazanırım?',
@@ -117,14 +141,32 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             name: 'DarkRP Başlarken - Sıkça Sorulan Sorular',
             url: `${baseUrl}/darkrp-baslarken/sss`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['drp', 'rp', 'sss', 'error', 'whitelist', 'wh', 'yetkili', 'sefir', 'mit', 'DirectX', 'baron', 'pöh', 'jöh']
         },
         {
-            name: 'DarkRP SSS - Etrafta her şey error, ne yapmalıyım? / Oyuna giremiyorum, ana menüye atıyor?',
+            name: 'DarkRP SSS - Teknik Sorunlar',
+            url: `${baseUrl}/darkrp-baslarken/sss#teknik`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'error', 'yeniyim', 'darkrp yeniyim', 'destek']
+        },
+        {
+            name: 'DarkRP SSS - Etrafta her şey error, ne yapmalıyım? / Herkesin Elleri Yukarıda / Bazı karakterler gözükmüyor',
             url: `${baseUrl}/darkrp-baslarken/sss#error`,
             content: 'Etrafımda herşey error...',
-            tags: ['drp', 'rp', 'sss', 'error', 'yeniyim', 'darkrp yeniyim']
+            tags: ['drp', 'rp', 'sss', 'error', 'yeniyim', 'darkrp yeniyim', 'destek', 'eller']
+        },
+        {
+            name: 'DarkRP SSS - Steam\'de Garry\'s Mod indirirken \'Bozuk İndirme\' hatası alıyorum, nasıl çözebilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#brokendownload`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'error', 'yeniyim', 'darkrp yeniyim', 'destek', 'steam']
+        },
+        {
+            name: 'DarkRP SSS - Ana Menüye düşüyorum / Oyun aniden kapanıyor',
+            url: `${baseUrl}/darkrp-baslarken/sss#menuerror`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'error', 'yeniyim', 'darkrp yeniyim', 'destek', 'gpucache']
         },
         {
             name: 'DarkRP SSS - "This typically means you are running out of Video Memory on your GPU" hatası alıyorum?',
@@ -133,208 +175,299 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'sss', 'error', 'engineerror', 'gpu', 'ekrankarti', 'gpumemory']
         },
         {
-            name: 'DarkRP SSS - Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?',
-            url: `${baseUrl}/darkrp-baslarken/sss#modeldetayi`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'error', 'model', 'detay']
-        },
-        {
-            name: 'DarkRP SSS - Steam Garry\'s Mod indirirken "Bozuk İndirme" yazıyor nasıl çözebilirim?',
-            url: `${baseUrl}/ttt-baslarken/sss#brokendownload`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'broken download', 'bozuk indirme', 'steam', 'broken', 'bozuk']
-        },
-        {
             name: 'DarkRP SSS - Konsol/Console Nedir?',
             url: `${baseUrl}/darkrp-baslarken/sss#console`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['drp', 'rp', 'sss', 'console', 'konsole']
         },
         {
+            name: 'DarkRP SSS - Eski Tarayıcıyı Nasıl Açarım??',
+            url: `${baseUrl}/darkrp-baslarken/sss#eskitarayici`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'legacy', 'browser', 'openserverbrowser']
+        },
+        {
+            name: 'DarkRP SSS - DarkRP Sunucusu gözükmüyor ne yapmam lazım?',
+            url: `${baseUrl}/darkrp-baslarken/sss#ip`,
+            content: 'Sunucu kaydoldu...',
+            tags: ['drp', 'rp', 'sss', 'sunucu gözükmüyor', 'vpn', 'proxy']
+        },
+        {
+            name: 'DarkRP SSS - Bazı araçlar ve insanlar garip duruyor ve ya hiç gözükmüyor / Görüntüler iç içe giriyor. Ne Yapmam Gerekiyor?',
+            url: `${baseUrl}/darkrp-baslarken/sss#modeldetayi`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'error', 'model', 'detay']
+        },
+
+        {
             name: 'DarkRP SSS - Tuşlarım çalışmıyor, neden?',
             url: `${baseUrl}/darkrp-baslarken/sss#tus`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'tuş', 'keyboard']
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'tuş', 'keyboard', 'key']
         },
         {
             name: 'DarkRP SSS - Oyunda sesim diğer oyunculara gitmiyor, ne yapmalıyım?',
             url: `${baseUrl}/darkrp-baslarken/sss#mikrofon`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['drp', 'rp', 'sss', 'sanal', 'mikrofon']
         },
         {
-            name: 'DarkRP SSS - F1, F2, F3, F4, M, T gibi tuşları başka tuşa atayabilir miyim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#sunucutus`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'tuş', 'sunucutuş']
+            name: 'DarkRP SSS - FPS Nasıl Artırabilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#fps`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'fps']
+        },
+        {
+            name: 'DarkRP SSS - Yurtdışından bağlanıyorum, sunucuya nasıl katılırım?',
+            url: `${baseUrl}/darkrp-baslarken/sss#yurtdisi`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'wh', 'yurtdisi']
         },
         {
             name: 'DarkRP SSS - Aile Paylaşımı ile sunucuya nasıl katılırım?',
             url: `${baseUrl}/darkrp-baslarken/sss#ailepaylasimi`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['drp', 'rp', 'sss', 'wh', 'family', 'aile', 'steamaile']
         },
         {
             name: 'DarkRP SSS - GeForce Now ile sunucuya nasıl katılırım?',
             url: `${baseUrl}/darkrp-baslarken/sss#geforcenow`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['drp', 'rp', 'sss', 'wh', 'geforce now']
         },
         {
             name: 'DarkRP SSS - GeForce Now\'da Garry\'s Mod nasıl betaya alırım?',
             url: `${baseUrl}/darkrp-baslarken/sss#geforcenow-beta`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['drp', 'rp', 'sss', 'wh', 'geforce now']
         },
         {
-            name: 'DarkRP SSS - Oyunda bayıldım, sonrasında ilk yardım ekibi gelip beni canlandırdı ve silahımı atamıyorum, neden?',
-            url: `${baseUrl}/darkrp-baslarken/sss#bayilmak`,
-            content: 'Bayıldım, doktor kaldırdı silah droplıyamıyorum...',
-            tags: ['drp', 'rp', 'sss', 'att', 'bayilma']
+            name: 'DarkRP SSS - F1, F2, F3, F4, M, T gibi tuşları başka tuşa atayabilir miyim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#sunucutus`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'tuş', 'sunucutuş', 'key']
         },
         {
-            name: 'DarkRP SSS - Envanterimdeki kutuyu nasıl açabilirim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#kutu`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'kutu', 'moonshop']
+            name: 'DarkRP SSS - İsmimi nasıl değiştireceğim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#isimdegistirme`,
+            content: 'Kimliğimi değiştirmek istiyorum',
+            tags: ['drp', 'rp', 'sss', 'nickname', 'name', 'lastname', 'displayname']
+        },
+        {
+            name: 'DarkRP SSS - Nasıl Dans Edebilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#dance`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'dance', 'dans', 'anahtar', 'r', '_DarkRP_AnimationMenu']
+        },
+        {
+            name: 'DarkRP SSS - Koltuğa nasıl oturacağım?',
+            url: `${baseUrl}/darkrp-baslarken/sss#alte`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'alte', 'koltuk', 'oturmak']
         },
         {
             name: 'DarkRP SSS - Araç Ehliyeti Nereden Alabilirim?',
             url: `${baseUrl}/darkrp-baslarken/sss#ehliyet`,
-            content: 'Ehliyet Almak İstiyorum',
-            tags: ['drp', 'rp', 'sss', 'ehliyet', 'driver', 'araba', 'araç ehliyeti', 'araba ehliyet']
+            content: 'Sürücü belgesi nasıl alırım?',
+            tags: ['drp', 'rp', 'sss', 'cars', 'araba', 'ehliyet', 'sürücü belgesi']
         },
         {
             name: 'DarkRP SSS - Silah Ruhsatı Nereden Alabilirim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#ehliyet`,
-            content: 'Ruhsat Almak İstiyorum',
-            tags: ['drp', 'rp', 'sss', 'ruhsat', 'tabanca', 'pompalı', 'silah']
+            url: `${baseUrl}/darkrp-baslarken/sss#ruhsat`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'gun', 'ehliyet', 'ruhsat']
+        },
+        {
+            name: 'DarkRP SSS - Silah Nereden Alabilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#silah`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'gun', 'poligon', 'ithalatçı', 'tabanca', 'pompalı']
+        },
+        {
+            name: 'DarkRP SSS - Oyunda bayıldım, sonrasında ilk yardım ekibi gelip beni canlandırdı ve silahımı atamıyorum, neden?',
+            url: `${baseUrl}/darkrp-baslarken/sss#bayilmak`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'att', 'doktor', 'ilk yardim', 'ambulans', 'drop']
+        },
+        {
+            name: 'DarkRP SSS - Parti belgesi nedir, parti ne işe yarar?',
+            url: `${baseUrl}/darkrp-baslarken/sss#parti`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'belge', 'parti', 'benzinlik', 'soygun', 'mug', 'raid', 'baskın']
         },
         {
             name: 'DarkRP SSS - Araç Nereden Satın Alabilirim?',
             url: `${baseUrl}/darkrp-baslarken/sss#arac`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['drp', 'rp', 'sss', 'araba', 'galeri']
         },
         {
             name: 'DarkRP SSS - Aracım NPC\'de yok, aracımı nasıl çıkartacağım?',
             url: `${baseUrl}/darkrp-baslarken/sss#araccikarma`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['drp', 'rp', 'sss', 'araba', 'galeri']
         },
         {
             name: 'DarkRP SSS - Aracımın yakıtı bitti, nasıl doldurabilirim?',
             url: `${baseUrl}/darkrp-baslarken/sss#yakit`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['drp', 'rp', 'sss', 'araba', 'yakıt', 'dizel', 'elektrik', 'benzin']
         },
         {
             name: 'DarkRP SSS - Aracım hasarlı, nasıl tamir edebilirim?',
             url: `${baseUrl}/darkrp-baslarken/sss#aractamir`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['drp', 'rp', 'sss', 'araba', 'mekanik', 'galeri', 'tamir', 'motor']
         },
         {
-            name: 'DarkRP SSS - Parti belgesi nedir, parti ne işe yarar?',
-            url: `${baseUrl}/darkrp-baslarken/sss#parti`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'parti', 'benzinlik', 'soygun', 'baskın']
+            name: 'DarkRP SSS - Susuzluğumu ve açlığımı nasıl gidereceğim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#yemek`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'yemek', 'su', 'ayran', 'döner', 'pilav', 'simit']
         },
         {
-            name: 'DarkRP SSS - Fizik Silahı Rengini Nasıl Değiştirebilirim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#guncolor`,
-            content: 'Physic Gun Rengini Nasıl Değiştirebilirim?',
-            tags: ['drp', 'rp', 'sss', 'Physic Gun', 'Fizik Gun', 'Gun', 'color', 'renk', 'sandbox']
+            name: 'DarkRP SSS - Nasıl canımı artırabilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#recete`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'recete', 'doktor', 'ilaç', 'reçetesiz', 'hp', 'can']
         },
         {
-            name: 'DarkRP SSS - İsmimi nasıl değiştireceğim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#isimdegistirme`,
-            content: 'İsmimi beğenmedim',
-            tags: ['drp', 'rp', 'sss', 'display name', 'IC', 'Karakter', 'Ad', 'Soyad']
+            name: 'DarkRP SSS - Nasıl 500 can olunur?',
+            url: `${baseUrl}/darkrp-baslarken/sss#bioorgan`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'bio', 'organ', 'eczacı', 'hp', 'can']
+        },
+        {
+            name: 'DarkRP SSS - Nasıl 300 zırh olunur?',
+            url: `${baseUrl}/darkrp-baslarken/sss#zirh`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'zırh', '1. Kalite', 'Çelik Yelek', 'Yelek', 'can']
+        },
+        {
+            name: 'DarkRP SSS - VIP ve VIP+ Meslekler Neler?',
+            url: `${baseUrl}/darkrp-baslarken/sss#vip`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'vip', 'vip+', 'meslekler', 'ithalatçı', 'mühendis', 'sivil polis', 'milli']
+        },
+        {
+            name: 'DarkRP SSS - Envanterimdeki kutuyu nasıl açabilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#kutu`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'kutu', 'moonshop']
+        },
+        {
+            name: 'DarkRP SSS - Piyango bileti Nasıl Alırım?',
+            url: `${baseUrl}/darkrp-baslarken/sss#piyango`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'milli piyango', 'piyango', 'gazino']
         },
         {
             name: 'DarkRP SSS - Döviz Nasıl Alırım?',
             url: `${baseUrl}/darkrp-baslarken/sss#doviz`,
-            content: 'Dolar, Euro, Kripto para Nasıl Alırım?',
-            tags: ['drp', 'rp', 'sss', 'BTC', 'ETH', '€', '$']
-        },
-        {
-            name: 'DarkRP SSS - Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?',
-            url: `${baseUrl}/darkrp-baslarken/sss#adminyok`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'admin', 'ticket']
-        },
-        {
-            name: 'DarkRP SSS - Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#bantemyiz`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'admin', 'bantemyiz', 'haksizban', 'yasaklanma']
-        },
-        {
-            name: 'DarkRP SSS - Yetkili nasıl olabilirim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-poh`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'admin', 'mod']
-        },
-        {
-            name: 'DarkRP SSS - Polis Özel Harekat Polisi ve Polis Özel Harekat Doktoru nasıl olurum?',
-            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-poh`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'wh', 'poh', 'doktor', 'asayiş']
-        },
-        {
-            name: 'DarkRP SSS - Jandarma Özel Harekat Komandosu ve Jandarma Özel Harekat Doktoru nasıl olurum?',
-            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-joh`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'wh', 'joh', 'doktor', 'jandarma', 'sıhhiye']
-        },
-        {
-            name: 'DarkRP SSS - Millî İstihbarat Teşkilatı Müsteşarı nasıl olurum?',
-            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-mit-mustesari`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'wh', 'mit', 'sivilpolis']
-        },
-        {
-            name: 'DarkRP SSS - Emniyet Genel Müdürü nasıl olurum?',
-            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-egm`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'wh', 'egm']
-        },
-        {
-            name: 'DarkRP SSS - Baron nasıl olurum?',
-            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-baron`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'wh', 'baron']
-        },
-        {
-            name: 'DarkRP SSS - Sefir nasıl olurum?',
-            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-sefir`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'wh', 'sefir']
-        },
-        {
-            name: 'DarkRP SSS - Bilim Adamı Nasıl Olunur?',
-            url: `${baseUrl}/darkrp-baslarken/sss#bilimadami`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'bitki', '3seviye']
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'dolar', 'btc', 'bitcoin', 'kripto', 'euro', 'sterlin']
         },
         {
             name: 'DarkRP SSS - Vergi Levhası nasıl çıkartırım?',
             url: `${baseUrl}/darkrp-baslarken/sss#vergilev`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'esnaf', 'vergi', 'gm_spawn']
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'vergi', 'levha', 'zabıta', 'esnaf']
+        },
+        {
+            name: 'DarkRP SSS - Physhic Gun/Fizik Gun Rengini Nasıl Değiştirebilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#guncolor`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'Fizik Gun', 'Fizik Silah', 'Renk', 'C Menü']
+        },
+        {
+            name: 'DarkRP SSS - Dans Menüsünü Anahtar Olmadan Nasıl Açarım?',
+            url: `${baseUrl}/darkrp-baslarken/sss#dancebind`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'console', 'dans', '_DarkRP_AnimationMenu']
+        },
+        {
+            name: 'DarkRP SSS - Kopyalayıcı ile kaydettiğim build arkadaşımla nasıl paylaşırım?',
+            url: `${baseUrl}/darkrp-baslarken/sss#dancebind`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'builder', 'paylaş', 'kb_duplicator']
+        },
+        {
+            name: 'DarkRP SSS - Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?',
+            url: `${baseUrl}/darkrp-baslarken/sss#adminyok`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'admin yok', 'şikayetçiyim']
+        },
+        {
+            name: 'DarkRP SSS - Video kaydım var, nereye yüklemeliyim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#kanit`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'admin yok', 'şikayetçiyim', 'ss']
+        },
+        {
+            name: 'DarkRP SSS - Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#bantemyiz`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'ban temyiz', 'itiraz']
+        },
+        {
+            name: 'DarkRP SSS - Başvurular',
+            url: `${baseUrl}/darkrp-baslarken/sss#basvuru`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'basvuru']
+        },
+        {
+            name: 'DarkRP SSS - Yetkili nasıl olabilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#admin`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'basvuru', 'admin', 'Gorevli yetkili']
+        },
+        {
+            name: 'DarkRP SSS - Bilim Adamı Nasıl Olunur?',
+            url: `${baseUrl}/darkrp-baslarken/sss#bilimadami`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'bilim insani', '3 seviye']
+        },
+        {
+            name: 'DarkRP SSS - Emniyet Genel Müdürü nasıl olurum?',
+            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-egm`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'egm']
+        },
+        {
+            name: 'DarkRP SSS - Millî İstihbarat Teşkilatı Müsteşarı nasıl olurum?',
+            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-mit-mustesari`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'mit']
+        },
+        {
+            name: 'DarkRP SSS - Polis Özel Harekât Polisi, Polis Özel Harekât Keskin Nişancısı ve Polis Özel Harekât Doktoru nasıl olurum?',
+            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-poh`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'pöh', 'sniper', 'doktor', 'pöh doktor']
+        },
+        {
+            name: 'DarkRP SSS - Jandarma Özel Harekat Komandosu ve Jandarma Özel Harekat Doktoru nasıl olurum?',
+            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-joh`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'jöh','doktor', 'jöh doktor']
+        },
+        {
+            name: 'DarkRP SSS - Baron nasıl olurum?',
+            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-baron`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'baron','sefir']
+        },
+        {
+            name: 'DarkRP SSS - Sefir nasıl olurum?',
+            url: `${baseUrl}/darkrp-baslarken/sss#basvuru-sefir`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'baron','sefir']
         },
         {
             name: 'DarkRP SSS - Aile kurmak istiyorum, ne yapmam gerekiyor?',
-            url: `${baseUrl}/darkrp-baslarken/sss#vergilev`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'aile', 'familya']
-        },
-        {
-            name: 'DarkRP SSS - Nasıl Dans Edebilirim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#vergilev`,
-            content: 'DarkRP moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['drp', 'rp', 'sss', 'dance', 'dans', '_DarkRP_AnimationMenu', 'animasyon menu']
+            url: `${baseUrl}/darkrp-baslarken/sss#family`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'familya','aile', 'family']
         },
         {
             name: 'DarkRP Kariyer',
@@ -373,18 +506,6 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'belediye', 'işçi', 'legal', 'yeniyim', "darkrp yeniyim"]
         },
         {
-            name: 'Devlet Çalışanı - Belediye Başkanı Nasıl Olacağım?',
-            url: `${baseUrl}/darkrp-kariyer/legal#baskanaday`,
-            content: 'Belediye Başkanı adayı nasıl olurum?',
-            tags: ['drp', 'rp', 'belediye', 'başkan', 'ysk', 'aday', 'legal']
-        },
-        {
-            name: 'Devlet Çalışanı - Belediye Başkan Yardımcısı Seçebiliyor muyum?',
-            url: `${baseUrl}/darkrp-kariyer/legal#baskanyardimcisi`,
-            content: 'Belediye Başkanı yardımcısı nasıl seçerim?',
-            tags: ['drp', 'rp', 'belediye', 'başkan yardımcısı', 'ysk', 'aday', 'legal']
-        },
-        {
             name: 'Devlet Çalışanı - Polis Sağlık Dolabı ve Teçhizat Dolabı Nedir?',
             url: `${baseUrl}/darkrp-kariyer/legal#dolap`,
             content: 'Polis Sağlık Dolabı, Polislerin ihtiyaçlarını karşılama konusundaki en etkili etkenlerden biridir. ',
@@ -419,6 +540,18 @@ document.addEventListener('DOMContentLoaded', function () {
             url: `${baseUrl}/darkrp-kariyer/legal#sivil-polis-mit`,
             content: 'Kamu düzenini sağlamak ve vatandaşlara hizmet etmek için sorumluluk taşır; güvenlik, vergi toplama ve yasaların uygulanmasında aktif rol oynar.',
             tags: ['drp', 'rp', 'şüpheli', 'hapis', 'zanlı', 'legal', 'polis', 'jandarma', 'sivilpolis', 'jandarma', 'özel harekat']
+        },
+        {
+            name: 'Devlet Çalışanı - Belediye Başkanı Nasıl Olacağım?',
+            url: `${baseUrl}/darkrp-kariyer/legal#baskanaday`,
+            content: 'Belediye Başkanı adayı nasıl olurum?',
+            tags: ['drp', 'rp', 'belediye', 'başkan', 'ysk', 'aday', 'legal']
+        },
+        {
+            name: 'Devlet Çalışanı - Belediye Başkan Yardımcısı Seçebiliyor muyum?',
+            url: `${baseUrl}/darkrp-kariyer/legal#baskanyardimcisi`,
+            content: 'Belediye Başkanı yardımcısı nasıl seçerim?',
+            tags: ['drp', 'rp', 'belediye', 'başkan yardımcısı', 'ysk', 'aday', 'legal']
         },
         {
             name: 'Devlet Çalışanı - Başkan Olarak Sokağa Çıkma Yasağı Başlatmadan Ne Yapmalıyım?',
@@ -495,13 +628,13 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             name: 'DarkRP Kariyer - Yasadışı Organizasyonlar',
             url: `${baseUrl}/darkrp-kariyer/illegal`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'baron', 'bilim', 'sefir', 'keko', 'temizlik']
         },
         {
             name: 'Yasadışı Organizasyonlar - Meslekler',
             url: `${baseUrl}/darkrp-kariyer/illegal#meslek`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'baron', 'bilim', 'sefir', 'keko', 'temizlik']
         },
         {
@@ -513,67 +646,67 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             name: 'Yasadışı Organizasyonlar - Nasıl Araba Çalabilirim?',
             url: `${baseUrl}/darkrp-kariyer/illegal#carjack`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'araba', 'soygun']
         },
         {
             name: 'Yasadışı Organizasyonlar - Banka Soygunu Nasıl Yapılır?',
             url: `${baseUrl}/darkrp-kariyer/illegal#bankasoygun`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'banka', 'soygun']
         },
         {
             name: 'Yasadışı Organizasyonlar - Kirli Dolar Üretimi',
             url: `${baseUrl}/darkrp-kariyer/illegal#dolar`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'dolar', 'printer']
         },
         {
             name: 'Yasadışı Organizasyonlar - Para Basma Makinesi Nedir? Nasıl Çalışır?',
             url: `${baseUrl}/darkrp-kariyer/illegal#printer`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'dolar', 'printer', 'mühendis']
         },
         {
             name: 'Yasadışı Organizasyonlar - Bitki Üretimi',
             url: `${baseUrl}/darkrp-kariyer/illegal#bitki`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'bitki', 'saksi', 'mühendis']
         },
         {
             name: 'Yasadışı Organizasyonlar - Bitkimi Nasıl Yükseltebilirim?',
             url: `${baseUrl}/darkrp-kariyer/illegal#bitkiupgrade`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'bitki', 'saksi', 'mühendis', '2seviye', '3seviye']
         },
         {
             name: 'Yasadışı Organizasyonlar - Saksı Nedir? Nasıl Çalışır?',
             url: `${baseUrl}/darkrp-kariyer/illegal#saksi`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'bitki', 'saksi', 'mühendis']
         },
         {
             name: 'Yasadışı Organizasyonlar - Kirli Dolar Temizleme ve Bitki Satmanin Yolları Nelerdir?',
             url: `${baseUrl}/darkrp-kariyer/illegal#temizleme`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'bitki', 'dolar', 'satma', 'npc', 'meslek', 'botanikci', 'sigortaci']
         },
         {
             name: 'Yasadışı Organizasyonlar - Korsan ve Eşkiyada ürettiğim İthal eşyaları kime satabilirim?\n',
             url: `${baseUrl}/darkrp-kariyer/illegal#ithalesya`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'korsan', 'eşkıya', 'ithal']
         },
         {
             name: 'Yasadışı Organizasyonlar - Faction Mesleklerine Nasıl Geçebilirim?',
             url: `${baseUrl}/darkrp-kariyer/illegal#factiongereksinim`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'faction', 'rus', 'italyan', 'triads', 'aşiret']
         },
         {
             name: 'Yasadışı Organizasyonlar - Familya/Aile Nedir? Neden Bir Familya/Aileye Katılmalıyım?',
             url: `${baseUrl}/darkrp-kariyer/illegal#aile`,
-            content: 'Yasadışı organizasyonlar, kanun dışı faaliyetlerde bulunan gruplardır. Suç, dolandırıcılık ve yasa ihlalleri gibi eylemlerle toplum güvenliğini tehdit eder.',
+            content: '',
             tags: ['drp', 'rp', 'illegal', 'familya', 'aile']
         },
         {
@@ -584,7 +717,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'TTT Oyun Kuralları',
-            url: `https://moonrp.com/oyunkurallari`,
+            url: `https://moonrp.com/tttkurallar`,
             content: 'Mutlaka bilinmesi gereken oyun kuralları',
             tags: ['ttt', 'Trouble in Terrorist Town', 'kurallar', 'yeniyim', "ttt yeniyim"]
         },
@@ -608,7 +741,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'TTT Başlarken - Gerekli Eklentiler ve Ayarlar',
-            url: `${baseUrl}/ttt-baslarken#gerekli-eklentiler-ve-ayarlar`,
+            url: `${baseUrl}/ttt-baslarken#workshop`,
             content: 'Oyuna girmeden önce yapılması gerekenler...',
             tags: ['ttt', 'Trouble in Terrorist Town', 'workshop', 'chromium', 'error', 'yeniyim', "ttt yeniyim"]
         },
@@ -650,7 +783,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'TTT Başlarken - Oyundaki tüm silahlarım nerede?',
-            url: `${baseUrl}/ttt-baslarken#weapon`,
+            url: `${baseUrl}/ttt-baslarken#weaponslot`,
             content: 'Silah slotlarım nerede?',
             tags: ['ttt', 'Trouble in Terrorist Town', 'weapon', 'silah']
         },
@@ -662,7 +795,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'TTT Başlarken - Silahımda Bazı Şeyler Yazıyor, Onlar Ne Anlama Geliyor?',
-            url: `${baseUrl}/ttt-baslarken#weaponn`,
+            url: `${baseUrl}/ttt-baslarken#weapon`,
             content: 'TTT Başlıyan herkesin bilmesi gerekenler',
             tags: ['ttt', 'Trouble in Terrorist Town', 'dmg', 'silah', 'weapon']
         },
@@ -703,28 +836,46 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['ttt', 'Trouble in Terrorist Town', 'c menü', 'dedective', 'terrorist', 'dedektif', 'hain', 'katil']
         },
         {
-            name: 'TTT Başlarken - Etkinlik Düzenleniyor mu?',
-            url: `${baseUrl}/ttt-baslarken#event`,
-            content: 'Etkinlik ve Etkinlik...',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'event', 'etkinlik', 'IC Kredi', 'Envanter Kredisi', 'yeniyim', "ttt yeniyim"]
-        },
-        {
             name: 'TTT Başlarken - Envanter nedir? Burada ne yapabilirim?',
             url: `${baseUrl}/ttt-baslarken#envanter`,
             content: 'TTT Başlıyan herkesin bilmesi gerekenler',
             tags: ['ttt', 'Trouble in Terrorist Town', 'envanter', 'takas', 'kutu', 'destekçi']
         },
         {
-            name: 'TTT Başlarken - Sıkça Sorulan Sorular',
-            url: `${baseUrl}/ttt-baslarken/sss`,
-            content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'whitelist', 'yetkili', 'DirectX']
+            name: 'TTT Başlarken - Etkinlik Düzenleniyor mu?',
+            url: `${baseUrl}/ttt-baslarken#event`,
+            content: 'Etkinlik ve Etkinlik...',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'event', 'etkinlik', 'IC Kredi', 'Envanter Kredisi', 'yeniyim', "ttt yeniyim"]
         },
         {
-            name: 'TTT SSS - Etrafta her şey error, ne yapmalıyım? / Oyuna giremiyorum, ana menüye atıyor?',
+            name: 'TTT Başlarken - Sıkça Sorulan Sorular',
+            url: `${baseUrl}/ttt-baslarken/sss`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'token', 'bunny']
+        },
+        {
+            name: 'TTT SSS - Teknik Sorunlar',
+            url: `${baseUrl}/ttt-baslarken/sss#teknik`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'yeniyim', 'ttt yeniyim', 'destek']
+        },
+        {
+            name: 'TTT SSS - Etrafta her şey error, ne yapmalıyım? / Bazı karakterler gözükmüyor',
             url: `${baseUrl}/ttt-baslarken/sss#error`,
             content: 'Etrafımda herşey error...',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'yeniyim', 'ttt yeniyim', 'destek', 'eller']
+        },
+        {
+            name: 'TTT SSS - Steam\'de Garry\'s Mod indirirken \'Bozuk İndirme\' hatası alıyorum, nasıl çözebilirim?',
+            url: `${baseUrl}/ttt-baslarken/sss#brokendownload`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'yeniyim', 'ttt yeniyim', 'destek', 'steam']
+        },
+        {
+            name: 'TTT SSS - Ana Menüye düşüyorum / Oyun aniden kapanıyor',
+            url: `${baseUrl}/ttt-baslarken/sss#menuerror`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'yeniyim', 'ttt yeniyim', 'destek', 'gpucache']
         },
         {
             name: 'TTT SSS - "This typically means you are running out of Video Memory on your GPU" hatası alıyorum?',
@@ -733,58 +884,101 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'engineerror', 'gpu', 'ekrankarti', 'gpumemory']
         },
         {
-            name: 'TTT SSS - Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?',
-            url: `${baseUrl}/ttt-baslarken/sss#modeldetayi`,
-            content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'model', 'detay']
-        },
-        {
-            name: 'TTT SSS - Steam Garry\'s Mod indirirken "Bozuk İndirme" yazıyor nasıl çözebilirim?',
-            url: `${baseUrl}/ttt-baslarken/sss#brokendownload`,
-            content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'broken download', 'bozuk indirme', 'steam', 'broken', 'bozuk']
-        },
-        {
             name: 'TTT SSS - Konsol/Console Nedir?',
             url: `${baseUrl}/ttt-baslarken/sss#console`,
-            content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'console', 'konsole']
         },
         {
+            name: 'TTT SSS - Eski Tarayıcıyı Nasıl Açarım??',
+            url: `${baseUrl}/ttt-baslarken/sss#eskitarayici`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'legacy', 'browser', 'openserverbrowser']
+        },
+        {
+            name: 'TTT SSS - TTT Sunucusu gözükmüyor ne yapmam lazım?',
+            url: `${baseUrl}/ttt-baslarken/sss#ip`,
+            content: 'Sunucu kaydoldu...',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'sunucu gözükmüyor', 'vpn', 'proxy']
+        },
+        {
+            name: 'TTT SSS - Bazı araçlar ve insanlar garip duruyor ve ya hiç gözükmüyor / Görüntüler iç içe giriyor. Ne Yapmam Gerekiyor?',
+            url: `${baseUrl}/ttt-baslarken/sss#modeldetayi`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'model', 'detay']
+        },
+
+        {
             name: 'TTT SSS - Tuşlarım çalışmıyor, neden?',
             url: `${baseUrl}/ttt-baslarken/sss#tus`,
-            content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'tuş', 'keyboard']
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'tuş', 'keyboard', 'key']
         },
         {
             name: 'TTT SSS - Oyunda sesim diğer oyunculara gitmiyor, ne yapmalıyım?',
             url: `${baseUrl}/ttt-baslarken/sss#mikrofon`,
-            content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
+            content: '',
             tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'sanal', 'mikrofon']
+        },
+        {
+            name: 'TTT SSS - FPS Nasıl Artırabilirim?',
+            url: `${baseUrl}/ttt-baslarken/sss#fps`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'fps']
+        },
+        {
+            name: 'TTT SSS - F1, F8, M, I gibi tuşları başka tuşa atayabilir miyim?',
+            url: `${baseUrl}/ttt-baslarken/sss#sunucutus`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'tuş', 'sunucutuş', 'key']
         },
         {
             name: 'TTT SSS - Pembe-Siyah Hatasını nasıl çözebilirim?',
             url: `${baseUrl}/ttt-baslarken/sss#csscontent`,
-            content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'css', 'pembe', 'kare', 'yeniyim', "ttt yeniyim"]
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'css', 'Counter-Strike: Source', 'cs:s']
         },
         {
             name: 'TTT SSS - Vape Token Sahibiyim, Ne Yapmalıyım?',
-            url: `${baseUrl}/ttt-baslarken/sss#ailepaylasimi`,
-            content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'Token', 'envanter']
+            url: `${baseUrl}/ttt-baslarken/sss#vapetoken`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'token', 'vape']
+        },
+        {
+            name: 'TTT SSS - Otomatik Bunny Nasıl Yaparım?',
+            url: `${baseUrl}/ttt-baslarken/sss#bunny`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'bunny']
         },
         {
             name: 'TTT SSS - Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?',
             url: `${baseUrl}/ttt-baslarken/sss#adminyok`,
-            content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'admin', 'ticket']
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'admin yok', 'şikayetçiyim']
+        },
+        {
+            name: 'TTT SSS - Video kaydım var, nereye yüklemeliyim?',
+            url: `${baseUrl}/ttt-baslarken/sss#kanit`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'admin yok', 'şikayetçiyim', 'ss']
+        },
+        {
+            name: 'TTT SSS - Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?',
+            url: `${baseUrl}/ttt-baslarken/sss#bantemyiz`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'ban temyiz', 'itiraz']
+        },
+        {
+            name: 'TTT SSS - Başvurular',
+            url: `${baseUrl}/ttt-baslarken/sss#basvuru`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'basvuru']
         },
         {
             name: 'TTT SSS - Yetkili nasıl olabilirim?',
             url: `${baseUrl}/ttt-baslarken/sss#admin`,
-            content: 'TTT moduyla ilgili en sık sorulan soruların yanıtlarını keşfedin; oyun kuralları, meslekler, para kazanma yöntemleri ve rol yapma ipuçlarıyla oyun deneyiminizi zenginleştirin.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'admin', 'mod']
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'basvuru', 'admin', 'Gorevli yetkili']
         },
         {
             name: 'Counter-Strike: Source Content Nasıl İndiririm?',
