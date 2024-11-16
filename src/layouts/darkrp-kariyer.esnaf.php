@@ -1,11 +1,11 @@
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
         <div class="content pt-3">
-            <h1 class="mb-4">Esnaf ve Siviller</h1>
-            <hr>
-            <br>
+            <h1 class="darkrpesnaf" style="">Esnaf ve Siviller</h1>
+            <p>Esnaf meslekleri sunucumuzda önemlidir. Çünkü sattıkları ve sundukları hizmet çoğu
+                oyuncu için önemlidir şimdi Esnaf ve Siviller hakkında temel bilgileri öğrenelim.</p>
             <div>
-                <h2 class="text-success" id="meslek">Meslekler</h2>
+                <h2 class="standartcolor" id="meslek">Meslekler</h2>
                 <div class="accordion" id="accordionJobs">
                     <?php foreach ($esnafJobs as $index => $job): ?>
                         <?php
@@ -18,7 +18,7 @@
                                         data-bs-toggle="collapse" data-bs-target="#collapse<?= $index ?>"
                                         aria-expanded="<?= $index === 0 ? 'true' : 'false' ?>"
                                         aria-controls="collapse<?= $index ?>">
-                                    <span class="text-warning-emphasis"><?= htmlspecialchars($job['title']) ?></span>
+                                    <span style="color: var(--darkrp-job-green-border)"><?= htmlspecialchars($job['title']) ?></span>
                                     <?php if ($isVip) {
                                         ?>
                                         <span style="padding-left: 1%; color: #16bb00">[VIP]</span>
@@ -44,15 +44,18 @@
                                         <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
                                         <p><?= htmlspecialchars($job['req']) ?></p>
                                     <?php endif; ?>
+                                    <?php if (!empty($job['whitelist'])): ?>
+                                        <small class="text-light">Bu meslek whitelist dir. Daha fazla bilgi için <a style="text-decoration: none" href="<?= $baseUrl ?>/darkrp-baslarken/sss#basvuru">Sıkça Sorulan Sorular - Başvurular</a> bölümüne bakınız.</small>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
                     <?php endforeach; ?>
                 </div>
             </div>
-            <hr>
+            <br>
             <div>
-                <h2 id="yiyecekveicecek">1. Yiyecek ve İçecek Sektörü</h2>
+                <h2 class="standartcolor" id="yiyecekveicecek">1. Yiyecek ve İçecek Sektörü</h2>
                 <br>
                 <p>Tüm esnaf mesleklerinde olduğu gibi, yiyecek ve içecek satışı yapabilmeniz ve rolünüzü
                     gerçekleştirebilmeniz için bir standınız ya da bir dükkanınız olması gerekiyor. Şehirdeki
@@ -70,44 +73,40 @@
                     oyuncularla
                     sürekli iletişim halinde kalarak şehir yaşamına canlılık katar.</p>
 
-                <h4 id="yiyecekveicecek-meslekler">Meslekler</h4>
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <p>Çiğ Köfte Salonu Sahibi</p>
-                            <p>İtalyan Restoranı Sahibi</p>
-                            <p>Simitçi</p>
-                            <p>Tavuk Pilavcı</p>
-                            <p>Kebapçı</p>
-                        </td>
-                        <td>
-                            <p>Kafe Sahibi</p>
-                            <p>Hamburgerci</p>
-                            <p>Dönerci</p>
-                            <p>Dondurmacı</p>
-                            <p>Tekel Bayi Sahibi</p>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                <h3 class="standartcolor" id="yiyecekveicecek-meslekler">Meslekler</h3>
 
-                <h4 id="yiyecekveicecek-meslek-urunleri">Meslek Ürünleri</h4>
-                <p>İlgili mesleğin malzemelerine erişmek için F4 tuşuna basarak açılan menüden Tezgahlar
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="mobile-no-margin" style="list-style-type: '- '">
+                            <li>Çiğ Köfte Salonu Sahibi</li>
+                            <li>İtalyan Restoranı Sahibi</li>
+                            <li>Simitçi</li>
+                            <li>Tavuk Pilavcı</li>
+                            <li>Kebapçı</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="mobile-no-margin" style="list-style-type: '- '">
+                            <li>Kafe Sahibi</li>
+                            <li>Hamburgerci</li>
+                            <li>Dönerci</li>
+                            <li>Dondurmacı</li>
+                            <li>Tekel Bayi Sahibi</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <br>
+                <h3 class="standartcolor" id="yiyecekveicecek-meslek-urunleri">Meslek Ürünleri</h3>
+                <p>İlgili mesleğin malzemelerine erişmek için <span class='key'>F4</span> tuşuna basarak açılan menüden Tezgahlar
                     sekmesine
                     girebilirsiniz. Her esnafın kendine özgü tezgahları ve malzemeleri bu sekmede bulunur.
                     Örneğin,
                     bir Çiğ Köfte Salonu Sahibi iseniz, işinizi yürütmek için bir adet çiğ köfte tezgahına sahip
                     olmanız gerekmektedir. Bu tezgahlar, hem ürünlerinizi hazırlamak hem de satış yapmak için
                     gereklidir.</p>
-
-                <h4 id="yiyecekveicecek-fiyatlandirma">Fiyatlandırma</h4>
+                <br>
+                <h3 class="standartcolor" id="yiyecekveicecek-fiyatlandirma">Fiyatlandırma</h3>
                 <p>Yiyecek ve içecek sektöründe fiyatlandırma abartılı olmamalıdır. Unutmayın, bu meslek grubu
                     temel
                     olarak rol yapma deneyimi için vardır. Oyuncular, rolünüzden keyif aldıklarında genellikle
@@ -116,12 +115,11 @@
                     hem de
                     rol yaparak oyunun tadını çıkarmak en iyi stratejidir.</p>
             </div>
-            <hr>
             <br>
             <div>
-                <h2 id="ticarivehizmetsektoru">2. Ticari ve Hizmet Sektörü</h2>
+                <h2 class="standartcolor" id="ticarivehizmetsektoru">2. Ticari ve Hizmet Sektörü</h2>
                 <br>
-                <h3 id="ticarivehizmetsektoru-yapimarket">Yapı Market Rehberi</h3>
+                <h3 class="standartcolor" id="ticarivehizmetsektoru-yapimarket">Yapı Market Rehberi</h3>
                 <p>İlk rehberimiz Yapı Market. Yapı marketlerde satılan ürünler, Garry's Mod'un temel eşyaları
                     olan
                     Physic Gun ve Tool Gun ile ilgilidir. Bu eşyalar, oyuncuların inşaat ve yapı işlemlerinde
@@ -132,11 +130,12 @@
                     grubudur. Oyuncularla sürekli etkileşimde olacağınız bu meslek, şehrin yapı ihtiyaçlarını
                     karşılamada önemli bir rol oynar.</p>
 
-                <h4 id="ticarivehizmetsektoru-yapimarket-urunleri">Yapı Market Ürünleri</h4>
+                <h4 class="standartcolor" id="ticarivehizmetsektoru-yapimarket-urunleri">Yapı Market Ürünleri</h4>
                 <p>Yapı marketlerde, oyuncuların inşaattan güvenliğe kadar çeşitli ihtiyaçlarını
                     karşılayabilecek
                     ürünler satılmaktadır. İşte yapı markette bulabileceğiniz ürünlerin listesi ve kısa
                     açıklamaları:</p>
+
                 <ul class="list-group">
                     <li class="list-group-item">
                         <strong class="<?= randomBSColor(0) ?>">Tool Gun, Physic Gun, Gravity Gun</strong>:
@@ -191,10 +190,9 @@
                         <span>Vücudunuza gelen hasarı seviyesine bağlı olarak azaltır.</span>
                     </li>
                 </ul>
-
-
                 <br>
-                <h3 id="ticarivehizmetsektoru-eczaci">Eczacı Rehberi</h3>
+
+                <h3 class="standartcolor" id="ticarivehizmetsektoru-eczaci">Eczacı Rehberi</h3>
                 <p>Sıradaki rehberimiz, DarkRP ve MoonGaming™ sunucularında hayati öneme sahip bir meslek olan
                     Eczacıya ait. Eczacı, oyuncuların sağlık ihtiyaçlarını karşılayan önemli bir rol oynar.
                     Eczanede
@@ -202,7 +200,7 @@
                     eczacının
                     sürekli etkileşim halinde olduğu bir meslek olduğunu gösterir.</p>
 
-                <h4 id="ticarivehizmetsektoru-eczaci-urunler">Eczanede Satılan Ürünler</h4>
+                <h4 class="standartcolor" id="ticarivehizmetsektoru-eczaci-urunler">Eczanede Satılan Ürünler</h4>
                 <ul class="list-group">
                     <li class="list-group-item">
                         <strong class="<?= randomBSColor(1) ?>">Bio-Organ (Seviye 1-5)</strong>:
@@ -217,9 +215,8 @@
                         <span>Mermilerin sekmesini (recoil) azaltır, ateşli silahlarla yapılan atışlarda daha isabetli olmanızı sağlar.</span>
                     </li>
                 </ul>
-
                 <br>
-                <h3 id="ticarivehizmetsektoru-poligon">Poligon Rehberi</h3>
+                <h3 class="standartcolor" id="ticarivehizmetsektoru-poligon">Poligon Rehberi</h3>
                 <p>Poligon mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların silah kullanma becerilerini
                     geliştirebilecekleri ve çeşitli silahlar ile mermiler satın alabilecekleri bir rolü temsil
                     eder.
@@ -231,7 +228,7 @@
                     duydukları silahları sağlayarak oyuncuların savaş yeteneklerini geliştirmelerine katkıda
                     bulunabilirsiniz.</p>
 
-                <h4 id="ticarivehizmetsektoru-poligon-urunler">Poligon Ürünleri</h4>
+                <h4 class="standartcolor" id="ticarivehizmetsektoru-poligon-urunler">Poligon Ürünleri</h4>
                 <ul class="list-group">
                     <li class="list-group-item">
                         <strong class="<?= randomBSColor(0) ?>">Tabanca (Seviye 1-5)</strong>:
@@ -258,9 +255,8 @@
                         <span>Zırh sağlamaktadır.</span>
                     </li>
                 </ul>
-
                 <br>
-                <h3 id="ticarivehizmetsektoru-ithalatci">İthalatçı Rehberi</h3>
+                <h3 class="standartcolor" id="ticarivehizmetsektoru-ithalatci">İthalatçı Rehberi</h3>
                 <p>İthalatçı mesleği, DarkRP ve MoonGaming™ sunucularında oyunculara geniş bir silah yelpazesi
                     sunan ve ağır silahlar temin edebilen özel bir rolü temsil eder. Bu meslek, oyuncuların daha
                     güçlü ve çeşitli silahları edinerek savaş yeteneklerini en üst düzeye çıkarmalarına yardımcı
@@ -269,7 +265,7 @@
                 <p>İthalatçı olarak, oyunculara nadir ve güçlü silahlar sağlayarak onların daha etkili savaş
                     becerileri kazanmalarına katkıda bulunabilirsiniz.</p>
 
-                <h4 id="ticarivehizmetsektoru-ithalatci-urunler">İthalatçı Ürünleri</h4>
+                <h4 class="standartcolor" id="ticarivehizmetsektoru-ithalatci-urunler">İthalatçı Ürünleri</h4>
                 <ul class="list-group">
                     <li class="list-group-item">
                         <strong class="<?= randomBSColor(0) ?>">Tabanca (Seviye 1-5)</strong>:
@@ -298,7 +294,7 @@
                 </ul>
 
                 <br>
-                <h3 id="ticarivehizmetsektoru-muhendis">Mühendis Rehberi</h3>
+                <h3 class="standartcolor" id="ticarivehizmetsektoru-muhendis">Mühendis Rehberi</h3>
                 <p>Mühendis mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların Bitki üretme ve para basma
                     makineleri için donanım
                     yükseltme katkı sağlıyabilceği bir rolü temsil
@@ -306,7 +302,7 @@
                     Bu meslekte, İnsanların Bitki üretimine katkıda bulunabilir ve ya para basma makinelerine katkıda
                     bulunabilirsiniz..</p>
 
-                <h4 id="ticarivehizmetsektoru-muhendis-urunler">Mühendis Ürünleri</h4>
+                <h4 class="standartcolor" id="ticarivehizmetsektoru-muhendis-urunler">Mühendis Ürünleri</h4>
                 <ul class="list-group">
                     <li class="list-group-item">
                         <strong class="<?= randomBSColor(5) ?>">Mühendis Kiti</strong>:
@@ -327,27 +323,26 @@
                 </ul>
 
                 <br>
-                <h3 id="ticarivehizmetsektoru-imam">İmam Rehberi</h3>
+                <h3 class="standartcolor" id="ticarivehizmetsektoru-imam">İmam Rehberi</h3>
                 <p>İmam mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların XP Kazanmasını sağlarlar.
                     Bu meslekte, İnsanlara belli ücret karşılığında üfleyerek daha fazla XP Kazanmasını
                     sağlıyabilirsiniz.</p>
                 <br>
-                <h3 class="text-warning">Sonuç</h3>
+                <h3 class="standartcolor">Sonuç</h3>
                 <p>Yiyecek ve içecek sektörü ile ticari ve hizmet sektöründe bulunan esnaf meslekleri, DarkRP
                     sunucularında rol yapma deneyiminizi zenginleştiren ve oyunculara etkileşim fırsatları sunan
                     önemli unsurlardır. Her meslek grubu, kendi içinde sunduğu hizmetler ve etkileşim olanakları
                     ile
                     oyunculara farklı deneyimler yaşatmaktadır.</p>
             </div>
-            <hr>
             <br>
             <div>
-                <h2 id="sss">Bilinmesi Gerekenler...</h2>
+                <h2 class="standartcolor" id="sss">Bilinmesi Gerekenler...</h2>
                 <br>
                 <div>
                     <div class="row">
                         <div class="col-md-8">
-                            <h4 id="poscihazi">POS Cihazı Hakkında</h4>
+                            <h3 class="standartcolor" id="poscihazi">POS Cihazı Hakkında</h3>
                             <p>Müşterinin yanında nakit yok mu? O zaman banka kartıyla ödeme yapabilir.</p>
                             <ol>
                                 <li>Rakamları kullanarak miktarı giriniz.</li>
@@ -363,14 +358,14 @@
                 </div>
                 <br><br>
                 <div>
-                    <h4 id="maden">Madende Bulduğum Kükürt, Demir, Çelik, Elmas ve Altın ile Ne
-                        Yapabilirim?</h4>
+                    <h3 class="standartcolor" id="maden">Madende Bulduğum Kükürt, Demir, Çelik, Elmas ve Altın ile Ne
+                        Yapabilirim?</h3>
                     <p>Madende bulduğunuz kükürt, demir, çelik, elmas ve altın gibi malzemeleri, maden
                         girişindeki NPC'yi kullanarak çeşitli eşyalar craftlayabilir veya bu malzemeleri NPC'ye
                         satarak gelir elde edebilirsiniz.</p>
                 </div>
             </div>
-
+            <br>
         </div>
         <hr>
         <blockquote>

@@ -21,11 +21,11 @@ foreach ($darkrpPaidJobs as $paidjob) {
 ?>
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
-        <h1 class="mb-4">Yasadışı Organizasyonlar</h1>
-        <hr>
-        <br>
+        <h1 class="darkrpillegal">Yasadışı Organizasyonlar</h1>
+        <p>Hoşgeldin, çaylak! ilk adımlar önemlidir. O yüzden bu rehber sana yol gösterecek.
+            Unutmamalısın öğrenmeye açık olman lazım herşey burada yazamaz değil mi?...</p>
         <div>
-            <h2 class="text-danger" id="meslek">Meslekler</h2>
+            <h2 class="standartcolor" id="meslek">Meslekler</h2>
             <div class="accordion" id="accordionJobs">
                 <?php foreach ($illegalJobs as $index => $job): ?>
                     <?php $isBaronOrSefir = ($job['title'] === 'Baron' || $job['title'] === 'Sefir');
@@ -37,7 +37,7 @@ foreach ($darkrpPaidJobs as $paidjob) {
                                     data-bs-toggle="collapse" data-bs-target="#collapse<?= $index ?>"
                                     aria-expanded="<?= $index === 0 ? 'true' : 'false' ?>"
                                     aria-controls="collapse<?= $index ?>">
-                                <span class="<?= $isBaronOrSefir ? 'text-danger' : 'text-warning-emphasis' ?>"><?= htmlspecialchars($job['title']) ?> </span>
+                                <span class="<?= $isBaronOrSefir ? 'text-danger' : 'text-danger-emphasis' ?>"><?= htmlspecialchars($job['title']) ?> </span>
                                 <?php if ($isVip) {
                                     ?>
                                     <span style="padding-left: 1%; color: #16bb00">[VIP]</span>
@@ -63,18 +63,21 @@ foreach ($darkrpPaidJobs as $paidjob) {
                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
                                     <p><?= htmlspecialchars($job['req']) ?></p>
                                 <?php endif; ?>
+                                <?php if (!empty($job['whitelist'])): ?>
+                                    <small class="text-light">Bu meslek whitelist dir. Daha fazla bilgi için <a style="text-decoration: none" href="<?= $baseUrl ?>/darkrp-baslarken/sss#basvuru">Sıkça Sorulan Sorular - Başvurular</a> bölümüne bakınız.</small>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
                 <?php endforeach; ?>
             </div>
         </div>
-        <hr>
+        <br>
 
         <div>
-            <h3 id="kekoyapabilcekleri">Keko Mesleğinde...</h3>
-            <br>
-            <ul>
+            <h2 class="standartcolor" id="kekoyapabilcekleri">Keko Mesleğinde...</h2>
+
+            <ul style="list-style-type: '* '">
                 <li>2 Kişi ile 30 dakikada bir adam soyabilirsiniz.</li>
                 <li>Benzinlik ve banka gibi yerlerde soygun yapamazsınız.</li>
                 <li>Baskın gerçekleştiremezsiniz.</li>
@@ -82,24 +85,20 @@ foreach ($darkrpPaidJobs as $paidjob) {
                 <li>3. seviyeye ulaştığınızda Çete Üyesi mesleğine erişim sağlayabilirsiniz.</li>
             </ul>
         </div>
-
-        <hr>
         <br>
-
         <div>
-            <h3 id="carjack">Nasıl Araba Çalabilirim?</h3>
+            <h2 class="standartcolor" id="carjack">Nasıl Araba Çalabilirim?</h2>
             <p>Araba çalmak için, 2. seviye çete üyesi olmalısınız arabaya bakarak <code>/soygun</code> komutu
                 ile araç çalabilirsiniz.
                 Ayrıca, 1 saatte bir araç çalabilirsiniz. (Bu kural aynı veya farklı araba için farketmez.)</p>
         </div>
-        <hr>
         <br>
 
         <div>
             <div class="row">
-                <h3 id="bankasoygun">Banka Soygunu Nasıl Yapılır?</h3>
+                <h2 class="standartcolor" id="bankasoygun">Banka Soygunu Nasıl Yapılır?</h2>
                 <div class="col-md-8">
-                    <p>Bankanın kasa tarafına geçerek para kısmına gidebilir ve "E" tuşuna basarak banka soygunu
+                    <p>Bankanın kasa tarafına geçerek para kısmına gidebilir ve <span class="key">E</span> tuşuna basarak banka soygunu
                         gerçekleştirebilirsiniz. En az üç kişinin bulunduğu bir grup oluşturmalısınız; tüm
                         soyguncuların aynı parti içinde yer alması ve en az 4. seviye çete üyesi veya üstü
                         mesleklere sahip olmaları gerekmektedir.</p>
@@ -113,15 +112,11 @@ foreach ($darkrpPaidJobs as $paidjob) {
                          alt="Para">
                 </div>
             </div>
-
-
         </div>
-        <hr>
         <br>
-
         <div>
             <div class="row">
-                <h3 id="dolar">Kirli Dolar Üretimi</h3>
+                <h2 class="standartcolor" id="dolar">Kirli Dolar Üretimi</h2>
                 <div class="col-md-8">
                     <p>Kirli Dolar için gerekli mesleklere erişiminiz olmalıdır. Kirli Dolar için Keko ve Rus
                         Mafya Üyesi gibi mesleklerde olmalısınız. Her meslekte Kirli Dolar üretilmemektedir.</p>
@@ -136,13 +131,10 @@ foreach ($darkrpPaidJobs as $paidjob) {
                 </div>
             </div>
         </div>
-
-        <hr>
         <br>
-
         <div>
             <div class="row">
-                <h3 id="printer">Para Basma Makinesi Nedir? Nasıl Çalışır?</h3>
+                <h2 class="standartcolor" id="printer">Para Basma Makinesi Nedir? Nasıl Çalışır?</h2>
                 <div class="col-md-4 d-none d-md-block">
                     <img src="<?= $baseUrl ?>/assets/image/darkrp_printer.png" class="img-fluid"
                          alt="Kirli Dolar Üretimi">
@@ -156,7 +148,7 @@ foreach ($darkrpPaidJobs as $paidjob) {
                         Printer, temelinde kirli dolar ürettiğimiz bir makinedir. Bu makineyi Keko'dan itibaren
                         birçok
                         illegal meslek çıkarabilir.
-                        Makineyi çıkarmak çok basittir; F4 menüsünden "Varlıklar" bölümüne giderek, ardından
+                        Makineyi çıkarmak çok basittir; <span class='key'>F4</span> menüsünden "Varlıklar" bölümüne giderek, ardından
                         "Para Basma
                         Makinesi" eşyalarına ulaşabilirsiniz.
                         Bu menünün altında, maksimum ne kadar makine çıkarabildiğiniz görünmektedir. Bastığınız
@@ -166,23 +158,23 @@ foreach ($darkrpPaidJobs as $paidjob) {
                         gösterebilir. Keko mesleğindeki oyuncu ile
                         İtalyan mafyası mesleğindeki oyuncunun bastığı para bir değildir.
                     </p>
-                    <p>Ayrıca mühendis çağırarak saksınızın daha performanslı çalışmasını sağlayabilirsiniz.</p>
-                    <h5>Para Basma Makinenizin Bakımı İçin Kullanmanız Gereken Eşyalar:</h5>
+                    <p>Ayrıca mühendis çağırarak Para Basma Makinenizin daha performanslı çalışmasını sağlayabilirsiniz.</p>
+                    <h5 class="standartcolor">Para Basma Makinenizin Bakımı İçin Kullanmanız Gereken Eşyalar:</h5>
                     <p class="text-danger">Bar dolu olduğu takdirde Para Basma Makinesine sürüklemeniz durumunda
                         işe
                         yaramıcaktır.</p>
                     <ul>
-                        <li><strong>Tamir Paketi:</strong> Yatay eksende kırmızı olarak gözüken büyük bar,
+                        <li><span><strong class="text-teal">Tamir Paketi:</strong> Yatay eksende kırmızı olarak gözüken büyük bar,
                             makinenizin
-                            can barıdır. Tamir kiti ile canını yenileyebilirsiniz.
+                            can barıdır. Tamir kiti ile canını yenileyebilirsiniz.</span>
                         </li>
-                        <li><strong>Mürekkep:</strong> Dikey eksende sol tarafta yer alan mürekkep barı,
+                        <li><span><strong class="text-warning">Mürekkep:</strong> Dikey eksende sol tarafta yer alan mürekkep barı,
                             makinenizin
-                            mürekkep yenilemenizi sağlar
+                            mürekkep yenilemenizi sağlar</span>
                         </li>
-                        <li><strong>Kağıt:</strong> Dikey eksende sağ tarafta yer alan kağıt barı, makinenizin
+                        <li><span><strong class="text-danger">Kağıt:</strong> Dikey eksende sağ tarafta yer alan kağıt barı, makinenizin
                             kağıdını
-                            yenilemenizi sağlar.
+                            yenilemenizi sağlar.</span>
                         </li>
                     </ul>
                 </div>
@@ -195,11 +187,10 @@ foreach ($darkrpPaidJobs as $paidjob) {
                 </div>
             </div>
         </div>
-        <hr>
         <br>
         <div>
             <div class="row">
-                <h3 id="bitki">Bitki Üretimi</h3>
+                <h2 class="standartcolor" id="bitki">Bitki Üretimi</h2>
                 <div class="col-md-8">
                     <p>Bitki üretebilmek için gerekli mesleklere erişiminiz olmalıdır. Bitki üretimi
                         için Keko ve Çete Üyesi mesleklerinde gerekli seviyeleri tamamladıktan sonra Mafya Üyesi
@@ -214,13 +205,11 @@ foreach ($darkrpPaidJobs as $paidjob) {
                 </div>
             </div>
         </div>
-
-        <hr>
         <br>
 
         <div>
             <div class="row">
-                <h3 id="bitkiupgrade">Bitkimi Nasıl Yükseltebilirim?</h3>
+                <h2 class="standartcolor" id="bitkiupgrade">Bitkimi Nasıl Yükseltebilirim?</h2>
                 <div class="col-md-4 d-none d-md-block">
                     <img src="<?= $baseUrl ?>/assets/image/darkrp_yukseltme_2.png" class="img-fluid"
                          alt="Bitki Yükseltme">
@@ -228,9 +217,9 @@ foreach ($darkrpPaidJobs as $paidjob) {
                 <div class="col-md-8">
                     <p>Bitkinizin kalitesini artırmak için aşağıdaki mesleklerden birinde olmanız
                         gerekmektedir:</p>
-                    <p>Bu meslekler F4 menüsünden "Varlıklar" bölümüne giderek, ardından "Bitki Paketleme"
+                    <p>Bu meslekler <span class='key'>F4</span> menüsünden "Varlıklar" bölümüne giderek, ardından "Bitki Paketleme"
                         adlı aracı çıkarak gerçekleştirmektedir.</p>
-                    <ul>
+                    <ul style="list-style-type: '— '">
                         <li>Çingene Çetesi Üyesi</li>
                         <li>Kore Mafyası Üyesi</li>
                         <li>Haydut Çetesi Üyesi</li>
@@ -247,21 +236,19 @@ foreach ($darkrpPaidJobs as $paidjob) {
 
             </div>
         </div>
-
-        <hr>
         <br>
 
         <div>
             <div class="row">
-                <h3 id="saksi">Saksı Nedir? Nasıl Çalışır?</h3>
+                <h2 class="standartcolor" id="saksi">Saksı Nedir? Nasıl Çalışır?</h2>
                 <div class="col-md-8">
                     <p>
                         Saksı, Bitki üretebildiğiniz bir araçtır. Bitki üretmeye, Mafya Üyesi
                         olduğunuzda başlayabilirsiniz. Mafya Üyesi olmak için en az Çete Üyesi 5. seviye
-                        olmalısınız. Mafya Üyesi olduğunuzda, yine F4 menüsünden çıkardığınız saksılar ile
+                        olmalısınız. Mafya Üyesi olduğunuzda, yine <span class='key'>F4</span> menüsünden çıkardığınız saksılar ile
                         Bitki üretebilirsiniz. Ancak saksının 3 gereksinimi vardır: toprak, bitki tohumu ve
                         su. Bitki tohumu ve suyu, oyundaki belirli NPC'lerden (Niştantaşı AVM, Çiftlik Taksi
-                        vb.) temin edebilirsiniz. Bu ürünleri temin ettikten sonra, saksıya bakarak 2 kere E
+                        vb.) temin edebilirsiniz. Bu ürünleri temin ettikten sonra, saksıya bakarak 2 kere <span class="key">E</span>
                         tuşuna basmanız yeterlidir (ilk başta toprak ekilecek, daha sonra bitki tohumu).
                     </p>
                     <p>
@@ -289,25 +276,23 @@ foreach ($darkrpPaidJobs as $paidjob) {
                 </div>
             </div>
         </div>
-
-        <hr>
         <br>
 
         <div>
-            <h3 id="temizleme" class="mb-4">Kirli Dolar Temizleme ve Bitki Satmanin Yolları Nelerdir?</h3>
+            <h2 id="temizleme" class="standartcolor mb-4">Kirli Dolar Temizleme ve Bitki Satmanin Yolları Nelerdir?</h2>
             <div class="alert alert-info" role="alert">
-                Meslek perm sahiplerinin kimler olduğunu öğrenmek için Discord sunucumuzda <strong>Meslek
+                Meslek sahipleri kimler olduğunu öğrenmek için Discord sunucumuzda <strong>Meslek
                     Sahipleri</strong> kanalına göz atabilirsiniz.
             </div>
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Kirli Dolar Temizleme Yöntemleri</h5>
+                            <h5 class="standartcolor card-title">Kirli Dolar Temizleme Yöntemleri</h5>
                             <p class="card-text">
                                 Kirli Dolar Temizlemenın iki yolu bulunmaktadır: birincisi, NPC'ye komisyonlu
                                 olarak
-                                temizletmek, diğeri ise uygun meslek permine sahip kişileri bularak onlara daha
+                                temizletmek, diğeri ise uygun meslekteki kişileri bularak onlara daha
                                 düşük komisyonla temizletmektir.
                             </p>
                             <h6 style="color: green;" class="mt-3">Meslekler</h6>
@@ -350,10 +335,10 @@ foreach ($darkrpPaidJobs as $paidjob) {
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Bitki Satma Yöntemleri</h5>
+                            <h5 class="standartcolor card-title">Bitki Satma Yöntemleri</h5>
                             <p class="card-text">
                                 Bitki Satmanın iki yolu bulunmaktadır: birincisi, NPC'ye komisyonlu satmak,
-                                diğeri ise uygun meslek permine sahip kişileri bularak onlara daha
+                                diğeri ise uygun meslekteki kişileri bularak onlara daha
                                 düşük komisyonla satmaktır.
 
                             </p>
@@ -395,13 +380,11 @@ foreach ($darkrpPaidJobs as $paidjob) {
                 </div>
             </div>
         </div>
-
-        <hr>
         <br>
         <div>
-            <h3 id="ithalesya" class="mb-4">Korsan ve Eşkiyada ürettiğim İthal eşyaları kime satabilirim?</h3>
+            <h2 id="ithalesya" class="standartcolor mb-4">Korsan ve Eşkiyada ürettiğim İthal eşyaları kime satabilirim?</h2>
             <div class="alert alert-info" role="alert">
-                Meslek perm sahiplerinin kimler olduğunu öğrenmek için Discord sunucumuzda <strong>Meslek
+                Meslek sahipleri kimler olduğunu öğrenmek için Discord sunucumuzda <strong>Meslek
                     Sahipleri</strong> kanalına göz atabilirsiniz.
             </div>
             <ul>
@@ -417,15 +400,13 @@ foreach ($darkrpPaidJobs as $paidjob) {
             </ul>
             <p>Mesleklerine sahip kişilere satabilirsiniz.</p>
         </div>
-
-        <hr>
         <br>
 
         <div>
-            <h3 id="factiongereksinim">Faction Mesleklerine Nasıl Geçebilirim?</h3>
+            <h2 class="standartcolor" id="factiongereksinim">Faction Mesleklerine Nasıl Geçebilirim?</h2>
             <p>Faction mesleklerine erişim sağlamak için öncelikle Keko mesleğine başlayıp 3. seviyeye
                 ulaşmanız gerekmektedir. Ardından, şu mesleklere geçiş yapabilirsiniz:</p>
-            <ul>
+            <ul style="list-style-type: '— '">
                 <li>Çete Üyesi (5. Seviye)</li>
                 <li>Mafya Üyesi (5. Seviye)</li>
                 <li>Eşkiya (5. Seviye)</li>
@@ -433,28 +414,27 @@ foreach ($darkrpPaidJobs as $paidjob) {
             </ul>
             <p>Bu mesleklerde gerekli seviyelere ulaştıktan sonra aşağıdaki 4 adet faction mesleğine erişim
                 sağlayabilirsiniz:</p>
-            <ul>
+            <ul style="list-style-type: '- '">
                 <li>Rus Mafya Üyesi</li>
                 <li>İtalyan Mafya Üyesi</li>
                 <li>Triads Mafya Üyesi</li>
                 <li>Aşiret Üyesi</li>
             </ul>
         </div>
-        <hr>
-
+        <br>
         <div>
-            <h3 id="aile">Familya/Aile Nedir? Neden Bir Familya/Aileye Katılmalıyım?</h3>
+            <h2 class="standartcolor" id="aile">Familya/Aile Nedir? Neden Bir Familya/Aileye Katılmalıyım?</h2>
             <p>Aile, birkaç oyuncunun bir araya gelerek oluşturduğu topluluktur. Bir aileye katılmanın bazı avantajları
                 şunlardır:</p>
             <ul style="list-style-type: '+ '">
-                <li><strong class="text-primary-emphasis">Oyunun mekaniklerini daha hızlı kavrama:</strong> Ailendeki
-                    diğer üyeler oyuna daha hakimse, bu durumdan sen de faydalanarak oyunu daha hızlı öğrenebilirsin.
+                <li><span><strong class="text-primary-emphasis">Oyunun mekaniklerini daha hızlı kavrama:</strong> Ailendeki
+                    diğer üyeler oyuna daha hakimse, bu durumdan sen de faydalanarak oyunu daha hızlı öğrenebilirsin.</span>
                 </li>
-                <li><strong class="text-success-emphasis">Daha hızlı gelişim:</strong> Genellikle aile üyeleri, üretim
-                    araçlarını birbirlerine vererek hızlı bir şekilde gelişmeyi destekler.
+                <li><span><strong class="text-success-emphasis">Daha hızlı gelişim:</strong> Genellikle aile üyeleri, üretim
+                    araçlarını birbirlerine vererek hızlı bir şekilde gelişmeyi destekler.</span>
                 </li>
-                <li><strong class="text-warning">Yeni bir sosyal ortam:</strong> Aileye katılarak diğer üyelerle sohbet
-                    edebilir ve yeni bir sosyal çevre edinebilirsin.
+                <li><span><strong class="text-warning">Yeni bir sosyal ortam:</strong> Aileye katılarak diğer üyelerle sohbet
+                    edebilir ve yeni bir sosyal çevre edinebilirsin.</span>
                 </li>
             </ul>
             <p>Bunlar sadece birkaç avantaj. Eğer bu seni cezbediyorsa, Discord'daki familya odasından familya
@@ -469,6 +449,6 @@ foreach ($darkrpPaidJobs as $paidjob) {
                 </a>
             </p>
         </div>
-<br>
+        <br>
     </div>
 </main>

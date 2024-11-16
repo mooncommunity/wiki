@@ -9,7 +9,7 @@ variables:
 
 before_script:
   - apt-get update && apt-get install -y php ruby-full nodejs npm
-  - npm -g install sass
+  - npm -g install sass@1.78.0
 
 convert_to_html:
   stage: convert

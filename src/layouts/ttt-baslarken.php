@@ -1,105 +1,114 @@
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
-        <h1 class="mb-4">TTT Başlarken</h1>
-        <hr>
-        <br>
+        <h1 class="standartcolor mb-4">TTT Başlarken</h1>
+        <p>Her zaman ilk başlangıçlar zordur, bu kısımdaki bilgiler sunucumuzun temel
+            mekaniklerini anlamana yardımcı olacak. Unutmamalısın ki öğrenmeye açık olman gerek. Bu rehber sadece temel
+            kısımlara değinmektedir.</p>
         <div>
-            <h3 id="gerekli-eklentiler-ve-ayarlar">Gerekli Eklentiler ve Ayarlar</h3>
-            <br>
-            <div class="alert alert-info" role="alert">
-                <a href="<?= $ttt_workshop ?>" target="_blank">
-                    <?= $ttt_workshop ?>
-                </a> adresindeki tüm eklentilere tek tek abone olmanız gerekmektedir.
-            </div>
-
-            <ul>
-                <li><b>Workshop Eklentileri</b>: <a href="<?= $ttt_ip ?>"
-                                                    target="_blank">TTT sunucumuza</a> katılmadan önce, <a
-                            href="<?= $ttt_workshop ?>" target="_blank">workshop</a>
-                    eklentilerini indiriniz. Eğer oyunda iseniz indirme işlemi sonrası Garry's Mod'u tamamen
-                    kapatıp açmanız gerekmektedir.
-                </li>
-                <li><b>Chromium Betası</b>: Daha iyi performans ve özellikler için <b>Chromium</b> betasına
-                    geçmeniz gerekmektedir.
-                </li>
-            </ul>
-
-            <div class="content-ref-box">
-                <p>
-                    <a id="chromeBox" href="<?= $baseUrl; ?>/ttt-baslarken/chromium" target="_blank">
-                        <i class="fa-brands fa-chrome"></i> Chromium nedir? Nasıl Chromium betasına geçerim?
-                    </a>
-                </p>
-            </div>
-            <br>
-            <h4>Oyun deneyiminizi iyileştirmek için</h4>
-            <ul>
-                <li><b>Counter Strike: Source</b>: Daha iyi ve sorunsuz bir oyun deneyimi için CS:S gereklidir.
-                </li>
-            </ul>
-            <div class="content-ref-box">
-                <p>
-                    <a id="cssBox" href="<?= $baseUrl; ?>/content" target="_blank">
-                        <i class="fa-solid fa-cubes"></i> CS:S Content Nasıl İndiririm?
-                    </a>
-                </p>
-            </div>
-            <hr>
-            <br>
-
             <div>
-                <h3 id="tus">Temel Kısayollar</h3>
+                <h2 class="standartcolor" id="workshop">Gerekli Eklentiler ve Ayarlar</h2>
                 <br>
-                <ul>
-                    <li><strong>F1:</strong> Yardım menüsünü açar. İzleyici modundan çıkabilirsiniz.</li>
-                    <li><strong>F8:</strong> Hasar logları gibi bilgileri gösterir.</li>
-                    <li><strong>TAB:</strong> Oyuncu listesini ve skorlarını görebilirsiniz.</li>
-                    <li><strong>Q:</strong> Elinizdeki silahı yere atmanızı sağlar.</li>
-                    <li><strong>C:</strong> Dedektif/Hain mağazasını açar.</li>
-                    <li><strong>Shift:</strong> Hainlerin birbiriyle konuşmasını sağlar.</li>
-                    <li><strong>I:</strong> Envanterinizi açmanızı sağlar.</li>
+                <div class="alert alert-info" role="alert">
+                <span><a href="<?= $ttt_workshop ?>" target="_blank">
+                    <?= $ttt_workshop ?>
+                    </a> hepsine tek tek abone olmalısınız. </span>
+                </div>
+
+                <ul style="list-style-type: '* ">
+                    <li><b class="text-teal">Workshop Eklentileri</b>: <a href="<?= $ttt_ip1 ?>"
+                                                                          target="_blank">TTT
+                            sunucumuza</a> katılmadan önce, <a
+                                href="<?= $ttt_workshop ?>" target="_blank">workshop</a>
+                        indirin. Eğer oyunda iseniz indirme işlemi sonrası Garry's mod komple kapatıp açınız.
+                    </li>
+                    <li><b class="text-warning">Chromium Betası</b>: Daha iyi performans ve
+                        özellikler
+                        için <b>Chromium</b> betasına
+                        geçmeniz
+                        gerekmektedir.
+                    </li>
                 </ul>
-            </div>
 
-            <hr>
-            <br>
-
-            <div>
-                <h3 id="chat">Sohbet ve İletişim</h3>
-                <div style="margin-left: 15px">
-                    <li><strong>/PM &lt;İsim&gt;:</strong> Belirli bir kullanıcıya özel mesaj atmanızı
-                        sağlar.<br><em>Örnek:</em><br><code>/PM Ozgur Sunucu hakkında bir şey sorabilir
-                            miyim?</code></li>
-                    <hr>
-                    <li><strong>@&lt;Mesaj&gt;:
-                        </strong> Yetkili sohbete mesaj yazar.<br><em>Örnek:</em><br><code>@Vuenx hile gibi
-                            izliyebilir misiniz?
-                        </code></li>
-                    <hr>
-                    <li><strong>!menu:
-                        </strong> Genel menüyü açar<br><em>Örnek:</em><br><code>!menu
-                        </code></li>
-                    <hr>
-                    <li><strong>!report:
-                        </strong> Son sizi vuran oyuncuyu raporlar<br><em>Örnek:</em><br><code>!report
-                        </code></li>
-                    <br>
+                <div class="content-ref-box">
+                    <p>
+                        <a id="chromeBox" href="<?= $baseUrl; ?>/ttt-baslarken/chromium" target="_blank">
+                            <i class="fa-brands fa-chrome"></i> Chromium Nedir? Nasıl Chromium Geçerim?
+                        </a>
+                    </p>
+                </div>
+                <br>
+                <h3 class="standartcolor">Oyun deneyiminizi iyileştirmek için</h3>
+                <ul style="list-style-type: '+ ">
+                    <li><b class="text-primary">Counter Strike: Source</b>: Daha iyi ve sorunsuz bir
+                        oyun deneyimi için CS:S gereklidir.
+                    </li>
+                </ul>
+                <div class="content-ref-box">
+                    <p>
+                        <a id="cssBox" href="<?= $baseUrl; ?>/content" target="_blank">
+                            <i class="fa-solid fa-cubes"></i> CS:S Content Nasıl İndiririm?
+                        </a>
+                    </p>
                 </div>
             </div>
-
-            <hr>
             <br>
-
             <div>
-                <h3 id="dil">Oyunun dilini Türkçe yapamıyor muyum?</h3>
+                <h2 class="standartcolor" id="tus">Temel Kısayollar</h2>
+                <br>
+                <ul id="tusUL">
+                    <li><strong><span class="key">F1</span></strong><span> Yardım menüsünü açar. İzleyici modundan çıkabilirsiniz.</span>
+                    </li>
+                    <li><strong><span class="key">F8</span></strong><span> Hasar logları gibi bilgileri gösterir.</span></li>
+                    <li><strong><span class="key">TAB</span></strong><span
+                        > Oyuncu listesini ve skorlarını görebilirsiniz.</span></li>
+                    <li><strong><span class="key">Q</span></strong><span> Elinizdeki silahı yere atmanızı sağlar.</span></li>
+                    <li><strong><span class="key">C</span></strong><span> Dedektif/Hain mağazasını açar.</span></li>
+                    <li><strong><span class="key">SHIFT</span></strong><span> Hainlerin birbiriyle konuşmasını sağlar.</span>
+                    </li>
+                    <li><strong><span class="key">I</span></strong><span> Envanterinizi açmanızı sağlar.</span></li>
+                    <li><strong><span class="key">M</span></strong><span> Genel menüyü açar.</span></li>
+                </ul>
+            </div>
+            <br>
+            <div>
+                <h2 class="standartcolor" id="chat">Sohbet ve İletişim</h2>
+                <div>
+                    <ul id="chatTabsContent" style="list-style-type: '- ">
+                        <li><strong>/PM &lt;İsim&gt;:</strong><span> Belirli bir kullanıcıya özel mesaj atmanızı
+                        sağlar.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/PM Ozgur Sunucu
+                                hakkında bir şey sorabilir
+                                miyim?</code></li>
+                        <hr>
+                        <li><strong>@&lt;Mesaj&gt;:
+                            </strong><span> Yetkili sohbete mesaj yazar.</span><br><em
+                                    class="text-success-emphasis">Örnek:</em><br><code>@Vuenx hile gibi
+                                izliyebilir misiniz?
+                            </code></li>
+                        <hr>
+                        <li><strong>!menu:
+                            </strong><span> Genel menüyü açar</span><br><em
+                                    class="text-success-emphasis">Örnek:</em><br><code>!menu
+                            </code></li>
+                        <hr>
+                        <li><strong>!report:
+                            </strong><span> Son sizi vuran oyuncuyu raporlar</span><br><em
+                                    class="text-success-emphasis">Örnek:</em><br><code>!report
+                            </code></li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div>
+                <h2 class="standartcolor" id="dil">Oyunun dilini Türkçe yapamıyor muyum?</h2>
                 <p>Maalesef, oyunun içerik arayüzü İngilizcedir ve dil seçimi yapılamamaktadır.</p>
             </div>
-            <hr>
             <br>
+
             <div>
-                <h3 id="izleyici">İzleyici modundayım, nasıl oyuna dönebilirim?</h3>
+                <h2 class="standartcolor" id="izleyici">İzleyici modundayım, nasıl oyuna dönebilirim?</h2>
                 <p>Eğer ölmediyseniz ve ekranda uçarak geziyorsanız, muhtemelen izleyici modundasınız. Bunu
-                    düzeltmek için "F1" tuşuna basarak "Settings" kısmına gidiniz. Ardından "Spectate-only mode
+                    düzeltmek için <span class="key">F1</span> tuşuna basarak "Settings" kısmına gidiniz. Ardından "Spectate-only mode
                     (always stay spectator)" seçeneğinin işaretini kaldırınız. Bu sayede bir sonraki raunda
                     otomatik olarak katılacaksınız.</p>
                 <div class="col-6 mx-auto text-center">
@@ -107,24 +116,19 @@
                          class="img-fluid">
                 </div>
             </div>
-
-            <hr>
             <br>
-
             <div>
-                <h3 id="dedektifolmamak">Mümkün olduğunca dedektif olmaktan kaçınmak istiyorum?</h3>
-                <p>"F1" tuşuna basarak "Settings" kısmına gidiniz. Ardından "Avoid being selected a Detective"
+                <h2 class="standartcolor" id="dedektifolmamak">Mümkün olduğunca dedektif olmaktan kaçınmak istiyorum?</h2>
+                <p><span class="key">F1</span> tuşuna basarak "Settings" kısmına gidiniz. Ardından "Avoid being selected a Detective"
                     seçeneğinin işaretleyiniz.</p>
                 <div class="col-6 mx-auto text-center">
                     <img src="<?= $baseUrl ?>/assets/image/ttt_detective.png" alt="TTT Dedektif Olmama ayarları"
                          class="img-fluid">
                 </div>
             </div>
-            <hr>
             <br>
-
             <div>
-                <h3 id="test">Test Odası nedir?</h3>
+                <h2 class="standartcolor" id="test">Test Odası nedir?</h2>
                 <p>Test odası, oyuncunun hain mi yoksa masum mu olduğunu anlamak için kullanılır. Eğer teste
                     girerseniz ve hain iseniz kırmızı ışık yanar, masum iseniz yeşil ışık yanar. Burada
                     dikkat
@@ -134,12 +138,9 @@
                     için her mapte değişen bir item mevcut o item bulmanız ve gerekli yere yerleştirmeniz
                     gerekmekte.</p>
             </div>
-            <hr>
             <br>
-
             <div>
-                <h3 id="weapon">Oyundaki tüm silahlarım nerede?</h3>
-                <br>
+                <h2 class="standartcolor" id="weaponslot">Oyundaki tüm silahlarım nerede?</h2>
                 <p>Üzerinizde bulunan tüm silahlarınız 1, 2, 3, 4, 5 slotlarınızda bulunmaktadır. Bu slotlara
                     erişmek
                     için '1', '2' gibi numaralara basıp kullanabilirsiniz veya mouse'unuzun orta tekerleği ile
@@ -149,11 +150,9 @@
                     <img src="<?= $baseUrl ?>/assets/image/ttt_silahbar.png" alt="Silahlar" class="img-fluid">
                 </div>
             </div>
-            <hr>
             <br>
             <div>
-                <h3 id="magneto">Eşyaları nasıl taşıyabilirim?</h3>
-                <br>
+                <h2 class="standartcolor" id="magneto">Eşyaları nasıl taşıyabilirim?</h2>
                 <p>5 silah slotunuzda yer alan "Magneto Stick" ile eşyaya sağ tıklama yaparak
                     taşıyabilirsiniz.</p>
 
@@ -161,12 +160,9 @@
                     <img src="<?= $baseUrl ?>/assets/image/ttt_magneto.png" alt="Magneto Stick" class="img-fluid">
                 </div>
             </div>
-
-            <hr>
             <br>
-
             <div>
-                <h3 id="weaponn">Silahımda Bazı Şeyler Yazıyor, Onlar Ne Anlama Geliyor?</h3>
+                <h2 class="standartcolor" id="weapon">Silahımda Bazı Şeyler Yazıyor, Onlar Ne Anlama Geliyor?</h2>
                 <p>
                     <strong class="text-success-emphasis">Accuracy/Doğruluk:</strong> Silahın ne kadar isabetli
                     atış yapacağını belirler. Ne
@@ -209,11 +205,9 @@
                     belirler.
                 </p>
             </div>
-            <hr>
             <br>
-
             <div>
-                <h3 id="silah-nadirlik">Aynı Silahların Farklı Varyasyonları Nedir?</h3>
+                <h2 class="standartcolor" id="silah-nadirlik">Aynı Silahların Farklı Varyasyonları Nedir?</h2>
                 <p>Görevlerden veya diğer yollarla elde ettiğiniz silahların farklı varyasyonları da mevcuttur. Bu
                     silahların ateş gücü, atış hızı gibi özellikleri nadirliğine göre değişmektedir. İşte normalden en
                     nadir olana kadar sıralama:</p>
@@ -228,156 +222,150 @@
                     <li class="text-primary-emphasis">Planetary</li>
                 </ul>
             </div>
-            <hr>
             <br>
-            <h3 id="mutator">Mutator Nedir?</h3>
-            <p>Mutatorlar, silahınızdaki bazı özellikleri değiştirmenizi sağlayan eşyalardır. Bazıları Destekçi Kredisi
-                ile satın alınabilir.</p>
-            <div class="accordion" id="mutatorAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed text-success-emphasis" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseAscendedTalent" aria-expanded="false"
-                                aria-controls="collapseAscendedTalent">
-                            Ascended Talent Mutator
-                        </button>
-                    </h2>
-                    <div id="collapseAscendedTalent" class="accordion-collapse collapse"
-                         aria-labelledby="headingAscendedTalent" data-bs-parent="#mutatorAccordion">
-                        <div class="accordion-body">
-                            Bu öğeyi kullanmak, herhangi bir "Ascended" nadirlikteki silahın yeteneklerini rastgele
-                            olarak değiştirmenize olanak tanır.
+            <div>
+                <h2 class="standartcolor" id="mutator">Mutator Nedir?</h2>
+                <p>Mutatorlar, silahınızdaki bazı özellikleri değiştirmenizi sağlayan eşyalardır. Bazıları Destekçi Kredisi
+                    ile satın alınabilir.</p>
+                <div class="accordion" id="mutatorAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-success-emphasis" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseAscendedTalent" aria-expanded="false"
+                                    aria-controls="collapseAscendedTalent">
+                                Ascended Talent Mutator
+                            </button>
+                        </h2>
+                        <div id="collapseAscendedTalent" class="accordion-collapse collapse"
+                             aria-labelledby="headingAscendedTalent" data-bs-parent="#mutatorAccordion">
+                            <div class="accordion-body">
+                                Bu öğeyi kullanmak, herhangi bir "Ascended" nadirlikteki silahın yeteneklerini rastgele
+                                olarak değiştirmenize olanak tanır.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed text-success-emphasis" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseAscendedStat" aria-expanded="false"
-                                aria-controls="collapseAscendedStat">
-                            Ascended Stat Mutator
-                        </button>
-                    </h2>
-                    <div id="collapseAscendedStat" class="accordion-collapse collapse"
-                         aria-labelledby="headingAscendedStat" data-bs-parent="#mutatorAccordion">
-                        <div class="accordion-body">
-                            Bu öğeyi kullanmak, herhangi bir "Ascended" silahın istatistiklerini rastgele olarak
-                            ayarlamanıza olanak tanır.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-success-emphasis" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseAscendedStat" aria-expanded="false"
+                                    aria-controls="collapseAscendedStat">
+                                Ascended Stat Mutator
+                            </button>
+                        </h2>
+                        <div id="collapseAscendedStat" class="accordion-collapse collapse"
+                             aria-labelledby="headingAscendedStat" data-bs-parent="#mutatorAccordion">
+                            <div class="accordion-body">
+                                Bu öğeyi kullanmak, herhangi bir "Ascended" silahın istatistiklerini rastgele olarak
+                                ayarlamanıza olanak tanır.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed text-success-emphasis" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseCosmicTalent" aria-expanded="false"
-                                aria-controls="collapseCosmicTalent">
-                            Cosmic Talent Mutator
-                        </button>
-                    </h2>
-                    <div id="collapseCosmicTalent" class="accordion-collapse collapse"
-                         aria-labelledby="headingCosmicTalent" data-bs-parent="#mutatorAccordion">
-                        <div class="accordion-body">
-                            Bu öğeyi kullanmak, herhangi bir "Cosmic" nadirlikteki silahın yeteneklerini rastgele olarak
-                            değiştirmenize olanak tanır.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-success-emphasis" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseCosmicTalent" aria-expanded="false"
+                                    aria-controls="collapseCosmicTalent">
+                                Cosmic Talent Mutator
+                            </button>
+                        </h2>
+                        <div id="collapseCosmicTalent" class="accordion-collapse collapse"
+                             aria-labelledby="headingCosmicTalent" data-bs-parent="#mutatorAccordion">
+                            <div class="accordion-body">
+                                Bu öğeyi kullanmak, herhangi bir "Cosmic" nadirlikteki silahın yeteneklerini rastgele olarak
+                                değiştirmenize olanak tanır.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed text-success-emphasis" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseCosmicStat" aria-expanded="false"
-                                aria-controls="collapseCosmicStat">
-                            Cosmic Stat Mutator
-                        </button>
-                    </h2>
-                    <div id="collapseCosmicStat" class="accordion-collapse collapse" aria-labelledby="headingCosmicStat"
-                         data-bs-parent="#mutatorAccordion">
-                        <div class="accordion-body">
-                            Bu öğeyi kullanmak, herhangi bir "Cosmic" silahın istatistiklerini rastgele olarak
-                            ayarlamanıza olanak tanır.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-success-emphasis" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseCosmicStat" aria-expanded="false"
+                                    aria-controls="collapseCosmicStat">
+                                Cosmic Stat Mutator
+                            </button>
+                        </h2>
+                        <div id="collapseCosmicStat" class="accordion-collapse collapse" aria-labelledby="headingCosmicStat"
+                             data-bs-parent="#mutatorAccordion">
+                            <div class="accordion-body">
+                                Bu öğeyi kullanmak, herhangi bir "Cosmic" silahın istatistiklerini rastgele olarak
+                                ayarlamanıza olanak tanır.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed text-success-emphasis" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseHighEndTalent" aria-expanded="false"
-                                aria-controls="collapseHighEndTalent">
-                            High-end Talent Mutator
-                        </button>
-                    </h2>
-                    <div id="collapseHighEndTalent" class="accordion-collapse collapse"
-                         aria-labelledby="headingHighEndTalent" data-bs-parent="#mutatorAccordion">
-                        <div class="accordion-body">
-                            Bu öğeyi kullanmak, herhangi bir "High-end" nadirlikteki silahın yeteneklerini rastgele
-                            olarak değiştirmenize olanak tanır.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-success-emphasis" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseHighEndTalent" aria-expanded="false"
+                                    aria-controls="collapseHighEndTalent">
+                                High-end Talent Mutator
+                            </button>
+                        </h2>
+                        <div id="collapseHighEndTalent" class="accordion-collapse collapse"
+                             aria-labelledby="headingHighEndTalent" data-bs-parent="#mutatorAccordion">
+                            <div class="accordion-body">
+                                Bu öğeyi kullanmak, herhangi bir "High-end" nadirlikteki silahın yeteneklerini rastgele
+                                olarak değiştirmenize olanak tanır.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed text-success-emphasis" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseHighEndStat" aria-expanded="false"
-                                aria-controls="collapseHighEndStat">
-                            High-end Stat Mutator
-                        </button>
-                    </h2>
-                    <div id="collapseHighEndStat" class="accordion-collapse collapse"
-                         aria-labelledby="headingHighEndStat" data-bs-parent="#mutatorAccordion">
-                        <div class="accordion-body">
-                            Bu öğeyi kullanmak, herhangi bir "High-end" silahın istatistiklerini rastgele olarak
-                            ayarlamanıza olanak tanır.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-success-emphasis" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseHighEndStat" aria-expanded="false"
+                                    aria-controls="collapseHighEndStat">
+                                High-end Stat Mutator
+                            </button>
+                        </h2>
+                        <div id="collapseHighEndStat" class="accordion-collapse collapse"
+                             aria-labelledby="headingHighEndStat" data-bs-parent="#mutatorAccordion">
+                            <div class="accordion-body">
+                                Bu öğeyi kullanmak, herhangi bir "High-end" silahın istatistiklerini rastgele olarak
+                                ayarlamanıza olanak tanır.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed text-success-emphasis" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseNameMutator" aria-expanded="false"
-                                aria-controls="collapseNameMutator">
-                            Name Mutator
-                        </button>
-                    </h2>
-                    <div id="collapseNameMutator" class="accordion-collapse collapse"
-                         aria-labelledby="headingNameMutator" data-bs-parent="#mutatorAccordion">
-                        <div class="accordion-body">
-                            Silahlarınıza takma adlar verebilmenizi sağlayan tek kullanımlık bir eşyadır.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-success-emphasis" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseNameMutator" aria-expanded="false"
+                                    aria-controls="collapseNameMutator">
+                                Name Mutator
+                            </button>
+                        </h2>
+                        <div id="collapseNameMutator" class="accordion-collapse collapse"
+                             aria-labelledby="headingNameMutator" data-bs-parent="#mutatorAccordion">
+                            <div class="accordion-body">
+                                Silahlarınıza takma adlar verebilmenizi sağlayan tek kullanımlık bir eşyadır.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <hr>
             <br>
-
             <div>
-                <h3 id="bind">Disguiser ve hızlı yanıtlar için tuş nasıl atıyabilirim?</h3>
-                <p>"F1" Tuşuna basınız ardından "Custom Binds" menüsüne geliniz buradan tuş ataması
+                <h2 class="standartcolor" id="bind">Disguiser ve hızlı yanıtlar için tuş nasıl atıyabilirim?</h2>
+                <p><span class="key">F1</span> Tuşuna basınız ardından "Custom Binds" menüsüne geliniz buradan tuş ataması
                     yapabilirsiniz.</p>
                 <div class="col-6 mx-auto text-center">
                     <img src="<?= $baseUrl ?>/assets/image/ttt_custom_binds.png" alt="Custom Binds" class="img-fluid">
                 </div>
             </div>
-            <hr>
             <br>
             <div>
-                <h3 id="kutu">Kutu ve silah nasıl elde edebilirim?</h3>
+                <h2 class="standartcolor" id="kutu">Kutu ve silah nasıl elde edebilirim?</h2>
                 <p><strong>Kutu ve Silah,</strong> IC krediniz, çekiliş, oyuncularla takas yaparak veya el sonu düşen
                     rastgele droptan
                     elde edilebilir.</p>
             </div>
-            <hr>
             <br>
             <div>
-                <h3 id="kredi">Envanter Kredisi ve C Menü Kredisi nasıl kazanırım?</h3>
+                <h2 class="standartcolor" id="kredi">Envanter Kredisi ve C Menü Kredisi nasıl kazanırım?</h2>
                 <p>Envanter kredisi kazanmak için bulunduğunuz role göre roundu tamamlamanız gerekir. Örneğin,
                     masumsanız roundun masumlar tarafından kazanılması gerekir.</p>
                 <p>C Menü kredisi kazanmak için dedektifseniz hain öldürmeniz, hainseniz masum veya dedektif
                     öldürmeniz gerekir.</p></div>
             <div>
-                <hr>
                 <br>
-
                 <div>
                     <?php
                     function addDetectivesCard($title, $description, $imageUrl, $isFaw = false)
@@ -411,16 +399,16 @@
                     }
 
                     ?>
-                    <h3 id="cmenu">Dedektif/Hain iken hangi ekipmanları kullanabilirim?</h3>
+                    <h2 class="standartcolor" id="cmenu">Dedektif/Hain iken hangi ekipmanları kullanabilirim?</h2>
                     <ul class="nav nav-tabs" id="cmenu-item" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="Detectives-tab" data-bs-toggle="tab"
+                            <button class="tttdedektif nav-link active" id="Detectives-tab" data-bs-toggle="tab"
                                     data-bs-target="#Detectives" type="button" role="tab" aria-controls="Detectives"
                                     aria-selected="true">Dedektif
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Traitors-tab" data-bs-toggle="tab" data-bs-target="#Traitors"
+                            <button class="ttthain nav-link" id="Traitors-tab" data-bs-toggle="tab" data-bs-target="#Traitors"
                                     type="button" role="tab" aria-controls="Traitors" aria-selected="false">Hain
                             </button>
                         </li>
@@ -429,7 +417,7 @@
                         <div class="tab-pane fade show active" id="Detectives" role="tabpanel"
                              aria-labelledby="Detectives-tab">
                             <div class="row" id="Detectives-card-faw">
-                                <h5>Önerdiklerimiz:</h5>
+                                <h5 class="standartcolor">Önerdiklerimiz:</h5>
                                 <?php
                                 foreach ($ttt_detectives as $detective) {
                                     if (isset($detective['favorite']) && $detective['favorite']) {
@@ -449,7 +437,7 @@
                         </div>
                         <div class="tab-pane fade" id="Traitors" role="tabpanel" aria-labelledby="Traitors-tab">
                             <div class="row" id="Traitors-card-faw">
-                                <h5>Önerdiklerimiz:</h5>
+                                <h5 class="standartcolor">Önerdiklerimiz:</h5>
                                 <?php
                                 foreach ($ttt_traitors as $traitor) {
                                     if (isset($traitor['favorite']) && $traitor['favorite']) {
@@ -469,206 +457,202 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <hr>
-            <br>
-            <div>
-                <h3 id="envanter">Envanter nedir? Burada ne yapabilirim?</h3>
-                <ul class="nav nav-tabs" id="envantertabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="envanter-tab" data-bs-toggle="tab"
-                                data-bs-target="#envanter-tab-pane" type="button" role="tab"
-                                aria-controls="envanter-tab-pane" aria-selected="true">Envanter
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="oyuncu-tab" data-bs-toggle="tab"
-                                data-bs-target="#oyuncu-tab-pane" type="button" role="tab"
-                                aria-controls="oyuncu-tab-pane" aria-selected="false">Oyuncu
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="ticaret-tab" data-bs-toggle="tab"
-                                data-bs-target="#ticaret-tab-pane" type="button" role="tab"
-                                aria-controls="ticaret-tab-pane" aria-selected="false">Ticaret
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="dukkan-tab" data-bs-toggle="tab"
-                                data-bs-target="#dukkan-tab-pane" type="button" role="tab"
-                                aria-controls="dukkan-tab-pane" aria-selected="false">Dükkan
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="ayarlar-tab" data-bs-toggle="tab"
-                                data-bs-target="#ayarlar-tab-pane" type="button" role="tab"
-                                aria-controls="ayarlar-tab-pane" aria-selected="false">Ayarlar
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="gorevler-tab" data-bs-toggle="tab"
-                                data-bs-target="#gorevler-tab-pane" type="button" role="tab"
-                                aria-controls="gorevler-tab-pane" aria-selected="false">Görevler
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="vip-tab" data-bs-toggle="tab"
-                                data-bs-target="#vip-tab-pane" type="button" role="tab"
-                                aria-controls="vip-tab-pane" aria-selected="false">VIP
-                        </button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="envanter-tabs">
-                    <div class="tab-pane fade show active" id="envanter-tab-pane" role="tabpanel"
-                         aria-labelledby="envanter-tab" tabindex="0">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="<?= $baseUrl ?>/assets/image/ttt_envanter.png" class="img-fluid"
-                                     alt="Envanter">
+                <br>
+                <div>
+                    <h2 class="standartcolor" id="envanter">Envanter nedir? Burada ne yapabilirim?</h2>
+                    <ul class="nav nav-tabs" id="envantertabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="envanter-tab" data-bs-toggle="tab"
+                                    data-bs-target="#envanter-tab-pane" type="button" role="tab"
+                                    aria-controls="envanter-tab-pane" aria-selected="true">Envanter
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="oyuncu-tab" data-bs-toggle="tab"
+                                    data-bs-target="#oyuncu-tab-pane" type="button" role="tab"
+                                    aria-controls="oyuncu-tab-pane" aria-selected="false">Oyuncu
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="ticaret-tab" data-bs-toggle="tab"
+                                    data-bs-target="#ticaret-tab-pane" type="button" role="tab"
+                                    aria-controls="ticaret-tab-pane" aria-selected="false">Ticaret
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="dukkan-tab" data-bs-toggle="tab"
+                                    data-bs-target="#dukkan-tab-pane" type="button" role="tab"
+                                    aria-controls="dukkan-tab-pane" aria-selected="false">Dükkan
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="ayarlar-tab" data-bs-toggle="tab"
+                                    data-bs-target="#ayarlar-tab-pane" type="button" role="tab"
+                                    aria-controls="ayarlar-tab-pane" aria-selected="false">Ayarlar
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="gorevler-tab" data-bs-toggle="tab"
+                                    data-bs-target="#gorevler-tab-pane" type="button" role="tab"
+                                    aria-controls="gorevler-tab-pane" aria-selected="false">Görevler
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="vip-tab" data-bs-toggle="tab"
+                                    data-bs-target="#vip-tab-pane" type="button" role="tab"
+                                    aria-controls="vip-tab-pane" aria-selected="false">VIP
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="envanter-tabs">
+                        <div class="tab-pane fade show active" id="envanter-tab-pane" role="tabpanel"
+                             aria-labelledby="envanter-tab" tabindex="0">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="<?= $baseUrl ?>/assets/image/ttt_envanter.png" class="img-fluid"
+                                         alt="Envanter">
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Buradan karakterinizin kıyafetlerini ve silahlarını değiştirebilirsiniz.</p>
+                                    <p>Ayrıca kutu açılımını da buradan yapabilirsiniz.</p>
+                                    <p>Eşya sağ tıklayıp geri dönüştürebilirsiniz.</p>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <p>Buradan karakterinizin kıyafetlerini ve silahlarını değiştirebilirsiniz.</p>
-                                <p>Ayrıca kutu açılımını da buradan yapabilirsiniz.</p>
-                                <p>Eşya sağ tıklayıp geri dönüştürebilirsiniz.</p>
+                        </div>
+                        <div class="tab-pane fade" id="oyuncu-tab-pane" role="tabpanel" aria-labelledby="oyuncu-tab"
+                             tabindex="0">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_oyuncu.png" class="img-fluid"
+                                         alt="Oyuncu">
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Seviyenizi, tecrübe puanınızı ve K/D durumunuzu görüntüleyebilirsiniz.</p>
+                                    <p>Ayrıca buradan ekipmanlarınız için hızlı slot seçimi yapabilirsiniz. Örneğin,
+                                        bir ekipman "Moon" olarak adlandırılabilir ve bu ekipmana farklı eşyalar
+                                        ekleyebilirsiniz. Hızlı seçim avantajı sağlar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ticaret-tab-pane" role="tabpanel"
+                             aria-labelledby="ticaret-tab" tabindex="0">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_ticaret.png" class="img-fluid"
+                                         alt="Ticaret">
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Buradan eşyalarınızı arkadaşlarınız ile takas yapabilirsiniz.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="dukkan-tab-pane" role="tabpanel" aria-labelledby="dukkan-tab"
+                             tabindex="0">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_dukkan.png" class="img-fluid"
+                                         alt="Dükkan">
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Buradan oyun içi kazandığınız Envanter Kredisi (IC) ile kutu satın
+                                        alabilirsiniz.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="ayarlar-tab-pane" role="tabpanel"
+                             aria-labelledby="ayarlar-tab" tabindex="0">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_ayarlar.png" class="img-fluid"
+                                         alt="Ayarlar">
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Buradan "Otomatik Bunny Yap" açabilirsiniz. </p>
+                                    <p>Eşya Geri Dönüştürme Hızı
+                                        ayarlıyabilirsiniz. </p>
+                                    <p>Dilerseniz perfomans moduna alıp FPS artışı
+                                        sağlıyabilirsiniz.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="gorevler-tab-pane" role="tabpanel"
+                             aria-labelledby="gorevler-tab" tabindex="0">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_gorevler.png" class="img-fluid"
+                                         alt="Görevler">
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Görevleri tamamlayarak silahınızın daha nadir versiyonlarına sahip
+                                        olabilirsiniz.</p>
+                                    <p>Silahınızın nadir versiyonlarına eriştikçe, silahın özellikleri de
+                                        değişmektedir.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="vip-tab-pane" role="tabpanel" aria-labelledby="vip-tab"
+                             tabindex="0">
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_vip.png" class="img-fluid"
+                                         alt="VIP">
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Satın aldığınız destekçi kredilerini burada kullanabilirsiniz.</p>
+                                    <p>Böylelikle IC Kredisi'ne dönüştürmüş olursunuz.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="oyuncu-tab-pane" role="tabpanel" aria-labelledby="oyuncu-tab"
-                         tabindex="0">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_oyuncu.png" class="img-fluid"
-                                     alt="Oyuncu">
-                            </div>
-                            <div class="col-md-6">
-                                <p>Seviyenizi, tecrübe puanınızı ve K/D durumunuzu görüntüleyebilirsiniz.</p>
-                                <p>Ayrıca buradan ekipmanlarınız için hızlı slot seçimi yapabilirsiniz. Örneğin,
-                                    bir ekipman "Moon" olarak adlandırılabilir ve bu ekipmana farklı eşyalar
-                                    ekleyebilirsiniz. Hızlı seçim avantajı sağlar.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="ticaret-tab-pane" role="tabpanel"
-                         aria-labelledby="ticaret-tab" tabindex="0">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_ticaret.png" class="img-fluid"
-                                     alt="Ticaret">
-                            </div>
-                            <div class="col-md-6">
-                                <p>Buradan eşyalarınızı arkadaşlarınız ile takas yapabilirsiniz.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="dukkan-tab-pane" role="tabpanel" aria-labelledby="dukkan-tab"
-                         tabindex="0">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_dukkan.png" class="img-fluid"
-                                     alt="Dükkan">
-                            </div>
-                            <div class="col-md-6">
-                                <p>Buradan oyun içi kazandığınız Envanter Kredisi (IC) ile kutu satın
-                                    alabilirsiniz.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="ayarlar-tab-pane" role="tabpanel"
-                         aria-labelledby="ayarlar-tab" tabindex="0">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_ayarlar.png" class="img-fluid"
-                                     alt="Ayarlar">
-                            </div>
-                            <div class="col-md-6">
-                                <p>Buradan "Otomatik Bunny Yap" açabilirsiniz. </p>
-                                <p>Eşya Geri Dönüştürme Hızı
-                                    ayarlıyabilirsiniz. </p>
-                                <p>Dilerseniz perfomans moduna alıp FPS artışı
-                                    sağlıyabilirsiniz.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="gorevler-tab-pane" role="tabpanel"
-                         aria-labelledby="gorevler-tab" tabindex="0">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_gorevler.png" class="img-fluid"
-                                     alt="Görevler">
-                            </div>
-                            <div class="col-md-6">
-                                <p>Görevleri tamamlayarak silahınızın daha nadir versiyonlarına sahip
-                                    olabilirsiniz.</p>
-                                <p>Silahınızın nadir versiyonlarına eriştikçe, silahın özellikleri de
-                                    değişmektedir.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="vip-tab-pane" role="tabpanel" aria-labelledby="vip-tab"
-                         tabindex="0">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <img src="<?= $baseUrl ?>/assets/image/ttt_envanter_vip.png" class="img-fluid"
-                                     alt="VIP">
-                            </div>
-                            <div class="col-md-6">
-                                <p>Satın aldığınız destekçi kredilerini burada kullanabilirsiniz.</p>
-                                <p>Böylelikle IC Kredisi'ne dönüştürmüş olursunuz.</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-
+                <br>
+                <div>
+                    <h2 class="standartcolor" id="event">Etkinlik Düzenleniyor mu?</h2>
+                    <p>Belli aralıklarla üstadlarımız tarafından etkinlik düzenlenmektedir.</p>
+                    <p>Ödül değişmektedir. Genellikle IC kredi verilmektedir.</p>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">
+                            <h5 class="text-success-emphasis">Boss Raund</h5>
+                            <p>Bir kişi dinozora dönüşür ve herkes o dinozora dönüşen kişiyi öldürmeye çalışır. Aynı zamanda
+                                hayatta kalmanız gerekir.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 class="text-primary-emphasis">Stalker Raund</h5>
+                            <p>Bir kişi görünmez olur ve herkes o görünmez kişiyi öldürmeye çalışır. Aynı zamanda hayatta
+                                kalmanız gerekir.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 class="text-danger-emphasis">Patlayan Tavuk</h5>
+                            <p>Silahlarınızı hiçbir şekilde kullanamazsınız ve etrafa tavuklar spamlanır. Bu tavuklar
+                                zıplayabilir. Hayatta kalmaya çalışmanız gerekir.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
+
             <hr>
-            <br>
-            <div>
-                <h3 id="event" class="mb-3">Etkinlik Düzenleniyor mu?</h3>
-                <p>Belli aralıklarla üstadlarımız tarafından etkinlik düzenlenmektedir.</p>
-                <p>Ödül değişmektedir. Genellikle IC kredi verilmektedir.</p>
-                <ul class="list-group mb-3">
-                    <li class="list-group-item">
-                        <h5 class="text-success-emphasis">Boss Raund</h5>
-                        <p>Bir kişi dinozora dönüşür ve herkes o dinozora dönüşen kişiyi öldürmeye çalışır. Aynı zamanda
-                            hayatta kalmanız gerekir.</p>
-                    </li>
-                    <li class="list-group-item">
-                        <h5 class="text-primary-emphasis">Stalker Raund</h5>
-                        <p>Bir kişi görünmez olur ve herkes o görünmez kişiyi öldürmeye çalışır. Aynı zamanda hayatta
-                            kalmanız gerekir.</p>
-                    </li>
-                    <li class="list-group-item">
-                        <h5 class="text-danger-emphasis">Patlayan Tavuk</h5>
-                        <p>Silahlarınızı hiçbir şekilde kullanamazsınız ve etrafa tavuklar spamlanır. Bu tavuklar
-                            zıplayabilir. Hayatta kalmaya çalışmanız gerekir.</p>
-                    </li>
-                </ul>
+            <blockquote>
+                Başlarken bilmeniz gerekenler serimiz burada son bulmaktadır. Daha fazlası için diğer
+                rehberlerimize de göz atmayı unutmayın.
+            </blockquote>
+
+            <div class="content-ref-box">
+                <p>
+                    <a id="sssBox" href="<?= $baseUrl; ?>/ttt-baslarken/sss">
+                        <i class="fas fa-question"></i> Sıkça Sorulan Sorular
+                    </a>
+                </p>
             </div>
-            <hr>
-            <br>
         </div>
-
-        <hr>
-        <blockquote>
-            Başlarken bilmeniz gerekenler serimiz burada son bulmaktadır. Daha fazlası için diğer
-            rehberlerimize de göz atmayı unutmayın.
-        </blockquote>
-
-        <div class="content-ref-box">
-            <p>
-                <a id="sssBox" href="<?= $baseUrl; ?>/ttt-baslarken/sss">
-                    <i class="fas fa-question"></i> Sıkça Sorulan Sorular
-                </a>
-            </p>
-        </div>
-        <br>
     </div>
 
 </main>

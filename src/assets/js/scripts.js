@@ -6,6 +6,7 @@ const baseUrl = window.location.port && window.location.port !== "80" && window.
 const currentUrl = baseUrl_Path ? (baseUrl + window.location.pathname).replace(baseUrl_Path, "") : (baseUrl + window.location.pathname);
 
 document.addEventListener('DOMContentLoaded', function () {
+
     const menuItems = [
         {id: 'homehome', text: 'Anasayfa', href: `${baseUrl}/`, icon: 'fas fa-home'},
         {type: 'category', text: 'DarkRP', icon: 'fa-solid fa-gun'},
@@ -100,6 +101,41 @@ document.addEventListener('DOMContentLoaded', function () {
             href: `${baseUrl}/darkrp-baslarken/sss`,
             icon: 'fas fa-question'
         },
+        {
+            id: 'darkrpvideorehber',
+            text: 'Video Rehber',
+            href: `#`,
+            icon: 'fa-solid fa-video',
+            dropdown: [
+                {
+                    id: 'darkrpvideo_cars',
+                    text: 'Araç Hurdalığına Araç Götürme?',
+                    href: `https://www.youtube.com/shorts/vrctpNdDa8A`,
+                    icon: 'fa-solid fa-car',
+                    target: '_blank'
+                },
+                {
+                    id: 'darkrpvideo_build',
+                    text: 'Build Nasıl Yapılır?',
+                    href: `https://www.youtube.com/watch?v=bx_BeAMHv-Y`,
+                    icon: 'fa-solid fa-building-circle-check',
+                    target: '_blank'
+                },
+                {
+                    id: 'darkrpvideo_balik',
+                    text: 'Balık Nasıl Tutulur?',
+                    href: `https://www.youtube.com/shorts/Pquczsp28PU`,
+                    icon: 'fa-solid fa-fish',
+                    target: '_blank'
+                },
+                {
+                    id: 'darkrpvideo_maden',
+                    text: 'Madencilik Nasıl Yapılır?',
+                    href: `${baseUrl}/ttt-baslarken/sss`,
+                    icon: 'fa-solid fa-person-arrow-down-to-line'
+                }
+            ]
+        },
 
         {type: 'category', text: 'Trouble in Terrorist Town', icon: 'fa-solid fa-user-secret'},
         {id: 'tttnedir', text: 'TTT Nedir?', href: `${baseUrl}/ttt`, icon: 'fa-solid fa-user-secret'},
@@ -163,7 +199,13 @@ document.addEventListener('DOMContentLoaded', function () {
             icon: 'fa-solid fa-video'
         },
         {type: 'category', text: 'Faydalı Bağlantılar', icon: 'fa-solid fa-arrow-up-right-from-square'},
-        {id: 'mg', text: 'MoonGaming', href: 'https://moonrp.com', icon: 'fa-solid fa-moon', target: '_blank'},
+        {
+            id: 'mg',
+            text: 'MoonGaming',
+            href: 'https://moonrp.com',
+            icon: 'fa-solid fa-moon',
+            target: '_blank'
+        },
         {
             id: 'mgdiscord',
             text: 'MoonGaming - Discord',
@@ -312,28 +354,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const offcanvasElement = document.getElementById('offcanvasRight');
     const offcanvasRightMenu = document.getElementById('offcanvas-right-menu');
 
+    let lastLevel = 1;
+    let currentParent = rightMenu;
+
     contentHeaders.forEach(header => {
         const id = header.id;
         const text = header.textContent;
 
         if (id.length !== 0) {
+            const headerLevel = parseInt(header.tagName.charAt(1), 10);
             const rightMenuItem = document.createElement('li');
             rightMenuItem.classList.add('nav-item');
-
-            let sizeClass;
-            const headerLevel = parseInt(header.tagName.charAt(1), 10);
-            sizeClass = headerLevel >= 1 && headerLevel <= 5 ? `bookmark-header-${headerLevel}` : '';
-
-
-            rightMenuItem.innerHTML = `<a class="nav-link ${sizeClass}" href="#${id}">${text}</a>`;
-            rightMenu.appendChild(rightMenuItem);
-
+            rightMenuItem.innerHTML = `<a class="nav-link" style="padding-left: ${headerLevel * 10}px;" href="#${id}">${text}</a>`;
+            currentParent.appendChild(rightMenuItem);
+            lastLevel = headerLevel;
             const offcanvasMenuItem = document.createElement('li');
             offcanvasMenuItem.classList.add('nav-item');
-            offcanvasMenuItem.innerHTML = `<a class="nav-link" href="#${id}">${text}</a>`;
+            offcanvasMenuItem.innerHTML = `<a class="nav-link" style="padding-left: ${headerLevel * 10}px;" href="#${id}">${text}</a>`;
             offcanvasRightMenu.appendChild(offcanvasMenuItem);
         }
     });
+
     if (offcanvasRightMenu.children.length === 0) {
         toggleOffcanvasBtn.classList.add("nullcontent");
     }
@@ -341,6 +382,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
         offcanvas.show();
     });
+
 
     function updateActiveClass() {
         const links = document.querySelectorAll('#mobileBookmarks .nav-link, #right-menu .nav-link');
@@ -383,14 +425,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function MarkSelector() {
-        contentHeaders.forEach(header => {
-            header.classList.remove('highlighted');
-        });
         const currentHash = window.location.hash;
+        contentHeaders.forEach(header => {
+            const existingSpan = header.querySelector('span.highlighted');
+            if (existingSpan) {
+                header.innerHTML = existingSpan.innerHTML;
+                existingSpan.remove();
+            }
+        });
+
         if (currentHash) {
             const targetHeader = document.querySelector(`.content ${currentHash}`);
             if (targetHeader) {
-                targetHeader.classList.add('highlighted');
+                const headerContent = targetHeader.innerHTML;
+                const span = document.createElement('span');
+                span.classList.add('highlighted');
+                span.innerHTML = headerContent;
+                targetHeader.innerHTML = '';
+                targetHeader.appendChild(span);
             }
         }
     }
@@ -406,4 +458,16 @@ document.addEventListener('DOMContentLoaded', function () {
             this.querySelector("i").classList.toggle("fa-chevron-down");
         });
     }
+
+    var videoContainers = document.querySelectorAll('.video-container');
+    videoContainers.forEach(function (container) {
+        var video = container.querySelector('.player');
+        var youtubePlayer = container.querySelector('.yt-player');
+        video.onerror = function () {
+            video.style.display = 'none';
+            youtubePlayer.style.display = 'block';
+        };
+    });
 });
+
+

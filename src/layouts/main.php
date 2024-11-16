@@ -4,8 +4,8 @@
             <img src="<?= $baseUrl; ?>/assets/image/logo1.png"
                  class="img-fluid mb-3" style="align-items: center;" alt="MoonGaming Logo">
         </div>
-        <h2>MoonGaming™ Hakkımızda</h2>
-        <hr>
+        <h2 class="mg">MoonGaming™ Hakkımızda</h2>
+        <br>
         <p>
             MoonGaming™ kurulduğu tarihten itibaren, tekrar etmekten başka bir iş görmeyen insanların kendilerini
             duvarları içinde kısıtladığı rol kalıplarını yıkıp yerine yenilikçi ve ilerici bir rol sistemi getirmeyi
@@ -14,8 +14,8 @@
             lezzet yaşatmış olan topluluğumuz, yeri geldiğinde bütün Türk oyuncu kitlesini toplamayı başarabilmiştir.
         </p>
         <br>
-        <h3>MoonGaming™ Rehber</h3>
-        <hr>
+        <h2 class="standartcolor">MoonGaming™ Rehber</h2>
+        <br>
         <p>
             MoonGaming™ sunucusu için topluluk tarafından hazırlanmış rehbere hoş geldiniz. Bu rehber,
             oyunun temel unsurlarını anlamanıza yardımcı olmak ve sıkça sorulan sorulara yanıt vermek

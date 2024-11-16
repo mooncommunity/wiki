@@ -1,7 +1,6 @@
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
-        <h1 class="mb-4">Chromium Nedir? Nasıl Chromium Geçerim?</h1>
-        <hr>
+        <h1 class="standartcolor mb-4">Chromium Nedir? Nasıl Chromium Geçerim?</h1>
         <p class="text-center">Oyunun normal sürümünde sadece 32-bit desteği yüzünden en fazla 2 GB RAM kullanabilirken,
             Bu beta ile 64-bit sürüme geçişle daha fazla bellek kullanımı ve performans artışı sağlıyor. Ayrıca, eski
             Awesomium yerine Chromium tabanlı bir arayüz kullanarak daha modern web teknolojilerine uyum sağlıyor. Bu
@@ -32,4 +31,5 @@
             </div>
         </div>
     </div>
+    <br>
 </main>

@@ -1,5 +1,13 @@
 @use "sass:map";
 @use 'sass:color';
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/variables-dark";
+@import "bootstrap/maps";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 $font-family: "Inter", sans-serif;
@@ -15,11 +23,26 @@ $colors: (
         scrollbar-thumb: #d1d5da,
         scrollbar-thumb-hover: #6a737d,
         dropdown-hover-bg: #f0f0f0,
-        header1: #3B82F6,
-        header2: #10B981,
-        header3: #F87171,
-        header4: #A855F7,
-        header5: #FB923C,
+        header1: $blue-300,
+        header1-border: $blue-400,
+        header2: $pink-300,
+        header2-border: $pink-400,
+        header3: $yellow-300,
+        header3-border: $yellow-400,
+        header4: $green-300,
+        header4-border: $green-400,
+        header5: $purple-300,
+        header5-border: $purple-400,
+        bs-purple: $purple-300,
+        bs-teal: $teal-300,
+        darkrp-job-red: $red-400,
+        darkrp-job-red-border: $red-600,
+        darkrp-job-blue: $blue-400,
+        darkrp-job-blue-border: $blue-600,
+        darkrp-job-green: $green-400,
+        darkrp-job-green-border: $green-600,
+        darkrp-job-gray: $gray-400,
+        darkrp-job-gray-border: $gray-600,
 );
 
 $dark-colors: (
@@ -33,29 +56,44 @@ $dark-colors: (
         scrollbar-thumb: #636e7b,
         scrollbar-thumb-hover: #768390,
         dropdown-hover-bg: #1b1f24,
-        header1: #3B82F6,
-        header2: #10B981,
-        header3: #FCA5A1,
-        header4: #A78BFA,
-        header5: #FB923C,
+        header1: $blue-500,
+        header1-border: $blue-600,
+        header2: $pink-500,
+        header2-border: $pink-600,
+        header3: $yellow-500,
+        header3-border: $yellow-600,
+        header4: $green-500,
+        header4-border: $green-600,
+        header5: $purple-500,
+        header5-border: $purple-600,
+        bs-purple: $purple-500,
+        bs-teal: $teal-500,
+        darkrp-job-red: $red-600,
+        darkrp-job-red-border: $red-400,
+        darkrp-job-blue: $blue-600,
+        darkrp-job-blue-border: $blue-400,
+        darkrp-job-green: $green-600,
+        darkrp-job-green-border: $green-400,
+        darkrp-job-gray: $gray-600,
+        darkrp-job-gray-border: $gray-400,
 );
 
-$bookmark-header: (
-        "bookmark-header1": 18px,
-        "bookmark-header2": 16px,
-        "bookmark-header3": 14px,
-        "bookmark-header4": 12px,
-        "bookmark-header5": 10px,
+$jobColors: (
+        "darkrpgenel": (var(--darkrp-job-gray), var(--darkrp-job-gray-border)),
+        "darkrplegal": (var(--darkrp-job-blue), var(--darkrp-job-blue-border)),
+        "darkrpesnaf": (var(--darkrp-job-green), var(--darkrp-job-green-border)),
+        "darkrpillegal": (var(--darkrp-job-red), var(--darkrp-job-red-border)),
+        "tttdedektif": (var(--darkrp-job-blue), var(--darkrp-job-blue-border)),
+        "tttmasum": (var(--darkrp-job-green), var(--darkrp-job-green-border)),
+        "ttthain": (var(--darkrp-job-red), var(--darkrp-job-red-border))
 );
 
 @mixin heading-color($level) {
   color: var(--header#{$level});
+  border-bottom: 1px solid var(--header#{$level}-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-
-@mixin bookmark-fontSize($level) {
-  font-size: map.get($bookmark-header, "bookmark-header#{$level}");
-}
-
 
 @function get-font-family($type: null) {
   @if $type == "code" {
@@ -97,12 +135,48 @@ $bookmark-header: (
   }
 }
 
+.text-purple {
+  color: var(--bs-purple) !important;
+
+  &.show {
+    color: var(--bs-purple) !important;
+  }
+}
+
+.text-teal {
+  color: var(--bs-teal) !important;
+
+  &.show {
+    color: var(--bs-teal) !important;
+  }
+}
+
 body {
   font-family: get-font-family();
 }
 
 nav {
   margin-bottom: 0.5% !important;
+}
+
+p, li, span, blockquote, ul, ol, table, th, td {
+  color: var(--bs-secondary-color);
+
+  .accordion-button &,
+  .alert &,
+  .category-item & {
+    color: inherit;
+  }
+
+}
+
+#chatTabsContent, #tusUL {
+  strong, b {
+    color: var(--bs-light);
+  }
+  .key {
+    margin-right: 2px;
+  }
 }
 
 code, pre {
@@ -175,13 +249,22 @@ pre {
   font-weight: bold;
 }
 
-#right-sidebar .nav-link,
 .dropdown-item-container .nav-link {
   border-left: 4px solid var(--scrollbar-thumb);
   padding-left: 10px;
 
   &.active {
     border-left-color: var(--bs-link-hover-color);
+  }
+}
+
+#right-sidebar {
+  .nav-link {
+    font-size: 10pt;
+
+    &.active {
+      border-left-color: var(--bs-link-hover-color);
+    }
   }
 }
 
@@ -213,16 +296,30 @@ pre {
 
 
 #darkrplegal-d .nav-link {
-  border-left-color: blue;
+  border-left-color: $blue-600;
+
+  &.active {
+    border-left-color: $blue-800;
+  }
 }
 
 #darkrpesnaf-d .nav-link {
-  border-left-color: green;
+  border-left-color: $green-600;
+
+  &.active {
+    border-left-color: $green-800;
+  }
 }
 
+
 #darkrpillegal-d .nav-link {
-  border-left-color: red;
+  border-left-color: $red-600;
+
+  &.active {
+    border-left-color: $red-800;
+  }
 }
+
 
 .nav-link-container {
   margin-bottom: 1%;
@@ -264,7 +361,7 @@ pre {
   transition: border-color 0.3s ease;
 
   &:hover {
-    border-color: var(--bs-menu-link-color);
+    border-color: var(--bs-link-hover);
   }
 
   a {
@@ -278,25 +375,64 @@ pre {
 
 }
 
+.key {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 2px solid var(--bs-light);
+  border-radius: 4px;
+  background-color: var(--bs-gray-600);
+  font-weight: bold;
+color: var(--bs-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 12px;
+}
+
 .content {
   @for $i from 1 through 5 {
-    h#{$i} {
+    h#{$i}.standartcolor {
       @if $i == 1 or $i == 2 {
         font-family: get-font-family("header");
       }
       @include heading-color($i);
     }
   }
+
+  @each $key, $colors in $jobColors {
+    @for $i from 1 through 5 {
+      h#{$i}.#{$key} {
+        color: nth($colors, 2);
+        border-bottom: 1px solid nth($colors, 1);
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .#{$key} {
+      color: nth($colors, 1);
+
+      &.active {
+        color: nth($colors, 2);
+      }
+    }
+    .nav-link.#{$key}:hover {
+      color: nth($colors, 2);
+    }
+  }
+
+  .mg {
+    color: var(--bs-secondary-color);
+    border-bottom: 1px solid var(--bs-secondary-bg);
+    padding-bottom: 0.5rem;
+  }
+}
+
+.alert {
+  word-break: break-word;
 }
 
 .nullcontent {
   display: none;
-}
-
-@for $i from 1 through 5 {
-  .bookmark-header-#{$i} {
-    @include bookmark-fontSize($i);
-  }
 }
 
 .accordion-button:not(.collapsed) {
@@ -327,7 +463,8 @@ pre {
 }
 
 .highlighted {
-  border: var(--bs-warning-border-subtle) solid 3px;
+  background-color: var(--bs-warning-border-subtle);
+  color: var(--bs-light-text-emphasis);
 }
 
 @media (max-width: 767px) {
@@ -384,9 +521,28 @@ pre {
   .mobile-content {
     display: block;
   }
+  .mobile-no-margin {
+    margin: 0;
+  }
 
   .desktop-content {
     display: none;
+  }
+  .content {
+    .nav-tabs {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .nav-item {
+      display: inline-block;
+    }
+
+    .nav-link {
+      min-width: 10%;
+      margin-right: 10px;
+    }
+
   }
 }
 

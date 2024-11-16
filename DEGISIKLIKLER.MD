@@ -1,116 +1,198 @@
-# 1.0.2
+# 1.1.0
 
 ## Search için anahtar kelime "darkrp yeniyim" || "ttt yeniyim"
 
-- Source Aşaması
-    - DarkRP Başlarken > SSS 'deki VIP ve VIP+ Meslekler DarkRP Meslekler Bağlandı.
-    - Kirli dolar temizleme ve bitki satma DarkRP Paralı mesleklere bağlandı.
-    - TTT C-menü , DarkRP Paralı meslekler, DarkRP Itemler , DarkRP Meslekler, DarkRP-TTT Server IP, Workshop URL, Admin başvuru tek bir PHP değişkenine toplandı.
-    - javascript ile URL değiştirmek yerine php tarafında mümkün olduğunca dinamik olarak yapılarak HTML çevriliyor.
-    - CSS Okunabilirliği düşük olduğu için SCSS geçildi. Dönüştürme aşamasında CSS çevriliyor.
+# Yapı Güncellendi
 
-- DarkRP Başlarken
-    - Ücretli meslekler boostrap list taşındı
-    - Eşyalar bootstrap list taşındı.
-    - "Önemli yerler" Sivri ada, Heybeli Ada, Bilim Adası, Şirket #1, Şirket #2 eklendi.
-    - Önemli yerler javascript ile ekleniyordu onun yerine source aşamasında artık php'den HTML çevirirken ekliyor.
-    - "Eşyalar # XP Eşyaları" da "Kalite Viski" tanımı güncellendi.
-    - "Eşyalar # XP Eşyaları" da "Türk Bayrağı" eklendi.
-
-- TTT Nedir?
-    - "Oyun başladığında herkes gizli rolünü öğrenir. Teröristler, masumları öldürmeden önce dedektifleri ve diğer
-      teröristleri ortadan kaldırmalıdır. Dedektifler, şüpheli oyuncuları tespit edip masumları korumalıdır." yazısı "
-      Oyun başladığında herkes gizli rolünü öğrenir. Teröristler, masumları öldürmeden önce dedektifleri ortadan
-      kaldırmalıdır. Dedektifler, şüpheli oyuncuları tespit edip masumları korumalıdır." olarak güncellendi
-
-- DarkRP Kariyer > Esnaf ve Siviller
-    - yasadışı organizasyonlara giden bir box eklendi sayfa sonuna
-    - meslek eşyaları bootstrap list taşındı.
-    - F4 deki tüm meslekler eklendi, vip,vip+ bilinen meslekler artık meslek başlığında gözüküyor.
-    - Mühendis eklendi
-    - İmam eklendi
-
-- TTT Başlarken
-    - C menü javascript ile ekleniyordu onun yerine source aşamasında artık php'den HTML çevirirken ekliyor.
-    - "Etkinlik düzenleniyor mu?" eklendi.
-    - "Sohbet ve İletişim" deki "pm" harfleri büyütüldü ("PM")
-
-- Resim eklendi
-    - src/assets/image/darkrp_koltuk_alte.gif
-    - src/assets/image/darkrp_ciftlik.jpg
-    - src/assets/image/darkrp_aileapartmani.jpg
-    - `src/assets/image/darkrp_sevgiapartmanı.jpg` `src/assets/image/darkrp_sevgiapartmani.jpg` olarak değiştirildi.
-    - src/assets/image/darkrp_ada_bilim.jpg
-    - src/assets/image/darkrp_ada_heybeli.jpg
-    - src/assets/image/darkrp_ada_sivri.jpg
-    - src/assets/image/darkrp_sirket1.jpg
-    - src/assets/image/darkrp_sirket2.jpg
-    - src/assets/image/favicon.ico
-    - src/assets/image/steam_menu_ayarlar.png
-    - src/assets/image/steam_menu_ayarlar_indirmeler.png
-    - src/assets/image/steam_menu_ayarlar_indirmeler_1.png
-
-
-- DarkRP Başlarken > SSS
-    - "Susuzluğumu ve açlığımı nasıl gidereceğim?" eklendi.
-    - "Koltuğa nasıl oturacağım?" eklendi.
-    - "Nasıl canımı artırabilirim?" eklendi.
-    - "VIP ve VIP+ Meslekler Neler?" eklendi.
-    - "Nasıl 500 can olunur?" eklendi
-    - "Nasıl 300 zırh olunur?" eklendi
-    - "Polis Özel Harekat Polisi ve Polis Özel Harekat Doktoru nasıl olurum?" başlığı "Polis Özel Harekât Polisi, Polis
-      Özel
-      Harekât Keskin Nişancısı ve Polis Özel Harekât
-      Doktoru nasıl olurum?
-      " olarak güncellendi ve içerik güncellendi
-        - "Nasıl Dans Edebilirim?" eklendi
-        - "Döviz nasıl alırım?" eklendi
-        - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?"
-          içeriği güncellendi.
-        - "Fizik Silahı Rengini Nasıl Değiştirebilirim?" eklendi.
-        - "Araç Ehliyeti Nereden Alabilirim?" eklendi
-        - "Silah Ruhsatı Nereden Alabilirim?" eklendi
-        - "Aracım hasarlı, nasıl tamir edebilirim?" eklendi
-        - "İsmimi nasıl değiştireceğim?" eklendi
-        - "Bilim İnsanı" yazıyordu "Bilim Adamı" olarak değiştirildi
-
-- TTT Başlarken > SSS
-    - "Oyunda görüntüler kesik kesik; bir taraf var, bir taraf yok. Görüntüler iç içe girmiş. Ne yapmam gerekiyor?"
-      içeriği güncellendi.
-    - Başvuru kısmı güncellendi.
-
-- DarkRP Kariyer > Devlet Çalışanı
-    - Esnaf ve siviller giden bir box eklendi sayfa sonuna
-    - F4 deki tüm meslekler eklendi, vip,vip+ bilinen meslekler artık meslek başlığında gözüküyor.
-    - Meslekler javascript ile ekleniyordu onun yerine source aşamasında artık php'den HTML çevirirken ekliyor.
-    - PÖH Keskin Nişancısı mesleği eklendi
-    - "Belediye Başkanı Nasıl Olacağım?" eklendi
-    - "Belediye Başkan Yardımcısı Seçebiliyor muyum?" eklendi
-
-- DarkRP Kariyer > Yasadışı Organizasyonlar
-    - F4 deki tüm meslekler eklendi, vip,vip+ bilinen meslekler artık meslek başlığında gözüküyor. (Eskort ve Menejer
-      hariç)
-    - Meslekler javascript ile ekleniyordu onun yerine source aşamasında artık php'den HTML çevirirken ekliyor.
-    - "Bitkiları" "Bitkileri" olarak düzenlendi.
-    - "Bitki üretiminin" ID si ot du bitki olarak güncellendi.
-    - "Korsan ve Eşkiyada Ürettiğim İthal eşyaları kime satabilirim?" ID si değiştirildi kacakesya dı ithalesya yapıldı
-    - Çeçen Mafya Üyesi ve Çeçen Mafya Lideri tanımında Bitki üretimi vardı kaldırıldı.
-
+- Build aşamasında artık SCSS kullanılıyor.
+- search.js eklendi
+- PHP Build aşamasında çözülebilcek şeyler javascript kaldırıldı örneğin ttt c menü artık php tarafında oluşturuluyor.
+- TTT C Menü, DarkRP Paralı Meslekler , Meslekler , DarkRP Eşyalar ve MoonCity PHP Kısmında array yapısına taşındı.
+- `.content` kısmında artık otomatik h1-h5 etiketlerine renk vermiyor vermesi için `.standartcolor` kullanılması
+  gerekiyor.
+- p, b, li vb. temel html tagların colorları değiştirildi.
+- mobil görünümde `.nav-tabs` için boyut iyileştirilmesi yapıldı.
+- bookmarks yeniden tasarlandı ve artık `#ID` seçilince CTRL + F deki benzer renk gerçekleşiyor.
 - Meta etiketlerinden OG Image kaldırıldı (Resim yapılana kadar eklenmicek)
 - aykafa.ico lokal dosyaya taşındı ve ismi favicon.ico oldu.
+- `.key`, `.rounded-button`, `.highlighted` eklendi.
+- `.highlighted` için js kodu eklendi.
+- `.video-container` içinde `.player` class lı video nun konumu bulunamayınca `.yt-player` görünür olması ve `.player`
+  görünür olmaması ayarlandı.
 
-- "scripts.js" dosyası düzenlendi
-    - H1, H2, H3, H4, H5 etiketlerinde ID varsa ve bu ID gidilirse artık sarı border gözükücek H etiketlerin
-      çerçevesinde.
+# Video eklendi
 
-- "style.css" dosyası düzenlendi
-    - Kod bloklarında artık "Fira code, monospace" kullanılıyor.
-    - `.highlighted` class eklendi.
-    - `.Rounded-button` class eklendi.
-    - `.desktop-content` class eklendi.
+- src/assets/video/darkrp_toolgun_button.mp4
+- src/assets/video/darkrp_toolgun_isik.mp4
+- src/assets/video/darkrp_toolgun_keypad.mp4
 
-- "search.js" dosyası eklendi.
-- Index sayfasında img classları ile oynandı.
+# Resim eklendi
+
+- src/assets/image/steam_menu_ayarlar_oyunkaydi.png
+- src/assets/image/gmod_menu1.png
+- src/assets/image/darkrp_koltuk.gif
+- src/assets/image/gmod_console.png
+- src/assets/image/gmod_console_key.png
+- src/assets/image/windows_denetim_ag.png
+- src/assets/image/windows_denetim_dns.png
+- src/assets/image/windows_powershell.png
+- `src/assets/image/darkrp_sevgiapartmanı.png` yerine `src/assets/image/darkrp_sevgiapartmani.png` yapıldı
+
+# Anasayfa
+
+- Headerlar ve renkleri güncellendi.
+- logo nun resim class ları ile oynandı.
+
+# DarkRP Nedir?
+
+- Renkler güncellendi.
+
+# DarkRP Başlarken
+
+- Kısa bir yazı eklendi.
+- h1-h6 etiketleri yeniden sıralandı.
+- Öncelik sırasına göre içerikler tekrar sıralandı.
+- Gerekli Eklentiler ve Ayarlar idsi değiştirildi `#workshop`
+- Temel kısayollar renkleri düzenlendi.
+- Sohbet ve İletişim'deki Menüler adları güncellendi Genel, Devlet Çalışanı, Esnaf ve Siviller, Yasadışı
+  Organizasyonlar . Daha önce Genel, Legal, Esnaf, İllegal di.
+- Sohbet ve İletişim deki renkler düzenlendi.
+- "Oyundaki tüm silahlarım nerede?" idsi değiştirildi `#weaponslot` (eskiden `#weapon` du)
+- "Physhic Gun ile Tool Gun Hakkında" fizik gun nerden alabilcekleri eklendi.
+- "Düğmeli Görünmez Kapı Nasıl Yapılır?" eklendi
+- "Keypad/Parola Görünmez Kapı Nasıl Yapılır?" eklendi
+- "Işık Nasıl Koyarım?" eklendi
+- "Önemli Yerler" 'Şirket #1, Şirket #2, Aile Apartmanı, Çiftlik, Sivri Ada, Heybeli Ada, Bilim Adası' eklendi.
+- "Telefon nasıl kullanırım?" güncellendi.
+    - Accordion yapısına geçirildi resimler sağa yaslandı (mobilde ortalı gözüküyor)
+    - Metinler güncellendi. Bazı yerlerde direkt icon kullanılıyor.
+- "Depoya Eşyamı Nasıl Koyabilirim?" içeriği güncellendi.
+- "ATM Nasıl Kullanılıyor?" içeriği güncellendi.
+- "Ücretli Meslekler Neler?" güncellendi
+    - İçerik güncellendi.
+    - Mesleklerin yapabilcekleri eklendi renk olarak(dolar bozanların rengi yeşil ...)
+    - daha şık görünmesi açısından bootstrap `list-group` geçirildi.
+- "Eşyalar" güncellendi. daha şık görünmesi açısından bootstrap `list-group` geçirildi.
+    - "XP Eşyaları" da "Kalite Viski" tanımı güncellendi.
+    - "XP Eşyaları" da "Türk Bayrağı" eklendi.
+
+# DarkRP Başlarken > SSS
+
+- Kategorilere ayrıldı (Teknik Sorunlar, Erişim, Oyun Deneyimi, Başvurular)
+- Error kısmı ayrıldı (Etrafta her şey error, ne yapmalıyım? , Ana Menüye düşüyorum / Oyun aniden kapanıyor)
+- "Steam'de Garry's Mod indirirken 'Bozuk İndirme' hatası alıyorum, nasıl çözebilirim?" eklendi.
+- "Eski Tarayıcıyı Nasıl Açarım?" eklendi
+- "DarkRP Sunucusu gözükmüyor ne yapmam lazım?" eklendi
+- "Yurtdışından bağlanıyorum, sunucuya nasıl katılırım?" eklendi
+- "FPS Nasıl Yükseltirim" eklendi
+- "İsmimi nasıl değiştireceğim?" eklendi.
+- "Nasıl Dans Edebilirim?" eklendi.
+- "Koltuğa nasıl oturacağım?" eklendi.
+- "Araç Ehliyeti Nereden Alabilirim?" eklendi.
+- "Silah Ruhsatı Nereden Alabilirim?" eklendi.
+- "Silah Nereden Alabilirim?" (PHP de array den çekiliyor ) eklendi
+- "Aracım hasarlı, nasıl tamir edebilirim?" eklendi
+- "Susuzluğumu ve açlığımı nasıl gidereceğim?" eklendi
+- "Nasıl canımı artırabilirim?" eklendi
+- "Nasıl 500 can olunur?" eklendi
+- "Nasıl 300 zırh olunur?" eklendi
+- "VIP ve VIP+ Meslekler Neler?" (PHP de array den çekiliyor ) eklendi
+- "Piyango bileti Nasıl Alırım?" eklendi
+- "Döviz Nasıl Alırım?" eklendi
+- "Physhic Gun/Fizik Gun Rengini Nasıl Değiştirebilirim?" eklendi
+- "Dans Menüsünü Anahtar Olmadan Nasıl Açarım?" eklendi
+- "Kopyalayıcı ile kaydettiğim build arkadaşımla nasıl paylaşırım?" eklendi
+- "Video kaydım var, nereye yüklemeliyim?" eklendi
+- Polis Özel Harekât Polisi başvuru sürecine Keskin nişancı eklendi.
+
+# DarkRP Kategorisi - Video Rehber
+
+- Araç Hurdalığına Araç Götürme?
+- Build Nasıl Yapılır?
+- Balık Nasıl Tutulur?
+- Madencilik Nasıl Yapılır?
+
+* Güncel bulduklarım bunlardı bunları ekledim şimdilik.
+
+# DarkRP Kariyer
+
+- Renkler düzeltildi.
+
+# DarkRP Kariyer > Devlet Çalışanı
+
+- Kısa bir yazı eklendi.
+- F4 Deki tüm meslekler eklendi.
+- Renkler değiştirildi mavi yapıldı.
+- VIP, VIP+ Meslek adının yanında belirtiliyior.
+- Whitelist li meslekler meslek tanımını açtığında aşağıda small olarak belirtiliyor.
+- h1-h5 tekrar düzenlendi.
+- Esnaf ve Siviller giden bir box eklendi sayfa sonuna
+- PÖH Keskin Nişancısı mesleği eklendi
+- "Belediye Başkanı Nasıl Olacağım?" eklendi
+- "Belediye Başkan Yardımcısı Seçebiliyor muyum?" eklendi
+
+# DarkRP Kariyer > Esnaf ve Siviller
+
+- Kısa bir yazı eklendi.
+- F4 Deki tüm meslekler eklendi.
+- Renkler değiştirildi yeşil yapıldı.
+- VIP, VIP+ Meslek adının yanında belirtiliyior.
+- Whitelist li meslekler meslek tanımını açtığında aşağıda small olarak belirtiliyor.
+- h1-h5 tekrar düzenlendi.
+- imam ve mühendis eklendi.
+- yasadışı organizasyonlara giden bir box eklendi sayfa sonuna
+
+# DarkRP Kariyer > Yasadışı Organizasyonlar
+
+- Kısa bir yazı eklendi.
+- F4 Deki tüm meslekler eklendi. ESKORT ve MENEJER hariç
+- Renkler değiştirildi kırmızı yapıldı.
+- VIP, VIP+ Meslek adının yanında belirtiliyior.
+- Whitelist li meslekler meslek tanımını açtığında aşağıda small olarak belirtiliyor.
+- h1-h5 tekrar düzenlendi.
+- Kirli dolar temizleme ve bitki satma meslekler PHP de arrayden çekiliyor.
+- İthal eşya PHP de arrayden çekiliyor.
+- "Bitkiları" "Bitkileri" olarak düzenlendi.
+- "Bitki üretiminin" ID si ot du bitki olarak güncellendi.
+- "Korsan ve Eşkiyada Ürettiğim İthal eşyaları kime satabilirim?" ID si değiştirildi kacakesya dı ithalesya yapıldı
+- Çeçen Mafya Üyesi ve Çeçen Mafya Lideri tanımında Bitki üretimi vardı kaldırıldı.
+
+# TTT Nedir?
+
+- Renkler güncellendi.
+- "... Teröristler, masumları öldürmeden önce dedektifleri ve diğer teröristleri ortadan kaldırmalıdır. Dedektifler,
+  şüpheli oyuncuları tespit edip masumları korumalıdır." yazısı "
+  ... Teröristler, masumları öldürmeden önce dedektifleri ortadan kaldırmalıdır. Dedektifler, şüpheli oyuncuları tespit
+  edip masumları korumalıdır." olarak güncellendi
+
+# TTT Başlarken
+
+- Kısa bir yazı eklendi.
+- h1-h6 etiketleri yeniden sıralandı.
+- Öncelik sırasına göre içerikler tekrar sıralandı.
+- Gerekli Eklentiler ve Ayarlar idsi değiştirildi `#workshop`
+- Temel kısayollar renkleri düzenlendi.
+- Sohbet ve İletişim deki renkler düzenlendi.
+- "Sohbet ve İletişim" deki "pm" harfleri büyütüldü ("PM")
+- "Oyundaki tüm silahlarım nerede?" idsi değiştirildi `#weaponslot` (eskiden `#weapon` du)
+- "Dedektif/Hain iken hangi ekipmanları kullanabilirim?" `.nav-tabs` renkleri güncellendi.
+- "Etkinlik düzenleniyor mu?" eklendi.
+
+# TTT Başlarken > SSS
+
+- Kategorilere ayrıldı (Teknik Sorunlar, Erişim, Oyun Deneyimi, Başvurular)
+- Error kısmı ayrıldı (Etrafta her şey error, ne yapmalıyım? , Ana Menüye düşüyorum / Oyun aniden kapanıyor)
+- "Steam'de Garry's Mod indirirken 'Bozuk İndirme' hatası alıyorum, nasıl çözebilirim?" eklendi.
+- "Eski Tarayıcıyı Nasıl Açarım?" eklendi
+- "TTT Sunucusu gözükmüyor ne yapmam lazım?" eklendi
+- "F1, F8, M, I gibi tuşları başka tuşa atayabilir miyim?" eklendi
+- "FPS Nasıl Yükseltirim" eklendi
+- "Otomatik Bunny Nasıl Yaparım?" eklendi
+- "Video kaydım var, nereye yüklemeliyim?" eklendi
+
+# Ekran Kaydı nasıl alabilirim?
+
+- Steam Kayıt Alma Eklendi
 
 # 1.0.1
 

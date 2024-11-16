@@ -1,13 +1,17 @@
 <?php
 $baseUrl_Path = "";
 $baseUrl = "https://b0.moonrehber.com" . $baseUrl_Path;
+//$baseUrl = "http://0.0.0.0:4000" . $baseUrl_Path;
 $DefaultOGImage = "/assets/image/og-image.png";
 //================================================================
 $darkrp_workshop = "https://steamcommunity.com/workshop/filedetails/?id=1545171095";
 $ttt_workshop = "https://steamcommunity.com/workshop/filedetails/?id=369504622";
 
-$darkrp_ip = "https://moonrp.com/darkrpconnect";
-$ttt_ip = "steam://connect/91.151.94.211:28015";
+$darkrp_ip = "91.151.94.211:27015";
+$ttt_ip = "91.151.94.211:28015";
+
+$darkrp_ip1 = "steam://connect/$darkrp_ip";
+$ttt_ip1 = "steam://connect/$ttt_ip";
 
 $darkrp_AdminBasvuru = "https://forms.gle/aThYDcDq2KCxbv1z8";
 $ttt_AdminBasvuru = "https://forms.gle/Z5mZFT4sBVbQ49Yi6";
@@ -211,7 +215,7 @@ $darkrpPaidJobs = [
         "description" => "Premium araç galerisindeki NPC'lerden komisyon alarak para kazanıyorsun.",
     ],
     "Etüt Merkezi Sahibi" => [
-        "description" => "Etüt Merkezindeki NPC'lerden komisyon alarak öğrenim sürecine katkıda bulunuyorsun.",
+        "description" => "Etüt Merkezindeki NPC'lerden komisyon alıyorsun.",
     ],
     "Eczane Sahibi" => [
         "description" => "Nöbetçi eczanedeki NPC'den komisyon alarak sağlık sektöründe yer alıyorsun.",
@@ -232,7 +236,7 @@ $darkrpPaidJobs = [
         "description" => "Bankadaki döviz NPC'sinden yapılan alım/satım işlemlerinden komisyon alıyorsun.",
     ],
     "İhaleci" => [
-        "description" => "Kendi NPC aracılığıyla Kirli dolarları temizleyerek kazanç elde ediyorsun.",
+        "description" => "MoonCity ihaleler düzenler. Kendi NPC aracılığıyla Kirli dolarları temizleyerek kazanç elde ediyorsun.",
         "dolar" => true,
     ],
     "Gece Kulübü Sahibi" => [
@@ -243,19 +247,19 @@ $darkrpPaidJobs = [
         "description" => "Doktor NPC'den komisyon alarak sağlık sektöründe yer ediniyorsun.",
     ],
     "Emlakçı" => [
-        "description" => "Kiralardan komisyon alıyor ve Kirli dolarları temizliyorsun.",
+        "description" => "MoonCity Kiralardan komisyon alıyorsun ve Kirli dolarları temizleyerek kazanç elde ediyorsun.",
         "dolar" => true,
     ],
     "Sigortacı" => [
-        "description" => "Kirli dolarları temizleyerek sigorta sektöründe iş yapıyorsun.",
+        "description" => "MoonCity halkının sigorta poliçeleriyle ilgileniyorsun. Ayrıca Kirli dolarları temizleyerek kazanç elde ediyorsun.",
         "dolar" => true,
     ],
     "Lojistik" => [
-        "description" => "Kirli dolarları temizleyerek tedarik zincirinde yer alıyorsun.",
+        "description" => "MoonCity lojistik yardımını sen sağlıyorsun. Ayrıca Kirli dolarları temizleyerek kazanç elde ediyorsun.",
         "dolar" => true,
     ],
     "Ekspertiz" => [
-        "description" => "Kirli dolarları temizleyerek değerleme yapıyorsun.",
+        "description" => "Araçların son durumlarını inceleyip rapor oluşturuyorsun. Ayrıca Kirli dolarları temizleyerek kazanç elde ediyorsun.",
         "dolar" => true,
     ],
     "Balıkçı" => [
@@ -271,15 +275,15 @@ $darkrpPaidJobs = [
         "description" => "Yemek NPC'lerinden komisyon alarak gıda sektöründe yer alıyorsun.",
     ],
     "İthalci" => [
-        "description" => "İthal malları alıp yurtdışına gönderiyorsun.",
+        "description" => "MoonCity, yerli malı geliştirmeye katkı sağlıyor ve bu ürünleri satıyorsun.",
         "ithal" => true,
     ],
     "Botanikçi" => [
-        "description" => "Bitkileri alıp yurtdışına pazarla para kazanıyorsun.",
+        "description" => "Her tür bitkiyi satın alarak bu ürünlerden kazanç sağlıyorsun.",
         "bitki" => true,
     ],
     "Sosyal Medya Sahibi" => [
-        "description" => "Sosyal medyada paylaşım yaparken ödenen vergiden komisyon alıyorsun.",
+        "description" => "Sosyal medyada paylaşım yaparken ödenen ücretten komisyon alıyorsun.",
     ],
     "Benzinlik Sahibi" => [
         "description" => "Benzinlikteki NPC'den komisyon alıyorsun.",
@@ -291,11 +295,11 @@ $darkrpPaidJobs = [
         "description" => "Mekanikteki NPC'den komisyon alıyorsun.",
     ],
     "Güzellik Salonu Sahibi" => [
-        "description" => "Kirli dolarları temizleyerek güzellik sektöründe yer alıyorsun.",
+        "description" => "Artık MoonCity'de bir güzellik salonun var! Ayrıca, kirli dolarları temizlemeden kazanç sağlıyorsun.",
         "dolar" => true,
     ],
     "Yatırım Danışmanı" => [
-        "description" => "Kirli dolarları temizleyerek yatırım fırsatları sağlıyorsun.",
+        "description" => "Yatırımda o kadar ustasın ki bu deneyimini insanlarla paylaşıyorsun. Ayrıca, kirli dolarları temizlemeden kazanç sağlıyorsun.",
         "dolar" => true,
     ],
     "Polis Tedarikçisi" => [
@@ -308,7 +312,7 @@ $darkrpPaidJobs = [
         "description" => "Envanterden depoya eşya atıldığında vergiden komisyon alıyorsun.",
     ],
     "Muhasebeci" => [
-        "description" => "Kirli dolarları temizleyerek finans sektöründe yer alıyorsun.",
+        "description" => "MoonCity'nin en büyük şirketlerinden birinde muhasebecilik yapıyorsun. Ayrıca, kirli dolarları temizlemeden kazanç sağlıyorsun.",
         "dolar" => true,
     ]
 ];
@@ -397,22 +401,22 @@ $darkrpItems = [
             ],
             [
                 "name" => "İngiliz Anahtarı",
-                "description" => "Belediye işlerinde %?? daha fazla XP sağlar.",
+                "description" => "Belediye işlerinde %20 daha fazla XP sağlar. Kutulardan çıkar.",
                 "class" => randomBSColor(3),
             ],
             [
                 "name" => "İmamın Abdest Suyu",
-                "description" => "İmamdan aldığınız XP bonusunu %?? oranında artırır. Kutulardan çıkar.",
+                "description" => "İmamdan aldığınız XP bonusunu %20 oranında artırır. Kutulardan çıkar.",
                 "class" => randomBSColor(4),
             ],
             [
                 "name" => "Fileto Bıçağı",
-                "description" => "Balıklardan elde edilen tecrübeyle kazandığınız XP'yi %?? artırır. Kutulardan çıkar.",
+                "description" => "Balıklardan elde edilen tecrübeyle kazandığınız XP'yi %25 artırır. Kutulardan çıkar.",
                 "class" => randomBSColor(5),
             ],
             [
                 "name" => "Beylik Tabancası",
-                "description" => "Para basma makinelerini ve bitkileri yok ettiğinizde kazandığınız XP'yi %?? artırır. Kutulardan çıkar. <span class='text-primary-emphasis'>(Devlet çalışanları için geçerlidir)</span>",
+                "description" => "Para basma makinelerini ve bitkileri yok ettiğinizde kazandığınız XP'yi %100 artırır. Kutulardan çıkar. <span class='text-primary-emphasis'>(Devlet çalışanları için geçerlidir)</span>",
                 "class" => "text-primary-emphasis",
             ],
             [
@@ -493,7 +497,7 @@ $darkrpItems = [
             ],
             [
                 "name" => "Çek Defteri",
-                "description" => "Kirli dolar temizlerken %?? NPC'ye daha az komisyon ödersiniz. Kutulardan çıkar.",
+                "description" => "Kirli dolar temizlerken %10 NPC'ye daha az komisyon ödersiniz. Kutulardan çıkar.",
                 "class" => randomBSColor(1),
             ],
             [
@@ -508,472 +512,484 @@ $darkrpItems = [
 $legalJobs = [
     [
         'title' => "Belediye İşçisi",
-        'description' => "MoonCity'de arızaları tamir etmekle görevli devlet çalışanıdır.",
+        'description' => "MoonCity’de her türlü arızayı gidermekle yükümlü devlet çalışanısın; şehrin gizli kahramanlarından biri!",
         'req' => null
     ],
     [
         'title' => "Zabıta",
-        'description' => "Şehir düzenini korumak ve halk sağlığını sağlamak için görev yapan önemli bir kuruluştur.",
+        'description' => "Şehirde düzeni sağlamak ve halk sağlığını korumak için görev yapıyorsun; sokakların gözü kulağısın!",
         'req' => null
     ],
     [
         'title' => "Zabıta Amiri",
-        'description' => "Ekiplerini yöneterek şehirdeki düzenin sağlanmasında ve vatandaşların haklarının korunmasında kritik bir rol oynar.",
-        'req' => "İlk önce Zabıta Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Ekipleri yönetip şehrin düzenini koruyorsun; vatandaşların haklarının güvencesi sensin. ",
+        'req' => "İlk önce Zabıta Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Bekçi",
-        'description' => "Gece ve gündüz devriye atarak güvenliği sağlamak ve olası tehlikelere karşı önlem almakla görevli bir güvenlik görevlisidir. Asayiş Polis Amirini dinlemek zorunda.",
+        'description' => "Gece ve gündüz devriye atarak güvenliği sağlıyorsun; olası tehlikelere karşı her an tetikte bekliyorsun. Asayiş Polis Amirini dinlemek zorundasın!",
         'req' => null
     ],
     [
         'title' => "Gardiyan",
-        'description' => "Polis Karakolunda Hapishanede güvenlikten sorumlu Polis birimidir. Asayiş Polis Amirini dinlemek zorunda.",
+        'description' => "Polis karakolundaki hapishanede güvenliği sağlamakla görevli bir güvenlik görevlisisin. Asayiş Polis Amirini dinlemek zorundasın; senin gözün her şeyde!",
         'req' => null
     ],
     [
         'title' => "Trafik Polis Memuru",
-        'description' => "Şehir içinde, Yolların güvenliğini sağlamak, trafik akışını düzenlemek ve sürücülerin kurallara uymasını denetlemekle sorumludur. Trafik Polis Amirini dinlemek zorunda eğer yok ise Asayiş Polis Amirinin sözünü dinlemek zorunda.",
-        'req' => "İlk önce Bekçi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Şehir içinde yolların güvenliğini sağlamak, trafik akışını düzenlemek ve sürücülerin kurallara uymasını denetlemekle görevli birisin. Trafik Polis Amirini dinlemek zorundasın; eğer o yoksa Asayiş Polis Amirinin sözünü dinlemen gerekiyor.",
+        'req' => "İlk önce Bekçi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Trafik Polisi Amiri",
-        'description' => "Trafik düzenini sağlamak için ekipleri yöneterek, kazaların önlenmesi ve sürücülerin güvenliğinin artırılması konusunda stratejiler geliştirir. Emniyet Genel Müdürünü dinlemek zorunda.",
-        'req' => "İlk önce Trafik Polis Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Trafik düzenini sağlamak için ekipleri yönetiyor, kazaların önlenmesi ve sürücülerin güvenliğinin artırılması için stratejiler geliştiriyorsun. Emniyet Genel Müdürünü dinlemek zorundasın.",
+        'req' => "İlk önce Trafik Polis Memuru Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Yunus Polisi",
-        'description' => "Hızlı müdahale ve devriye görevleriyle suç öncesi ve sonrası güvenliği sağlamakla sorumlu olan, motorlu devriye ekiplerini oluşturan polis birimidir. Asayiş Polis Amirini dinlemek zorunda.",
-        'req' => "İlk önce Trafik Polis Memuru mesleğinde deneyim kazanmanız gerekiyor."
+        'description' => "Hızlı müdahale ve devriye görevleriyle suç öncesi ve sonrası güvenliği sağlamakla sorumlusun. Motorlu devriye ekiplerinin bir parçası olarak sokaklarda her an hazır bekliyorsun. Asayiş Polis Amirini dinlemek zorundasın!",
+        'req' => "İlk önce Trafik Polis Memuru Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Polis Asayiş Memuru",
-        'description' => "Şehir içinde, Halkın güvenliğini sağlamak, suçları önlemek ve toplumsal düzeni korumak amacıyla aktif olarak devriye gezen bir güvenlik görevlisidir.",
-        'req' => "İlk önce Trafik Polis Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Şehir içinde halkın güvenliğini sağlamak, suçları önlemek ve toplumsal düzeni korumak için aktif olarak devriye gezen bir güvenlik görevlisisin. Sokaklarda her an güvenliği sağlamakla görevlisin!",
+        'req' => "İlk önce Trafik Polis Memuru Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Polis Asayiş Amiri",
-        'description' => "Polis Asayiş ekiplerinin faaliyetlerini yöneterek, suç önleme stratejilerini geliştirmek ve toplumsal güvenliği artırmak için çalışmalar yürütür.  Emniyet Genel Müdürünü dinlemek zorunda.",
-        'req' => "İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Polis Asayiş ekiplerinin faaliyetlerini yöneterek, suç önleme stratejileri geliştiriyor ve toplumsal güvenliği artırmak için çalışıyorsun. Emniyet Genel Müdürünü dinlemek zorundasın; liderlik pozisyonunda senin de büyük bir rolün var!",
+        'req' => "İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Sivil Polis",
-        'description' => "EGM Bağlı olarak illegal bölgelere sızarak bilgi toplar. Polis Asayiş Amirini dinlemek zorundadır.",
+        'description' => "EGM'ye bağlı olarak illegal bölgelere sızıp bilgi topluyorsun. Bu sırada Polis Asayiş Amirini dinlemek zorundasın; gizli görevlerde bilgi senin en büyük silahın!",
         'req' => null,
         'vip' => 1
     ],
     [
         'title' => "Polis Özel Harekat Memuru",
-        'description' => "Yüksek riskli operasyonlarda görev alarak, terörle mücadele, narkotik operasyonları ve diğer güvenlik tehditlerine karşı müdahalede bulunan uzman bir güvenlik görevlisidir.",
-        'req' => "İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Yüksek riskli operasyonlarda yer alarak terörle mücadele ve narkotik operasyonları gibi güvenlik tehditlerine karşı müdahale eden uzman bir güvenlik görevlisisin.",
+        'req' => "İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanman gerekiyor.",
+        'whitelist' => true,
     ],
     [
         'title' => "Polis Özel Harekat Köpeği",
-        'description' => "Polis özel harekat birimlerinde görev alan, eğitimli bir köpektir. Acil durumlarda ekip üyelerine destek sağlarken, operasyonların güvenliğini artırmak için yaralıları bulma ve kurtarma görevlerinde de rol oynar.",
-        'req' => "İlk önce Sokak Köpeği ve Sokak Kedisi mesleğinde deneyim kazanmanız gerekiyor."
+        'description' => "Polis özel harekat birimlerinde görev yapan eğitimli bir köpeksin. Acil durumlarda ekip üyelerine destek sağlarken, yaralıları bulma ve kurtarma görevlerinde de rol alıyorsun.",
+        'req' => "İlk önce Sokak Köpeği ve Sokak Kedisi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Polis Özel Harekat Doktoru",
-        'description' => "Polis özel harekat birimlerinde görev yapan personele tıbbi destek sağlamakla birlikte, acil durumlarda yaralıların tedavisini yaparak operasyon güvenliğini artırmaya katkıda bulunur.",
-        'req' => "İlk önce Doktor Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Polis özel harekat birimlerinde görev yapan personele tıbbi destek sağlıyorsun. Acil durumlarda yaralıları tedavi ederek operasyon güvenliğine katkıda bulunuyorsun.",
+        'req' => "İlk önce Doktor Mesleğinde Deneyim Kazanman gerekiyor.",
+        'whitelist' => true,
     ],
     [
         'title' => "Polis Özel Harekat Bulldozer",
-        'description' => "Yüksek riskli operasyonlarda görev alarak, terörle mücadele, narkotik operasyonları ve diğer güvenlik tehditlerine karşı müdahalede bulunan uzman bir güvenlik görevlisidir.",
-        'req' => "İlk önce Polis Özel Harekat Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Yüksek riskli operasyonlarda yer alarak terörle mücadele ve narkotik operasyonları gibi güvenlik tehditlerine karşı müdahale eden uzman bir güvenlik görevlisisin.",
+        'req' => "İlk önce Polis Özel Harekat Memuru Mesleğinde Deneyim Kazanman gerekiyor.",
+        'whitelist' => true,
     ],
     [
         'title' => "Polis Özel Harekat Keskin Nişancısı",
-        'description' => "Yüksek riskli operasyonlarda görev alarak, terörle mücadele, narkotik operasyonları ve diğer güvenlik tehditlerine karşı müdahalede bulunan uzman bir güvenlik görevlisidir.",
-        'req' => "Öncelikle Polis Asayiş mesleğinde deneyim kazanmanız, keskin nişancı tecrübesi edinmeniz ve ekip çalışmasına yatkın olmanız gerekmektedir."
+        'description' => "Yüksek riskli operasyonlarda görev alarak terörle mücadele ve narkotik operasyonlarına karşı müdahale eden bir keskin nişancısın.",
+        'req' => "İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanman gerekiyor.",
+        'whitelist' => true,
     ],
     [
         'title' => "Polis Özel Harekat Amiri",
-        'description' => "Polis özel harekat ekiplerinin yönetimini üstlenerek, stratejik planlamalar yapar ve operasyonel başarıyı sağlamak için personelinin eğitim ve gelişiminden sorumludur.",
-        'req' => null
+        'description' => "Polis özel harekat ekiplerinin yönetimini üstleniyor, stratejik planlamalar yapıyorsun. Operasyonel başarı için personelinin eğitim ve gelişiminden sen sorumlusun; liderliğinle ekip ruhunu güçlendiriyorsun!",
+        'req' => null,
+        'whitelist' => true,
     ],
     [
         'title' => "Acil Tıp Teknisyeni",
-        'description' => "MoonCity, bayılmış olan insanları hayata döndürmek için çaba gösterir.",
-        'req' => "İlk önce Belediye İşçisi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "MoonCity'de bayılmış insanları hayata döndürmek için çaba gösteriyorsun; acil durumlarda hayat kurtaran kahramanlardansın.",
+        'req' => "İlk önce Belediye İşçisi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Doktor",
-        'description' => "MoonCity, bayılmış olan insanları hayata döndürmekle ve reçete yazmakla görevlidir.",
-        'req' => "İlk önce Acil Tıp Teknisyeni Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "MoonCity'de bayılmış olanları hayata döndürmekle ve reçete yazmakla görevlisin; sağlık hizmetlerinin vazgeçilmez bir parçasısın.",
+        'req' => "İlk önce Acil Tıp Teknisyeni Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "İtfaiye",
-        'description' => "MoonCity, çıkan yangıları söndürmekle görevli olan devlet çalışanlarıdır.",
-        'req' => "İlk önce Belediye İşçisi ve Zabıta Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "MoonCity'de çıkan yangınları söndürmekle görevli devlet çalışanı olarak, hayat kurtaran bir görev üstleniyorsun.",
+        'req' => "İlk önce Belediye İşçisi ve Zabıta Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Belediye Başkanı",
-        'description' => "MoonCity'nin yerel yönetimini yöneten, şehirdeki kamu hizmetlerini organize eden ve vatandaşların ihtiyaçlarını karşılamak için çalışarak toplumsal sorunlara çözümler üreten liderdir.",
+        'description' => "MoonCity'nin yerel yönetimini yöneterek kamu hizmetlerini organize eden ve vatandaşların ihtiyaçlarına çözümler üreten lider sensin; şehirdeki toplumsal sorunlara karşı duyarlı bir yaklaşım sergiliyorsun.",
         'req' => null
     ],
     [
         'title' => "Belediye Başkanı Yardımcısı",
-        'description' => "Belediye Başkanına destek veren ve onun görevlerini üstlenmesine yardımcı olan, yerel yönetim süreçlerinde etkin rol oynayan liderdir. Şehirdeki kamu hizmetlerinin düzenlenmesi ve vatandaşlarla iletişimin sağlanmasında önemli bir görevi vardır.",
+        'description' => "Belediye Başkanına destek veriyor, onun görevlerini üstlenmesine yardımcı oluyorsun. Yerel yönetim süreçlerinde etkin bir rol oynayarak kamu hizmetlerinin düzenlenmesi ve vatandaşlarla iletişimin sağlanmasında önemli bir görev üstleniyorsun.",
         'req' => null
     ],
     [
         'title' => "Hakim",
-        'description' => "Adalet sisteminin işleyişini sağlayan, davaları değerlendirip taraflar arasında adil bir karar veren yargı mensubudur. Hukukun üstünlüğünü koruyarak, toplumsal düzenin sağlanmasında önemli bir rol üstlenir.",
-        'req' => "İlk önce Gardiyan mesleğinde deneyim kazanmanız gerekiyor."
+        'description' => "Adalet sisteminin işleyişini sağlayan ve davaları değerlendirip taraflar arasında adil bir karar veren bir yargı mensubusun. Hukukun üstünlüğünü koruyarak toplumsal düzenin sağlanmasında önemli bir rol üstleniyorsun.",
+        'req' => "İlk önce Gardiyan Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Savcı",
-        'description' => "Suçlamaları yöneten ve davaları takip eden, adaletin tecelli etmesi için delilleri toplayarak mahkemeye sunan hukuk uzmanıdır. Kamu adına davaları açarak, suçluların cezalandırılmasını sağlar.",
-        'req' => "İlk önce Hakim mesleğinde deneyim kazanmanız gerekiyor."
+        'description' => "Suçlamaları yöneten ve davaları takip eden bir hukuk uzmanısın. Adaletin tecelli etmesi için delilleri toplayıp mahkemeye sunarak kamu adına davaları açıyorsun.",
+        'req' => "İlk önce Hakim Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Emniyet Genel Müdürü",
-        'description' => "MoonCity şehir içinde güvenlik stratejilerini belirleyerek, polis teşkilatının etkinliğini artırmak ve kamu güvenliğini sağlamakla sorumlu en üst düzey yetkilidir. Tüm polis birimleri sözünü dinlemek zorundadır.",
-        'req' => null
+        'description' => "MoonCity'de güvenlik stratejilerini belirleyerek polis teşkilatının etkinliğini artırmak ve kamu güvenliğini sağlamakla sorumlusun. Tüm polis birimleri senin sözünü dinlemek zorunda; şehrin güvenliği senin elinde!",
+        'req' => null,
+        'whitelist' => true,
     ],
     [
         'title' => "Jandarma Özel Harekat Komandosu",
-        'description' => "Yüksek riskli görevlerde uzmanlaşmış, terörle mücadele ve asayiş sağlama gibi kritik operasyonları gerçekleştirmek üzere eğitim almış bir askeri personeldir.",
-        'req' => "İlk önce Polis Özel Harekat Memuru ve ya Jandarma Komutanı Mesleğinde Deneyim Kazanmanız gerekiyor.",
+        'description' => "Yüksek riskli görevlerde uzmanlaşmış bir askeri personelsin. Terörle mücadele ve asayiş sağlama gibi kritik operasyonları gerçekleştirmek üzere eğitim aldın.",
+        'req' => "İlk önce Polis Özel Harekat Memuru ve ya Jandarma Komutanı Mesleğinde Deneyim Kazanman gerekiyor.",
+        'whitelist' => true,
         'close' => true
     ],
     [
         'title' => "Jandarma Özel Harekat Doktoru",
-        'description' => "Jandarma özel harekat birimlerinde görev yapan personele tıbbi hizmet sunarak, acil durumlarda yaralıların tedavisini gerçekleştirir ve operasyonlarda sağlık güvenliğini sağlar.",
-        'req' => "İlk önce Polis Özel Harekat Doktoru Mesleğinde Deneyim Kazanmanız gerekiyor.",
+        'description' => "Jandarma özel harekat birimlerinde görev yaparak personele tıbbi hizmet sunuyorsun. Acil durumlarda yaralıların tedavisini gerçekleştirip operasyonlarda sağlık güvenliğini sağlıyorsun.",
+        'req' => "İlk önce Polis Özel Harekat Doktoru Mesleğinde Deneyim Kazanman gerekiyor.",
+        'whitelist' => true,
         'close' => true
     ],
     [
         'title' => "Jandarma Özel Harekat Komutanı",
-        'description' => "Jandarma Özel harekat biriminin yönetiminden sorumlu olup, operasyonel stratejileri belirleyerek, ekibinin etkinliğini artırmak için liderlik yapar.",
+        'description' => "Jandarma Özel Harekat biriminin yönetiminden sorumlusun; operasyonel stratejileri belirleyerek ekibinin etkinliğini artırmak için liderlik yapıyorsun. Ekip arkadaşlarının güvenliği ve başarısı senin elinde!",
         'req' => null,
+        'whitelist' => true,
         'close' => true
     ],
     [
         'title' => "Milli Istihbarat Teskilatı Personeli",
-        'description' => "Çeşitli birimlerinde görev alarak, ulusal güvenliği sağlamak amacıyla istihbarat toplama, analiz yapma ve operasyonel faaliyetlerde bulunan uzmanlardan oluşur.",
-        'req' => "İlk önce Sivil Polis Mesleğinde Deneyim Kazanmanız gerekiyor.",
+        'description' => "Çeşitli birimlerde görev alarak ulusal güvenliği sağlamak için istihbarat toplama, analiz yapma ve operasyonel faaliyetlerde bulunan uzmanlardan birisin.",
+        'req' => "İlk önce Sivil Polis Mesleğinde Deneyim Kazanman gerekiyor.",
         'vip' => 2
     ],
     [
         'title' => "Milli Istihbarat Teskilatı Müsteşarı",
-        'description' => "Milli İstihbarat Teşkilatı'nın en üst düzey yöneticisi olup, teşkilatın stratejik hedeflerini belirler, operasyonlarını yönetir ve devletin güvenlik politikalarına yön vermekle sorumludur.",
+        'description' => "Milli İstihbarat Teşkilatı'nın en üst düzey yöneticisi olarak teşkilatın stratejik hedeflerini belirliyor ve operasyonlarını yönetiyorsun. Devletin güvenlik politikalarına yön vermekle sorumlusun; ulusal güvenlik için kritik bir rol oynuyorsun!",
         'req' => null,
+        'whitelist' => true,
         'vip' => 2
     ],
     [
         'title' => "Jandarma",
-        'description' => "Şehir dışında, Halkın güvenliğini sağlamak, suçları önlemek ve toplumsal düzeni korumak amacıyla aktif olarak devriye gezen bir güvenlik görevlisidir.",
-        'req' => "İlk önce Jandarma Trafik Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Şehir dışında halkın güvenliğini sağlamak, suçları önlemek ve toplumsal düzeni korumak için devriye gezen bir güvenlik görevlisisin. Aktif bir şekilde görev alarak insanları koruma misyonunu üstleniyorsun.",
+        'req' => "İlk önce Jandarma Trafik Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Jandarma Trafik",
-        'description' => "Şehir dışında, Yolların güvenliğini sağlamak, trafik akışını düzenlemek ve sürücülerin kurallara uymasını denetlemekle sorumludur.",
-        'req' => "İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Şehir dışında yolların güvenliğini sağlamakla, trafik akışını düzenlemekle ve sürücülerin kurallara uymasını denetlemekle sorumlusun. Trafikteki düzeni sağlamak için sürekli dikkatli olmalısın.",
+        'req' => "İlk önce Jandarma Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Jandarma Komutanı",
-        'description' => "Jandarma ve Jandarma trafik personellerin faaliyetlerini yöneterek, suç önleme stratejilerini geliştirmek ve toplumsal güvenliği artırmak için çalışmalar yürütür.",
-        'req' => "İlk önce Jandarma ve Polis Asayiş Amiri Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Jandarma ve jandarma trafik personelinin faaliyetlerini yöneterek suç önleme stratejileri geliştiriyor ve toplumsal güvenliği artırmak için çalışmalar yürütüyorsun. Liderlik becerilerinle ekibin başarısını sağlıyorsun. ",
+        'req' => "İlk önce Jandarma ve Polis Asayiş Amiri Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Belediye Başkanı Koruması",
-        'description' => "MoonCity, Belediye başkanı korumakla görevlidir.",
-        'req' => "İlk önce Jandarma Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "MoonCity'de belediye başkanını korumakla görevlisin; güvenlik sağlamak için her zaman tetikte olmalısın. Önemli bir sorumluluğun var!",
+        'req' => "İlk önce Jandarma Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Belediye Başkanı Şoförü",
-        'description' => "MoonCity, Belediye başkanın şöförlüğünü yapmakla görevlidir.",
-        'req' => "İlk önce Taksici Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "MoonCity'de belediye başkanının şoförlüğünü yapmakla görevlisin; onu güvenli bir şekilde her yere ulaştırmak için hazırda bekliyorsun. Sorumluluğun büyük!",
+        'req' => "İlk önce Taksici Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
 ];
 
 $esnafJobs = [
     [
         'title' => "Güvenlik Görevlisi",
-        'description' => "Görev yaptığı alanda güvenliği sağlamak, potansiyel tehlikeleri önceden tespit etmek ve olaylara müdahale etmekle sorumlu olan profesyoneldir. İnsanların ve mülklerin güvenliğini koruma amacı güder.",
+        'description' => "Sen, bulunduğun yerde güvenliği sağlamakla görevlisin. Potansiyel tehlikeleri önceden sezip, olaylara hemen müdahale ediyorsun. İnsanların ve mülklerin güvenliği için elinden geleni yapıyorsun.",
         'req' => null
     ],
     [
         'title' => "Yapı Market Sahibi",
-        'description' => "Physic Gun ve Tool Gun gibi özel araçların yanı sıra fotoğraf makinesi, araç alarmı, çelik yelek, kulaklık ve kask gibi malzemeleri satarak para kazanan kişidir. İnşaat ve güvenlik sektörüne yönelik ürün yelpazesini genişleterek müşteri ihtiyaçlarını karşılamayı hedefler.",
+        'description' => "Fiziksel ve aletlerle donatılmış bir mağazanın sahibisin. Çeşitli inşaat ve güvenlik malzemelerini satarken, müşteri ihtiyaçlarını anlamak için sürekli bir çaba içindesin.",
         'req' => null
     ],
     [
         'title' => "Poligon Sahibi",
-        'description' => "Atış eğitimi ve pratikleri sunan bir poligonun sahibi olan kişidir. Tabanca gibi çeşitli silahların satışını yaparak ve güvenli bir atış ortamı sağlayarak para kazanır. Ayrıca, atış kursları düzenleyerek bireylerin becerilerini geliştirmelerine yardımcı olur.",
-        'req' => null
+        'description' => "Atış eğitimleri veren bir poligon işletiyorsun. Silah satışından, güvenli bir atış ortamı sağlamaya kadar birçok işle ilgileniyorsun. Ayrıca atış kursları düzenleyerek insanların becerilerini geliştirmelerine yardım ediyorsun.",
+        'req' => null,
+        'gunshop' => true,
     ],
     [
         'title' => "Çiğköfte Salonu Sahibi",
-        'description' => "Çiğköfte satışına yönelik bir işletmenin sahibi olan kişidir. Lezzetli çiğköfteleri hazırlayarak ve sunarak, müşterilerine hijyenik bir ortamda hizmet vermeyi hedefler.",
+        'description' => "Lezzetli çiğköfteleri hazırlayıp sunarak, müşterilerine hijyenik ve keyifli bir ortamda hizmet vermeyi hedefliyorsun. Her lokmada damak tadını yakalamak için özen gösteriyorsun.",
         'req' => null
     ],
     [
         'title' => "Garson",
-        'description' => "Restoran veya kafe gibi mekanlarda müşterilere hizmet veren, sipariş alıp servis yapan ve misafirlerin memnuniyetini sağlamaya yönelik çalışan kişidir. Gıda güvenliği ve hijyen kurallarına uygun olarak hizmet verir.",
+        'description' => "Bir restoran veya kafede, sipariş alıp servis yaparak misafirlerin memnuniyetini sağlamaya çalışıyorsun. Gıda güvenliği ve hijyen konularına dikkat ederek, herkesin hoş bir deneyim yaşamasını sağlıyorsun.",
         'req' => null
     ],
     [
         'title' => "İtalyan Restoranı Sahibi",
-        'description' => "İtalyan mutfağına yönelik lezzetler sunan bir restoranın sahibi olan kişidir. Müşterilere kaliteli yemek deneyimi sağlamak için geleneksel İtalyan tariflerini kullanarak menü oluşturur ve işletmenin yönetimini üstlenir.",
+        'description' => "İtalyan mutfağının lezzetlerini sunan bir restoranın sahibisin. Geleneksel tariflerle oluşturduğun menü, müşterilere unutulmaz bir yemek deneyimi yaşatmak için tasarlandı.",
         'req' => null
     ],
     [
         'title' => "AVM Sahibi",
-        'description' => "Alışveriş merkezi işleten ve yöneten kişidir. Farklı mağaza ve restoranların yer aldığı bir alan sunarak, ziyaretçilere çeşitli alışveriş ve eğlence imkanları sağlar. AVM'nin genel yönetimi, pazarlaması ve müşteri memnuniyetinin sağlanmasında önemli rol oynar.",
+        'description' => "Farklı mağaza ve restoranları bir araya getiren bir alışveriş merkezinin sahibisin. Ziyaretçilere çeşitli alışveriş ve eğlence imkanı sunarken, AVM'nin yönetimini de üstleniyorsun.",
         'req' => null
     ],
     [
         'title' => "Eczacı",
-        'description' => "İlaçların dağıtımını yapan, hastaların sağlık ihtiyaçlarını karşılamak üzere Bio-organ ve Recoil gibi ilaçları satan sağlık profesyonelidir.",
+        'description' => "Hastaların sağlık ihtiyaçlarına yönelik ilaçlar sunuyorsun. Bio-organ ve Recoil gibi ürünlerle, sağlık konularında yardımcı olmayı amaçlıyorsun.",
         'req' => null
     ],
     [
         'title' => "Simitçi",
-        'description' => "Geleneksel simit ve diğer unlu mamulleri üreterek satan esnaftır. Müşterilerine taze simitler sunarak, sokak lezzetlerinin keyfini çıkarmalarına yardımcı olur.",
+        'description' => "Taze simitler ve diğer unlu mamuller üreterek, sokak lezzetleri sunuyorsun. Müşterilerin her zaman sıcak ve çıtır simitlerle mutlu olmasını sağlıyorsun.",
         'req' => null
     ],
     [
         'title' => "Tavuk Pilavcı",
-        'description' => "Taze pişirilmiş tavuk ve pilav sunarak, misafirlere lezzetli ve doyurucu bir yemek deneyimi sağlayan kişidir. Müşterilerin ihtiyaçlarına göre hızlı ve kaliteli hizmet verir.",
+        'description' => "Lezzetli taze tavuk ve pilav sunarak, misafirlere doyurucu bir yemek deneyimi sağlıyorsun. Hızlı ve kaliteli hizmetinle, herkesin keyif almasını hedefliyorsun.",
         'req' => null
     ],
     [
         'title' => "Kebapçı",
-        'description' => "Çeşitli kebap çeşitleri hazırlayıp sunan bir esnaftır. Müşterilerine lezzetli et yemekleri ve mezeler sunarak, geleneksel Türk mutfağının tadını çıkarma fırsatı verir.",
+        'description' => "Çeşitli kebap çeşitlerini hazırlayıp sunarak, misafirlerine geleneksel Türk mutfağının tadını çıkarma fırsatı veriyorsun. Her kebapta ustalığını konuşturuyorsun.",
         'req' => null
     ],
     [
         'title' => "Kafe Sahibi",
-        'description' => "Müşterilere kahve, çay, atıştırmalıklar ve çeşitli içecekler sunan bir kafenin sahibidir. Sıcak ve samimi bir ortam yaratarak, sosyal bir alan sağlamayı amaçlar.",
+        'description' => "Kahve, çay ve atıştırmalıklar sunan bir kafenin sahibisin. Sıcak ve samimi bir ortam yaratmaya çalışarak, sosyal bir buluşma yeri olmayı hedefliyorsun.",
         'req' => null
     ],
     [
         'title' => "Hamburgerci",
-        'description' => "Çeşitli hamburger çeşitleri hazırlayıp satan esnaftır. Taze malzemeler kullanarak, müşterilerine lezzetli ve doyurucu burgerler sunar.",
+        'description' => "Taze malzemelerle hazırladığın hamburgerleri müşterilerine sunuyorsun. Her burgerde, lezzetli ve doyurucu bir deneyim yaşatmayı amaçlıyorsun.",
         'req' => null
     ],
     [
         'title' => "Dönerci",
-        'description' => "Döner kebap hazırlayıp satan esnaftır. Müşterilerine lezzetli dönerler ve yan ürünler sunarak, hızlı ve doyurucu bir yemek deneyimi sağlar.",
+        'description' => "Döner kebap hazırlayıp sunarak, misafirlerine hızlı ve doyurucu bir yemek deneyimi yaşatıyorsun. Her lokmada lezzeti hissettirmeyi amaçlıyorsun.",
         'req' => null
     ],
     [
         'title' => "Dondurmacı",
-        'description' => "Farklı dondurma çeşitleri sunarak serinletici lezzetler sağlayan esnaftır. Yaz aylarında taze ve doğal dondurmalarla müşteri memnuniyetini hedefler.",
+        'description' => "Farklı dondurma çeşitleri sunarak, yaz aylarında serinletici lezzetler sağlıyorsun. Taze ve doğal dondurmalarla müşteri memnuniyetini sağlıyorsun.",
         'req' => null
     ],
     [
         'title' => "Çorba & Paça Salonu Sahibi",
-        'description' => "Lezzetli çorba ve paça yemekleri sunan bir işletmenin sahibidir. Müşterilere sıcak ve besleyici yemekler sunarak, geleneksel tatları yaşatmayı amaçlar.",
+        'description' => "Lezzetli çorba ve paça yemekleri sunarak, sıcak ve besleyici bir deneyim yaşatıyorsun. Geleneksel tatları yaşatmayı amaçlıyorsun.",
         'req' => null
     ],
     [
         'title' => "Büfe Sahibi",
-        'description' => "Atıştırmalıklar, içecekler ve çeşitli günlük ihtiyaç maddeleri satan küçük bir işletmenin sahibidir. Hızlı hizmet sunarak, müşterilerin temel ihtiyaçlarını karşılamayı hedefler.",
+        'description' => "Atıştırmalıklar ve içecekler sunan küçük bir işletmenin sahibisin. Hızlı hizmetle, müşterilerin temel ihtiyaçlarını karşılamaya çalışıyorsun.",
         'req' => null
     ],
     [
         'title' => "Dövüş Sanatları Öğretmeni",
-        'description' => "Öğrencilere dövüş sanatları tekniklerini, savunma yöntemlerini ve disiplinini öğretmekle görevli olan kişidir. Fiziksel ve zihinsel gelişimi destekleyerek, öğrencilerin kendine güven kazanmalarına yardımcı olur.",
+        'description' => "Öğrencilere dövüş sanatlarını ve savunma tekniklerini öğretmekle görevlisin. Fiziksel ve zihinsel gelişimi destekleyerek, öğrencilerin kendine güven kazanmasını sağlıyorsun.",
         'req' => null
     ],
     [
         'title' => "Mekanik",
-        'description' => "Araç mekanik sistemlerin bakım, onarım ve işletilmesi ile ilgilenen meslek grubudur. Mekanik bilgi ve becerilerini kullanarak, çeşitli takılabilir parçaları sunar.",
+        'description' => "Araçların bakım ve onarımıyla ilgileniyorsun. Mekanik bilgi ve becerilerinle, sorunları hızlı bir şekilde çözmeye çalışıyorsun.",
         'req' => null,
         'vip' => 2
     ],
     [
         'title' => "Mühendis",
-        'description' => "Mühendisler, para basma makineleri, saksı gibi çeşitli ürünlerin tasarım ve üretim süreçlerinde çalışarak teknik çözümler geliştirirler. Farklı alanlarda sahip oldukları problem çözme yetenekleri ile yenilikçi projeler üretirler.",
-        'req' => "İlk önce Yapı market sahibi ve Poligon Sahibi Mesleğinde Deneyim Kazanmanız gerekiyor.",
+        'description' => "Farklı alanlarda mühendislik yaparak, yaratıcı çözümler üretiyorsun. Teknik sorunları çözmek için çok yönlü düşünme yeteneğinle projeler geliştiriyorsun.",
+        'req' => "İlk önce Yapı market sahibi ve Poligon Sahibi Mesleğinde Deneyim Kazanman gerekiyor.",
         'vip' => 2
     ],
     [
         'title' => "Taksici",
-        'description' => "Müşterileri belirli bir noktadan alarak istedikleri yere ulaştıran, taksi hizmeti sunan kişidir. Güvenli ve konforlu bir ulaşım sağlamak için trafiği ve güzergahları iyi bilmelidir.",
+        'description' => "Müşterileri belirli noktalardan alıp istedikleri yere götürüyorsun. Güvenli ve konforlu bir ulaşım sağlamak için trafiği ve güzergahları iyi biliyorsun.",
         'req' => null
     ],
     [
         'title' => "Dolmuş Şoförü",
-        'description' => "Belirli bir rota üzerinde yolcu taşımakla görevli olan şofördür. Müşterilere uygun fiyatlarla ulaşım imkanı sunarak, toplu taşıma hizmetine katkı sağlar.",
+        'description' => "Belirli bir rota üzerinde yolcu taşıyarak, uygun fiyatlarla ulaşım imkanı sunuyorsun. Toplu taşımaya katkıda bulunarak, insanların hayatlarını kolaylaştırıyorsun.",
         'req' => null
     ],
     [
         'title' => "Kargocu",
-        'description' => "Kargoculuk, yapı market sahipleri, poligon sahipleri, ithalatçılar ve eczacılar gibi çeşitli yerlerden gelen paketlerin alıcılara ulaştırılmasını sağlamakla görevli olan bir meslektir. Kargo teslimatı ve takip işlemlerine odaklanarak, müşteri memnuniyetini ön planda tutar.",
+        'description' => "Çeşitli yerlerden gelen paketleri alıcılara ulaştırıyorsun. Kargo teslimatı yaparak, müşteri memnuniyetini sağlamayı ön planda tutuyorsun.",
         'req' => null
     ],
     [
         'title' => "Maden İşçisi",
-        'description' => "Maden ocaklarında çalışarak, madenlerin çıkarılması, işlenmesi ve taşınması işlemlerini gerçekleştiren kişidir. İş güvenliği kurallarına uyarak, zorlu şartlar altında çalışır.",
+        'description' => "Maden ocaklarında çalışarak, madenleri çıkarmakla görevli birisin. İş güvenliği kurallarına dikkat ederek, zorlu koşullarda çalışıyorsun.",
         'req' => null
     ],
     [
         'title' => "Kereste İşçisi",
-        'description' => "Ağaçları kesip işleyerek kereste haline getiren kişidir. Kereste üretiminde çeşitli makineleri kullanarak, kaliteli ahşap ürünler elde eder.",
+        'description' => "Ağaçları kesip kereste haline getiriyorsun. Kereste üretiminde çeşitli makineleri kullanarak kaliteli ahşap ürünler elde ediyorsun.",
         'req' => null
     ],
     [
         'title' => "Doğal Kaynaklar Mühendisi",
-        'description' => "Doğal kaynakların verimli ve sürdürülebilir kullanımını sağlamak amacıyla, maden ocaklarında ve ormanlık alanlarda çalışarak modern alet ve ekipmanlar kullanır. Madenci veya keresteci olarak, iş süreçlerini optimize eder ve çevresel etkileri minimize eder.",
-        'req' => "İlk önce Maden İşçisi ve Kereste İşçisi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'description' => "Doğal kaynakların verimli kullanımını sağlamak için modern ekipmanlarla çalışıyorsun. Çevresel etkileri azaltarak, sürdürülebilir çözümler geliştiriyorsun.",
+        'req' => "İlk önce Maden İşçisi ve Kereste İşçisi Mesleğinde Deneyim Kazanman gerekiyor."
     ],
     [
         'title' => "Doğal Kaynaklar Yüksek Mühendisi",
-        'description' => "Doğal kaynakların verimli ve sürdürülebilir kullanımını sağlamak amacıyla, maden ocaklarında ve ormanlık alanlarda çalışarak modern alet ve ekipmanlar kullanır. Madenci veya keresteci olarak, iş süreçlerini optimize eder ve çevresel etkileri minimize eder.",
-        'req' => "İlk önce Maden İşçisi ve Kereste İşçisi Mesleğinde Deneyim Kazanmanız gerekiyor.",
+        'description' => "Doğal kaynakların verimli kullanımını sağlamak için modern ekipmanlarla çalışıyorsun. Çevresel etkileri azaltarak, sürdürülebilir çözümler geliştiriyorsun.",
+        'req' => "İlk önce Maden İşçisi ve Kereste İşçisi Mesleğinde Deneyim Kazanman gerekiyor.",
         'vip' => 2
     ],
     [
         'title' => "Ganyan Bayi Sahibi",
-        'description' => "At yarışları üzerine bahis alarak gelir elde eden bir işletme sahibidir. Yarışların takibini yapar ve müşterilere bahis olanakları sunar.",
+        'description' => "At yarışları üzerine bahis alarak gelir elde eden bir işletme sahibisin. Yarışları takip ediyor ve müşterilere bahis imkanı sunuyorsun.",
         'req' => null
     ],
     [
         'title' => "Banka Sorumlusu",
-        'description' => "Moon Bank'ta çalışan ve bankanın kasasını koruyarak finansal işlemleri yöneten bir uzmandır. Müşteri taleplerine yanıt verir, hesapları yönetir ve güvenliği sağlamak için gerekli önlemleri alır.",
+        'description' => "Moon Bank'ta çalışan bir uzmansın. Müşteri taleplerine yanıt veriyor, hesapları yönetiyor ve bankanın kasasını koruyarak güvenliği sağlıyorsun.",
         'req' => null
     ],
     [
         'title' => "İthalatçı",
-        'description' => "Yurtdışından ürün veya hizmetlerin ithalatını yapan bir iş insanıdır. Poligon sahibine göre ürün yelpazesi daha fazladır.",
-        'req' => "İlk önce Poligon Sahibi Mesleğinde Deneyim Kazanmanız gerekiyor.",
+        'description' => "Yurtdışından ürünlerin ithalatını yapıyorsun. Daha geniş bir ürün yelpazesine sahip olmak için poligon sahibinden yardım alıyorsun.",
+        'req' => "Önce Poligon Sahibi deneyimi kazanmalısın.",
+        'gunshop' => true,
         'vip' => 2
     ],
     [
         'title' => "Müzisyen",
-        'description' => "Müzik besteleme, icra etme ve sahne performanslarıyla müzik dünyasında yer alan bir sanatçıdır. Farklı müzik tarzlarında eserler üretir ve dinleyicilere müzik deneyimi sunar.",
+        'description' => "Müzik besteleme ve icra etme konusunda tutkulu bir sanatçısın. Farklı müzik tarzlarında eserler üreterek dinleyicilere müzik deneyimi sunuyorsun.",
         'req' => null
     ],
     [
         'title' => "Dilenci",
-        'description' => "Geçim sağlamak amacıyla toplumda çeşitli yerlerde para veya yiyecek talep eden kişidir. Genellikle sokaklarda veya kalabalık yerlerde bulunurlar.",
+        'description' => "Geçim sağlamak için sokaklarda para veya yiyecek talep eden birisin. Genellikle kalabalık yerlerde bulunuyorsun.",
         'req' => null
     ],
     [
         'title' => "Kimsesiz Çocuk",
-        'description' => "Ailesi olmayan ve bir bakım kurumunda veya sokakta yaşayan çocuklardır. Genellikle sevgi ve destek arayışında olurlar.",
+        'description' => "Ailesiz bir çocuksun ve ya bakım kurumunda yaşıyorsun ya da sokaktasın. Sevgi ve destek arayışı içindesin.",
         'req' => null
     ],
     [
         'title' => "DJ",
-        'description' => "Müzik seti veya bilgisayar kullanarak müzikleri miksleyen ve partilerde veya etkinliklerde performans sergileyen kişidir. Farklı müzik türlerini harmanlayarak dinleyicilere eğlenceli bir deneyim sunar.",
+        'description' => "Müzik seti veya bilgisayar kullanarak müzikleri miksleyen birisin. Partilerde eğlenceli atmosferler yaratıyorsun.",
         'req' => null
     ],
     [
         'title' => "Din Adamı",
-        'description' => "Bir dinin inançlarını, öğretilerini ve ritüellerini yürüten ve bu konuda toplumu bilgilendiren kişidir. Genellikle ibadetlerin yönetimi ve dini konularda rehberlik yapar.",
+        'description' => "Bir dinin inançlarını ve ritüellerini yürütüyorsun. Toplumu bilgilendirip rehberlik yapıyorsun.",
         'req' => null
     ],
     [
         'title' => "Kaykaycı",
-        'description' => "Kaykay kullanarak çeşitli hareketler ve stiller geliştiren, bu sporla ilgilenen kişidir. Genellikle sokaklarda, park veya özel kaykay alanlarında kayar.",
+        'description' => "Kaykay kullanarak çeşitli hareketler ve stiller geliştiren birisin. Genellikle sokaklarda, park veya özel alanlarda kayıyorsun.",
         'req' => null
     ],
     [
         'title' => "Oto Kurtarıcı",
-        'description' => "Araçların yolda kalması durumunda yardım sağlayarak onları güvenli bir yere taşıyan profesyoneldir. Acil durumlarda 24 saat hizmet vererek sürücülere destek olur.",
+        'description' => "Araçların yolda kalması durumunda yardım sağlayarak onları güvenli bir yere taşıyan bir profesyonelsin. Acil durumlarda sürücülere destek oluyorsun.",
         'req' => null,
         'close' => true
     ],
     [
         'title' => "Sokak Köpeği",
-        'description' => "Sokaklarda yaşayan, genellikle insanlardan bağımsız olarak hayatta kalmaya çalışan köpeklerdir. İnsanlara karşı genellikle dostça bir tutum sergileyebilirler.",
+        'description' => "Sokaklarda yaşayan ve insanlardan bağımsız bir şekilde hayatta kalmaya çalışan bir köpeksin. İnsanlara karşı genellikle dostça bir tutum sergiliyorsun.",
         'req' => null
     ],
     [
         'title' => "Sokak Kedisi",
-        'description' => "Sokaklarda yaşayan, beslenme ve barınma ihtiyaçlarını genellikle kendi başına karşılayan kedilerdir. İnsanlarla sınırlı bir ilişki kurarak hayatlarını sürdürürler.",
+        'description' => "Sokaklarda yaşayan ve beslenme ile barınma ihtiyaçlarını kendi başına karşılayan bir kedisin. İnsanlarla sınırlı bir ilişki kurarak hayatını sürdürüyorsun.",
         'req' => null
     ],
     [
-        'title' => "Belıkçı",
-        'description' => "Küçük bir gölde, balık tutarak geçimini sağlar.",
+        'title' => "Balıkçı",
+        'description' => "Küçük bir gölde balık tutarak geçimini sağlıyorsun. Doğayla iç içe, sakin bir yaşam sürüyorsun.",
         'req' => null
     ],
     [
         'title' => "Piyangocu",
-        'description' => "Piyango biletleri satan ve kazananları belirleyen kişidir. Müşterilere bilet satışı yaparak, şans oyunları ile kazanç sağlamaya çalışır.",
+        'description' => "Piyango biletleri satan birisin. Müşterilere bilet satışı yaparak şans oyunlarıyla kazanç sağlamaya çalışıyorsun.",
         'req' => null
     ],
     [
         'title' => "Kurye",
-        'description' => "Yapı market sahipleri, poligon sahipleri, ithalatçılar ve eczacılar gibi çeşitli yerlerden gelen paketlerin alıcılara ulaştırılmasını sağlamakla görevli olan bir meslektir. Kargo teslimatı ve takip işlemlerine odaklanarak, müşteri memnuniyetini ön planda tutar. Paketlerin veya belgelerin belirli bir adrese hızlı bir şekilde ulaştırılmasını sağlar. Genellikle zaman baskısı altında çalışır ve müşteri memnuniyetine odaklanır.",
+        'description' => "Farklı yerlerden gelen paketleri alıcılara ulaştıran bir meslek dalında çalışıyorsun. Zaman baskısı altında çalışarak müşteri memnuniyetini sağlıyorsun.",
         'req' => null
     ],
     [
         'title' => "MoonTV Çalışanı",
-        'description' => "MoonTV kanalı için içerik üreten veya yayın sürecine katkı sağlayan kişidir. Programların düzenlenmesi, çekimlerin yapılması ve yayın öncesi hazırlıklarda yer alır.",
+        'description' => "MoonTV kanalı için içerik üreten ya da yayın sürecine katkı sağlayan birisin. Programları düzenleyip çekimlerde yer alıyorsun.",
         'req' => null,
         'vip' => 1
     ],
     [
         'title' => "İmam",
-        'description' => "Toplumda dini liderlik yapan, vaazlar vererek insanlara rehberlik eden, inanç ve ahlak konularında eğitim veren bir kişidir. İmam, camide veya topluluk içinde dini görevlerini yerine getirirken, insanları bir araya getirir ve toplumsal dayanışmayı güçlendirir.",
+        'description' => "Dini liderlik yapan, vaazlar vererek insanlara rehberlik eden birisin. Camide veya topluluk içinde insanları bir araya getiriyorsun.",
         'req' => null
     ],
     [
         'title' => "Avukat",
-        'description' => "Hukuk alanında uzmanlaşmış, müvekkillerine yasal danışmanlık ve savunma hizmeti sunan kişidir. Mahkeme süreçlerinde müvekkillerini temsil eder.",
+        'description' => "Hukuk alanında uzmanlaşmış birisin ve müvekkillerine yasal danışmanlık ile savunma hizmeti sunuyorsun. Mahkeme süreçlerinde müvekkillerini temsil ediyorsun.",
         'req' => null
     ],
     [
         'title' => "Tekel Bayi Sahibi",
-        'description' => "Alkol ve diğer ürünlerin satışını yapan bir dükkânın sahibi ve işletmecisidir. Müşterilerine çeşitli ürünler sunarak gelir elde eder.",
+        'description' => "Alkol ve diğer ürünlerin satışını yapan bir dükkânın sahibisin. Müşterilerine çeşitli ürünler sunarak gelir elde ediyorsun.",
         'req' => null
     ],
     [
         'title' => "Parkurcu",
-        'description' => "Farklı zeminlerde ve engeller arasında akrobatik hareketler yaparak hızlı bir şekilde ilerleyen kişidir. Fiziksel yetenekleri ve çevikliği ile dikkat çeker.",
+        'description' => "Farklı zeminlerde ve engeller arasında akrobatik hareketler yaparak hızlı bir şekilde ilerleyen birisin. Fiziksel yeteneklerinle dikkat çekiyorsun.",
         'req' => null
     ],
     [
         'title' => "Grafitici",
-        'description' => "Grafiti sanatıyla sokaklara renk katan ve mesajlar ileten bir sanatçıdır. Duvarlar veya çeşitli yüzeyler üzerinde yaratıcılığını sergiler.",
+        'description' => "Grafiti sanatıyla sokaklara renk katan bir sanatçısın. Duvarlar veya çeşitli yüzeyler üzerinde yaratıcılığını sergiliyorsun.",
         'req' => null
     ],
     [
         'title' => "Sokak Sanatçısı",
-        'description' => "Sokaklarda performans sergileyerek ya da eserler yaratarak insanlara eğlence sunan sanatçıdır. Genellikle bağışlarla geçimlerini sağlar.",
+        'description' => "Sokaklarda performans sergileyerek insanlara eğlence sunan birisin. Genellikle bağışlarla geçimini sağlıyorsun.",
         'req' => null
     ],
     [
         'title' => "Motel Sahibi",
-        'description' => "Misafirlerine konaklama hizmeti sunan küçük otel veya motelin işletmecisidir. Konukların rahat bir konaklama deneyimi yaşamasını sağlamak için çalışır.",
+        'description' => "Misafirlerine konaklama hizmeti sunan küçük bir otelin işletmecisisin. Konukların rahat bir konaklama deneyimi yaşamasını sağlıyorsun.",
         'req' => null
     ],
     [
         'title' => "Palyaço",
-        'description' => "Eğlence ve gösteri amaçlı kostüm giyen, çocuklara ve yetişkinlere neşe katmak için mizah ve yetenek sergileyen kişidir. Partilerde ve etkinliklerde performans gösterir.",
+        'description' => "Eğlence ve gösteri amaçlı kostüm giyen, çocuklara ve yetişkinlere neşe katmak için mizah ve yetenek sergileyen birisin. Partilerde ve etkinliklerde performans gösteriyorsun.",
         'req' => null
     ],
     [
         'title' => "Piyanist",
-        'description' => "Piyano çalarak müzik yapan, konserler veren veya çeşitli etkinliklerde performans sergileyen müzisyendir. Melodiler ve armonilerle dinleyicilere duygusal bir deneyim sunar.",
+        'description' => "Piyano çalarak müzik yapan, konserler veren ya da çeşitli etkinliklerde performans sergileyen bir müzisyensin. Melodiler ve armonilerle dinleyicilere duygusal bir deneyim sunuyorsun.",
         'req' => null
     ],
     [
         'title' => "Deve",
-        'description' => "Sahibinden kaçan bu deve şehirde gezer tıpki sokak köpeği, sokak kedisi gibi.",
+        'description' => "Sahibinden kaçan bu deve, şehirde gezerken sokak köpeği ve sokak kedisi gibi serbest bir yaşam sürüyor.",
         'req' => null
     ],
     [
         'title' => "Ağır Yaşamlar Vakfı Başkanı",
-        'description' => "Aşırı kilolu ve tembel bir yaşam tarzına sahip olan, toplumdaki sorunlara duyarsız kalabilen kişidir. Vakfın başkanı olarak, iyi niyetle hareket etse de, genellikle hareketsiz bir yaşam sürmekte ve bu nedenle kendisi için sağlıklı çözümler üretmekte zorlanmaktadır.",
+        'description' => "Aşırı kilolu bir yaşam tarzına sahip, toplumdaki sorunlara karşı duyarsız kalabilen birisin. İyi niyetle hareket etsen de sağlıklı çözümler bulmakta zorlanıyorsun.",
         'req' => null
     ],
     [
         'title' => "Ramazan Davulcusu",
-        'description' => "Ramazan ayı boyunca sahur vaktinde insanları uyandırmak için davul çalan kişidir. Geleneksel bir rol üstlenerek topluma hizmet eder.",
+        'description' => "Ramazan ayı boyunca sahur vaktinde insanları uyandırmak için davul çalan birisin. Geleneksel bir rol üstlenerek topluma hizmet ediyorsun.",
         'req' => null
     ],
     [
         'title' => "Sihirbaz",
-        'description' => "İlginç ve eğlenceli gösterilerle izleyicileri şaşırtan, illüzyon teknikleri kullanarak performans sergileyen sanatçıdır. Eğlence dünyasında dikkat çeker.",
+        'description' => "Eğlenceli ve ilginç gösterilerle izleyicileri şaşırtan bir sanatçısın. Illüzyon teknikleri kullanarak performans sergiliyorsun.",
         'req' => null
     ],
 ];
@@ -987,200 +1003,201 @@ $illegalJobs = [
     [
         'title' => "Çete Üyesi",
         'description' => "Şehirde biraz zaman geçirip temelleri kavradıktan sonra, tebrikler! Artık ufak çetelerle gizli yerlerde kirli dolar kazanmanın tam zamanı.",
-        'req' => "İlk önce Keko Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Keko Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Çete Lideri",
         'description' => "Artık arka sokakları tamamen tanıdın. Eskiden senin gibi tecrübesiz gençleri toplayarak bir çete kurmanın tam zamanı. Ne kadar toplu gezmek güvenli hissettirse de, diğer çetelerin ve polislerin dikkatini çekmemeye özen göster.",
-        'req' => "İlk önce Çete Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Çete Lideri Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Mülteci",
-        'description' => "Savaş, zulüm veya diğer zorlayıcı koşullar nedeniyle yaşadıkları yerden kaçan ve güvenli bir yaşam arayan bireylerdir. Yeni bir topluma uyum sağlama çabası içindedirler ve destek arayışındadırlar. Ayrıca kirli dolar üreterek hayatta kalmaya çalışırlar.",
+        'description' => "Savaş, zulüm veya diğer zorlayıcı koşullar nedeniyle yaşadıkları yerden kaçan ve güvenli bir yaşam arayan bireylerdir. Yeni bir topluma uyum sağlama çabası içindesin ve destek arayışındasın. Ayrıca hayatta kalmak için kirli dolar üretmeye çalışıyorsun; zor bir dönemden geçiyorsun.",
         'req' => null
     ],
     [
         'title' => "Mülteci Haklarını Koruma Derneği Başkanı",
-        'description' => "Mültecilerin haklarını savunmak ve ihtiyaç duydukları desteği sağlamakla görevli olan, derneğin faaliyetlerini yöneten liderdir. Mültecilerin topluma entegrasyonu ve haklarının korunması için çeşitli projeler geliştirmektedir.",
-        'req' => "İlk önce Mülteci mesleğinde deneyim kazanmanız gerekiyor."
+        'description' => "Mültecilerin haklarını savunmak ve onlara ihtiyaç duydukları desteği sağlamakla görevli olan derneğin liderisin. Mültecilerin topluma entegrasyonunu sağlamak ve haklarını korumak için çeşitli projeler geliştiriyorsun.",
+        'req' => "İlk önce Mülteci Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
-
     [
         'title' => "Mafya Üyesi",
         'description' => "Sonunda biraz yaşlandın ve büyüklerin ligine adım attın. Artık basit suçlar ilgini çekmiyor; yeni açılan saksılardan güzel paralar kazanmaya başlayabilirsin.",
-        'req' => "İlk önce Çete Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Çete Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Mafya Babası",
         'description' => "Adı bile yeterli. Bu şehirde mafya babası olmak kolay olmasa da, olduğunda saygınlık beraberinde gelecektir.",
-        'req' => "İlk önce Mafya Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Mafya Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Korsan",
         'description' => "Artık şehirde değilsin. Burada kendi kuralların var. Gerçek bir korsan ol ve korsan gibi yaşa.",
-        'req' => "İlk önce Mafya Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Mafya Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Kaptan",
         'description' => "Korsanların başısın. Lüks bir yaşam sürmesen de, kaçak mallarla şehirdekilerden daha rahat bir yaşam sürdüğün kesin.",
-        'req' => "İlk önce Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Korsan Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Eşkiya",
         'description' => "Dağa çıkmak kolay olmasa da, burada çok sayıda saksılarınla ürettiğin mahsuller sana iyi bir kazanç sağlayacaktır. Sokağa çıkma yasağında devlete karşı gelerek şehri dar edebilirsin.",
-        'req' => "İlk önce Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Korsan Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Elebaşı",
         'description' => "Köyün ağası sensin. Eşkiyaların emirlerine uymak zorundadır. Eğer biri emrine uymuyorsa, ona ceza vermek senin elindedir. Eşkiyalarınla beraber devlete kafa tutmanın eğlenceli bir yolunu keşfet!",
-        'req' => "İlk önce Eşkiya Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Eşkiya Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Sefir",
         'description' => "MoonCity'nin Sefiri, Baron adına şehirdeki illegal eylemleri yürütmekten sorumludur. İllegaller ona saygı göstermek zorundadır.",
-        'req' => null
+        'req' => null,
+        'whitelist' => true,
     ],
     [
         'title' => "Baron",
         'description' => "Baron illegalin en tepesindeki kişidir. Tüm mafya, çete ve familyalar ona bağlı çalışmaktadır. İllegaller ona saygı göstermek zorundadır.",
-        'req' => null
+        'req' => null,
+        'whitelist' => true,
     ],
     [
         'title' => "Aşiret Üyesi",
         'description' => "Aşiretinin bir üyesi olarak, geçmişin ve geleneklerinle gurur duyuyorsun. Bitki üretimi ve kirli dolar üretimi yaparak, aşiretinin güçlenmesine katkıda bulunuyorsun. Ancak, bu yolda birçok tehlikeyle karşılaşacağının farkındasın.",
-        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Aşiret Lideri",
         'description' => "Aşiretin artık senin liderliğinde. Bitki ve kirli dolar üretimi konusundaki deneyimlerinle, diğer aşiretlerle mücadele etmelisin. Sadece gücünü korumakla kalmayacak, aynı zamanda aşiretini de daha ileriye taşımalısın.",
-        'req' => "İlk önce Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Aşiret Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "İtalyan Mafya Üyesi",
         'description' => "İtalyan mafyası, gelenekleri ve aile bağlarıyla tanınır. Artık ailenin bir parçasısın ve yeraltı dünyasının sırlarını öğrenmeye başladın. Bitki üretimi ve kirli dolar üretimi yaparak, bu dünyanın tehlikeleriyle yüzleşmeyi öğreniyorsun.",
-        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "İtalyan Mafya Babası",
         'description' => "Bir mafya babası olarak, gücünü ve otoriteni kanıtlaman gerekecek. Artık sadece Bitki üretmekle kalmayacak, aynı zamanda kirli dolar üretimiyle de ilgileneceksin. Düşmanların her köşede seni bekliyor; bu yüzden dikkatli olmalısın.",
-        'req' => "İlk önce İtalyan Mafya Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce İtalyan Mafya Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Rus Mafya Üyesi",
         'description' => "Şehirdeki en güçlü güçlerden birinin parçası olmanın gururunu yaşıyorsun. Rus mafyası, gizlilik ve sadakat üzerine kuruludur. Bitki üretimi yaparak ve kirli dolar basma konusunda yeteneklerinle dikkat çekmeye başladın; artık seni tanıyorlar ve saygı gösteriyorlar.",
-        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Rus Mafya Babası",
         'description' => "Bu şehirde Rus mafyasının lideri olmak, büyük bir sorumluluktur. Kendi çeteni kurduktan sonra, düşmanlarınla yüzleşmek zorunda kalacaksın. Bitki üretimi ve kirli dolar üretimi konularında söz sahibi olmanın yanı sıra, düşmanlarına karşı güç gösterileri yapmayı da öğrenmelisin.",
-        'req' => "İlk önce Rus Mafya Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Rus Mafya Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Triads Mafya Üyesi",
         'description' => "Triads, tarih ve geleneklerle dolu bir kültüre sahip. Artık bu kültürün bir parçası olarak Bitki üretimi ve kirli dolar üretimi yapıyorsun. Gizli bağlantılarınla, bu karanlık dünyada kendine bir yer edinmeye çalışıyorsun.",
-        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Eşkiya ve Korsan Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Triads Mafya Lideri",
         'description' => "Triads'ın lideri olmak, büyük bir sorumluluktur. Artık sadece kendi çeteni değil, tüm örgütü yönetmek zorundasın. Bitki ve kirli dolar üretimi konusunda uzmanlaşarak, düşmanlarına karşı güçlü bir lider olmalısın. Her kararın, hem seni hem de çetenin kaderini belirleyecek.",
-        'req' => "İlk önce Triads Mafya Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Triads Mafya Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Ninja",
-        'description' => "Gizli görevlerde uzmanlaşmış, yüksek seviyede dövüş becerilerine sahip bir savaşçıdır. Katana ustasıdır ve bu kılıcıyla hızlı ve etkili saldırılar gerçekleştirebilir. Ayrıca, kirli dolar üretimi yaparak kendi kaynaklarını yaratma konusunda da beceriklidir.",
+        'description' => "Gizli görevlerde uzmanlaşmış, yüksek seviyede dövüş becerilerine sahip bir savaşçısın. Katana ustası olarak bu kılıcınla hızlı ve etkili saldırılar gerçekleştirebiliyorsun. Ayrıca, kirli dolar üretimi yaparak kendi kaynaklarını yaratma konusunda da oldukça beceriklisin. Hem karanlıkta hareket etmekte ustasın, hem de hayatta kalma becerilerinle dikkat çekiyorsun!",
         'req' => null,
         'vip' => 2
     ],
     [
         'title' => "Bilim Adamı",
         'description' => "Bilime adım atmaktan çekinmiyorsun. Sürekli yeni formüller deniyor ve sonunda Bitkinin kalitesini artıracak malzemeyi buluyorsun.",
-        'req' => "İlk önce Yeni Faction lider(Tarikat, Kore, Motorcu Çetesi...) Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Yeni Faction lider(Tarikat, Kore, Motorcu Çetesi...) Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Emekli Doktor",
         'description' => "Artık yaşını almışsın. Yıllardır çalıştığın hastaneden emekli oldun; paran anca borçlarını kapatmaya yetiyor. Bu durumdan müzdaripsin ve karanlık tarafa geçmeyi kendine hak görüyorsun; bu da en büyük hakkındır.",
-        'req' => "İlk önce Belediye İşçisi, ATT ve Doktor Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Belediye İşçisi, ATT ve Doktor Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
 
     [
         'title' => "Çingene Çetesi Üyesi",
         'description' => "Çingeneler, şehirde Bitki üretiminde söz sahibidir. Bitkiları yükseltebilme yeteneğine sahip olarak bu karanlık dünyada yer alabilirsin.",
-        'req' => "İlk önce Triads Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Triads Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Çingene Çetesi Lideri",
         'description' => "Çingene çetesinin lideri olarak, Bitki üretim sürecini yönetmek ve çeteni en iyi şekilde yönlendirmek zorundasın. Bitkileri yükseltmek, seni diğer çetelerden ayıracak önemli bir özellik olacaktır.",
-        'req' => "İlk önce Çingene Çetesi Üyesi, riads Mafye Lideri ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Çingene Çetesi Üyesi, riads Mafye Lideri ve Aşiret Lideri Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Kore Mafyası Üyesi",
         'description' => "Kore mafyası, Triadslardan sonra Asya'dan gelen bir güç olarak, şehirde Bitki üretimi yapmaktadır. Bitkileri yükseltme yeteneğinle, bu güçlü gruba katılmanın avantajlarını kullanabilirsin.",
-        'req' => "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Kore Mafyası Lideri",
         'description' => "Kore mafyasının lideri olarak, çetenin işlerini yürütmek ve düşmanlarına karşı güçlü bir duruş sergilemek senin sorumluluğundadır. Bitkileri yükseltme yeteneğin, seni diğer çetelerden ayıran en büyük özelliğin olacaktır.",
-        'req' => "İlk önce Kore Mafyası Üyesi, Rus Mafyası Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Kore Mafyası Üyesi, Rus Mafyası Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Haydut Çetesi Üyesi",
         'description' => "Keke Köyü’nün yeni ferdi olarak, artık KEKE Köyünde Bitki üretimi yapma şansına sahipsin. Bitkileri yükseltme becerinle, şehirdeki diğer çetelerle rekabet edebilirsin.",
-        'req' => "İlk önce İtalyan Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce İtalyan Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Haydut Çetesi Lideri",
         'description' => "Haydut çetesinin lideri olarak, çetenin tüm operasyonlarını yönetmek senin sorumluluğundadır. Bitki üretimi ve yükseltme süreçlerini kontrol ederek, düşmanlarına karşı sağlam bir duruş sergilemelisin.",
-        'req' => "İlk önce Haydut Çetesi Üyesi, İtalyan Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Haydut Çetesi Üyesi, İtalyan Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Çeçen Mafya Üyesi",
         'description' => "Çeçen mafyasının bir üyesi olarak, yüksek seviye printerlarla para üretimi yapma fırsatına sahipsin. Çetenin gücünü artırmaya yardımcı olabilirsin.",
-        'req' => "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Çeçen Mafya Lideri",
         'description' => "Çeçen mafyasının lideri olarak, çetenin en üst düzey operasyonlarını yönetmek zorundasın. Yüksek seviye printerlarla para üretimi yaparak da ailene yardımcı olabilirsin.",
-        'req' => "İlk önce Çeçen Mafya Üyesi, Rus Mafya Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Çeçen Mafya Üyesi, Rus Mafya Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Tarikat Üyesi",
         'description' => "Dini bir yapı olan tarikatın bir üyesi olarak, yeni para basma makineleriyle para üretimi yapıyorsun. Ek olarak, liderinin önderliğinde ritüel rolleri yaparak tarikatın gizemli dünyasına adım atıyorsun.",
-        'req' => "İlk önce İtalyan Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce İtalyan Mafye Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Tarikat Lideri",
         'description' => "Tarikatın lideri olarak, tüm üyeleri yönetmek ve yeni para basma makineleriyle para üretimini kontrol etmek senin sorumluluğundadır. Ayrıca, ritüel rolleri organize ederek, tarikatın gücünü artırmalısın.",
-        'req' => "İlk önce Tarikat Üyesi, İtalyan Mafye Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Tarikat Üyesi, İtalyan Mafye Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Güney Kartel Üyesi",
         'description' => "Güney Karteli’nin bir üyesi olarak, şehirde Bitki üretimini üstleniyorsun. Bitkileri yükseltme yeteneğinle, kartelin gücüne katkıda bulunabilirsin.",
-        'req' => "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Rus Mafyası Üyesi ve Aşiret Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Güney Kartel Lideri",
         'description' => "Güney Karteli’nin lideri olarak, tüm operasyonları yönetmek senin sorumluluğundadır. Bitkileri yükseltme ve üretim süreçlerini kontrol ederek, kartelin gücünü artırmalısın.",
-        'req' => "İlk önce Güney Kartel Üyesi, Rus Mafya Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Güney Kartel Üyesi, Rus Mafya Babası ve Aşiret Lideri Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Kuzey Kartel Üyesi",
         'description' => "Kuzey Karteli’nin bir üyesi olarak, şehirde Bitki üretimini üstleniyorsun. Bitkileri yükseltme becerinle, kartelin etkisini artırmak için mücadele edebilirsin.",
-        'req' => "İlk önce İtalyan Mafye Üyesi ve Triads Mafye Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce İtalyan Mafye Üyesi ve Triads Mafye Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Kuzey Kartel Lideri",
         'description' => "Kuzey Karteli’nin lideri olarak, tüm kartelin işlerini yönetmek zorundasın. Bitkileri yükseltme ve üretim süreçlerini kontrol ederek, kartelin en güçlü gücü haline gelmesini sağlamalısın.",
-        'req' => "İlk önce Kuzey Kartel Üyesi, İtalyan Mafye Babası ve Triads Mafye Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Kuzey Kartel Üyesi, İtalyan Mafye Babası ve Triads Mafye Lideri Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Motor Çetesi Üyesi",
         'description' => "Motor çetesinin bir üyesi olarak, sahip olduğun motorlarla şehirde illegal roller yapma fırsatına sahipsin. Ayrıca, yeni para basma makineleriyle para basma işlemlerine de katılabilirsin.",
-        'req' => "İlk önce İtalyan Mafye Üyesi ve Triads Mafye Üyesi Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce İtalyan Mafye Üyesi ve Triads Mafye Üyesi Mesleğinde Deneyim Kazanman gerekiyor.",
     ],
     [
         'title' => "Motor Çetesi Lideri",
         'description' => "Motor çetesinin lideri olarak, çeteni yönetmek ve yeni para basma makineleriyle para üretimini kontrol etmek zorundasın. Aynı zamanda, motorlarınla gerçekleştireceğin illegal eylemleri organize etmelisin.",
-        'req' => "İlk önce Motor Çetesi Üyesi, İtalyan Mafye Babası ve Triads Mafye Lideri Mesleğinde Deneyim Kazanmanız gerekiyor."
+        'req' => "İlk önce Motor Çetesi Üyesi, İtalyan Mafye Babası ve Triads Mafye Lideri Mesleğinde Deneyim Kazanman gerekiyor.",
     ]
 ];
 
