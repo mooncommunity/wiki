@@ -1,75 +1,45 @@
 stages:
   - convert
-  - convert_scss
   - build
   - deploy
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-before_script:
-  - apt-get update && apt-get install -y php ruby-full nodejs npm
-  - npm -g install sass@1.78.0
-
 convert_to_html:
   stage: convert
+  image: docker:latest
+  services:
+    - docker:rc-dind
   script:
-    - echo "Starting PHP to HTML conversion..."
-    - cd src
-    - if [ -d HTML ]; then rm -rf HTML; fi
-    - mkdir -p HTML
-    - echo "Converting PHP files to HTML..."
-    - find . -type f -name "*.php" -not -path "*include*" -exec sh -c '
-      for php_file; do
-      echo "Processing $php_file";
-      relative_path="${php_file#./}";
-      html_file="HTML/${relative_path%.php}.html";
-      mkdir -p "$(dirname "$html_file")";
-      php "$php_file" > "$html_file";
-      done
-      ' sh {} +
-    - if [ -d assets ]; then cp -rf ./assets ./HTML; fi
-    - if [ -f ./_config.yml ]; then cp -f ./_config.yml ./HTML; fi
-    - if [ -d ../HTML ]; then rm -rf ../HTML; fi
-    - mv -f ./HTML ..
-    - echo "PHP to HTML conversion completed."
-
+    - echo "Run HTML conversion..."
+    - apt-get update && apt-get install -y docker.io
+    - docker build -t hofmann-convert-release -f build/convert.Dockerfile .
+    - docker run --rm -v "$CI_PROJECT_DIR:/app" hofmann-convert-release sh -c /app/build/.build
+    - echo "HTML conversion completed."
   artifacts:
     paths:
       - HTML
     expire_in: 1 hour
-
-build_sass:
-  stage: convert_scss
-  dependencies:
-    - convert_to_html
-  script:
-    - echo "Building Sass files..."
-    - cd ./HTML/assets/scss
-    - sass styles.scss ../css/styles.css
-    - cd ..
-    - rm -rf scss
-
-  artifacts:
-    paths:
-      - HTML
-    expire_in: 1 hour
+  only:
+    - latest  
 
 build_jekyll:
   stage: build
   dependencies:
     - convert_to_html
-    - build_sass
   script:
+    - apt-get update && apt-get install -y ruby-full
     - echo "Installing Jekyll..."
     - gem install bundler jekyll
     - echo "Building the Jekyll site..."
     - jekyll build -s ./HTML -d ./_site
-
   artifacts:
     paths:
       - _site
     expire_in: 1 hour
+  only:
+    - latest  
 
 pages:
   stage: deploy
@@ -79,4 +49,4 @@ pages:
     paths:
       - public
   only:
-    - latest
+    - latest  
