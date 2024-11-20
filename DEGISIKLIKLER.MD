@@ -1,3 +1,28 @@
+# 1.2.0
+
+# Yapı Güncellendi
+- Build aşamasında artık HTML, JS, CSS yerine PHP, TS, SCSS kullanılıyor. ([Builder/Static Builder](https://github.com/herrwinfried/builder/tree/static-builder))
+- `.img-zoom` eklendi. Masaüstünde Bootstrap modal açarak resmi büyütmeye yardımcı oluyor.
+- `src/PHP/include/variable.php` deki DarkRP Meslekleri güncellendi. (bitki1, bitki2, bitki3, printer, requirejobs, requireORjobs değerleri eklendi.)
+
+# DarkRP Kariyer > Yasadışı Organizasyonlar
+- "Kirli Dolar Üretimi" başlığına Kirli dolar üretebilen meslekler eklendi.
+- "Bitki Üretimi" başlığına Bitki üretebilen meslekler eklendi.
+- "Bitkimi Nasıl Yükseltebilirim?" bitki 2 ve bitki 3 çıkartabilen meslekler Z-a olcak şekilde eklendi.
+
+# DarkRP Kariyer > Devlet Çalışanı
+- Bekçinin meslek gereksinimi güncellendi.
+
+# DarkRP Kariyer > Esnaf ve Siviller
+- Kargocu meslek gereksinimi güncellendi.
+
+# DarkRP Başlarken > SSS
+- "Silah Nereden Alabilirim?" Eşkıya ve elebaşı eklendi.
+- "Ana Menüye düşüyorum / Oyun aniden kapanıyor" "Özel İçerikleri İndirme" yerine "Sistem Gereksinimlerini Karşılıyor mu?" eklendi.
+
+# TTT Başlarken > SSS
+- "Ana Menüye düşüyorum / Oyun aniden kapanıyor" "Özel İçerikleri İndirme" yerine "Sistem Gereksinimlerini Karşılıyor mu?" eklendi.
+
 # 1.1.0
 
 ## Search için anahtar kelime "darkrp yeniyim" || "ttt yeniyim"
