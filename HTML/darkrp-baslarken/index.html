@@ -26,25 +26,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
-<script src="https://moonrp.com/wiki/assets/js/search.js"></script>
-<nav id="mainmenu" class="navbar navbar-expand-lg">
+<script type="module" src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
+<script type="module" src="https://moonrp.com/wiki/assets/js/search.js"></script>
+<nav id="mainNavbar" class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-brand">
-            <a class="navbar-brand" href="https://moonrp.com/wiki/"><img src="https://moonrp.com/wiki/assets/image/favicon.ico"
-                                                                  height="32" width="32">
-                MoonGaming™ Rehber</a>
+            <a class="navbar-brand" href="https://moonrp.com/wiki/">
+                <img src="https://moonrp.com/wiki/assets/image/favicon.ico" height="32" width="32">
+                MoonGaming™ Rehber
+            </a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" id="top-menu">
-
+            <ul class="navbar-nav ms-auto" id="topMenu">
             </ul>
         </div>
-        <button class="btn btn-outline-secondary rounded-button" id="searchIcon">
+        <button class="btn btn-outline-secondary rounded-button" id="searchButton">
             <i class="fas fa-search"></i> Ara...
         </button>
     </div>
@@ -52,9 +52,9 @@
 
 <div class="container-fluid">
     <div class="row">
-        <nav id="left-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <nav id="leftSidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
             <div class="position-sticky">
-                <ul class="nav flex-column" id="left-menu"></ul>
+                <ul class="nav flex-column" id="leftMenu"></ul>
             </div>
         </nav><main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
@@ -98,21 +98,23 @@
             <h2 class="standartcolor" id="tus">Temel Kısayollar</h2>
             <br>
             <ul id="tusUL" style="list-style-type: '- ">
-                <li><strong><span class="key">F1</span></strong><span> FPS görünümü ve üçüncü şahıs (third-person) kamera görünümü arasında geçiş yapabilirsiniz.</span>
+                <li><strong><kbd>F1</kbd></strong><span> FPS görünümü ve üçüncü şahıs (third-person) kamera görünümü arasında geçiş yapabilirsiniz.</span>
                 </li>
-                <li><strong><span class="key">F2</span></strong><span> Sahip olduğunuz araçlara arkadaşlarınızı ekleyebilir, ev kiralayabilirsiniz (Kapıya bakıp yapmalısınız), evinize arkadaşlarınızı ekleyebilirsiniz. </span>
+                <li><strong><kbd>F2</kbd></strong><span> Sahip olduğunuz araçlara arkadaşlarınızı ekleyebilir, ev kiralayabilirsiniz (Kapıya bakıp yapmalısınız), evinize arkadaşlarınızı ekleyebilirsiniz. </span>
                 </li>
-                <li><strong><span class="key">F3</span></strong><span> Araç içinde iseniz plaka değişimi yapmanızı sağlar. Ek olarak araçta değilseniz fare imlecinizi belirtir. </span>
+                <li><strong><kbd>F3</kbd></strong><span> Araç içinde iseniz plaka değişimi yapmanızı sağlar. Ek olarak araçta değilseniz fare imlecinizi belirtir. </span>
                 </li>
-                <li><strong><span class="key">F4</span></strong><span> Meslek, sevkiyat ve varlıklar menüsüne erişebilirsiniz.</span>
+                <li><strong><kbd>F4</kbd></strong><span> Meslek, sevkiyat ve varlıklar menüsüne erişebilirsiniz.</span>
                 </li>
-                <li><strong><span class="key">TAB</span></strong><span> Oyuncu listesi ve durumlarına bakabilirsiniz.
+                <li><strong><kbd>TAB</kbd></strong><span> Oyuncu listesi ve durumlarına bakabilirsiniz.
                 </span></li>
-                <li><strong><span class="key">M</span></strong><span>Oyunun haritasının küçültülmüş halini gösterir. (Yokuş altına inince/Çıkınca harita değişir) </span>
+                <li><strong><kbd>M</kbd></strong><span>Oyunun haritasının küçültülmüş halini gösterir. (Yokuş altına inince/Çıkınca harita değişir) </span>
                 </li>
-                <li><strong><span class="key">T</span></strong><span> Teslim olmanızı sağlar. Eğer teslim olduysanız da elinizi indirmenizi sağlar. </span>
+                <li><strong><kbd>T</kbd></strong><span> Teslim olmanızı sağlar. Eğer teslim olduysanız da elinizi indirmenizi sağlar. </span>
                 </li>
-                <li><strong><span class="key">I</span></strong><span> Envanterinizi açmanızı sağlar.</span></li>
+                <li><strong><kbd>I</kbd></strong><span> Envanterinizi açmanızı sağlar.</span></li>
+                <li><strong><kbd>X</kbd></strong><span> Oyun içerisinden sesli konuşmanızı sağlar.</span></li>
+                <li><strong><kbd>Y</kbd></strong><span> Oyun içerisinden Yazılı Sohbet açmanızı sağlar.</span></li>
             </ul>
         </div>
         <br>
@@ -174,10 +176,6 @@
                         <hr>
                         <li><strong>/dropmoney &lt;Miktar&gt;:</strong><span> Yere belirtiğiniz miktarda para
                             atar.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/dropmoney
-                                1000</code></li>
-                        <hr>
-                        <li><strong>/give &lt;Miktar&gt;:</strong><span> CrossHair(<i class="fa-thin fa-plus" style="color: #63E6BE;"></i>) ile baktığınız kişiye para
-                            atar.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/give
                                 1000</code></li>
                         <hr>
                         <li><strong>/drop:</strong><span> Elinizde atılabilir silah var ise yere atmanızı
@@ -249,13 +247,13 @@
                             <span>Warrant ve Wanted işlemleri için GBT Tablet kullanmanız önerilir.</span>
                         </div>
                         <br>
-                        <li><strong>/warran<span class="key">T</span></strong><span> Aranma izni çıkarmak için
+                        <li><strong>/warrant</strong><span> Aranma izni çıkarmak için
                             kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/warrant
                                 'Micheal MoonGiller' 'Yasadışı
                                 Madde
                                 Şüphesi'</code></li>
                         <hr>
-                        <li><strong>/unwarran<span class="key">T</span></strong><span> Aranma iznini iptal etmek için
+                        <li><strong>/unwarrant</span></strong><span> Aranma iznini iptal etmek için
                             kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/unwarrant
                                 'Micheal MoonGiller'</code></li>
                         <hr>
@@ -353,14 +351,14 @@
         <div>
             <h2 class="standartcolor" id="build">Build</h2>
             <br>
-            <p><span class="key">Q</span> Tuşuna basarak eşyalara göz atabilirsiniz. Her eşyayı çıkartamayabilirsiniz
+            <p><kbd>Q</kbd> Tuşuna basarak eşyalara göz atabilirsiniz. Her eşyayı çıkartamayabilirsiniz
                 bazı eşyalar
                 sunucumuzda kara listeye alınır.</p>
             <p>Göz at kısmından bizim addonlarımıza ait eşyaları kullanabilir veya Garry's Mod sunduğu
                 eşyaları
                 kullanabilirsiniz.</p>
             <div>
-                <img src="https://moonrp.com/wiki/assets/image/darkrp_qmenu.png" alt="" class="img-fluid mx-auto d-block">
+                <img src="https://moonrp.com/wiki/assets/image/darkrp_qmenu.png" alt="" class="img-fluid img-zoom mx-auto d-block">
             </div>
         </div>
         <br>
@@ -504,10 +502,10 @@
             <div class="row">
                 <div class="col-12">
                     <ol>
-                        <li>İlk önce <span class='key'>Q</span> basın. Ardından Sağ taraftan Düğme Seçiniz.</li>
-                        <li>Düğme Bir Tuş Atınız Örneğin <span class='key'>Numpad 0</span></li>
+                        <li>İlk önce <kbd>Q</kbd> basın. Ardından Sağ taraftan Düğme Seçiniz.</li>
+                        <li>Düğme Bir Tuş Atınız Örneğin <kbd>Numpad 0</kbd></li>
                         <li>Düğmeyi koyacağınız yere tool gun ile vurunuz.</li>
-                        <li><span class='key'>Q</span> Basın. Ardından Sağ Taraftan Görünmez Kapı Seçiniz.</li>
+                        <li><kbd>Q</kbd> Basın. Ardından Sağ Taraftan Görünmez Kapı Seçiniz.</li>
                         <li>Düğme ile aynı tuşu seçiniz ve görünmez kapı olacak noktayı tool gun ile vurunuz.</li>
                     </ol>
                 </div>
@@ -549,12 +547,12 @@
             <div class="row">
                 <div class="col-12">
                     <ol>
-                        <li>İlk önce <span class='key'>Q</span> basın. Ardından Sağ taraftan Keypad Seçiniz.</li>
+                        <li>İlk önce <kbd>Q</kbd> basın. Ardından Sağ taraftan Keypad Seçiniz.</li>
                         <li>Ne kadar Süre açık kalıcağı kısmını 5 saniye olarak ayarlayın.</li>
                         <li>Parola Giriniz (En fazla 4 hane olabilir)</li>
-                        <li>Keypad için Açma Tuşu Atınız Örneğin <span class='key'> Numpad +</span></li>
+                        <li>Keypad için Açma Tuşu Atınız Örneğin <kbd> Numpad +</kbd></li>
                         <li>Keypad koyacağınız yere tool gun ile vurunuz.</li>
-                        <li><span class='key'>Q</span> Basın. Ardından Sağ Taraftan Görünmez Kapı Seçiniz.</li>
+                        <li><kbd>Q</kbd> Basın. Ardından Sağ Taraftan Görünmez Kapı Seçiniz.</li>
                         <li>Düğme ile aynı tuşu seçiniz ve görünmez kapı olacak noktayı tool gun ile vurunuz.</li>
                     </ol>
                 </div>
@@ -596,7 +594,7 @@
             <div class="row">
                 <div class="col-12">
                     <ol>
-                        <li>İlk önce <span class='key'>Q</span> basın. Ardından Sağ taraftan Işık Seçiniz.</li>
+                        <li>İlk önce <kbd>Q</kbd> basın. Ardından Sağ taraftan Işık Seçiniz.</li>
                         <li>Halat uzunluğu vb. Ayarlayın</li>
                         <li>Renk Seçiniz</li>
                         <li>Işık koyacağınız yere tool gun ile vurunuz.</li>
@@ -1654,7 +1652,7 @@
                                 <div class="col-md-2 col-12">
                                     <img src="https://moonrp.com/wiki/assets/image/darkrp_telefon.png"
                                          style="align-items: center;" alt="Telefon"
-                                         class="img-fluid mx-auto d-block">
+                                         class="img-fluid img-zoom mx-auto d-block">
                                 </div>
                             </div>
                         </div>
@@ -1682,7 +1680,7 @@
                                 <div class="col-md-2 col-12">
                                     <img src="https://moonrp.com/wiki/assets/image/darkrp_telefon_kamera.png"
                                          style="align-items: center;" alt="Telefon - Kamera"
-                                         class="img-fluid mx-auto d-block">
+                                         class="img-fluid img-zoom mx-auto d-block">
                                 </div>
                             </div>
                         </div>
@@ -1712,7 +1710,7 @@
                                 <div class="col-md-2 col-12">
                                     <img src="https://moonrp.com/wiki/assets/image/darkrp_telefon_galeri.png"
                                          style="align-items: center;" alt="Telefon - Galeri"
-                                         class="img-fluid mx-auto d-block">
+                                         class="img-fluid img-zoom mx-auto d-block">
                                 </div>
                             </div>
                         </div>
@@ -1746,7 +1744,7 @@
                                 <div class="col-md-2 col-12">
                                     <img src="https://moonrp.com/wiki/assets/image/darkrp_telefon_twitter.png"
                                          style="align-items: center;" alt="Telefon - X(Twitter)"
-                                         class="img-fluid mx-auto d-block">
+                                         class="img-fluid img-zoom mx-auto d-block">
                                 </div>
                             </div>
                         </div>
@@ -1774,7 +1772,7 @@
                                 <div class="col-md-2 col-12">
                                     <img src="https://moonrp.com/wiki/assets/image/darkrp_telefon_papara.png"
                                          style="align-items: center;" alt="Telefon - Papara"
-                                         class="img-fluid mx-auto d-block">
+                                         class="img-fluid img-zoom mx-auto d-block">
                                 </div>
                             </div>
                         </div>
@@ -1803,7 +1801,7 @@
                                 <div class="col-md-2 col-12">
                                     <img src="https://moonrp.com/wiki/assets/image/darkrp_telefon_mesajlar.png"
                                          style="align-items: center;" alt="Telefon - Mesajlar"
-                                         class="img-fluid mx-auto d-block">
+                                         class="img-fluid img-zoom mx-auto d-block">
                                 </div>
                             </div>
                         </div>
@@ -1830,7 +1828,7 @@
                                 <div class="col-md-2 col-12">
                                     <img src="https://moonrp.com/wiki/assets/image/darkrp_telefon_borsa.png"
                                          style="align-items: center;" alt="Telefon - Borsa"
-                                         class="img-fluid mx-auto d-block">
+                                         class="img-fluid img-zoom mx-auto d-block">
                                 </div>
                             </div>
                         </div>
@@ -1856,7 +1854,7 @@
                                 <div class="col-md-2 col-12">
                                     <img src="https://moonrp.com/wiki/assets/image/darkrp_telefon_hesapmak.png"
                                          style="align-items: center;" alt="Telefon - Hesap Makinesi"
-                                         class="img-fluid mx-auto d-block">
+                                         class="img-fluid img-zoom mx-auto d-block">
                                 </div>
                             </div>
                         </div>
@@ -1880,7 +1878,7 @@
                                 <div class="col-md-2 col-12">
                                     <img src="https://moonrp.com/wiki/assets/image/darkrp_telefon_ayarlar.png"
                                          style="align-items: center;" alt="Telefon - Hesap Makinesi"
-                                         class="img-fluid mx-auto d-block">
+                                         class="img-fluid img-zoom mx-auto d-block">
                                 </div>
                             </div>
                         </div>
@@ -1907,7 +1905,7 @@
                     <br>
                     <ol>
                         <h5 class="standartcolor">Eşyalarımı Nasıl Depoya Koyacağım?</h5>
-                        <li class="text-teal">Depo Görevlisi NPC'nin yanına gidin ve <span class="key">E</span> tuşuna
+                        <li class="text-teal">Depo Görevlisi NPC'nin yanına gidin ve <kbd>E</kbd> tuşuna
                             basınız. (Banka,
                             Benzinlik gibi
                             yerlerde depo görevlisi NPC bulunmaktadır.)
@@ -1917,7 +1915,7 @@
                     </ol>
                 </div>
                 <div class="col-md-4 col-12">
-                    <img src="https://moonrp.com/wiki/assets/image/darkrp_depo.png" class="img-fluid mx-auto d-block">
+                    <img src="https://moonrp.com/wiki/assets/image/darkrp_depo.png" class="img-fluid img-zoom mx-auto d-block">
                 </div>
             </div>
         </div>
@@ -1948,7 +1946,7 @@
                     </ol>
                 </div>
                 <div class="col-md-4 col-12">
-                    <img src="https://moonrp.com/wiki/assets/image/darkrp_atm.png" class="img-fluid mx-auto d-block">
+                    <img src="https://moonrp.com/wiki/assets/image/darkrp_atm.png" class="img-fluid img-zoom mx-auto d-block">
                 </div>
             </div>
 
@@ -1977,7 +1975,7 @@
                 <li><strong class="text-warning">Etüt merkezi</span></strong> Geçici olarak öğrenme
                     becerilerinizi geliştirir.
                 </li>
-                <li><strong class="text-info">Üretim:</strong> Bitki Yetiştiriciliği ve Para Basma Makinesi başarıyla tamamlandığında, <span class="key">E</span> tuşuna basarak XP kazanabilirsiniz.</li>
+                <li><strong class="text-info">Üretim:</strong> Bitki Yetiştiriciliği ve Para Basma Makinesi başarıyla tamamlandığında, <kbd>E</kbd> tuşuna basarak XP kazanabilirsiniz.</li>
                 <li><strong class="text-primary">Baskın:</strong> Baskınlarda ele geçirilen
                     araçlardan kazanabilirsiniz. <span
                             class="text-secondary">(Baskın süresi boyunca)</span></li>
@@ -2275,10 +2273,9 @@
         </div>
     </div>
 
-</main><br> <br>
-<nav id="right-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+</main><nav id="rightSidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
     <div class="position-sticky">
-        <ul class="nav flex-column" id="right-menu"></ul>
+        <ul class="nav flex-column" id="rightMenu"></ul>
     </div>
 </nav>
 </div>
@@ -2287,15 +2284,15 @@
 <div id="mobileBookmarks">
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Başlıklar</h5>
+            <h5 class="standartcolor" id="offcanvasRightLabel">Başlıklar</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="nav flex-column" id="offcanvas-right-menu"></ul>
+            <ul class="nav flex-column" id="offcanvasMenu"></ul>
         </div>
     </div>
 
-    <button class="btn btn-primary position-fixed bottom-0 end-0 m-3" id="toggle-offcanvas"
+    <button class="btn btn-primary position-fixed bottom-0 end-0 m-3" id="toggleOffcanvas"
             aria-label="Toggle Content Menu">
         <i class="fa-solid fa-bookmark"></i>
     </button>
@@ -2315,19 +2312,39 @@
                     <i class="text-danger fa-solid fa-delete-left position-absolute top-50 translate-middle-y"
                        id="clearSearch" style="display: none; cursor: pointer; right: 30px;"></i>
                 </div>
-
                 <ul class="list-group mt-3" id="searchResults"></ul>
             </div>
         </div>
     </div>
 </div>
-</body>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-warning" id="imageModalLabel">Resmin Büyütülmüş Hali</h5>
+                <small style="margin-left: 2px; font-size: 8px">BETA</small>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="desktop-content">
+                    <img id="modalImage" src="" alt="" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="mobile-content">
+                    <div class="alert alert-warning" role="alert">
+                        Şu an Sadece Masaüstü Platform Desteklemektedir.
+                    </div>
+                    <img id="modalImageMobile" src="" alt="" class="mobile-content img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <noscript>
-    <style>
-        nav, main {
+    <style>nav, main {
             display: none;
-        }
-    </style>
+        }</style>
     <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog"
          style="display: block; background: rgba(0,0,0,0.5);">
         <div class="modal-dialog" role="document">
@@ -2349,4 +2366,5 @@
         </div>
     </div>
 </noscript>
+</body>
 </html>

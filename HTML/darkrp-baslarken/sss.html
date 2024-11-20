@@ -26,25 +26,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
-<script src="https://moonrp.com/wiki/assets/js/search.js"></script>
-<nav id="mainmenu" class="navbar navbar-expand-lg">
+<script type="module" src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
+<script type="module" src="https://moonrp.com/wiki/assets/js/search.js"></script>
+<nav id="mainNavbar" class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-brand">
-            <a class="navbar-brand" href="https://moonrp.com/wiki/"><img src="https://moonrp.com/wiki/assets/image/favicon.ico"
-                                                                  height="32" width="32">
-                MoonGaming™ Rehber</a>
+            <a class="navbar-brand" href="https://moonrp.com/wiki/">
+                <img src="https://moonrp.com/wiki/assets/image/favicon.ico" height="32" width="32">
+                MoonGaming™ Rehber
+            </a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" id="top-menu">
-
+            <ul class="navbar-nav ms-auto" id="topMenu">
             </ul>
         </div>
-        <button class="btn btn-outline-secondary rounded-button" id="searchIcon">
+        <button class="btn btn-outline-secondary rounded-button" id="searchButton">
             <i class="fas fa-search"></i> Ara...
         </button>
     </div>
@@ -52,9 +52,9 @@
 
 <div class="container-fluid">
     <div class="row">
-        <nav id="left-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <nav id="leftSidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
             <div class="position-sticky">
-                <ul class="nav flex-column" id="left-menu"></ul>
+                <ul class="nav flex-column" id="leftMenu"></ul>
             </div>
         </nav><main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
@@ -144,7 +144,7 @@
                             <div class="row">
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/gmod_dosya.png" alt="Garry's Mod Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -175,7 +175,7 @@
                             <div class="row">
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -189,7 +189,7 @@
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol start="4">
@@ -214,7 +214,7 @@
                             <div class="row">
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -227,7 +227,7 @@
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol start="4">
@@ -264,7 +264,7 @@
                                 <br>
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -277,7 +277,7 @@
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol start="4">
@@ -305,7 +305,7 @@
                             <div class="row">
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -318,7 +318,7 @@
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol start="4">
@@ -358,7 +358,7 @@
                                 <br>
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_menu_ayarlar.png" alt="Steam Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -370,7 +370,7 @@
                                     <div class="col-md-6 text-center">
                                         <img src="https://moonrp.com/wiki/assets/image/steam_menu_ayarlar_indirmeler.png"
                                              alt="Steam Ayarlar - İndirmeler"
-                                             class="img-fluid">
+                                             class="img-fluid img-zoom">
                                     </div>
                                     <div class="col-md-6">
                                         <ol start="4">
@@ -400,7 +400,7 @@
                                 <br>
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_menu_ayarlar.png" alt="Steam Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -412,7 +412,7 @@
                                     <div class="col-md-6 text-center">
                                         <img src="https://moonrp.com/wiki/assets/image/steam_menu_ayarlar_indirmeler_1.png"
                                              alt="Steam Ayarlar - İndirmeler"
-                                             class="img-fluid">
+                                             class="img-fluid img-zoom">
                                     </div>
                                     <div class="col-md-6">
                                         <ol start="4">
@@ -469,29 +469,15 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed text-primary-emphasis" type="button"
                                 data-bs-toggle="collapse"
-                                data-bs-target="#collapseErrorMenuContentDownload" aria-expanded="true">
-                            Özel İçerikleri indirme
+                                data-bs-target="#collapseErrorMenuSystemReq" aria-expanded="true">
+                            Sistem Gereksinimlerini Karşılıyor mu?
                         </button>
                     </h2>
-                    <div id="collapseErrorMenuContentDownload" class="accordion-collapse collapse"
+                    <div id="collapseErrorMenuSystemReq" class="accordion-collapse collapse"
                          data-bs-parent="#errorMenuAccordion">
                         <div class="accordion-body">
                             <div class="row">
-                                <div class="col-md-6 text-center">
-                                    <img src="https://moonrp.com/wiki/assets/image/gmod_dosya.png" alt="Garry's Mod Ayarları"
-                                         class="img-fluid">
-                                </div>
-                                <div class="col-md-6">
-                                    <ol>
-                                        <li>Garry's mod açın</li>
-                                        <li>Ayarlar menüsüne Gelin</li>
-                                        <li>"Oyun sunucusu bilgisayarınıza özel içerik indirmeyi denediğinde" kısmın
-                                            altındaki
-                                            butona gelin
-                                        </li>
-                                        <li>"Sunucudaki özel dosyaları indir" seçiniz.</li>
-                                    </ol>
-                                </div>
+                                <p>Bilgisayarınız <a href="https://store.steampowered.com/app/4000/Garrys_Mod/" target="_blank">Garry's mod</a> sistem gereksinimlerini karşılamıyor ise sorun bundan kaynaklı olabilir. Bilgisayarınızda düzgün çalışabilmesi için en az önerilen sistem gereksinimlerine sahip olduğundan emin olunuz. </p>
                             </div>
                         </div>
                     </div>
@@ -510,7 +496,7 @@
                             <div class="row">
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -524,7 +510,7 @@
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol start="4">
@@ -550,7 +536,7 @@
                             <div class="row">
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -563,7 +549,7 @@
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol start="4">
@@ -591,7 +577,7 @@
                             <div class="row">
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -604,7 +590,7 @@
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol start="4">
@@ -641,7 +627,7 @@
                                 <br>
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -654,7 +640,7 @@
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol start="4">
@@ -682,7 +668,7 @@
                             <div class="row">
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -695,7 +681,7 @@
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/steam_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol start="4">
@@ -751,7 +737,7 @@
                             <div class="row">
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/gmod_menu1.png" alt="Garry's mod menü"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -778,17 +764,17 @@
                             <div class="row">
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/gmod_console_key.png" alt="Gmod tuş atama"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
                                         <li>"Ayarlar" gidiniz.</li>
                                         <li>"Klavye" tıklayınız.</li>
-                                        <li>"Geliştirici Konsoluna geçiş" bulun ve <span class="key">é</span> tuşunu
+                                        <li>"Geliştirici Konsoluna geçiş" bulun ve <kbd>é</kbd> tuşunu
                                             atayınız.
                                         </li>
                                         <li>Uygula basınız.</li>
-                                        <li><span class="key">é</span> tuşuna basarak konsolu açınız</li>
+                                        <li><kbd>é</kbd> tuşuna basarak konsolu açınız</li>
                                         <li>
                                             <code>gamemenucommand openserverbrowser</code> yazınız.
                                         </li>
@@ -846,17 +832,17 @@
                             <div class="row">
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/gmod_console_key.png" alt="Gmod tuş atama"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
                                         <li>"Ayarlar" gidiniz.</li>
                                         <li>"Klavye" tıklayınız.</li>
-                                        <li>"Geliştirici Konsoluna geçiş" bulun ve <span class="key">é</span> tuşunu
+                                        <li>"Geliştirici Konsoluna geçiş" bulun ve <kbd>é</kbd> tuşunu
                                             atayınız.
                                         </li>
                                         <li>Uygula basınız.</li>
-                                        <li><span class="key">é</span> tuşuna basarak konsolu açınız</li>
+                                        <li><kbd>é</kbd> tuşuna basarak konsolu açınız</li>
                                         <li>
                                             <code>connect 91.151.94.211:27015</code>
                                             yazınız.
@@ -881,7 +867,7 @@
                                 <div class="col-md-6 text-center">
                                     <img src="https://moonrp.com/wiki/assets/image/windows_powershell.png"
                                          alt="Windows Powershell"
-                                         class="img-fluid">
+                                         class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
                                     <ol>
@@ -894,7 +880,7 @@
                                     <div class="col-md-6 text-center">
                                         <img src="https://moonrp.com/wiki/assets/image/windows_denetim_ag.png"
                                              alt="denetim masası"
-                                             class="img-fluid">
+                                             class="img-fluid img-zoom">
                                     </div>
                                     <div class="col-md-6">
                                         <ol start="3">
@@ -909,7 +895,7 @@
                                     <div class="col-md-6 text-center">
                                         <img src="https://moonrp.com/wiki/assets/image/windows_denetim_dns.png"
                                              alt="dns ayarları"
-                                             class="img-fluid">
+                                             class="img-fluid img-zoom">
                                     </div>
                                     <div class="col-md-6">
                                         <ol start="7">
@@ -976,7 +962,7 @@
             <h3 class="standartcolor" id="modeldetayi">Bazı araçlar ve insanlar garip duruyor ve ya hiç gözükmüyor /
                 Görüntüler iç içe
                 giriyor. Ne Yapmam Gerekiyor?</h3>
-                            <p><span class='key'>ESC</span> tuşuna basınız, ardından "Oyun Ayarları"na basınız. "Görüntü" kısmına
+                            <p><kbd>ESC</kbd> tuşuna basınız, ardından "Oyun Ayarları"na basınız. "Görüntü" kısmına
                     gelerek "Gelişmiş"e
                     tıklayınız ve ardından "Model Detayı"nı yüksek seviyeye ayarlayınız.
                 </p>
@@ -989,7 +975,7 @@
             <h3 class="standartcolor" id="tus"><b>Tuşlarım çalışmıyor, neden?</b></h3>
             <p>Bir problem oluşmuş olabilir, oyun ayarlarından klavye menüsüne gelerek varsayılan düzeye geçip
                 sorunu kontrol edebilirsiniz.</p>
-            <p>Eğer sorun çözülmez ise konsolu (<span class="key">é</span>) açınız ve aşağıdaki komutları yazınız.</p>
+            <p>Eğer sorun çözülmez ise konsolu (<kbd>é</kbd>) açınız ve aşağıdaki komutları yazınız.</p>
             <pre><code>unbindall
 exec config_default.cfg
 </code></pre>
@@ -1041,7 +1027,7 @@ exec config_default.cfg
         <br>
         <div>
             <h3 class="standartcolor" id="fps"><b>FPS Nasıl Artırabilirim?</b></h3>
-                            <p><span class='key'>ESC</span> tuşuna basınız, ardından Menüden FPS Yükseltme seçiniz.
+                            <p><kbd>ESC</kbd> tuşuna basınız, ardından Menüden FPS Yükseltme seçiniz.
                 </p>
                                 </div>
     </div>        <div>
@@ -1053,7 +1039,8 @@ exec config_default.cfg
             <br>
             <div>
                 <h3 class="standartcolor" id="dance"><b>Nasıl Dans Edebilirim?</b></h3>
-                <p>Oyunda elinize anahtarı alınız ve <span class="key">R</span> tuşuna basınız ardından çıkan menüde dans seçiniz.</p>
+                <p>Oyunda elinize anahtarı alınız ve <kbd>R</kbd> tuşuna basınız ardından çıkan menüde
+                    dans seçiniz.</p>
             </div>
             <br>
             <div>
@@ -1065,14 +1052,14 @@ exec config_default.cfg
                                 çapraz,yüksekte veya alçakta kalmanız durumunda olmaz.
                             </li>
                             <li>Üstüne çıktıktan sonra uygun pozisyonu arayınız</li>
-                            <li>Pozisyonu bulduktan sonra <span class='key'>ALT</span> tuşu ile birlikte <span class='key'>E</span> basınız.</li>
-                            <li>Kalmak isterseniz <span class='key'>E</span> tuşuna basınız.</li>
+                            <li>Pozisyonu bulduktan sonra <kbd>ALT</kbd> tuşu ile birlikte <kbd>E</kbd> basınız.</li>
+                            <li>Kalmak isterseniz <kbd>E</kbd> tuşuna basınız.</li>
                         </ul>
                     </div>
 
                     <div class="col-md-4">
                         <img src="https://moonrp.com/wiki/assets/image/darkrp_koltuk_alte.gif"
-                             class="img-fluid mx-auto d-block">
+                             class="img-fluid img-zoom mx-auto d-block">
                     </div>
                 </div>
             </div>
@@ -1090,12 +1077,17 @@ exec config_default.cfg
             <div>
                 <h3 class="standartcolor" id="silah"><b>Silah Nereden Alabilirim?</b></h3>
                 <p>Aşağıdaki mesleklerde olan kişilerden alabilirsin:</p>
+                <p>Kırmızı renkli meslekler, Sadece ithal silah üretip satabiliyorlar. Silah ruhsatı kapsamında değillerdir. Silah ruhsatı kapsamındaki silahlar, yeşil renkli mesleklerde bulunur. <a href="https://moonrp.com/oyunkurallari" target="_blank" style="text-decoration-line: none">Daha fazla bilgi için oyun kurallarına göz atınız.</a> </p>
                 <ul style="list-style-type: '— '">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                <li class="text-success">Poligon Sahibi</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="text-success">İthalatçı</li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="text-success">
+                                    Poligon Sahibi                                </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="text-success">
+                                    İthalatçı                                </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="text-danger">
+                                    Eşkiya                                </li>
+                                                                                                                <li class="text-danger">
+                                    Elebaşı                                </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
             </div>
             <br>
             <div>
@@ -1142,7 +1134,7 @@ exec config_default.cfg
             <div>
                 <h3 class="standartcolor" id="yemek"><b>Susuzluğumu ve açlığımı nasıl gidereceğim?</b></h3>
                 <p>Yemek NPC Giderek susuzluğunuzu ve açlığınızı giderebilirsiniz.</p>
-                <p>NPC nerede bulucağınız bilmiyor iseniz <a href="https://moonrp.com/wiki/darkrp-baslarken#city">DarkRP
+                <p>NPC nerede bulucağınız bilmiyor iseniz <a href="https://moonrp.com/wiki/darkrp-baslarken#city" style="text-decoration-line: none">DarkRP
                         Başlarken -
                         Önemli Yerler</a> göz atınız.</p>
             </div>
@@ -1171,25 +1163,35 @@ exec config_default.cfg
             <div>
                 <h3 class="standartcolor" id="vip"><b>VIP ve VIP+ Meslekler Neler?</b></h3>
                 <ul style="list-style-type: '— '">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="text-primary-emphasis">Sivil Polis                                                            <span style="color: #16bb00">[VIP]</span>
-                                <span style="color: #19d100">[VIP+]</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="text-primary-emphasis">Milli Istihbarat Teskilatı Personeli                                                                                        <span style="color: #16bb00">[VIP+]</span>
-                                </li>
-                                                                                                    <li class="text-primary-emphasis">Milli Istihbarat Teskilatı Müsteşarı                                                                                        <span style="color: #16bb00">[VIP+]</span>
-                                </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="text-success">Mekanik                                                                                        <span style="color: #16bb00">[VIP+]</span>
-                                </li>
-                                                                                                    <li class="text-success">Mühendis                                                                                        <span style="color: #16bb00">[VIP+]</span>
-                                </li>
-                                                                                                                                                                                                                                                                                                                                                                            <li class="text-success">Doğal Kaynaklar Yüksek Mühendisi                                                                                        <span style="color: #16bb00">[VIP+]</span>
-                                </li>
-                                                                                                                                                                                            <li class="text-success">İthalatçı                                                                                        <span style="color: #16bb00">[VIP+]</span>
-                                </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="text-success">MoonTV Çalışanı                                                            <span style="color: #16bb00">[VIP]</span>
-                                <span style="color: #19d100">[VIP+]</span>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="text-danger">Ninja                                                                                        <span style="color: #16bb00">[VIP+]</span>
-                                </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="text-primary-emphasis">
+                                    Sivil Polis                                                                            <span style="color: #16bb00">[VIP]</span>
+                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="text-primary-emphasis">
+                                    Milli Istihbarat Teskilatı Personeli                                                                                                                <span style="color: #19d100">[VIP+]</span>
+                                                                    </li>
+                                                                                                                <li class="text-primary-emphasis">
+                                    Milli Istihbarat Teskilatı Müsteşarı                                                                                                                <span style="color: #19d100">[VIP+]</span>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="text-success">
+                                    Mekanik                                                                                                                <span style="color: #19d100">[VIP+]</span>
+                                                                    </li>
+                                                                                                                <li class="text-success">
+                                    Mühendis                                                                                                                <span style="color: #19d100">[VIP+]</span>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="text-success">
+                                    Doğal Kaynaklar Yüksek Mühendisi                                                                                                                <span style="color: #19d100">[VIP+]</span>
+                                                                    </li>
+                                                                                                                                                                                                                        <li class="text-success">
+                                    İthalatçı                                                                                                                <span style="color: #19d100">[VIP+]</span>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="text-success">
+                                    MoonTV Çalışanı                                                                            <span style="color: #16bb00">[VIP]</span>
+                                                                                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="text-danger">
+                                    Ninja                                                                                                                <span style="color: #19d100">[VIP+]</span>
+                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                </ul>
                 <p>Diğer VIP ve VIP+ Ayrıcalıklarını MoonGaming - Market Sayfasından bakabilirsiniz.</p>
                 <div class="content-ref-box">
                     <p>
@@ -1202,7 +1204,8 @@ exec config_default.cfg
             <br>
             <div>
                 <h3 class="standartcolor" id="kutu"><b>Envanterimdeki kutuyu nasıl açabilirim?</b></h3>
-                <p>MoonShop'a gidip anahtar almalısınız. Ardından kutuyu anahtara sürükleyip "... ile birlikte aç" seçeneğine tıklamalısınız.</p>
+                <p>MoonShop'a gidip anahtar almalısınız. Ardından kutuyu anahtara sürükleyip "... ile birlikte aç"
+                    seçeneğine tıklamalısınız.</p>
             </div>
             <br>
             <div>
@@ -1230,7 +1233,8 @@ exec config_default.cfg
                         tıklayın.
                     </li>
                     <li>Bir harita seçin ve oyunu başlatın.</li>
-                    <li>Oyuna girdikten sonra, <span class="key">C</span> tuşuna basarak "Oyuncu Modeli" menüsünü açın.</li>
+                    <li>Oyuna girdikten sonra, <kbd>C</kbd> tuşuna basarak "Oyuncu Modeli" menüsünü açın.
+                    </li>
                     <li>Açılan menüde "Renkler" kısmına gelin ve silah renginizi seçin.</li>
                     <li>Konsolu açın ve <code>kill</code> komutunu yazın. Ardından, seçtiğiniz renk aktif olacaktır.
                     </li>
@@ -1239,28 +1243,31 @@ exec config_default.cfg
             <br>
             <div>
                 <h3 class="standartcolor" id="dancebind"><b>Dans Menüsünü Anahtar Olmadan Nasıl Açarım?</b></h3>
-                <p>konsolu açınız ve konsola aşağıdaki komutu yazınız böylelikle <span class="key">0</span> bastığında Dans Menüsü açılacaktır.</p>
+                <p>konsolu açınız ve konsola aşağıdaki komutu yazınız böylelikle <kbd>0</kbd> bastığında
+                    Dans Menüsü açılacaktır.</p>
                 <code>bind "0" "_DarkRP_AnimationMenu"</code>
             </div>
             <br>
             <div>
                 <h3 class="standartcolor" id="kopyalayici"><b>Kopyalayıcı ile kaydettiğim build arkadaşımla nasıl
                         paylaşırım?</b></h3>
-                <div class="alert alert-info"><span>Arkadaşınızda aynı konuma yerleştirmelidir ve oyunu kapalı olmalı.</span> <span class="text-danger">Eğer çalışmaz ise türkçe karakter var
+                <div class="alert alert-info">
+                    <span>Arkadaşınızda aynı konuma yerleştirmelidir ve oyunu kapalı olmalı.</span> <span
+                            class="text-danger">Eğer çalışmaz ise türkçe karakter var
                     ise dosya adında onları siliniz ve dosyanın içindeki kullanıcı ad ve steamid kendi
                     bilgilerinizle değiştirilmeli.</span></div>
             </div>
-                <ol>
-                    <li>İlk önce Steam kütüphanesine geliniz.</li>
-                    <li>Garry's Mod bulup sağ tıklayınız</li>
-                    <li>Özellikler...</li>
-                    <li>Yüklü Dosyalar sekmesine gidin</li>
-                    <li>"Göz at..." tıklayın.</li>
-                    <li>"garrysmod" klasörüne gidiniz.</li>
-                    <li>"data" klasörüne gidiniz.</li>
-                    <li>"kb_duplicator" klasörüne gidiniz.</li>
-                    <li>Build dosyanızı arkadaşınıza gönderin.</li>
-                </ol>
+            <ol>
+                <li>İlk önce Steam kütüphanesine geliniz.</li>
+                <li>Garry's Mod bulup sağ tıklayınız</li>
+                <li>Özellikler...</li>
+                <li>Yüklü Dosyalar sekmesine gidin</li>
+                <li>"Göz at..." tıklayın.</li>
+                <li>"garrysmod" klasörüne gidiniz.</li>
+                <li>"data" klasörüne gidiniz.</li>
+                <li>"kb_duplicator" klasörüne gidiniz.</li>
+                <li>Build dosyanızı arkadaşınıza gönderin.</li>
+            </ol>
         </div>
         <br>
         
@@ -1410,10 +1417,9 @@ Familya Üyeleri:
         </div>
     </div>
     <br>
-</main><br> <br>
-<nav id="right-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+</main><nav id="rightSidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
     <div class="position-sticky">
-        <ul class="nav flex-column" id="right-menu"></ul>
+        <ul class="nav flex-column" id="rightMenu"></ul>
     </div>
 </nav>
 </div>
@@ -1422,15 +1428,15 @@ Familya Üyeleri:
 <div id="mobileBookmarks">
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Başlıklar</h5>
+            <h5 class="standartcolor" id="offcanvasRightLabel">Başlıklar</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="nav flex-column" id="offcanvas-right-menu"></ul>
+            <ul class="nav flex-column" id="offcanvasMenu"></ul>
         </div>
     </div>
 
-    <button class="btn btn-primary position-fixed bottom-0 end-0 m-3" id="toggle-offcanvas"
+    <button class="btn btn-primary position-fixed bottom-0 end-0 m-3" id="toggleOffcanvas"
             aria-label="Toggle Content Menu">
         <i class="fa-solid fa-bookmark"></i>
     </button>
@@ -1450,19 +1456,39 @@ Familya Üyeleri:
                     <i class="text-danger fa-solid fa-delete-left position-absolute top-50 translate-middle-y"
                        id="clearSearch" style="display: none; cursor: pointer; right: 30px;"></i>
                 </div>
-
                 <ul class="list-group mt-3" id="searchResults"></ul>
             </div>
         </div>
     </div>
 </div>
-</body>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-warning" id="imageModalLabel">Resmin Büyütülmüş Hali</h5>
+                <small style="margin-left: 2px; font-size: 8px">BETA</small>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="desktop-content">
+                    <img id="modalImage" src="" alt="" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="mobile-content">
+                    <div class="alert alert-warning" role="alert">
+                        Şu an Sadece Masaüstü Platform Desteklemektedir.
+                    </div>
+                    <img id="modalImageMobile" src="" alt="" class="mobile-content img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <noscript>
-    <style>
-        nav, main {
+    <style>nav, main {
             display: none;
-        }
-    </style>
+        }</style>
     <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog"
          style="display: block; background: rgba(0,0,0,0.5);">
         <div class="modal-dialog" role="document">
@@ -1484,4 +1510,5 @@ Familya Üyeleri:
         </div>
     </div>
 </noscript>
+</body>
 </html>

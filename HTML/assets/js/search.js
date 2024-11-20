@@ -1,3 +1,4 @@
+import { baseUrl } from './scripts.js';
 document.addEventListener('DOMContentLoaded', function () {
     const searchData = [
         {
@@ -198,7 +199,6 @@ document.addEventListener('DOMContentLoaded', function () {
             content: '',
             tags: ['drp', 'rp', 'sss', 'error', 'model', 'detay']
         },
-
         {
             name: 'DarkRP SSS - Tuşlarım çalışmıyor, neden?',
             url: `${baseUrl}/darkrp-baslarken/sss#tus`,
@@ -449,25 +449,25 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'DarkRP SSS - Jandarma Özel Harekat Komandosu ve Jandarma Özel Harekat Doktoru nasıl olurum?',
             url: `${baseUrl}/darkrp-baslarken/sss#basvuru-joh`,
             content: '',
-            tags: ['drp', 'rp', 'sss', 'jöh','doktor', 'jöh doktor']
+            tags: ['drp', 'rp', 'sss', 'jöh', 'doktor', 'jöh doktor']
         },
         {
             name: 'DarkRP SSS - Baron nasıl olurum?',
             url: `${baseUrl}/darkrp-baslarken/sss#basvuru-baron`,
             content: '',
-            tags: ['drp', 'rp', 'sss', 'baron','sefir']
+            tags: ['drp', 'rp', 'sss', 'baron', 'sefir']
         },
         {
             name: 'DarkRP SSS - Sefir nasıl olurum?',
             url: `${baseUrl}/darkrp-baslarken/sss#basvuru-sefir`,
             content: '',
-            tags: ['drp', 'rp', 'sss', 'baron','sefir']
+            tags: ['drp', 'rp', 'sss', 'baron', 'sefir']
         },
         {
             name: 'DarkRP SSS - Aile kurmak istiyorum, ne yapmam gerekiyor?',
             url: `${baseUrl}/darkrp-baslarken/sss#family`,
             content: '',
-            tags: ['drp', 'rp', 'sss', 'familya','aile', 'family']
+            tags: ['drp', 'rp', 'sss', 'familya', 'aile', 'family']
         },
         {
             name: 'DarkRP Kariyer',
@@ -907,7 +907,6 @@ document.addEventListener('DOMContentLoaded', function () {
             content: '',
             tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'model', 'detay']
         },
-
         {
             name: 'TTT SSS - Tuşlarım çalışmıyor, neden?',
             url: `${baseUrl}/ttt-baslarken/sss#tus`,
@@ -1028,54 +1027,44 @@ document.addEventListener('DOMContentLoaded', function () {
             content: 'Steam ID öğrenin...',
             tags: ['dc', 'steam', 'id', 'steam64', 'steamhex']
         },
-
     ];
-
-
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
-    const searchIcon = document.getElementById('searchIcon');
+    const searchIcon = document.getElementById('searchButton');
     const clearSearch = document.getElementById('clearSearch');
-
-    const topMenu = document.getElementById('top-menu');
+    const topMenu = document.getElementById('topMenu');
     const navbarNav = document.getElementById('navbarNav');
-
     function toggleSearchIcon() {
+        var _a;
         if (window.innerWidth < 767) {
             topMenu.appendChild(searchIcon);
-        } else {
-            navbarNav.parentNode.insertBefore(searchIcon, navbarNav.nextSibling);
+        }
+        else {
+            (_a = navbarNav.parentNode) === null || _a === void 0 ? void 0 : _a.insertBefore(searchIcon, navbarNav.nextSibling);
         }
     }
-
     toggleSearchIcon();
     window.addEventListener('resize', toggleSearchIcon);
-
     searchIcon.addEventListener('click', () => {
+        // @ts-ignore
         const modal = new bootstrap.Modal(document.getElementById('searchModal'));
         modal.show();
     });
-
-
     clearSearch.addEventListener('click', () => {
         searchInput.value = '';
         searchResults.innerHTML = '';
         clearSearch.style.display = 'none';
     });
-
     searchInput.addEventListener('input', () => {
         const query = searchInput.value.toLowerCase();
         searchResults.innerHTML = '';
-
         if (query) {
             clearSearch.style.display = 'block';
-
             const filteredData = searchData.filter(item => {
                 return item.name.toLowerCase().includes(query) ||
                     item.content.toLowerCase().includes(query) ||
                     item.tags.some(tag => tag.toLowerCase().includes(query));
             });
-
             if (filteredData.length > 0) {
                 filteredData.forEach(item => {
                     const listItem = document.createElement('li');
@@ -1083,10 +1072,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     listItem.innerHTML = `<a style="text-decoration: none" href="${item.url}"><b>${item.name}</b></a>${item.content ? ': ' + item.content : ''}`;
                     searchResults.appendChild(listItem);
                 });
-            } else {
+            }
+            else {
                 searchResults.innerHTML = '<li class="list-group-item">Sonuç bulunamadı.</li>';
             }
-        } else {
+        }
+        else {
             clearSearch.style.display = 'none';
             searchResults.innerHTML = '';
         }

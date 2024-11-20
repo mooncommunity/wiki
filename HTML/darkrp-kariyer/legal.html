@@ -26,25 +26,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
-<script src="https://moonrp.com/wiki/assets/js/search.js"></script>
-<nav id="mainmenu" class="navbar navbar-expand-lg">
+<script type="module" src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
+<script type="module" src="https://moonrp.com/wiki/assets/js/search.js"></script>
+<nav id="mainNavbar" class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-brand">
-            <a class="navbar-brand" href="https://moonrp.com/wiki/"><img src="https://moonrp.com/wiki/assets/image/favicon.ico"
-                                                                  height="32" width="32">
-                MoonGaming™ Rehber</a>
+            <a class="navbar-brand" href="https://moonrp.com/wiki/">
+                <img src="https://moonrp.com/wiki/assets/image/favicon.ico" height="32" width="32">
+                MoonGaming™ Rehber
+            </a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" id="top-menu">
-
+            <ul class="navbar-nav ms-auto" id="topMenu">
             </ul>
         </div>
-        <button class="btn btn-outline-secondary rounded-button" id="searchIcon">
+        <button class="btn btn-outline-secondary rounded-button" id="searchButton">
             <i class="fas fa-search"></i> Ara...
         </button>
     </div>
@@ -52,9 +52,9 @@
 
 <div class="container-fluid">
     <div class="row">
-        <nav id="left-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <nav id="leftSidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
             <div class="position-sticky">
-                <ul class="nav flex-column" id="left-menu"></ul>
+                <ul class="nav flex-column" id="leftMenu"></ul>
             </div>
         </nav><main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
@@ -120,8 +120,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Ekipleri yönetip şehrin düzenini koruyorsun; vatandaşların haklarının güvencesi sensin. </p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Zabıta Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Zabıta</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -139,7 +140,10 @@
                                      aria-labelledby="heading3" data-bs-parent="#accordionJobs">
                                     <div class="accordion-body">
                                                                                 <p>Gece ve gündüz devriye atarak güvenliği sağlıyorsun; olası tehlikelere karşı her an tetikte bekliyorsun. Asayiş Polis Amirini dinlemek zorundasın!</p>
-                                                                                                                    </div>
+                                                                                    <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
+                                                                                            <p>İlk önce
+                                                    <b>Güvenlik Görevlisi</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -176,8 +180,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Şehir içinde yolların güvenliğini sağlamak, trafik akışını düzenlemek ve sürücülerin kurallara uymasını denetlemekle görevli birisin. Trafik Polis Amirini dinlemek zorundasın; eğer o yoksa Asayiş Polis Amirinin sözünü dinlemen gerekiyor.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Bekçi Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Bekçi</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -196,8 +201,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Trafik düzenini sağlamak için ekipleri yönetiyor, kazaların önlenmesi ve sürücülerin güvenliğinin artırılması için stratejiler geliştiriyorsun. Emniyet Genel Müdürünü dinlemek zorundasın.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Trafik Polis Memuru Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Trafik Polis Memuru</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -216,8 +222,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Hızlı müdahale ve devriye görevleriyle suç öncesi ve sonrası güvenliği sağlamakla sorumlusun. Motorlu devriye ekiplerinin bir parçası olarak sokaklarda her an hazır bekliyorsun. Asayiş Polis Amirini dinlemek zorundasın!</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Trafik Polis Memuru Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Trafik Polis Memuru</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -236,8 +243,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Şehir içinde halkın güvenliğini sağlamak, suçları önlemek ve toplumsal düzeni korumak için aktif olarak devriye gezen bir güvenlik görevlisisin. Sokaklarda her an güvenliği sağlamakla görevlisin!</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Trafik Polis Memuru Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Trafik Polis Memuru</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -256,8 +264,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Polis Asayiş ekiplerinin faaliyetlerini yöneterek, suç önleme stratejileri geliştiriyor ve toplumsal güvenliği artırmak için çalışıyorsun. Emniyet Genel Müdürünü dinlemek zorundasın; liderlik pozisyonunda senin de büyük bir rolün var!</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Polis Asayiş Memuru</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -296,8 +305,12 @@
                                     <div class="accordion-body">
                                                                                 <p>Yüksek riskli operasyonlarda yer alarak terörle mücadele ve narkotik operasyonları gibi güvenlik tehditlerine karşı müdahale eden uzman bir güvenlik görevlisisin.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a style="text-decoration: none" href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça Sorulan Sorular - Başvurular</a> bakınız.</small>
+                                                                                            <p>İlk önce
+                                                    <b>Polis Asayiş Memuru</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                        <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a
+                                                        style="text-decoration: none"
+                                                        href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça
+                                                    Sorulan Sorular - Başvurular</a> bakınız.</small>
                                                                             </div>
                                 </div>
                             </div>
@@ -317,8 +330,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Polis özel harekat birimlerinde görev yapan eğitimli bir köpeksin. Acil durumlarda ekip üyelerine destek sağlarken, yaralıları bulma ve kurtarma görevlerinde de rol alıyorsun.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Sokak Köpeği ve Sokak Kedisi Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Sokak Köpeği</b>, <b>Sokak Kedisi</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -337,8 +351,12 @@
                                     <div class="accordion-body">
                                                                                 <p>Polis özel harekat birimlerinde görev yapan personele tıbbi destek sağlıyorsun. Acil durumlarda yaralıları tedavi ederek operasyon güvenliğine katkıda bulunuyorsun.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Doktor Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a style="text-decoration: none" href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça Sorulan Sorular - Başvurular</a> bakınız.</small>
+                                                                                            <p>İlk önce
+                                                    <b>Doktor</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                        <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a
+                                                        style="text-decoration: none"
+                                                        href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça
+                                                    Sorulan Sorular - Başvurular</a> bakınız.</small>
                                                                             </div>
                                 </div>
                             </div>
@@ -358,8 +376,12 @@
                                     <div class="accordion-body">
                                                                                 <p>Yüksek riskli operasyonlarda yer alarak terörle mücadele ve narkotik operasyonları gibi güvenlik tehditlerine karşı müdahale eden uzman bir güvenlik görevlisisin.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Polis Özel Harekat Memuru Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a style="text-decoration: none" href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça Sorulan Sorular - Başvurular</a> bakınız.</small>
+                                                                                            <p>İlk önce
+                                                    <b>Polis Özel Harekat Memuru</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                        <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a
+                                                        style="text-decoration: none"
+                                                        href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça
+                                                    Sorulan Sorular - Başvurular</a> bakınız.</small>
                                                                             </div>
                                 </div>
                             </div>
@@ -379,8 +401,12 @@
                                     <div class="accordion-body">
                                                                                 <p>Yüksek riskli operasyonlarda görev alarak terörle mücadele ve narkotik operasyonlarına karşı müdahale eden bir keskin nişancısın.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Polis Asayiş Memuru Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a style="text-decoration: none" href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça Sorulan Sorular - Başvurular</a> bakınız.</small>
+                                                                                            <p>İlk önce
+                                                    <b>Polis Asayiş Memuru</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                        <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a
+                                                        style="text-decoration: none"
+                                                        href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça
+                                                    Sorulan Sorular - Başvurular</a> bakınız.</small>
                                                                             </div>
                                 </div>
                             </div>
@@ -399,7 +425,10 @@
                                      aria-labelledby="heading16" data-bs-parent="#accordionJobs">
                                     <div class="accordion-body">
                                                                                 <p>Polis özel harekat ekiplerinin yönetimini üstleniyor, stratejik planlamalar yapıyorsun. Operasyonel başarı için personelinin eğitim ve gelişiminden sen sorumlusun; liderliğinle ekip ruhunu güçlendiriyorsun!</p>
-                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a style="text-decoration: none" href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça Sorulan Sorular - Başvurular</a> bakınız.</small>
+                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a
+                                                        style="text-decoration: none"
+                                                        href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça
+                                                    Sorulan Sorular - Başvurular</a> bakınız.</small>
                                                                             </div>
                                 </div>
                             </div>
@@ -419,8 +448,9 @@
                                     <div class="accordion-body">
                                                                                 <p>MoonCity&#039;de bayılmış insanları hayata döndürmek için çaba gösteriyorsun; acil durumlarda hayat kurtaran kahramanlardansın.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Belediye İşçisi Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Belediye İşçisi</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -439,8 +469,9 @@
                                     <div class="accordion-body">
                                                                                 <p>MoonCity&#039;de bayılmış olanları hayata döndürmekle ve reçete yazmakla görevlisin; sağlık hizmetlerinin vazgeçilmez bir parçasısın.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Acil Tıp Teknisyeni Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Acil Tıp Teknisyeni</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -459,8 +490,9 @@
                                     <div class="accordion-body">
                                                                                 <p>MoonCity&#039;de çıkan yangınları söndürmekle görevli devlet çalışanı olarak, hayat kurtaran bir görev üstleniyorsun.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Belediye İşçisi ve Zabıta Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Belediye İşçisi</b>, <b>Zabıta</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -515,8 +547,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Adalet sisteminin işleyişini sağlayan ve davaları değerlendirip taraflar arasında adil bir karar veren bir yargı mensubusun. Hukukun üstünlüğünü koruyarak toplumsal düzenin sağlanmasında önemli bir rol üstleniyorsun.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Gardiyan Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Gardiyan</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -535,8 +568,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Suçlamaları yöneten ve davaları takip eden bir hukuk uzmanısın. Adaletin tecelli etmesi için delilleri toplayıp mahkemeye sunarak kamu adına davaları açıyorsun.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Hakim Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Hakim</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -554,7 +588,10 @@
                                      aria-labelledby="heading24" data-bs-parent="#accordionJobs">
                                     <div class="accordion-body">
                                                                                 <p>MoonCity&#039;de güvenlik stratejilerini belirleyerek polis teşkilatının etkinliğini artırmak ve kamu güvenliğini sağlamakla sorumlusun. Tüm polis birimleri senin sözünü dinlemek zorunda; şehrin güvenliği senin elinde!</p>
-                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a style="text-decoration: none" href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça Sorulan Sorular - Başvurular</a> bakınız.</small>
+                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a
+                                                        style="text-decoration: none"
+                                                        href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça
+                                                    Sorulan Sorular - Başvurular</a> bakınız.</small>
                                                                             </div>
                                 </div>
                             </div>
@@ -577,8 +614,12 @@
                                             </div>
                                                                                 <p>Yüksek riskli görevlerde uzmanlaşmış bir askeri personelsin. Terörle mücadele ve asayiş sağlama gibi kritik operasyonları gerçekleştirmek üzere eğitim aldın.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Polis Özel Harekat Memuru ve ya Jandarma Komutanı Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a style="text-decoration: none" href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça Sorulan Sorular - Başvurular</a> bakınız.</small>
+                                                                                            <p>İlk önce
+                                                    <b>Polis Özel Harekat Memuru</b> veya <b>Jandarma Komutanı</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                        <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a
+                                                        style="text-decoration: none"
+                                                        href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça
+                                                    Sorulan Sorular - Başvurular</a> bakınız.</small>
                                                                             </div>
                                 </div>
                             </div>
@@ -601,8 +642,12 @@
                                             </div>
                                                                                 <p>Jandarma özel harekat birimlerinde görev yaparak personele tıbbi hizmet sunuyorsun. Acil durumlarda yaralıların tedavisini gerçekleştirip operasyonlarda sağlık güvenliğini sağlıyorsun.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Polis Özel Harekat Doktoru Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a style="text-decoration: none" href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça Sorulan Sorular - Başvurular</a> bakınız.</small>
+                                                                                            <p>İlk önce
+                                                    <b>Polis Özel Harekat Doktoru</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                        <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a
+                                                        style="text-decoration: none"
+                                                        href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça
+                                                    Sorulan Sorular - Başvurular</a> bakınız.</small>
                                                                             </div>
                                 </div>
                             </div>
@@ -624,7 +669,10 @@
                                                 Bu meslek şu anda kullanılmamaktadır. Yani bu mesleğe geçemezsiniz.
                                             </div>
                                                                                 <p>Jandarma Özel Harekat biriminin yönetiminden sorumlusun; operasyonel stratejileri belirleyerek ekibinin etkinliğini artırmak için liderlik yapıyorsun. Ekip arkadaşlarının güvenliği ve başarısı senin elinde!</p>
-                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a style="text-decoration: none" href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça Sorulan Sorular - Başvurular</a> bakınız.</small>
+                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a
+                                                        style="text-decoration: none"
+                                                        href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça
+                                                    Sorulan Sorular - Başvurular</a> bakınız.</small>
                                                                             </div>
                                 </div>
                             </div>
@@ -645,8 +693,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Çeşitli birimlerde görev alarak ulusal güvenliği sağlamak için istihbarat toplama, analiz yapma ve operasyonel faaliyetlerde bulunan uzmanlardan birisin.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Sivil Polis Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Sivil Polis</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -665,7 +714,10 @@
                                      aria-labelledby="heading29" data-bs-parent="#accordionJobs">
                                     <div class="accordion-body">
                                                                                 <p>Milli İstihbarat Teşkilatı&#039;nın en üst düzey yöneticisi olarak teşkilatın stratejik hedeflerini belirliyor ve operasyonlarını yönetiyorsun. Devletin güvenlik politikalarına yön vermekle sorumlusun; ulusal güvenlik için kritik bir rol oynuyorsun!</p>
-                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a style="text-decoration: none" href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça Sorulan Sorular - Başvurular</a> bakınız.</small>
+                                                                                                                            <small class="text-light">Bu meslek whitelistlidir. Daha fazla bilgi için <a
+                                                        style="text-decoration: none"
+                                                        href="https://moonrp.com/wiki/darkrp-baslarken/sss#basvuru"> Sıkça
+                                                    Sorulan Sorular - Başvurular</a> bakınız.</small>
                                                                             </div>
                                 </div>
                             </div>
@@ -685,8 +737,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Şehir dışında halkın güvenliğini sağlamak, suçları önlemek ve toplumsal düzeni korumak için devriye gezen bir güvenlik görevlisisin. Aktif bir şekilde görev alarak insanları koruma misyonunu üstleniyorsun.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Jandarma Trafik Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Jandarma Trafik</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -705,8 +758,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Şehir dışında yolların güvenliğini sağlamakla, trafik akışını düzenlemekle ve sürücülerin kurallara uymasını denetlemekle sorumlusun. Trafikteki düzeni sağlamak için sürekli dikkatli olmalısın.</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Jandarma Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Polis Asayiş Memuru</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -725,8 +779,9 @@
                                     <div class="accordion-body">
                                                                                 <p>Jandarma ve jandarma trafik personelinin faaliyetlerini yöneterek suç önleme stratejileri geliştiriyor ve toplumsal güvenliği artırmak için çalışmalar yürütüyorsun. Liderlik becerilerinle ekibin başarısını sağlıyorsun. </p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Jandarma ve Polis Asayiş Amiri Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Polis Asayiş Amiri</b>, <b>Jandarma</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -745,8 +800,9 @@
                                     <div class="accordion-body">
                                                                                 <p>MoonCity&#039;de belediye başkanını korumakla görevlisin; güvenlik sağlamak için her zaman tetikte olmalısın. Önemli bir sorumluluğun var!</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Jandarma Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Jandarma</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                                                                 <div class="accordion-item">
@@ -765,8 +821,9 @@
                                     <div class="accordion-body">
                                                                                 <p>MoonCity&#039;de belediye başkanının şoförlüğünü yapmakla görevlisin; onu güvenli bir şekilde her yere ulaştırmak için hazırda bekliyorsun. Sorumluluğun büyük!</p>
                                                                                     <h5 class="text-primary-emphasis">Nasıl bu mesleğe geçebilirim?</h5>
-                                            <p>İlk önce Taksici Mesleğinde Deneyim Kazanman gerekiyor.</p>
-                                                                                                                    </div>
+                                                                                            <p>İlk önce
+                                                    <b>Taksici</b>                                                    mesleğinde deneyim kazanman gerekiyor.</p>
+                                                                                                                                                                </div>
                                 </div>
                             </div>
                                             </div>
@@ -809,7 +866,7 @@
                                 tamir ikonunun olduğu yere gidip görevinizi yerine getirmeye başlayabilirsiniz.</p>
                         </div>
                         <div class="col-md-4">
-                            <img src="https://moonrp.com/wiki/assets/image/darkrp_belediyeisci.png" class="img-fluid"
+                            <img src="https://moonrp.com/wiki/assets/image/darkrp_belediyeisci.png" class="img-fluid img-zoom"
                                  alt="Belediye İşçisi">
                         </div>
                     </div>
@@ -840,7 +897,8 @@
                 <br>
 
                 <div>
-                    <h2 class="standartcolor" id="taser">Taser Hangi Durumlarda Kullanılmalıdır ve Kullanılmamalıdır?</h2>
+                    <h2 class="standartcolor" id="taser">Taser Hangi Durumlarda Kullanılmalıdır ve
+                        Kullanılmamalıdır?</h2>
                     <p>Taser, bir polis memurunun şüphelileri ölümcül olmayan bir şekilde etkisiz hale getirmesine
                         yardımcı olan bir teçhizattır. Ancak, taser kullanımı belirli durumlarla sınırlıdır. Aşağıda,
                         taserin hangi durumlarda kullanılmaması gerektiği belirtilmiştir:</p>
@@ -852,7 +910,8 @@
                         <li><span><strong class="text-danger">Kelepçelenmiş Bir Şüpheli:</strong> Zaten kelepçelenmiş bir şüpheliye taser
                             kullanmak gereksizdir.</span>
                         </li>
-                        <li><span><strong class="text-teal">Kaçma veya Zarar Verme Olasılığı Olmayan Bir Şüpheli:</strong> Eğer şüpheli herhangi
+                        <li><span><strong
+                                        class="text-teal">Kaçma veya Zarar Verme Olasılığı Olmayan Bir Şüpheli:</strong> Eğer şüpheli herhangi
                             bir şekilde kaçmaya veya zarar vermeye niyetli değilse, taser kullanmak uygun değildir.</span>
                         </li>
                     </ul>
@@ -892,7 +951,7 @@
                     </div>
 
                     <div class="text-center">
-                        <img src="https://moonrp.com/wiki/assets/image/darkrp_gbt.png" class="img-fluid"
+                        <img src="https://moonrp.com/wiki/assets/image/darkrp_gbt.png" class="img-fluid img-zoom"
                              alt="GBT Tablet Görseli">
                     </div>
                 </div>
@@ -1005,10 +1064,9 @@
             </div>
 
         </div>
-</main><br> <br>
-<nav id="right-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+</main><nav id="rightSidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
     <div class="position-sticky">
-        <ul class="nav flex-column" id="right-menu"></ul>
+        <ul class="nav flex-column" id="rightMenu"></ul>
     </div>
 </nav>
 </div>
@@ -1017,15 +1075,15 @@
 <div id="mobileBookmarks">
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Başlıklar</h5>
+            <h5 class="standartcolor" id="offcanvasRightLabel">Başlıklar</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="nav flex-column" id="offcanvas-right-menu"></ul>
+            <ul class="nav flex-column" id="offcanvasMenu"></ul>
         </div>
     </div>
 
-    <button class="btn btn-primary position-fixed bottom-0 end-0 m-3" id="toggle-offcanvas"
+    <button class="btn btn-primary position-fixed bottom-0 end-0 m-3" id="toggleOffcanvas"
             aria-label="Toggle Content Menu">
         <i class="fa-solid fa-bookmark"></i>
     </button>
@@ -1045,19 +1103,39 @@
                     <i class="text-danger fa-solid fa-delete-left position-absolute top-50 translate-middle-y"
                        id="clearSearch" style="display: none; cursor: pointer; right: 30px;"></i>
                 </div>
-
                 <ul class="list-group mt-3" id="searchResults"></ul>
             </div>
         </div>
     </div>
 </div>
-</body>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-warning" id="imageModalLabel">Resmin Büyütülmüş Hali</h5>
+                <small style="margin-left: 2px; font-size: 8px">BETA</small>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="desktop-content">
+                    <img id="modalImage" src="" alt="" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="mobile-content">
+                    <div class="alert alert-warning" role="alert">
+                        Şu an Sadece Masaüstü Platform Desteklemektedir.
+                    </div>
+                    <img id="modalImageMobile" src="" alt="" class="mobile-content img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <noscript>
-    <style>
-        nav, main {
+    <style>nav, main {
             display: none;
-        }
-    </style>
+        }</style>
     <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog"
          style="display: block; background: rgba(0,0,0,0.5);">
         <div class="modal-dialog" role="document">
@@ -1079,4 +1157,5 @@
         </div>
     </div>
 </noscript>
+</body>
 </html>

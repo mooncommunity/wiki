@@ -1,18 +1,17 @@
-// const baseUrl_Path = "";
-// const baseUrl = window.location.port && window.location.port !== "80" && window.location.port !== "443"
+// export const baseUrl_Path = "";
+// export const baseUrl: string = window.location.port && window.location.port !== "80" && window.location.port !== "443"
 //     ? `${window.location.protocol}//${window.location.hostname}:${window.location.port}${baseUrl_Path}`
 //     : `${window.location.protocol}//${window.location.hostname}${baseUrl_Path}`;
-
-const baseUrl_Path = "/wiki";
-const baseUrl = "https://moonrp.com/wiki";
-const currentUrl = baseUrl_Path ? (baseUrl + window.location.pathname).replace(baseUrl_Path, "") : (baseUrl + window.location.pathname);
-
+export const baseUrl_Path = "/wiki";
+export const baseUrl = "https://moonrp.com/wiki";
+export const currentUrl = baseUrl_Path
+    ? (baseUrl + window.location.pathname).replace(baseUrl_Path, "")
+    : (baseUrl + window.location.pathname);
 document.addEventListener('DOMContentLoaded', function () {
-
     const menuItems = [
-        {id: 'homehome', text: 'Anasayfa', href: `${baseUrl}/`, icon: 'fas fa-home'},
-        {type: 'category', text: 'DarkRP', icon: 'fa-solid fa-gun'},
-        {id: 'darkrpnedir', text: 'DarkRP Nedir?', href: `${baseUrl}/darkrp`, icon: 'fa-solid fa-gun'},
+        { id: 'homehome', text: 'Anasayfa', href: `${baseUrl}/`, icon: 'fas fa-home' },
+        { type: 'category', text: 'DarkRP', icon: 'fa-solid fa-gun' },
+        { id: 'darkrpnedir', text: 'DarkRP Nedir?', href: `${baseUrl}/darkrp`, icon: 'fa-solid fa-gun' },
         {
             id: 'darkrpkurallar',
             text: 'Oyun Kuralları',
@@ -96,7 +95,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
             ]
         },
-
         {
             id: 'darkrpsss1',
             text: 'Sıkça Sorulan Sorular',
@@ -133,14 +131,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 {
                     id: 'darkrpvideo_maden',
                     text: 'Madencilik Nasıl Yapılır?',
-                    href: `${baseUrl}/ttt-baslarken/sss`,
+                    href: `https://www.youtube.com/shorts/j_5w_VZC8Tk`,
                     icon: 'fa-solid fa-person-arrow-down-to-line'
                 }
             ]
         },
-
-        {type: 'category', text: 'Trouble in Terrorist Town', icon: 'fa-solid fa-user-secret'},
-        {id: 'tttnedir', text: 'TTT Nedir?', href: `${baseUrl}/ttt`, icon: 'fa-solid fa-user-secret'},
+        { type: 'category', text: 'Trouble in Terrorist Town', icon: 'fa-solid fa-user-secret' },
+        { id: 'tttnedir', text: 'TTT Nedir?', href: `${baseUrl}/ttt`, icon: 'fa-solid fa-user-secret' },
         {
             id: 'tttkurallar',
             text: 'Oyun Kuralları',
@@ -148,7 +145,6 @@ document.addEventListener('DOMContentLoaded', function () {
             icon: 'fa-solid fa-book-skull',
             target: '_blank'
         },
-
         {
             id: 'tttwelcome',
             text: 'TTT Başlarken',
@@ -181,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
             href: `${baseUrl}/ttt-baslarken/sss`,
             icon: 'fas fa-question'
         },
-        {type: 'category', text: 'Konu Dışı', icon: 'fa-solid fa-person-circle-question'},
+        { type: 'category', text: 'Konu Dışı', icon: 'fa-solid fa-person-circle-question' },
         {
             id: 'gmodcontent',
             text: 'CS:S Content Nasıl İndiririm?',
@@ -200,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function () {
             href: `${baseUrl}/ekrankaydi`,
             icon: 'fa-solid fa-video'
         },
-        {type: 'category', text: 'Faydalı Bağlantılar', icon: 'fa-solid fa-arrow-up-right-from-square'},
+        { type: 'category', text: 'Faydalı Bağlantılar', icon: 'fa-solid fa-arrow-up-right-from-square' },
         {
             id: 'mg',
             text: 'MoonGaming',
@@ -236,14 +232,9 @@ document.addEventListener('DOMContentLoaded', function () {
             icon: 'fa-regular fa-id-card',
             target: '_blank'
         },
-
     ];
-
-
-    const leftMenu = document.getElementById('left-menu');
-    const topMenu = document.getElementById('top-menu');
-    const rightMenu = document.getElementById('right-menu');
-
+    const leftMenu = document.getElementById('leftMenu');
+    const topMenu = document.getElementById('topMenu');
     menuItems.forEach(item => {
         const mobileID = `${item.id}-mobile`;
         if (item.type === 'category') {
@@ -252,96 +243,73 @@ document.addEventListener('DOMContentLoaded', function () {
             categoryItem.innerHTML = `<span><i class="${item.icon}"></i> ${item.text}</span>`;
             leftMenu.appendChild(categoryItem);
             topMenu.appendChild(categoryItem.cloneNode(true));
-        } else {
-
+        }
+        else {
             const menuItem = document.createElement('li');
             menuItem.classList.add('nav-item');
             const menuItemContainer = document.createElement('div');
             menuItemContainer.classList.add('nav-link-container', 'd-flex', 'justify-content-between', 'align-items-center');
-
             const linkElement = document.createElement('a');
             linkElement.classList.add('nav-link');
-            linkElement.setAttribute('id', item.id);
-            linkElement.setAttribute('href', item.href);
+            linkElement.setAttribute('id', item.id || '');
+            linkElement.setAttribute('href', item.href || '#');
             linkElement.innerHTML = `<i class="${item.icon}"></i> ${item.text}`;
             if (item.target) {
                 linkElement.setAttribute('target', item.target);
             }
             menuItemContainer.appendChild(linkElement);
-
             if (item.dropdown) {
                 const wrapperDiv = document.createElement('div');
                 wrapperDiv.classList.add('dropdown-wrapper');
-
                 wrapperDiv.appendChild(menuItemContainer);
                 menuItem.appendChild(wrapperDiv);
                 leftMenu.appendChild(menuItem);
-
                 const dropdownDiv = document.createElement('div');
                 dropdownDiv.classList.add('item-container');
                 dropdownDiv.setAttribute('id', `${item.id}-dropdown`);
-
                 item.dropdown.forEach(sub => {
                     const dropdownItem = document.createElement('div');
                     dropdownItem.classList.add('dropdown-item-container');
-                    dropdownItem.setAttribute("id", `${sub.id}-d`)
+                    dropdownItem.setAttribute("id", `${sub.id}-d`);
                     dropdownItem.innerHTML = `
                         <a class="nav-link" id="${sub.id}" href="${sub.href}">
                             <i class="${sub.icon}"></i> ${sub.text}
                         </a>`;
                     dropdownDiv.appendChild(dropdownItem);
                 });
-
                 const dropdownBtn = document.createElement('button');
                 dropdownBtn.classList.add('dropdown-toggle-btn', 'btn');
                 dropdownBtn.setAttribute('aria-expanded', 'false');
                 dropdownBtn.innerHTML = `<i class="fas fa-chevron-right"></i>`;
-
                 menuItemContainer.appendChild(dropdownBtn);
                 wrapperDiv.appendChild(dropdownDiv);
-
                 dropdownBtn.addEventListener('click', function () {
                     const isVisible = dropdownDiv.classList.toggle('show');
-                    dropdownBtn.setAttribute('aria-expanded', isVisible);
+                    dropdownBtn.setAttribute('aria-expanded', isVisible.toString());
                     const icon = dropdownBtn.querySelector('i');
-
                     if (icon) {
-                        if (isVisible) {
-                            icon.classList.remove('fa-chevron-right');
-                            icon.classList.add('fa-chevron-down');
-                        } else {
-                            icon.classList.remove('fa-chevron-down');
-                            icon.classList.add('fa-chevron-right');
-                        }
+                        icon.classList.toggle('fa-chevron-right', !isVisible);
+                        icon.classList.toggle('fa-chevron-down', isVisible);
                     }
                 });
-
-
                 const clonedMenuItem = menuItem.cloneNode(true);
                 const mobileDropdownDiv = clonedMenuItem.querySelector('.item-container');
                 mobileDropdownDiv.setAttribute('id', `${item.id}-mobile-dropdown`);
                 topMenu.appendChild(clonedMenuItem);
-
                 const mobileDropdownBtn = clonedMenuItem.querySelector('.dropdown-toggle-btn');
                 mobileDropdownBtn.addEventListener('click', function () {
                     const isVisible = mobileDropdownDiv.classList.toggle('show');
-                    mobileDropdownBtn.setAttribute('aria-expanded', isVisible);
+                    mobileDropdownBtn.setAttribute('aria-expanded', isVisible.toString());
                     const icon = mobileDropdownBtn.querySelector('i');
-
                     if (icon) {
-                        if (isVisible) {
-                            icon.classList.remove('fa-chevron-right');
-                            icon.classList.add('fa-chevron-down');
-                        } else {
-                            icon.classList.remove('fa-chevron-down');
-                            icon.classList.add('fa-chevron-right');
-                        }
+                        icon.classList.toggle('fa-chevron-right', !isVisible);
+                        icon.classList.toggle('fa-chevron-down', isVisible);
                     }
                 });
-            } else {
+            }
+            else {
                 menuItem.appendChild(menuItemContainer);
                 leftMenu.appendChild(menuItem);
-
                 const clonedMenuItem = menuItem.cloneNode(true);
                 const clonedMenuItemContainer = clonedMenuItem.querySelector('.nav-link-container');
                 clonedMenuItemContainer.classList.remove('align-items-center');
@@ -350,19 +318,16 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
-
     const contentHeaders = document.querySelectorAll('.content h1, .content h2, .content h3, .content h4, .content h5');
-    const toggleOffcanvasBtn = document.getElementById('toggle-offcanvas');
+    const toggleOffcanvasBtn = document.getElementById('toggleOffcanvas');
     const offcanvasElement = document.getElementById('offcanvasRight');
-    const offcanvasRightMenu = document.getElementById('offcanvas-right-menu');
-
+    const offcanvasRightMenu = document.getElementById('offcanvasMenu');
+    const rightMenu = document.getElementById('rightMenu');
     let lastLevel = 1;
     let currentParent = rightMenu;
-
     contentHeaders.forEach(header => {
         const id = header.id;
-        const text = header.textContent;
-
+        const text = header.textContent || "";
         if (id.length !== 0) {
             const headerLevel = parseInt(header.tagName.charAt(1), 10);
             const rightMenuItem = document.createElement('li');
@@ -376,35 +341,31 @@ document.addEventListener('DOMContentLoaded', function () {
             offcanvasRightMenu.appendChild(offcanvasMenuItem);
         }
     });
-
     if (offcanvasRightMenu.children.length === 0) {
         toggleOffcanvasBtn.classList.add("nullcontent");
     }
-    toggleOffcanvasBtn.addEventListener('click', function () {
+    toggleOffcanvasBtn.addEventListener('click', () => {
+        // @ts-ignore
         const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
         offcanvas.show();
     });
-
-
     function updateActiveClass() {
-        const links = document.querySelectorAll('#mobileBookmarks .nav-link, #right-menu .nav-link');
-        const allMenuLinks = document.querySelectorAll('#top-menu .nav-link, #left-menu .nav-link');
-
+        const links = document.querySelectorAll('#mobileBookmarks .nav-link, #rightMenu .nav-link');
+        const allMenuLinks = document.querySelectorAll('#topMenu .nav-link, #leftMenu .nav-link');
         links.forEach(link => link.classList.remove('active'));
         allMenuLinks.forEach(link => link.classList.remove('active'));
-
         links.forEach(link => {
-            const targetId = link.getAttribute('href').substring(1);
+            var _a;
+            const targetId = ((_a = link.getAttribute('href')) === null || _a === void 0 ? void 0 : _a.substring(1)) || "";
             const targetElement = document.getElementById(targetId);
-
             if (targetElement && window.location.hash === `#${targetId}`) {
                 link.classList.add('active');
             }
         });
-
         allMenuLinks.forEach(link => {
+            const currentUrl = window.location.href;
             const currentUrl1 = currentUrl.slice(0, -1);
-            if ((link.getAttribute('href') === currentUrl) || (link.getAttribute('href') === currentUrl1)) {
+            if (link.getAttribute('href') === currentUrl || link.getAttribute('href') === currentUrl1) {
                 link.classList.add('active');
                 const parentItem = link.closest('.dropdown-wrapper');
                 if (parentItem) {
@@ -425,7 +386,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         MarkSelector();
     }
-
     function MarkSelector() {
         const currentHash = window.location.hash;
         contentHeaders.forEach(header => {
@@ -435,7 +395,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 existingSpan.remove();
             }
         });
-
         if (currentHash) {
             const targetHeader = document.querySelector(`.content ${currentHash}`);
             if (targetHeader) {
@@ -448,28 +407,72 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
-
     window.addEventListener('hashchange', updateActiveClass);
     updateActiveClass();
-
-    var toggler = document.getElementsByClassName("caret");
-    for (var i = 0; i < toggler.length; i++) {
+    const toggler = document.getElementsByClassName("caret");
+    for (let i = 0; i < toggler.length; i++) {
         toggler[i].addEventListener("click", function () {
-            this.parentElement.querySelector(".nested").classList.toggle("active");
-            this.querySelector("i").classList.toggle("fa-chevron-right");
-            this.querySelector("i").classList.toggle("fa-chevron-down");
+            const parentElement = this.parentElement;
+            const nested = parentElement.querySelector(".nested");
+            nested.classList.toggle("active");
+            const icon = this.querySelector("i");
+            if (icon) {
+                icon.classList.toggle("fa-chevron-right");
+                icon.classList.toggle("fa-chevron-down");
+            }
         });
     }
-
-    var videoContainers = document.querySelectorAll('.video-container');
-    videoContainers.forEach(function (container) {
-        var video = container.querySelector('.player');
-        var youtubePlayer = container.querySelector('.yt-player');
-        video.onerror = function () {
+    const videoContainers = document.querySelectorAll('.video-container');
+    videoContainers.forEach(container => {
+        const video = container.querySelector('.player');
+        const youtubePlayer = container.querySelector('.yt-player');
+        video.onerror = () => {
             video.style.display = 'none';
             youtubePlayer.style.display = 'block';
         };
     });
+    const modalElement = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalImageMobile = document.getElementById("modalImageMobile");
+    const modalTitle = document.getElementById("imageModalLabel");
+    const bootstrapModal = new window.bootstrap.Modal(modalElement, {
+        backdrop: true
+    });
+    const zoomImages = document.querySelectorAll(".img-zoom");
+    zoomImages.forEach(image => {
+        image.addEventListener("click", () => {
+            modalImage.src = image.src;
+            modalTitle.innerText = `Büyütülmüş Resim`;
+            modalImageMobile.src = image.src;
+            bootstrapModal.show();
+        });
+    });
+    let scale = 1;
+    let currentTranslateX = 0;
+    let currentTranslateY = 0;
+    let isDragging = false;
+    let startX, startY;
+    modalImage.addEventListener("wheel", (event) => {
+        event.preventDefault();
+        const zoomAmount = event.deltaY < 0 ? 1.1 : 0.9;
+        scale = Math.max(1, Math.min(scale * zoomAmount, 3));
+        modalImage.style.transform = `scale(${scale}) translate(${currentTranslateX}px, ${currentTranslateY}px)`;
+    });
+    modalImage.addEventListener("mousedown", (event) => {
+        isDragging = true;
+        startX = event.clientX - currentTranslateX;
+        startY = event.clientY - currentTranslateY;
+        modalImage.style.cursor = "grabbing";
+    });
+    document.addEventListener("mousemove", (event) => {
+        if (!isDragging)
+            return;
+        currentTranslateX = event.clientX - startX;
+        currentTranslateY = event.clientY - startY;
+        modalImage.style.transform = `scale(${scale}) translate(${currentTranslateX}px, ${currentTranslateY}px)`;
+    });
+    document.addEventListener("mouseup", () => {
+        isDragging = false;
+        modalImage.style.cursor = "grab";
+    });
 });
-
-

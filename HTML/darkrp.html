@@ -26,25 +26,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
-<script src="https://moonrp.com/wiki/assets/js/search.js"></script>
-<nav id="mainmenu" class="navbar navbar-expand-lg">
+<script type="module" src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
+<script type="module" src="https://moonrp.com/wiki/assets/js/search.js"></script>
+<nav id="mainNavbar" class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <div class="navbar-brand">
-            <a class="navbar-brand" href="https://moonrp.com/wiki/"><img src="https://moonrp.com/wiki/assets/image/favicon.ico"
-                                                                  height="32" width="32">
-                MoonGaming™ Rehber</a>
+            <a class="navbar-brand" href="https://moonrp.com/wiki/">
+                <img src="https://moonrp.com/wiki/assets/image/favicon.ico" height="32" width="32">
+                MoonGaming™ Rehber
+            </a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" id="top-menu">
-
+            <ul class="navbar-nav ms-auto" id="topMenu">
             </ul>
         </div>
-        <button class="btn btn-outline-secondary rounded-button" id="searchIcon">
+        <button class="btn btn-outline-secondary rounded-button" id="searchButton">
             <i class="fas fa-search"></i> Ara...
         </button>
     </div>
@@ -52,9 +52,9 @@
 
 <div class="container-fluid">
     <div class="row">
-        <nav id="left-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <nav id="leftSidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
             <div class="position-sticky">
-                <ul class="nav flex-column" id="left-menu"></ul>
+                <ul class="nav flex-column" id="leftMenu"></ul>
             </div>
         </nav><main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
@@ -99,10 +99,9 @@
             </p>
         </div>
     </div>
-</main><br> <br>
-<nav id="right-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+</main><nav id="rightSidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
     <div class="position-sticky">
-        <ul class="nav flex-column" id="right-menu"></ul>
+        <ul class="nav flex-column" id="rightMenu"></ul>
     </div>
 </nav>
 </div>
@@ -111,15 +110,15 @@
 <div id="mobileBookmarks">
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Başlıklar</h5>
+            <h5 class="standartcolor" id="offcanvasRightLabel">Başlıklar</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="nav flex-column" id="offcanvas-right-menu"></ul>
+            <ul class="nav flex-column" id="offcanvasMenu"></ul>
         </div>
     </div>
 
-    <button class="btn btn-primary position-fixed bottom-0 end-0 m-3" id="toggle-offcanvas"
+    <button class="btn btn-primary position-fixed bottom-0 end-0 m-3" id="toggleOffcanvas"
             aria-label="Toggle Content Menu">
         <i class="fa-solid fa-bookmark"></i>
     </button>
@@ -139,19 +138,39 @@
                     <i class="text-danger fa-solid fa-delete-left position-absolute top-50 translate-middle-y"
                        id="clearSearch" style="display: none; cursor: pointer; right: 30px;"></i>
                 </div>
-
                 <ul class="list-group mt-3" id="searchResults"></ul>
             </div>
         </div>
     </div>
 </div>
-</body>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-warning" id="imageModalLabel">Resmin Büyütülmüş Hali</h5>
+                <small style="margin-left: 2px; font-size: 8px">BETA</small>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="desktop-content">
+                    <img id="modalImage" src="" alt="" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="mobile-content">
+                    <div class="alert alert-warning" role="alert">
+                        Şu an Sadece Masaüstü Platform Desteklemektedir.
+                    </div>
+                    <img id="modalImageMobile" src="" alt="" class="mobile-content img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <noscript>
-    <style>
-        nav, main {
+    <style>nav, main {
             display: none;
-        }
-    </style>
+        }</style>
     <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog"
          style="display: block; background: rgba(0,0,0,0.5);">
         <div class="modal-dialog" role="document">
@@ -173,4 +192,5 @@
         </div>
     </div>
 </noscript>
+</body>
 </html>
