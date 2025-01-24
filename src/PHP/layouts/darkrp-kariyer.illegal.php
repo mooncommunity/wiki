@@ -98,34 +98,6 @@ foreach ($darkrpPaidJobs as $paidjob) {
         </div>
         <br>
         <div>
-            <h2 class="standartcolor" id="carjack">Nasıl Araba Çalabilirim?</h2>
-            <p>Araba çalmak için, 2. seviye çete üyesi olmalısınız arabaya bakarak <code>/soygun</code> komutu
-                ile araç çalabilirsiniz.
-                Ayrıca, 1 saatte bir araç çalabilirsiniz. (Bu kural aynı veya farklı araba için farketmez.)</p>
-        </div>
-        <br>
-
-        <div>
-            <div class="row">
-                <h2 class="standartcolor" id="bankasoygun">Banka Soygunu Nasıl Yapılır?</h2>
-                <div class="col-md-8">
-                    <p>Bankanın kasa tarafına geçerek para kısmına gidebilir ve <kbd>E</kbd> tuşuna basarak banka soygunu
-                        gerçekleştirebilirsiniz. En az üç kişinin bulunduğu bir grup oluşturmalısınız; tüm
-                        soyguncuların aynı parti içinde yer alması ve en az 4. seviye çete üyesi veya üstü
-                        mesleklere sahip olmaları gerekmektedir.</p>
-                </div>
-                <div class="col-md-4 d-none d-md-block">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_banka_para.png" class="img-fluid img-zoom"
-                         alt="Para">
-                </div>
-                <div class="col-md-4 mobile-content">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_banka_para.png" class="img-fluid img-zoom"
-                         alt="Para">
-                </div>
-            </div>
-        </div>
-        <br>
-        <div>
             <div class="row">
                 <h2 class="standartcolor" id="dolar">Kirli Dolar Üretimi</h2>
                 <div class="col-md-8">
@@ -148,11 +120,11 @@ foreach ($darkrpPaidJobs as $paidjob) {
                     </div>
                 </div>
                 <div class="col-md-4 d-none d-md-block">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer.png" class="img-fluid img-zoom" 
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer.png" class="img-fluid img-zoom"
                          alt="Kirli Dolar Üretimi">
                 </div>
                 <div class="col-md-4 mobile-content">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer.png" class="img-fluid img-zoom" 
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer.png" class="img-fluid img-zoom"
                          alt="Kirli Dolar Üretimi">
                 </div>
             </div>
@@ -162,10 +134,10 @@ foreach ($darkrpPaidJobs as $paidjob) {
             <div class="row">
                 <h2 class="standartcolor" id="printer">Para Basma Makinesi Nedir? Nasıl Çalışır?</h2>
                 <div class="col-md-4 d-none d-md-block">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer.png" class="img-fluid img-zoom" 
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer.png" class="img-fluid img-zoom"
                          alt="Kirli Dolar Üretimi">
                     <hr>
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer_tamir.png" class="img-fluid img-zoom" 
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer_tamir.png" class="img-fluid img-zoom"
                          alt="Tamir Paketi">
                 </div>
 
@@ -184,7 +156,8 @@ foreach ($darkrpPaidJobs as $paidjob) {
                         gösterebilir. Keko mesleğindeki oyuncu ile
                         İtalyan mafyası mesleğindeki oyuncunun bastığı para bir değildir.
                     </p>
-                    <p>Ayrıca mühendis çağırarak Para Basma Makinenizin daha performanslı çalışmasını sağlayabilirsiniz.</p>
+                    <p>Ayrıca mühendis çağırarak Para Basma Makinenizin daha performanslı çalışmasını
+                        sağlayabilirsiniz.</p>
                     <h5 class="standartcolor">Para Basma Makinenizin Bakımı İçin Kullanmanız Gereken Eşyalar:</h5>
                     <p class="text-danger">Bar dolu olduğu takdirde Para Basma Makinesine sürüklemeniz durumunda
                         işe
@@ -205,10 +178,10 @@ foreach ($darkrpPaidJobs as $paidjob) {
                     </ul>
                 </div>
                 <div class="col-md-4 mobile-content">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer.png" class="img-fluid img-zoom" 
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer.png" class="img-fluid img-zoom"
                          alt="Kirli Dolar Üretimi">
                     <hr>
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer_tamir.png" class="img-fluid img-zoom" 
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_printer_tamir.png" class="img-fluid img-zoom"
                          alt="Tamir Paketi">
                 </div>
             </div>
@@ -243,49 +216,16 @@ foreach ($darkrpPaidJobs as $paidjob) {
                     </div>
                 </div>
                 <div class="col-md-4 d-none d-md-block">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi.png" class="img-fluid img-zoom"  alt="Bitki Üretimi">
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi.png" class="img-fluid img-zoom"
+                         alt="Bitki Üretimi">
                 </div>
                 <div class="col-md-4 mobile-content">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi.png" class="img-fluid img-zoom"  alt="Bitki Üretimi">
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi.png" class="img-fluid img-zoom"
+                         alt="Bitki Üretimi">
                 </div>
             </div>
         </div>
         <br>
-
-        <div>
-            <div class="row">
-                <h2 class="standartcolor" id="bitkiupgrade">Bitkimi Nasıl Yükseltebilirim?</h2>
-                <div class="col-md-4 d-none d-md-block">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_yukseltme_2.png" class="img-fluid img-zoom" 
-                         alt="Bitki Yükseltme">
-                </div>
-                <div class="col-md-8">
-                    <p>Bitkinizin kalitesini artırmak için aşağıdaki mesleklerden birinde olmanız
-                        gerekmektedir:</p>
-                    <p>Bu meslekler <kbd>F4</kbd> menüsünden "Varlıklar" bölümüne giderek, ardından "Bitki Paketleme"
-                        adlı aracı çıkarak gerçekleştirmektedir.</p>
-                    <ul style="list-style-type: '— '">
-                            <?php
-                            $illegalJobs = $darkrpJobs['illegal']['jobs'];
-                            foreach ($illegalJobs as $job) {
-                                if (isset($job['bitki3']) && $job['bitki3'] === true) {
-                                    echo '<li>' . htmlspecialchars($job['title']) . '</li>';
-                                } elseif (isset($job['bitki2']) && $job['bitki2'] === true) {
-                                    echo '<li>' . htmlspecialchars($job['title']) . '</li>';
-                                }
-                            }
-                            ?>
-                    </ul>
-                </div>
-                <div class="col-md-4 mobile-content">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_yukseltme_2.png" class="img-fluid img-zoom" 
-                         alt="Bitki Yükseltme">
-                </div>
-
-            </div>
-        </div>
-        <br>
-
         <div>
             <div class="row">
                 <h2 class="standartcolor" id="saksi">Saksı Nedir? Nasıl Çalışır?</h2>
@@ -309,23 +249,55 @@ foreach ($darkrpPaidJobs as $paidjob) {
                     <p>Ayrıca mühendis çağırarak saksınızın daha performanslı çalışmasını sağlayabilirsiniz.</p>
                 </div>
                 <div class="col-md-4 d-none d-md-block">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi1.png" class="img-fluid img-zoom" 
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi1.png" class="img-fluid img-zoom"
                          alt="Saksı Nedir Nasıl Çalışır?">
                     <hr>
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi.png" class="img-fluid img-zoom" 
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi.png" class="img-fluid img-zoom"
                          alt="Saksı Nedir Nasıl Çalışır?">
                 </div>
                 <div class="col-md-4 mobile-content">
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi1.png" class="img-fluid img-zoom" 
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi1.png" class="img-fluid img-zoom"
                          alt="Saksı Nedir Nasıl Çalışır?">
                     <hr>
-                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi.png" class="img-fluid img-zoom" 
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_saksi.png" class="img-fluid img-zoom"
                          alt="Saksı Nedir Nasıl Çalışır?">
                 </div>
             </div>
         </div>
         <br>
+        <div>
+            <div class="row">
+                <h2 class="standartcolor" id="bitkiupgrade">Bitkimi Nasıl Yükseltebilirim?</h2>
+                <div class="col-md-4 d-none d-md-block">
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_yukseltme_2.png" class="img-fluid img-zoom"
+                         alt="Bitki Yükseltme">
+                </div>
+                <div class="col-md-8">
+                    <p>Bitkinizin kalitesini artırmak için aşağıdaki mesleklerden birinde olmanız
+                        gerekmektedir:</p>
+                    <p>Bu meslekler <kbd>F4</kbd> menüsünden "Varlıklar" bölümüne giderek, ardından "Bitki Paketleme"
+                        adlı aracı çıkarak gerçekleştirmektedir.</p>
+                    <ul style="list-style-type: '— '">
+                        <?php
+                        $illegalJobs = $darkrpJobs['illegal']['jobs'];
+                        foreach ($illegalJobs as $job) {
+                            if (isset($job['bitki3']) && $job['bitki3'] === true) {
+                                echo '<li>' . htmlspecialchars($job['title']) . '</li>';
+                            } elseif (isset($job['bitki2']) && $job['bitki2'] === true) {
+                                echo '<li>' . htmlspecialchars($job['title']) . '</li>';
+                            }
+                        }
+                        ?>
+                    </ul>
+                </div>
+                <div class="col-md-4 mobile-content">
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_yukseltme_2.png" class="img-fluid img-zoom"
+                         alt="Bitki Yükseltme">
+                </div>
 
+            </div>
+        </div>
+        <br>
         <div>
             <h2 id="temizleme" class="standartcolor mb-4">Kirli Dolar Temizleme ve Bitki Satmanin Yolları Nelerdir?</h2>
             <div class="alert alert-info" role="alert">
@@ -430,7 +402,8 @@ foreach ($darkrpPaidJobs as $paidjob) {
         </div>
         <br>
         <div>
-            <h2 id="ithalesya" class="standartcolor mb-4">Korsan ve Eşkiyada ürettiğim İthal eşyaları kime satabilirim?</h2>
+            <h2 id="ithalesya" class="standartcolor mb-4">Korsan ve Eşkiyada ürettiğim İthal eşyaları kime
+                satabilirim?</h2>
             <div class="alert alert-info" role="alert">
                 Meslek sahipleri kimler olduğunu öğrenmek için Discord sunucumuzda <strong>Meslek
                     Sahipleri</strong> kanalına göz atabilirsiniz.
@@ -449,7 +422,35 @@ foreach ($darkrpPaidJobs as $paidjob) {
             <p>Mesleklerine sahip kişilere satabilirsiniz.</p>
         </div>
         <br>
+        <div>
+            <h2 class="standartcolor" id="carjack">Nasıl Araba Çalabilirim?</h2>
+            <p>Araba çalmak için, 2. seviye çete üyesi olmalısınız arabaya bakarak <code>/soygun</code> komutu
+                ile araç çalabilirsiniz.
+                Ayrıca, 1 saatte bir araç çalabilirsiniz. (Bu kural aynı veya farklı araba için farketmez.)</p>
+        </div>
+        <br>
 
+        <div>
+            <div class="row">
+                <h2 class="standartcolor" id="bankasoygun">Banka Soygunu Nasıl Yapılır?</h2>
+                <div class="col-md-8">
+                    <p>Bankanın kasa tarafına geçerek para kısmına gidebilir ve <kbd>E</kbd> tuşuna basarak banka
+                        soygunu
+                        gerçekleştirebilirsiniz. En az üç kişinin bulunduğu bir grup oluşturmalısınız; tüm
+                        soyguncuların aynı parti içinde yer alması ve en az 4. seviye çete üyesi veya üstü
+                        mesleklere sahip olmaları gerekmektedir.</p>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_banka_para.png" class="img-fluid img-zoom"
+                         alt="Para">
+                </div>
+                <div class="col-md-4 mobile-content">
+                    <img src="<?= $baseUrl ?>/assets/image/darkrp_banka_para.png" class="img-fluid img-zoom"
+                         alt="Para">
+                </div>
+            </div>
+        </div>
+        <br>
         <div>
             <h2 class="standartcolor" id="factiongereksinim">Faction Mesleklerine Nasıl Geçebilirim?</h2>
             <p>Faction mesleklerine erişim sağlamak için öncelikle Keko mesleğine başlayıp 3. seviyeye

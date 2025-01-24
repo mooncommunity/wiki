@@ -1,7 +1,7 @@
 <main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
     <div class="content pt-3">
         <div class="text-center">
-            <img src="<?= $baseUrl; ?>/assets/image/logo1.png"
+            <img src="<?= $baseUrl; ?>/assets/image/logo.png"
                  class="img-fluid mb-3" style="align-items: center;" alt="MoonGaming Logo">
         </div>
         <h2 class="mg">MoonGaming™ Hakkımızda</h2>

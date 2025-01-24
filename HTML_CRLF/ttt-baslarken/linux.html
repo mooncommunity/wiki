@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="tr" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="index, follow">
+
+    <meta name="description"
+          content="Proton, Linux'ta Windows oyunlarını çalıştırmak için optimize edilmiş bir uyumluluk aracıdır. Native Linux sürümleri için alternatif sunarken, native desteği olmayan oyunlarda performansı artırır ve geniş oyun yelpazesi sağlar">
+    <meta name="keywords"
+          content="MoonRP, MoonGaming, TTT, Garry's Mod, GMod">
+
+    <meta property="og:title" content="Linux distrosu kullanıyorum nasıl sunucuya katılabilirim? - MoonGaming™ Rehber">
+    <meta property="og:description"
+          content="Proton, Linux'ta Windows oyunlarını çalıştırmak için optimize edilmiş bir uyumluluk aracıdır. Native Linux sürümleri için alternatif sunarken, native desteği olmayan oyunlarda performansı artırır ve geniş oyun yelpazesi sağlar">
+        <meta property="og:url" content="https://moonrp.com/wiki">
+    <meta property="og:type" content="website">
+
+    <title>Linux distrosu kullanıyorum nasıl sunucuya katılabilirim? - MoonGaming™ Rehber</title>
+
+    <link rel="icon" type="image/x-icon" href="https://moonrp.com/wiki/assets/image/favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://moonrp.com/wiki/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="https://moonrp.com/wiki/assets/js/scripts.js"></script>
+<script type="module" src="https://moonrp.com/wiki/assets/js/search.js"></script>
+<nav id="mainNavbar" class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <div class="navbar-brand">
+            <a class="navbar-brand" href="https://moonrp.com/wiki/">
+                <img src="https://moonrp.com/wiki/assets/image/favicon.ico" height="32" width="32">
+                MoonGaming™ Rehber
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="topMenu">
+            </ul>
+        </div>
+        <button class="btn btn-outline-secondary rounded-button" id="searchButton">
+            <i class="fas fa-search"></i> Ara...
+        </button>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav id="leftSidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+            <div class="position-sticky">
+                <ul class="nav flex-column" id="leftMenu"></ul>
+            </div>
+        </nav><main class="col-md-6 ms-sm-auto col-lg-8 px-md-4">
+    <div class="content pt-3">
+        <h1 class="standartcolor mb-4">Linux distrosu kullanıyorum, nasıl sunucuya katılabilirim?</h1>
+        <div class="alert alert-info" role="alert">
+            <strong>Bilgi:</strong> Linux kullanıcıların bir sorun yaşaması halinde internetten araştırma
+            yapması gerekmektedir. Bu rehber sadece oyuna nasıl bağlanabileceklerini anlatmaktadır.
+        </div>
+        <p>Sunucumuza katılmanın iki yolu mevcuttur. Birincisi <a style="text-decoration: none"
+                                                                                     href="#native">Linux sürümünü</a>
+            kullanmak,
+            ikinci seçenek ise <a style="text-decoration: none" href="#proton">Uyumluluk modu (Proton ile Windows
+                sürümü)</a> kullanmaktır.
+        </p>
+
+        <div>
+            <h2 class="standartcolor" id="native">1. Native Sürüm</h2>
+            <p>İndirdiğiniz gibi kullanabilirsiniz.</p>
+            <div>
+                <h3 class="standartcolor">Oyun girdiğimde menüler gözükmüyor, nasıl çözebilirim?</h3>
+                <div class="alert alert-danger" role="alert">
+                    <strong>Uyarı:</strong> Bu adım üçüncü şahıs tarafından düzenleme içerir. Oyunun orijinal dosyasına
+                    müdahale eder. Bir sorun yaşanması halinde sorumluluk kabul edilmemektedir.
+                </div>
+                <p><a
+                            href="https://github.com/solsticegamestudios/GModCEFCodecFix/releases">GModCEFCodecFix</a>
+                    ile
+                    oyunun açılışındaki menü sorununuzu çözebilirsiniz.</p>
+                <div>
+                    <h4 class="standartcolor">GModCEFCodecFix Projesi Nedir?</h4>
+                    <p>Bu projenin amacı Linux ve macOS kullanıcıların chromium menü sorununu çözmek,
+                        chromium sürümünü en güncel hale getirmek, H.264 (MP4) ve AAC gibi sahipli video/ses
+                        codec'lerini
+                        etkinleştirmek, yazılımsal WebGL desteği sunmak ve kısıtlı olarak GPU hızlandırma sunmaktır.</p>
+                </div>
+                <ol>
+                    <li>
+                        <a href="https://github.com/solsticegamestudios/GModCEFCodecFix/releases/latest/download/GModCEFCodecFix-Linux">GModCEFCodecFix-Linux</a>
+                        dosyasını indirdikten sonra terminalinizi açınız.
+                    </li>
+                    <li>GModCEFCodecFix-Linux dosyasının bulunduğu konuma gidiniz.</li>
+                </ol>
+
+                <pre><code>bash
+# Kullandığınız dile göre klasör ismi değişebilir
+cd Downloads
+chmod +x GModCEFCodecFix-Linux
+./GModCEFCodecFix-Linux -a 0
+# -a 0 parametresi işlem tamamlandıktan sonra direkt oyunu başlatmak içindir
+</code></pre>
+            </div>
+            <br>
+            <div>
+                <h3 class="standartcolor">Peki, GModCEFCodecFix nasıl kaldırırım?</h3>
+                <p>Steam'dan oyun dosyalarının bütünlüğünü doğruladığınızda Steam değiştirilen
+                    dosyaları tekrar indirecektir. Ve ya oyunu komple silip tekrar yükliyebilirsiniz.</p>
+            </div>
+            <br>
+            <div>
+                <h3 class="standartcolor">"Unable to load module engine_client.so" hatası alıyorum?</h3>
+                <p>OpenSSL sürümünüz GMod ile uyumsuz olmasından veya OpenSSL yüklü olmamasından
+                    kaynaklıdır.</p>
+                <pre><code>bash
+wget https://www.openssl.org/source/old/1.0.1/openssl-1.0.1u.tar.gz
+tar xzf openssl-1.0.1u.tar.gz
+cd openssl-1.0.1u
+./config shared
+make -j$(nproc)
+cp {libssl,libcrypto}.so* ~/.steam/steam/steamapps/common/GarrysMod/bin/linux64
+rm -r openssl-1.0.1u*
+</code></pre>
+            </div>
+            <br>
+            <div>
+                <h3 class="standartcolor">Steam Overlay Çalışmıyor?</h3>
+                <p>Steam overlay Linux sürümünde ne yazık ki düzgün çalışmamaktadır. Devre dışı
+                    bırakabilirsiniz.</p>
+            </div>
+            <br>
+            <div>
+                <h3 class="standartcolor">Oyun bazı kısımları bu sürümde düzgün çalışmıyor gibi ne yapabilirim?</h3>
+                <p><a href="#proton">Uyumluluk Modunda</a> oynamayı deniyebilirsiniz.</p>
+            </div>
+            <div>
+                <h3 class="standartcolor">Oyun içerisinde bazı simgeler [] şeklinde ne yapmalıyım?</h3>
+                <p>Bu tamamen Windows fontlarıyla alakalı, Windows fontlarının tamamına sahip
+                    olmadığınızdan
+                    kaynaklı.
+                    <code>~/.local/share/fonts/</code> giderek eksik fontları bir şekilde tamamlamanız gerekmekte.</p>
+            </div>
+        </div>
+        <br>
+        <div>
+            <h2 class="standartcolor" id="proton">2. Uyumluluk modu (Proton)</h2>
+            <p>Oyunuzu uyumluluk moduna almanız gerekiyor. Peki Garry's Mod Linux sürümü sunmuyor mu?
+                Evet, sunuyor
+                fakat addonlarımızın birçoğu Windows'a göre ayarlanıyor. Olası sorunlarını minimalize etmek amacıyla
+                uyumluluk modunda kullanmanızı öneriyoruz.</p>
+            <div>
+                <h3 class="standartcolor">Garry's Mod uyumluluk moduna nasıl alırım?</h3>
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center">
+                        <p><img src="https://moonrp.com/wiki/assets/image/steam_gmod_ozellikler.png" alt=""
+                                                   class="img-fluid img-zoom"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <ol>
+                            <li>İlk önce Steam kütüphanenize geliniz.</li>
+                            <li>Garry's Mod'u bulup sağ tıklayın.</li>
+                            <li>Özellikler...</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row align-items-center mt-4">
+                    <div class="col-md-6 text-center">
+                        <img src="https://moonrp.com/wiki/assets/image/steam_proton.png" alt="" class="img-fluid img-zoom">
+                    </div>
+                    <div class="col-md-6">
+                        <ol start="4">
+                            <li>Uyumluluk</li>
+                            <li>"Belirli bir Steam Play uyumluluk aracının kullanılmasını zorla" işaretleyiniz.</li>
+                            <li>"Proton Experimental" veya "Proton 9.0" seçiniz.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <h3 class="standartcolor">Oyun içerisinde bazı simgeler [] şeklinde ne yapmalıyım?</h3>
+                <p>Bu tamamen windows fontlarıyla alakalı windows fontların tamamına sahip
+                    olmadığınızdan
+                    kaynaklı.
+                    steamapps klasörüne giderek <code>compatdata/4000/pfx/driver_c/windows/fonts</code> giderek eksik
+                    fontları bir şekilde tamamlamanız gerekmekte.</p>
+            </div>
+        </div>
+    </div>
+</main><nav id="rightSidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+    <div class="position-sticky">
+        <ul class="nav flex-column" id="rightMenu"></ul>
+    </div>
+</nav>
+</div>
+</div>
+
+<div id="mobileBookmarks">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="standartcolor" id="offcanvasRightLabel">Başlıklar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column" id="offcanvasMenu"></ul>
+        </div>
+    </div>
+
+    <button class="btn btn-primary position-fixed bottom-0 end-0 m-3" id="toggleOffcanvas"
+            aria-label="Toggle Content Menu">
+        <i class="fa-solid fa-bookmark"></i>
+    </button>
+</div>
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel"><i class="fas fa-search"></i> Ara...</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="position-relative">
+                    <input type="text" class="form-control pe-5 rounded-button" id="searchInput"
+                           placeholder="Aramak istediğini buraya yaz...">
+                    <i class="text-danger fa-solid fa-delete-left position-absolute top-50 translate-middle-y"
+                       id="clearSearch" style="display: none; cursor: pointer; right: 30px;"></i>
+                </div>
+                <ul class="list-group mt-3" id="searchResults"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-warning" id="imageModalLabel">Resmin Büyütülmüş Hali</h5>
+                <small style="margin-left: 2px; font-size: 8px">BETA</small>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="desktop-content">
+                    <img id="modalImage" src="" alt="" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="mobile-content">
+                    <div class="alert alert-warning" role="alert">
+                        Şu an Sadece Masaüstü Platform Desteklemektedir.
+                    </div>
+                    <img id="modalImageMobile" src="" alt="" class="mobile-content img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<noscript>
+    <style>nav, main {
+            display: none;
+        }</style>
+    <div class="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog"
+         style="display: block; background: rgba(0,0,0,0.5);">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="border: 1px solid red;">
+                <div class="modal-header">
+                    <h5 class="modal-title text-warning-emphasis"><i class="fa-brands fa-js"></i> JavaScript Gerekli
+                    </h5>
+                </div>
+                <div class="modal-body text-primary-emphasis">
+                    <p><i class="fa-solid fa-circle-exclamation"></i> Bu sayfanın düzgün çalışabilmesi için lütfen
+                        JavaScript'i etkinleştirin.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://support.google.com/adsense/answer/12654?hl=tr" type="button"
+                       class="btn btn-outline-success"><i class="fa-brands fa-chrome"></i> Google Chrome JavaScript
+                        Etkinleştirme</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</noscript>
+</body>
+</html>

@@ -2,6 +2,8 @@
 
 cd /app/src
 test -d ../HTML && find ../HTML -mindepth 1 ! -name "_config.yml" -exec rm -rf {} + || mkdir -p ../HTML
+test -d ../HTML_CRLF && find ../HTML_CRLF -mindepth 1 ! -name "_config.yml" -exec rm -rf {} + || mkdir -p ../HTML_CRLF
+test -d ../HTML_CR && find ../HTML_CR -mindepth 1 ! -name "_config.yml" -exec rm -rf {} + || mkdir -p ../HTML_CR
 echo -e "HTML Folder Created / The contents of the HTML Folder have been deleted."
 sleep 1
 echo -e "Downloading node_modules."
@@ -30,4 +32,9 @@ find ./assets/image -type f \( -name "*.png" -o -name "*.jpeg" -o -name "*.jpg" 
 echo -e "Copying video to HTML Folder"
 find ./assets/video -type f -name "*.mp4" -exec cp --parents {} ../HTML \;
 
-
+echo -e "LF, CRLF and CR transactions are in progress."
+cp -rf ../HTML/. ../HTML_CRLF
+cp -rf ../HTML/. ../HTML_CR
+find ../HTML -type f -name "*" -exec dos2unix {} \;
+find ../HTML_CRLF -type f -name "*" -exec unix2dos {} \;
+find ../HTML_CR -type f -name "*" -exec unix2mac {} \;

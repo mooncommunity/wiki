@@ -105,22 +105,9 @@ document.addEventListener('DOMContentLoaded', function () {
             id: 'darkrpvideorehber',
             text: 'Video Rehber',
             href: `#`,
+            target: '_blank',
             icon: 'fa-solid fa-video',
             dropdown: [
-                {
-                    id: 'darkrpvideo_cars',
-                    text: 'Araç Hurdalığına Araç Götürme?',
-                    href: `https://www.youtube.com/shorts/vrctpNdDa8A`,
-                    icon: 'fa-solid fa-car',
-                    target: '_blank'
-                },
-                {
-                    id: 'darkrpvideo_build',
-                    text: 'Build Nasıl Yapılır?',
-                    href: `https://www.youtube.com/watch?v=bx_BeAMHv-Y`,
-                    icon: 'fa-solid fa-building-circle-check',
-                    target: '_blank'
-                },
                 {
                     id: 'darkrpvideo_balik',
                     text: 'Balık Nasıl Tutulur?',
@@ -133,8 +120,76 @@ document.addEventListener('DOMContentLoaded', function () {
                     text: 'Madencilik Nasıl Yapılır?',
                     href: `https://www.youtube.com/shorts/j_5w_VZC8Tk`,
                     icon: 'fa-solid fa-person-arrow-down-to-line'
+                },
+                {
+                    id: 'darkrpvideo_cars',
+                    text: 'Araç Hurdalığına Araç Götürme?',
+                    href: `https://www.youtube.com/shorts/vrctpNdDa8A`,
+                    icon: 'fa-solid fa-car',
+                    target: '_blank'
+                },
+                {
+                    id: 'darkrpvideo_toolgun',
+                    text: 'Tool Gun Nasıl Kullanılır?',
+                    href: `https://www.youtube.com/watch?v=f3CUn74XE5A`,
+                    icon: 'fa-solid fa-person-circle-question',
+                    target: '_blank'
+                },
+                {
+                    id: 'darkrpvideo_build',
+                    text: 'Build Nasıl Yapılır?',
+                    href: `https://www.youtube.com/watch?v=bx_BeAMHv-Y`,
+                    icon: 'fa-solid fa-helmet-safety',
+                    target: '_blank'
+                },
+            ]
+        },
+        { type: 'category', text: 'FiveM', icon: 'fa-solid fa-car-side' },
+        { id: 'fivemnedir', text: 'FiveM Nedir?', href: `${baseUrl}/fivem`, icon: 'fa-solid fa-car-side' },
+        {
+            id: 'fivemkurallar',
+            text: 'Oyun Kuralları',
+            href: `https://discord.com/channels/308530419748306944/1331288794892075018`,
+            icon: 'fa-solid fa-book-atlas',
+            target: '_blank'
+        },
+        {
+            id: 'fivemwelcome',
+            text: 'FiveM Başlarken',
+            href: `${baseUrl}/fivem-baslarken`,
+            icon: 'fa-solid fa-mitten',
+            dropdown: [
+                {
+                    id: 'fivemjob',
+                    text: 'Meslekler',
+                    href: `${baseUrl}/fivem-baslarken#meslek`,
+                    icon: 'fa-solid fa-people-group',
+                },
+                {
+                    id: 'fivemmoney',
+                    text: 'Oyunda Nasıl Para Kazanabilirim?',
+                    href: `${baseUrl}/fivem-baslarken#money`,
+                    icon: 'fa-solid fa-sack-dollar',
+                },
+                {
+                    id: 'fivemfish',
+                    text: 'Balık Nasıl Tutulur ?',
+                    href: `${baseUrl}/fivem-baslarken#balik`,
+                    icon: 'fa-solid fa-fish',
+                },
+                {
+                    id: 'fivemsss',
+                    text: 'Sıkça Sorulan Sorular',
+                    href: `${baseUrl}/fivem-baslarken/sss`,
+                    icon: 'fas fa-question'
                 }
             ]
+        },
+        {
+            id: 'fivemsss1',
+            text: 'Sıkça Sorulan Sorular',
+            href: `${baseUrl}/fivem-baslarken/sss`,
+            icon: 'fas fa-question'
         },
         { type: 'category', text: 'Trouble in Terrorist Town', icon: 'fa-solid fa-user-secret' },
         { id: 'tttnedir', text: 'TTT Nedir?', href: `${baseUrl}/ttt`, icon: 'fa-solid fa-user-secret' },
@@ -179,10 +234,10 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         { type: 'category', text: 'Konu Dışı', icon: 'fa-solid fa-person-circle-question' },
         {
-            id: 'gmodcontent',
-            text: 'CS:S Content Nasıl İndiririm?',
-            href: `${baseUrl}/content`,
-            icon: 'fa-solid fa-cubes'
+            id: 'steamidfind',
+            text: 'Steam ID nasıl öğrenebilirim?',
+            href: `${baseUrl}/steamid`,
+            icon: 'fa-brands fa-steam'
         },
         {
             id: 'discordid',
@@ -195,6 +250,12 @@ document.addEventListener('DOMContentLoaded', function () {
             text: 'Ekran Kaydı nasıl alabilirim?',
             href: `${baseUrl}/ekrankaydi`,
             icon: 'fa-solid fa-video'
+        },
+        {
+            id: 'gmodcontent',
+            text: 'CS:S Content Nasıl İndiririm?',
+            href: `${baseUrl}/css`,
+            icon: 'fa-solid fa-cubes'
         },
         { type: 'category', text: 'Faydalı Bağlantılar', icon: 'fa-solid fa-arrow-up-right-from-square' },
         {
@@ -221,14 +282,14 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             id: 'mgshopier',
             text: 'MoonGaming - Shopier',
-            href: 'https://www.shopier.com/ShowProductNew/storefront.php?shop=MoonGamingTR',
+            href: 'https://www.shopier.com/MoonGamingTR',
             icon: 'fa-solid fa-cart-shopping',
             target: '_blank'
         },
         {
             id: 'steamidfinder',
             text: 'Steam ID Bulucu',
-            href: 'https://www.steamidfinder.com/',
+            href: 'https://steamdb.info/calculator/',
             icon: 'fa-regular fa-id-card',
             target: '_blank'
         },
@@ -318,7 +379,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
-    const contentHeaders = document.querySelectorAll('.content h1, .content h2, .content h3, .content h4, .content h5');
+    const contentHeaders = document.querySelectorAll('.content h1, .content h2, .content h3, .content h4, .content h5:not(.modal h1):not(.modal h2):not(.modal h3):not(.modal h4):not(.modal h5)');
     const toggleOffcanvasBtn = document.getElementById('toggleOffcanvas');
     const offcanvasElement = document.getElementById('offcanvasRight');
     const offcanvasRightMenu = document.getElementById('offcanvasMenu');

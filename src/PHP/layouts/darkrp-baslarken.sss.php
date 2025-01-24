@@ -52,21 +52,23 @@ $tttContent = false;
                 <h3 class="standartcolor" id="ruhsat"><b>Silah Ruhsatı Nereden Alabilirim?</b></h3>
                 <p>Belediye Başkanından Cuzi fiyata kendine özel silah ruhsatı bastırabilirsin.</p>
             </div>
+            <br>
             <div>
-                <h3 class="standartcolor" id="silah"><b>Silah Nereden Alabilirim?</b></h3>
-                <p>Aşağıdaki mesleklerde olan kişilerden alabilirsin:</p>
-                <p>Kırmızı renkli meslekler, Sadece ithal silah üretip satabiliyorlar. Silah ruhsatı kapsamında değillerdir. Silah ruhsatı kapsamındaki silahlar, yeşil renkli mesleklerde bulunur. <a href="https://moonrp.com/oyunkurallari" target="_blank" style="text-decoration-line: none">Daha fazla bilgi için oyun kurallarına göz atınız.</a> </p>
-                <ul style="list-style-type: '— '">
-                    <?php foreach ($darkrpJobs as $category => $data): ?>
-                        <?php foreach ($data['jobs'] as $job): ?>
-                            <?php if (isset($job["gunshop"]) && $job["gunshop"]): ?>
-                                <li class="<?= $category === 'legal' ? 'text-primary-emphasis' : ($category === 'esnaf' ? 'text-success' : 'text-danger') ?>">
-                                    <?= htmlspecialchars($job['title']) ?>
-                                </li>
-                            <?php endif; ?>
-                        <?php endforeach; ?>
-                    <?php endforeach; ?>
-                </ul>
+                <h3 class="standartcolor" id="yilbasikredisi"><b>Yılbaşı kredisi nasıl elde edebilirim?</b></h3>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="alert alert-info">
+                            <p>Yılbaşı kredisi her zaman kazanılabilen bir kredi değildir. Yani bu rehberi okuduğunuzda
+                                sonlandırılmış olabilir. O yüzden discord üzerinden duyuruları takip ediniz.</p>
+                        </div>
+                        <p>Oyun içerisinde etrafta rastgele spamlanan hediye kutularına <kbd>E</kbd> basarak kutuların
+                            içinden elde edebilirsiniz.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="<?= $baseUrl ?>/assets/image/darkrp_yilbasikredisi.png"
+                             class="img-fluid img-zoom mx-auto d-block">
+                    </div>
+                </div>
             </div>
             <br>
             <div>
@@ -113,7 +115,8 @@ $tttContent = false;
             <div>
                 <h3 class="standartcolor" id="yemek"><b>Susuzluğumu ve açlığımı nasıl gidereceğim?</b></h3>
                 <p>Yemek NPC Giderek susuzluğunuzu ve açlığınızı giderebilirsiniz.</p>
-                <p>NPC nerede bulucağınız bilmiyor iseniz <a href="<?= $baseUrl ?>/darkrp-baslarken#city" style="text-decoration-line: none">DarkRP
+                <p>NPC nerede bulucağınız bilmiyor iseniz <a class="no-text-decoration"
+                                                             href="<?= $baseUrl ?>/darkrp-baslarken#city">DarkRP
                         Başlarken -
                         Önemli Yerler</a> göz atınız.</p>
             </div>
@@ -178,6 +181,12 @@ $tttContent = false;
                 <h3 class="standartcolor" id="kutu"><b>Envanterimdeki kutuyu nasıl açabilirim?</b></h3>
                 <p>MoonShop'a gidip anahtar almalısınız. Ardından kutuyu anahtara sürükleyip "... ile birlikte aç"
                     seçeneğine tıklamalısınız.</p>
+            </div>
+            <br>
+            <div>
+                <h3 class="standartcolor" id="kiyafet"><b>Envanterimde Aksesuar Nasıl Kullanılır?</b></h3>
+                <p>Öncelikle <kbd>I</kbd> tuşuna basarak envanterinizi açın ve eşyaya çift tıklayarak "Kullan"
+                    seçeneğini seçin. Daha sonra MoonShop'a giderek ortadaki NPC ile aksesuarı kuşanabilirsiniz.</p>
             </div>
             <br>
             <div>

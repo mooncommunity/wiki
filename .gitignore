@@ -1,8 +1,6 @@
 .idea
 .vscode
-_site
-.jekyll-cache
 
 node_modules
 package-lock.json
-src/HTML
+

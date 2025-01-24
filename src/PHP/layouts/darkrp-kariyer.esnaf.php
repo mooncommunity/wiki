@@ -204,7 +204,7 @@
                 <br>
 
                 <h3 class="standartcolor" id="ticarivehizmetsektoru-eczaci">Eczacı Rehberi</h3>
-                <p>Sıradaki rehberimiz, DarkRP ve MoonGaming™ sunucularında hayati öneme sahip bir meslek olan
+                <p>Sıradaki rehberimiz, hayati öneme sahip bir meslek olan
                     Eczacıya ait. Eczacı, oyuncuların sağlık ihtiyaçlarını karşılayan önemli bir rol oynar.
                     Eczanede
                     satılan ürünler, oyuncuların sağlık değerlerini yükseltmesi için vazgeçilmezdir. Bu da
@@ -228,7 +228,7 @@
                 </ul>
                 <br>
                 <h3 class="standartcolor" id="ticarivehizmetsektoru-poligon">Poligon Rehberi</h3>
-                <p>Poligon mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların silah kullanma becerilerini
+                <p>Poligon mesleği, oyuncuların silah kullanma becerilerini
                     geliştirebilecekleri ve çeşitli silahlar ile mermiler satın alabilecekleri bir rolü temsil
                     eder.
                     Bu meslekte, basit tabancalardan hafif makineli tüfeklere kadar geniş bir yelpazede silahlar
@@ -268,7 +268,7 @@
                 </ul>
                 <br>
                 <h3 class="standartcolor" id="ticarivehizmetsektoru-ithalatci">İthalatçı Rehberi</h3>
-                <p>İthalatçı mesleği, DarkRP ve MoonGaming™ sunucularında oyunculara geniş bir silah yelpazesi
+                <p>İthalatçı mesleği, oyunculara geniş bir silah yelpazesi
                     sunan ve ağır silahlar temin edebilen özel bir rolü temsil eder. Bu meslek, oyuncuların daha
                     güçlü ve çeşitli silahları edinerek savaş yeteneklerini en üst düzeye çıkarmalarına yardımcı
                     olur. Ağır makineli tüfekler ve özel mühimmat seçenekleri ile daha stratejik savaşlara
@@ -306,7 +306,7 @@
 
                 <br>
                 <h3 class="standartcolor" id="ticarivehizmetsektoru-muhendis">Mühendis Rehberi</h3>
-                <p>Mühendis mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların Bitki üretme ve para basma
+                <p>Mühendis mesleği, oyuncuların Bitki üretme ve para basma
                     makineleri için donanım
                     yükseltme katkı sağlıyabilceği bir rolü temsil
                     eder.
@@ -332,12 +332,28 @@
                         <span>Para basma makinesinin yanlışlıkla isabet eden kurşunlarda canını korumayı sağlar. Fakat yine canı azalır.</span>
                     </li>
                 </ul>
-
                 <br>
                 <h3 class="standartcolor" id="ticarivehizmetsektoru-imam">İmam Rehberi</h3>
-                <p>İmam mesleği, DarkRP ve MoonGaming™ sunucularında oyuncuların XP Kazanmasını sağlarlar.
+                <p>İmam mesleği, oyuncuların XP Kazanmasını sağlarlar.
                     Bu meslekte, İnsanlara belli ücret karşılığında üfleyerek daha fazla XP Kazanmasını
                     sağlıyabilirsiniz.</p>
+                <br>
+                <h3 class="standartcolor" id="ticarivehizmetsektoru-balikci">Balıkçı Rehberi</h3>
+                <p>Balıkçı mesleği, oyuncuların Çeşitli Balık Tutmasını sağlarlar.
+                    Bu meslekte, İnsanlara belli ücret karşılığında Balıklarınızı satabilir ve ya NPC balıklarınızı
+                    satarak para kazanabilirsiniz.</p>
+                <h4 class="standartcolor" id="ticarivehizmetsektoru-balikci-urunler">Balık Ürünleri</h4>
+
+                <ul class="list-group">
+                    <?php foreach ($darkrpBalik as $balik): ?>
+                        <li class="list-group-item">
+                            <strong class="<?= $balik['class'] ?>"><?= $balik['name'] ?></strong>:
+                            <span><?= $balik['description'] ?></span>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+
+
                 <br>
                 <h3 class="standartcolor">Sonuç</h3>
                 <p>Yiyecek ve içecek sektörü ile ticari ve hizmet sektöründe bulunan esnaf meslekleri, DarkRP

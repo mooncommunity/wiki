@@ -2,18 +2,17 @@
     <div class="content pt-3">
         <h1 class="standartcolor mb-4">Ekran Kaydı nasıl alabilirim?</h1>
         <br>
-        <p>Ekran kaydı almak için önerdiğimiz bazı uygulamalar: Xbox Game Bar, OBS Studio, Nvidia App (Betada onun
-            yerine Nvidia GeForce kullanabilirsiniz), Steam</p>
+        <p>Ekran kaydı almak için önerdiğimiz bazı uygulamalar: Xbox Game Bar, OBS Studio, Nvidia App ve ya Steam</p>
         <br>
 
         <ul class="nav nav-tabs" id="screenRecordTabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="xbox-tab" data-bs-toggle="tab" data-bs-target="#xbox" type="button"
+                <button class="nav-link" id="xbox-tab" data-bs-toggle="tab" data-bs-target="#xbox" type="button"
                         role="tab" aria-controls="xbox" aria-selected="true">Xbox Game Bar <i
                             class="text-primary fa-brands fa-windows"></i></button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="obs-tab" data-bs-toggle="tab" data-bs-target="#obs" type="button"
+                <button class="nav-link active" id="obs-tab" data-bs-toggle="tab" data-bs-target="#obs" type="button"
                         role="tab" aria-controls="obs" aria-selected="false">OBS Studio <i
                             class="text-primary fa-brands fa-windows"></i> <i
                             class="fa-brands fa-linux text-warning-emphasis"></i></button>
@@ -33,7 +32,7 @@
 
         <div class="tab-content mt-4" id="screenRecordTabsContent">
             <div class="tab-content mt-4" id="screenRecordTabsContent">
-                <div class="tab-pane fade show active" id="xbox" role="tabpanel" aria-labelledby="xbox-tab">
+                <div class="tab-pane fade" id="xbox" role="tabpanel" aria-labelledby="xbox-tab">
                     <div class="row align-items-center mb-4">
                         <div class="col-12 text-center">
                             <img src="<?= $baseUrl ?>/assets/image/xbox_game_bar_1.png" alt="Xbox Game Bar Ayarları"
@@ -90,7 +89,7 @@
                     <br>
                 </div>
 
-                <div class="tab-pane fade" id="obs" role="tabpanel" aria-labelledby="obs-tab">
+                <div class="tab-pane fade show active" id="obs" role="tabpanel" aria-labelledby="obs-tab">
                     <div class="accordion" id="obsAccordion">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
