@@ -19,25 +19,25 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'DarkRP Nedir?',
             url: `${baseUrl}/darkrp`,
             content: '',
-            tags: ['drp', 'rp', 'yeniyim', "darkrp yeniyim"]
+            tags: ['drp', 'rp', "darkrp yeniyim"]
         },
         {
             name: 'DarkRP Oyun Kuralları',
             url: `https://moonrp.com/oyunkurallari`,
             content: 'Mutlaka bilinmesi gereken oyun kuralları',
-            tags: ['drp', 'rp', 'kurallar', 'yeniyim', "darkrp yeniyim"]
+            tags: ['drp', 'rp', 'kurallar', "darkrp yeniyim"]
         },
         {
             name: 'DarkRP Başlarken',
             url: `${baseUrl}/darkrp-baslarken`,
             content: 'DarkRP Başlıyan herkesin bilmesi gerekenler',
-            tags: ['drp', 'rp', 'başlarken', 'yeniyim', "darkrp yeniyim"]
+            tags: ['drp', 'rp', 'başlarken', "darkrp yeniyim"]
         },
         {
             name: 'DarkRP - Chromium Nedir? Nasıl Chromium Geçerim?',
             url: `${baseUrl}/darkrp-baslarken/chromium`,
             content: 'Garry\'s Mod için Chromium güncellemesi, HTML panelleri ve medya içeriği için daha iyi performans ve uyumluluk sağlar, oyunculara daha akıcı bir deneyim sunar.',
-            tags: ['drp', 'rp', 'chrome', 'beta', 'steambeta', 'yeniyim', "darkrp yeniyim"]
+            tags: ['drp', 'rp', 'chrome', 'beta', 'steambeta', "darkrp yeniyim"]
         },
         {
             name: 'DarkRP - Linux distrosu kullanıyorum, nasıl sunucuya katılabilirim?',
@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'DarkRP Başlarken - Gerekli Eklentiler ve Ayarlar',
             url: `${baseUrl}/darkrp-baslarken#workshop`,
             content: 'Oyuna girmeden önce yapılması gerekenler...',
-            tags: ['drp', 'rp', 'workshop', 'chromium', 'error', 'yeniyim', "darkrp yeniyim"]
+            tags: ['drp', 'rp', 'workshop', 'chromium', 'error', "darkrp yeniyim"]
         },
         {
-            name: 'DarkRP Başlarken - Temel Kısayollar',
+            name: 'DarkRP Başlarken - Kısayollar',
             url: `${baseUrl}/darkrp-baslarken#tus`,
             content: 'Sunucuya özel tuşlar...',
             tags: ['drp', 'rp', 'tuş', 'sunucutuş']
@@ -64,13 +64,25 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'komut', 'command', 'chat', 'legal', 'Devlet çalışanı', 'esnaf', 'genel', 'illegal', 'Yasadışı organizasyonlar']
         },
         {
+            name: 'DarkRP Başlarken - Meslek Nasıl Seçebilirim?',
+            url: `${baseUrl}/darkrp-baslarken#meslek`,
+            content: '',
+            tags: ['drp', 'rp', 'F4', 'legal', 'esnaf', 'illegal', 'Devlet Çalışanı', 'Esnaf ve Siviller', 'Yasadışı Organizasyonlar']
+        },
+        {
             name: 'DarkRP Başlarken - Oyundaki tüm silahlarım nerede?',
             url: `${baseUrl}/darkrp-baslarken#weaponslot`,
             content: 'Silah slotlarım nerede?',
             tags: ['drp', 'rp', 'weapon', 'silah']
         },
         {
-            name: 'DarkRP Başlarken - Build',
+            name: 'DarkRP Başlarken - Silah Nereden Alabilirim?',
+            url: `${baseUrl}/darkrp-baslarken#silah`,
+            content: '',
+            tags: ['drp', 'rp', 'gun', 'poligon', 'ithalatçı', 'tabanca', 'pompalı']
+        },
+        {
+            name: 'DarkRP Başlarken - Nasıl Build Yapabilirim?',
             url: `${baseUrl}/darkrp-baslarken#build`,
             content: 'Eşya nasıl çıkartırım?',
             tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun']
@@ -106,10 +118,28 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun', 'lamba', 'aydınlatma', 'ışık']
         },
         {
+            name: 'DarkRP Başlarken - Kopyalayıcı ile Buildimi nasıl kopyalarım?',
+            url: `${baseUrl}/darkrp-baslarken#toolgun-kopyalayici`,
+            content: '',
+            tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun', 'kopyalayici', 'kb_duplicator']
+        },
+        {
+            name: 'DarkRP Başlarken - Kopyalayıcı ile Buildimi nasıl yapıştırırım?',
+            url: `${baseUrl}/darkrp-baslarken#toolgun-kopyalayici1`,
+            content: '',
+            tags: ['drp', 'rp', 'inşaat', 'build', 'fizikgun', 'toolgun', 'physicgun', 'kopyalayici', 'kb_duplicator']
+        },
+        {
             name: 'DarkRP Başlarken - Önemli yerler',
             url: `${baseUrl}/darkrp-baslarken#city`,
             content: 'Bilmen gereken lokasyonlar...',
             tags: ['drp', 'rp', 'city', 'şehir']
+        },
+        {
+            name: 'DarkRP Başlarken - Kıyafet Nasıl Değiştirebilirim?',
+            url: `${baseUrl}/darkrp-baslarken#kiyafet`,
+            content: '',
+            tags: ['drp', 'rp', "DarkRP yeniyim", "kıyafet", "clothes", "shirt", "karakter", "moonshop"]
         },
         {
             name: 'DarkRP Başlarken - Telefon nasıl kullanırım?',
@@ -136,6 +166,12 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'xp', 'xpboost', 'mg', 'tag', 'happy hours', 'etüt']
         },
         {
+            name: 'DarkRP Başlarken - Para Nasıl Kazanırım?',
+            url: `${baseUrl}/darkrp-baslarken#money`,
+            content: '',
+            tags: ['drp', 'rp', 'money']
+        },
+        {
             name: 'DarkRP Başlarken - Ücretli Meslekler neler?',
             url: `${baseUrl}/darkrp-baslarken#meslekperm`,
             content: 'Botanikçi, İthalci, Hastane Sahibi, Etüt Merkezi Sahibi...',
@@ -157,25 +193,31 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'DarkRP SSS - Teknik Sorunlar',
             url: `${baseUrl}/darkrp-baslarken/sss#teknik`,
             content: '',
-            tags: ['drp', 'rp', 'sss', 'error', 'yeniyim', 'darkrp yeniyim', 'destek']
+            tags: ['drp', 'rp', 'sss', 'error', 'darkrp yeniyim', 'destek']
         },
         {
             name: 'DarkRP SSS - Etrafta her şey error, ne yapmalıyım? / Herkesin Elleri Yukarıda / Bazı karakterler gözükmüyor',
             url: `${baseUrl}/darkrp-baslarken/sss#error`,
             content: 'Etrafımda herşey error...',
-            tags: ['drp', 'rp', 'sss', 'error', 'yeniyim', 'darkrp yeniyim', 'destek', 'eller']
+            tags: ['drp', 'rp', 'sss', 'error', 'darkrp yeniyim', 'destek', 'eller']
         },
         {
             name: 'DarkRP SSS - Steam\'de Garry\'s Mod indirirken \'Bozuk İndirme\' hatası alıyorum, nasıl çözebilirim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#brokendownload`,
+            url: `${baseUrl}/ttt-baslarken/sss#steambrokendownload`,
             content: '',
-            tags: ['drp', 'rp', 'sss', 'error', 'yeniyim', 'darkrp yeniyim', 'destek', 'steam']
+            tags: ['drp', 'rp', 'sss', 'error', 'darkrp yeniyim', 'destek', 'steam']
+        },
+        {
+            name: 'DarkRP SSS - Steam\'de Garry\'s Mod indirirken \'Disk Yazma\' hatası alıyorum, nasıl çözebilirim?',
+            url: `${baseUrl}/ttt-baslarken/sss#steambrokendisk`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'error', 'darkrp yeniyim', 'destek', 'steam']
         },
         {
             name: 'DarkRP SSS - Ana Menüye düşüyorum / Oyun aniden kapanıyor',
             url: `${baseUrl}/darkrp-baslarken/sss#menuerror`,
             content: '',
-            tags: ['drp', 'rp', 'sss', 'error', 'yeniyim', 'darkrp yeniyim', 'destek', 'gpucache']
+            tags: ['drp', 'rp', 'sss', 'error', 'darkrp yeniyim', 'destek', 'gpucache']
         },
         {
             name: 'DarkRP SSS - "This typically means you are running out of Video Memory on your GPU" hatası alıyorum?',
@@ -184,13 +226,25 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'sss', 'error', 'engineerror', 'gpu', 'ekrankarti', 'gpumemory']
         },
         {
+            name: 'DarkRP SSS - "Steam VAC sunucularına bağlanılamadı."',
+            url: `${baseUrl}/ttt-baslarken/sss#vacnetwork`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'error', 'vac', 'firewall', 'modem', 'router']
+        },
+        {
+            name: 'DarkRP SSS - "Failed To Connect After 6 Retries" nasıl çözebilirim?',
+            url: `${baseUrl}/ttt-baslarken/sss#connectfailed`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'error', 'vac', 'firewall', 'modem', 'router']
+        },
+        {
             name: 'DarkRP SSS - Konsol/Console Nedir?',
             url: `${baseUrl}/darkrp-baslarken/sss#console`,
             content: '',
             tags: ['drp', 'rp', 'sss', 'console', 'konsole']
         },
         {
-            name: 'DarkRP SSS - Eski Tarayıcıyı Nasıl Açarım??',
+            name: 'DarkRP SSS - Eski Tarayıcıyı Nasıl Açarım?',
             url: `${baseUrl}/darkrp-baslarken/sss#eskitarayici`,
             content: '',
             tags: ['drp', 'rp', 'sss', 'legacy', 'browser', 'openserverbrowser']
@@ -221,10 +275,10 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'sss', 'sanal', 'mikrofon']
         },
         {
-            name: 'DarkRP SSS - FPS Nasıl Artırabilirim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#fps`,
+            name: 'DarkRP SSS - Erişim',
+            url: `${baseUrl}/darkrp-baslarken/sss#erisim`,
             content: '',
-            tags: ['drp', 'rp', 'sss', 'fps']
+            tags: ['drp', 'rp', 'sss', 'wh', 'darkrp yeniyim', 'destek']
         },
         {
             name: 'DarkRP SSS - Yurtdışından bağlanıyorum, sunucuya nasıl katılırım?',
@@ -251,10 +305,22 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'sss', 'wh', 'geforce now']
         },
         {
+            name: 'DarkRP SSS - Oyun Deneyimi',
+            url: `${baseUrl}/darkrp-baslarken/sss#oyun`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'darkrp yeniyim', 'destek']
+        },
+        {
             name: 'DarkRP SSS - F1, F2, F3, F4, M, T gibi tuşları başka tuşa atayabilir miyim?',
             url: `${baseUrl}/darkrp-baslarken/sss#sunucutus`,
             content: '',
             tags: ['drp', 'rp', 'sss', 'tuş', 'sunucutuş', 'key']
+        },
+        {
+            name: 'DarkRP SSS - FPS Nasıl Artırabilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#fps`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'fps']
         },
         {
             name: 'DarkRP SSS - İsmimi nasıl değiştireceğim?',
@@ -287,10 +353,10 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'sss', 'gun', 'ehliyet', 'ruhsat']
         },
         {
-            name: 'DarkRP SSS - Silah Nereden Alabilirim?',
-            url: `${baseUrl}/darkrp-baslarken/sss#silah`,
+            name: 'DarkRP SSS - Yılbaşı kredisi nasıl elde edebilirim?',
+            url: `${baseUrl}/darkrp-baslarken/sss#yilbasikredisi`,
             content: '',
-            tags: ['drp', 'rp', 'sss', 'gun', 'poligon', 'ithalatçı', 'tabanca', 'pompalı']
+            tags: ['drp', 'rp', 'sss', 'kredi', 'noel']
         },
         {
             name: 'DarkRP SSS - Oyunda bayıldım, sonrasında ilk yardım ekibi gelip beni canlandırdı ve silahımı atamıyorum, neden?',
@@ -365,6 +431,12 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'sss', 'kutu', 'moonshop']
         },
         {
+            name: 'DarkRP SSS - Envanterimde Aksesuar Nasıl Kullanılır?',
+            url: `${baseUrl}/darkrp-baslarken/sss#kiyafet`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'kutu', 'moonshop']
+        },
+        {
             name: 'DarkRP SSS - Piyango bileti Nasıl Alırım?',
             url: `${baseUrl}/darkrp-baslarken/sss#piyango`,
             content: '',
@@ -399,6 +471,12 @@ document.addEventListener('DOMContentLoaded', function () {
             url: `${baseUrl}/darkrp-baslarken/sss#dancebind`,
             content: '',
             tags: ['drp', 'rp', 'sss', 'builder', 'paylaş', 'kb_duplicator']
+        },
+        {
+            name: 'DarkRP SSS - Auto-disconnect süresini nasıl uzatırım?',
+            url: `${baseUrl}/darkrp-baslarken/sss#timeout`,
+            content: '',
+            tags: ['drp', 'rp', 'sss', 'auto-disconnect', 'timeout']
         },
         {
             name: 'DarkRP SSS - Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?',
@@ -506,13 +584,13 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Devlet Çalışanı - Bekçi İken Ne Yapmalıyım?',
             url: `${baseUrl}/darkrp-kariyer/legal#bekci`,
             content: 'Bekçi mesleği, Emniyet Teşkilatı\'nın temel taşıdır.',
-            tags: ['drp', 'rp', 'bekçi', 'legal', 'yeniyim', "darkrp yeniyim"]
+            tags: ['drp', 'rp', 'bekçi', 'legal', "darkrp yeniyim"]
         },
         {
             name: 'Devlet Çalışanı - Belediye İşçisiyim, Nasıl Görevimi Yerine Getirebilirim?',
             url: `${baseUrl}/darkrp-kariyer/legal#belediyeisci`,
             content: 'Belediye işçisi ne yapıyor...',
-            tags: ['drp', 'rp', 'belediye', 'işçi', 'legal', 'yeniyim', "darkrp yeniyim"]
+            tags: ['drp', 'rp', 'belediye', 'işçi', 'legal', "darkrp yeniyim"]
         },
         {
             name: 'Devlet Çalışanı - Polis Sağlık Dolabı ve Teçhizat Dolabı Nedir?',
@@ -618,7 +696,13 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'Esnaf ve Siviller - İmam Rehberi',
-            url: `${baseUrl}/darkrp-kariyer/esnaf#ticarivehizmetsektoru-muhendis-urunler`,
+            url: `${baseUrl}/darkrp-kariyer/esnaf#ticarivehizmetsektoru-imam`,
+            content: '',
+            tags: ['drp', 'rp', 'imam', 'üfleme', 'xp', 'boost']
+        },
+        {
+            name: 'Esnaf ve Siviller - Balıkçı Rehberi',
+            url: `${baseUrl}/darkrp-kariyer/esnaf#ticarivehizmetsektoru-balikci`,
             content: '',
             tags: ['drp', 'rp', 'imam', 'üfleme', 'xp', 'boost']
         },
@@ -650,7 +734,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'Yasadışı Organizasyonlar - Keko Mesleğinde...',
             url: `${baseUrl}/darkrp-kariyer/illegal#kekoyapabilcekleri`,
             content: 'İlk adımlar önemli...',
-            tags: ['drp', 'rp', 'illegal', 'yeniyim', 'keko', "darkrp yeniyim"]
+            tags: ['drp', 'rp', 'illegal', 'keko', "darkrp yeniyim"]
         },
         {
             name: 'Yasadışı Organizasyonlar - Nasıl Araba Çalabilirim?',
@@ -719,28 +803,353 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['drp', 'rp', 'illegal', 'familya', 'aile']
         },
         {
-            name: 'TTT Nedir',
+            name: 'FiveM Nedir?',
+            url: `${baseUrl}/fivem`,
+            content: '',
+            tags: ['FiveM', "FiveM yeniyim"]
+        },
+        {
+            name: 'FiveM Oyun Kuralları',
+            url: `https://moonrp.com/fivemkurallar`,
+            content: 'Mutlaka bilinmesi gereken oyun kuralları',
+            tags: ['FiveM', 'kurallar', "FiveM yeniyim"]
+        },
+        {
+            name: 'FiveM Başlarken',
+            url: `${baseUrl}/fivem-baslarken`,
+            content: 'FiveM Başlıyan herkesin bilmesi gerekenler',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim"]
+        },
+        {
+            name: 'FiveM Başlarken - Sunucuya katılmadan önce dikkat edilmesi gerekenler',
+            url: `${baseUrl}/fivem-baslarken#first`,
+            content: 'Oyunu açmadan önce yapılması gerekenler...',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim"]
+        },
+        {
+            name: 'FiveM Başlarken - Temel Kısayollar',
+            url: `${baseUrl}/fivem-baslarken#tus`,
+            content: 'Sunucuya özel tuşlar...',
+            tags: ['FiveM', 'tuş', 'sunucutuş']
+        },
+        {
+            name: 'FiveM Başlarken - Sohbet ve İletişim',
+            url: `${baseUrl}/fivem-baslarken#chat`,
+            content: 'İşini kolaylaştırcak komutlar burada...',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim"]
+        },
+        {
+            name: 'FiveM Başlarken - Meslekler',
+            url: `${baseUrl}/fivem-baslarken#meslek`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "polis", "doktor", "taksi", "pizza", "çöpçü", "hakim", "avukat", "savcı"]
+        },
+        {
+            name: 'FiveM Başlarken - Oyunda Nasıl Para Kazanabilirim?',
+            url: `${baseUrl}/fivem-baslarken#money`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "money", "cash", "market", "banka"]
+        },
+        {
+            name: 'FiveM Başlarken - Açlığımı ve Susuzluğumu nasıl giderebilirim?',
+            url: `${baseUrl}/fivem-baslarken#yemek`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "yemek", "içecek", "cafe", "market"]
+        },
+        {
+            name: 'FiveM Başlarken - Kıyafet Nasıl Değiştirebilirim?',
+            url: `${baseUrl}/fivem-baslarken#kiyafet`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "kıyafet", "clothes", "shirt", "karakter"]
+        },
+        {
+            name: 'FiveM Başlarken - F3 Menüsü Nedir?',
+            url: `${baseUrl}/fivem-baslarken#f3menu`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "F3", "Meslek", "Moon Özel", "Günlük Çark", "Günlük Görevler", "Playtime Shop", "Kıyafet", "Tıraş", "Traş", "Animasyon", "Konumlar", "Harita", "etkileşim", "kucakla", "kelepçele", "tutukla", "kamu"]
+        },
+        {
+            name: 'FiveM Başlarken - Telefon Nasıl Kullanırım?',
+            url: `${baseUrl}/fivem-baslarken#phone`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "Telefon", "Phone", "Mesaj", "Servis", "911"]
+        },
+        {
+            name: 'FiveM Başlarken - Takas Nasıl Yaparım?',
+            url: `${baseUrl}/fivem-baslarken#takas`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "takas", "trade", "item"]
+        },
+        {
+            name: 'FiveM Başlarken - Balık Nasıl Tutulur ?',
+            url: `${baseUrl}/fivem-baslarken#balik`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "Legal Balık"]
+        },
+        {
+            name: 'FiveM Başlarken - Çöp Kutusu Karıştırma',
+            url: `${baseUrl}/fivem-baslarken#copkutusu`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim"]
+        },
+        {
+            name: 'FiveM Başlarken - Karpuz Toplama ve Satma',
+            url: `${baseUrl}/fivem-baslarken#karpuz`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "Tarla"]
+        },
+        {
+            name: 'FiveM Başlarken - Üzüm Toplama ve Satma',
+            url: `${baseUrl}/fivem-baslarken#uzum`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "Tarla"]
+        },
+        {
+            name: 'FiveM Başlarken - Üzüm Nasıl İşlenir ?',
+            url: `${baseUrl}/fivem-baslarken#uzumisleme`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "Tarla"]
+        },
+        {
+            name: 'FiveM Başlarken - Yasadışı Balıkçılık Nasıl Yapılır ?',
+            url: `${baseUrl}/fivem-baslarken#balikillegal`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "illegal"]
+        },
+        {
+            name: 'FiveM Başlarken - Market Soygunu Nasıl Gerçekleştirebilirim?',
+            url: `${baseUrl}/fivem-baslarken#market`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "illegal"]
+        },
+        {
+            name: 'FiveM Başlarken - Banka Soygunu Nasıl Gerçekleştirebilirim?',
+            url: `${baseUrl}/fivem-baslarken#banka`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "illegal"]
+        },
+        {
+            name: 'FiveM Başlarken - Vangelico Jewelry Nasıl Soyabilirim?',
+            url: `${baseUrl}/fivem-baslarken#elmas`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "illegal", "elmas mağazası"]
+        },
+        {
+            name: 'FiveM Başlarken - Tıbbi Bitki Nasıl Toplarım? ve Nasıl Paketlerim ?',
+            url: `${baseUrl}/fivem-baslarken#bitki`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "illegal", "bitki"]
+        },
+        {
+            name: 'FiveM Başlarken - Aromatik Otlar Nasıl Toplarım? ve Nasıl Paketlerim ?',
+            url: `${baseUrl}/fivem-baslarken#bitki1`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "illegal", "bitki"]
+        },
+        {
+            name: 'FiveM Başlarken - Şeker Üretimi Nasıl Yapabilirim? ve Nasıl Paketlerim ?',
+            url: `${baseUrl}/fivem-baslarken#kristal`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "illegal"]
+        },
+        {
+            name: 'FiveM Başlarken - Arabamı Hurdalığa Nasıl Veririm?',
+            url: `${baseUrl}/fivem-baslarken#hurdalik`,
+            content: '',
+            tags: ['FiveM', 'başlarken', "FiveM yeniyim", "illegal", "araba"]
+        },
+        {
+            name: 'FiveM Başlarken - Sıkça Sorulan Sorular',
+            url: `${baseUrl}/fivem-baslarken/sss`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'error', 'whitelist', 'wh', 'yetkili']
+        },
+        {
+            name: 'FiveM SSS - Teknik Sorunlar',
+            url: `${baseUrl}/fivem-baslarken/sss#teknik`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'darkrp yeniyim', 'destek']
+        },
+        {
+            name: 'FiveM SSS - FiveM cache nasıl temizlerim?',
+            url: `${baseUrl}/fivem-baslarken/sss#cache`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'destek', 'önbellek', 'sunucu önbellek', 'sunucu cache', 'server cache']
+        },
+        {
+            name: 'FiveM SSS - Steam\'de Grand Theft Auto V indirirken \'Bozuk İndirme\' hatası alıyorum, nasıl çözebilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#steambrokendownload`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'error', 'FiveM yeniyim', 'destek', 'steam']
+        },
+        {
+            name: 'FiveM SSS - Steam\'de Grand Theft Auto V indirirken \'Disk Yazma\' hatası alıyorum, nasıl çözebilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#steambrokendisk`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'error', 'FiveM yeniyim', 'destek', 'steam']
+        },
+        {
+            name: 'FiveM SSS - Grand Theft Auto V oyun dosyalarını nasıl doğruluyabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#gtavcheck`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'error', 'FiveM yeniyim', 'destek', 'steam', 'epic games', 'rockstar games']
+        },
+        {
+            name: 'FiveM SSS - Normal GTA 5\'te yaptığım grafik ayarları FiveM\'de gözükmüyor, nasıl düzeltebilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#grafik`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'FiveM ayarlar', 'gta5 ayarlar', 'gta ayarlar']
+        },
+        {
+            name: 'FiveM SSS - FiveM, Mikrofonum Kapalı ve Oyuncuların Konuşmaları Bana Gelmiyor, Nasıl Düzeltirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#ses`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'FiveM ayarlar', 'gta5 ayarlar', 'gta ayarlar', "hapör", "mikrofon", "ses"],
+        },
+        {
+            name: 'FiveM SSS - Erişim Sorunlar',
+            url: `${baseUrl}/fivem-baslarken/sss#erisim`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'wh', 'FiveM yeniyim', 'destek']
+        },
+        {
+            name: 'FiveM SSS - Hangi Platformdaki GTA V Destekleniyor?',
+            url: `${baseUrl}/fivem-baslarken/sss#buygtav`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'wh', 'FiveM yeniyim', 'destek', 'epic games', 'rockstar games', 'steam', 'korsan gta']
+        },
+        {
+            name: 'FiveM SSS - FiveM\'den global olarak yasaklandım. Nasıl katılabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#globalban`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'ban', 'destek', 'global']
+        },
+        {
+            name: 'FiveM SSS - Grand Theft Auto: Online\'da yasaklandım. FiveM\'e girebilir miyim?',
+            url: `${baseUrl}/fivem-baslarken/sss#onlineban`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'ban', 'destek', 'gta:o', 'online', 'gta']
+        },
+        {
+            name: 'FiveM SSS - Oyun Deneyimi',
+            url: `${baseUrl}/fivem-baslarken/sss#oyun`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'FiveM yeniyim', 'destek']
+        },
+
+        {
+            name: 'FiveM SSS - Extended Texture Budget Nedir?',
+            url: `${baseUrl}/fivem-baslarken/sss#extendedtext`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'Extended', 'Texture', 'Budget', 'graphics', 'grafik']
+        },
+        {
+            name: 'FiveM SSS - FiveM Özel Tuşlarımı Nasıl Sıfırlarım',
+            url: `${baseUrl}/fivem-baslarken/sss#tus`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'tuş', 'tus', 'klavye']
+        },
+        {
+            name: 'FiveM SSS - Araç Nasıl Satın Alabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#arac`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'araba', 'satın alma', 'kiralık galeri', 'galeri'],
+        },
+        {
+            name: 'FiveM SSS - Araç Ehliyeti Nereden Alabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#ehliyet`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'araba', 'driver', 'driver license', 'Sürücü Belgesi'],
+        },
+        {
+            name: 'FiveM SSS - Araç Torpidosuna eşya nasıl koyabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#aracesya`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'araba', 'eşya', 'torpido', 'emanet'],
+        },
+        {
+            name: 'FiveM SSS - Araç bindiğimde sol altta bir menü var. Nasıl kullanabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#aracmenu`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'arabada müzik açma', 'navigasyon', 'drift modu'],
+        },
+        {
+            name: 'FiveM SSS - Silah Nereden Alabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#silah`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'weapon', 'silah', 'gun shop', 'gunshop'],
+        },
+        {
+            name: 'FiveM SSS - Silah Ruhsatı Nereden Alabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#ruhsat`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'ruhsat', 'weapon', 'weapon license'],
+        },
+        {
+            name: 'FiveM SSS - Rapor Nereden Alabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#rapor`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'EMS', 'Hastane', 'Doktor', 'Sağlık Raporu']
+        },
+        {
+            name: 'FiveM SSS - Takside NPC Yolcu Nasıl Alınır/Taksi Metre Nasıl Açabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#taksi`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'taxi', 'taksi', 'müşteri']
+        },
+        {
+            name: 'FiveM SSS - Evcil Hayvan Nasıl Alabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#pets`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'hayvan', 'pet']
+        },
+        {
+            name: 'FiveM SSS - Oyuncudan şikayetçiyim. Ne yapmalıyım?',
+            url: `${baseUrl}/fivem-baslarken/sss#report`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'şikayetçiyim']
+        },
+        {
+            name: 'FiveM SSS - Video kaydım var, nereye yüklemeliyim?',
+            url: `${baseUrl}/fivem-baslarken/sss#kanit`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'admin yok', 'şikayetçiyim', 'ss']
+        },
+        {
+            name: 'FiveM SSS - Sunucudan uzaklaştırıldım, nasıl itiraz edebilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#bantemyiz`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'ban temyiz', 'itiraz']
+        },
+        {
+            name: 'FiveM SSS - Yetkili nasıl olabilirim?',
+            url: `${baseUrl}/fivem-baslarken/sss#admin`,
+            content: '',
+            tags: ['FiveM', 'rp', 'sss', 'basvuru', 'admin']
+        },
+        {
+            name: 'TTT Nedir?',
             url: `${baseUrl}/ttt`,
             content: '',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'yeniyim', "ttt yeniyim"]
+            tags: ['ttt', 'Trouble in Terrorist Town', "ttt yeniyim"]
         },
         {
             name: 'TTT Oyun Kuralları',
             url: `https://moonrp.com/tttkurallar`,
             content: 'Mutlaka bilinmesi gereken oyun kuralları',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'kurallar', 'yeniyim', "ttt yeniyim"]
+            tags: ['ttt', 'Trouble in Terrorist Town', 'kurallar', "ttt yeniyim"]
         },
         {
             name: 'TTT Başlarken',
             url: `${baseUrl}/ttt-baslarken`,
             content: 'TTT Başlıyan herkesin bilmesi gerekenler',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'başlarken', 'yeniyim', "ttt yeniyim"]
+            tags: ['ttt', 'Trouble in Terrorist Town', 'başlarken', "ttt yeniyim"]
         },
         {
             name: 'TTT - Chromium Nedir? Nasıl Chromium Geçerim?',
             url: `${baseUrl}/ttt-baslarken/chromium`,
             content: 'Garry\'s Mod için Chromium güncellemesi, HTML panelleri ve medya içeriği için daha iyi performans ve uyumluluk sağlar, oyunculara daha akıcı bir deneyim sunar.',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'chrome', 'beta', 'steambeta', 'yeniyim', "ttt yeniyim"]
+            tags: ['ttt', 'Trouble in Terrorist Town', 'chrome', 'beta', 'steambeta', "ttt yeniyim"]
         },
         {
             name: 'TTT - Linux distrosu kullanıyorum, nasıl sunucuya katılabilirim?',
@@ -752,7 +1161,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT Başlarken - Gerekli Eklentiler ve Ayarlar',
             url: `${baseUrl}/ttt-baslarken#workshop`,
             content: 'Oyuna girmeden önce yapılması gerekenler...',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'workshop', 'chromium', 'error', 'yeniyim', "ttt yeniyim"]
+            tags: ['ttt', 'Trouble in Terrorist Town', 'workshop', 'chromium', 'error', "ttt yeniyim"]
         },
         {
             name: 'TTT Başlarken - Temel Kısayollar',
@@ -836,7 +1245,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT Başlarken - Envanter Kredisi ve C Menü Kredisi nasıl kazanırım?',
             url: `${baseUrl}/ttt-baslarken#kredi`,
             content: 'TTT Başlıyan herkesin bilmesi gerekenler',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'kredi', 'c menü kredi', 'hain', 'dedektif', 'yeniyim', "ttt yeniyim"]
+            tags: ['ttt', 'Trouble in Terrorist Town', 'kredi', 'c menü kredi', 'hain', 'dedektif', "ttt yeniyim"]
         },
         {
             name: 'TTT Başlarken - Dedektif/Hain iken hangi ekipmanları kullanabilirim?',
@@ -854,7 +1263,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT Başlarken - Etkinlik Düzenleniyor mu?',
             url: `${baseUrl}/ttt-baslarken#event`,
             content: 'Etkinlik ve Etkinlik...',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'event', 'etkinlik', 'IC Kredi', 'Envanter Kredisi', 'yeniyim', "ttt yeniyim"]
+            tags: ['ttt', 'Trouble in Terrorist Town', 'event', 'etkinlik', 'IC Kredi', 'Envanter Kredisi', "ttt yeniyim"]
         },
         {
             name: 'TTT Başlarken - Sıkça Sorulan Sorular',
@@ -866,25 +1275,31 @@ document.addEventListener('DOMContentLoaded', function () {
             name: 'TTT SSS - Teknik Sorunlar',
             url: `${baseUrl}/ttt-baslarken/sss#teknik`,
             content: '',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'yeniyim', 'ttt yeniyim', 'destek']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'ttt yeniyim', 'destek']
         },
         {
             name: 'TTT SSS - Etrafta her şey error, ne yapmalıyım? / Bazı karakterler gözükmüyor',
             url: `${baseUrl}/ttt-baslarken/sss#error`,
             content: 'Etrafımda herşey error...',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'yeniyim', 'ttt yeniyim', 'destek', 'eller']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'ttt yeniyim', 'destek', 'eller']
         },
         {
             name: 'TTT SSS - Steam\'de Garry\'s Mod indirirken \'Bozuk İndirme\' hatası alıyorum, nasıl çözebilirim?',
-            url: `${baseUrl}/ttt-baslarken/sss#brokendownload`,
+            url: `${baseUrl}/ttt-baslarken/sss#steambrokendownload`,
             content: '',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'yeniyim', 'ttt yeniyim', 'destek', 'steam']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'ttt yeniyim', 'destek', 'steam']
+        },
+        {
+            name: 'TTT SSS - Steam\'de Garry\'s Mod indirirken \'Disk Yazma\' hatası alıyorum, nasıl çözebilirim?',
+            url: `${baseUrl}/ttt-baslarken/sss#steambrokendisk`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'ttt yeniyim', 'destek', 'steam']
         },
         {
             name: 'TTT SSS - Ana Menüye düşüyorum / Oyun aniden kapanıyor',
             url: `${baseUrl}/ttt-baslarken/sss#menuerror`,
             content: '',
-            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'yeniyim', 'ttt yeniyim', 'destek', 'gpucache']
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'ttt yeniyim', 'destek', 'gpucache']
         },
         {
             name: 'TTT SSS - "This typically means you are running out of Video Memory on your GPU" hatası alıyorum?',
@@ -893,13 +1308,25 @@ document.addEventListener('DOMContentLoaded', function () {
             tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'engineerror', 'gpu', 'ekrankarti', 'gpumemory']
         },
         {
+            name: 'TTT SSS - "Steam VAC sunucularına bağlanılamadı."',
+            url: `${baseUrl}/ttt-baslarken/sss#vacnetwork`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'vac', 'firewall', 'modem', 'router']
+        },
+        {
+            name: 'TTT SSS - "Failed To Connect After 6 Retries" nasıl çözebilirim?',
+            url: `${baseUrl}/ttt-baslarken/sss#connectfailed`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'error', 'vac', 'firewall', 'modem', 'router']
+        },
+        {
             name: 'TTT SSS - Konsol/Console Nedir?',
             url: `${baseUrl}/ttt-baslarken/sss#console`,
             content: '',
             tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'console', 'konsole']
         },
         {
-            name: 'TTT SSS - Eski Tarayıcıyı Nasıl Açarım??',
+            name: 'TTT SSS - Eski Tarayıcıyı Nasıl Açarım?',
             url: `${baseUrl}/ttt-baslarken/sss#eskitarayici`,
             content: '',
             tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'legacy', 'browser', 'openserverbrowser']
@@ -958,6 +1385,12 @@ document.addEventListener('DOMContentLoaded', function () {
             url: `${baseUrl}/ttt-baslarken/sss#bunny`,
             content: '',
             tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'bunny']
+        },
+        {
+            name: 'TTT SSS - Auto-disconnect süresini nasıl uzatırım?',
+            url: `${baseUrl}/darkrp-baslarken/sss#timeout`,
+            content: '',
+            tags: ['ttt', 'Trouble in Terrorist Town', 'sss', 'auto-disconnect', 'timeout']
         },
         {
             name: 'TTT SSS - Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?',
@@ -1027,13 +1460,13 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'MoonGaming - Shopier',
-            url: `https://www.shopier.com/ShowProductNew/storefront.php?shop=MoonGamingTR`,
-            content: 'VIP, VIP+ , Kutular vb...',
+            url: `https://www.shopier.com/MoonGamingTR`,
+            content: 'XP, Kredi, VIP, VIP+ , Kutular, İmzalı Araçlar, LSPD Aboneliği vb...',
             tags: ['mg', 'moongaming', 'xp', 'vip', 'vip+', 'kutu', 'destekci', 'kredi']
         },
         {
             name: 'Steam ID Bulucu',
-            url: `https://www.steamidfinder.com/`,
+            url: `https://steamdb.info/calculator/`,
             content: 'Steam ID öğrenin...',
             tags: ['dc', 'steam', 'id', 'steam64', 'steamhex']
         },

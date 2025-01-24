@@ -5,7 +5,11 @@ if ($darkRPContent) {
     $AdminBasvuru = $ttt_AdminBasvuru;
 }
 ?>
-
+<div>
+    <h3 class="standartcolor" id="timeout"><b>Auto-disconnect süresini nasıl uzatırım?</b></h3>
+    <p>Oyunda <kbd>é</kbd> tuşuna basarak konsolu açınız ardından <code>cl_timeout 99999</code> yazınız.</p>
+</div>
+<br>
 <div>
     <h3 class="standartcolor" id="adminyok"><b>Oyunda yetkili yok ve oyuncudan şikayetçiyim. Ne yapmalıyım?</b></h3>
     <p>Gerekli delilleri toplıyarak MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
@@ -22,6 +26,8 @@ if ($darkRPContent) {
                 <li><a href="https://youtube.com" target="_blank">Youtube</a> <b class="text-danger-emphasis">[Video
                         için]</b></li>
                 <li><a href="https://streamable.com" target="_blank">Streamable</a> <b class="text-danger-emphasis">[Video
+                        için]</b></li>
+                <li><a href="https://odysee.com/" target="_blank">Odysee</a> <b class="text-danger-emphasis">[Video
                         için]</b></li>
             </ul>
         </div>
@@ -46,6 +52,7 @@ if ($darkRPContent) {
 <div>
     <h2 class="standartcolor" id="basvuru">Başvurular</h2>
     <p>Oyun içerisinde başvurabilceğin alanlar bu kısımda yer almaktadır.</p>
+    <br>
     <div>
         <h3 class="standartcolor" id="admin"><b>Yetkili nasıl olabilirim?</b></h3>
         <p>Yetkili olabilmek için <a href="<?= $AdminBasvuru ?>" target="_blank">başvuru</a>
@@ -97,9 +104,6 @@ if ($darkRPContent) {
             <h3 class="standartcolor" id="basvuru-joh"><b>Jandarma Özel Harekat Komandosu ve Jandarma Özel Harekat
                     Doktoru nasıl
                     olurum?</b></h3>
-            <div class="alert alert-info" role="alert">
-                Jandarma Özel Harekat Komandosu/Doktoru şu anlık kapalıdır.
-            </div>
             <p>Jandarma Özel Harekat Komandosu olabilmek için Polis Özel Harekat Polisi mesleğinde 5. seviye ve
                 ya
                 Jandarma Komutanı 3. Seviye ulaştığınızda, Discord sunucumuzda başvuru odasına gelip
