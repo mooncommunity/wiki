@@ -45,7 +45,7 @@
                 </ul>
                 <div class="content-ref-box">
                     <p>
-                        <a id="cssBox" href="<?= $baseUrl; ?>/content" target="_blank">
+                        <a id="cssBox" href="<?= $baseUrl; ?> /css" target="_blank">
                             <i class="fa-solid fa-cubes"></i> CS:S Content Nasıl İndiririm?
                         </a>
                     </p>
@@ -55,51 +55,47 @@
             <div>
                 <h2 class="standartcolor" id="tus">Temel Kısayollar</h2>
                 <br>
-                <ul id="tusUL">
-                    <li><strong><kbd>F1</kbd></strong><span> Yardım menüsünü açar. İzleyici modundan çıkabilirsiniz.</span>
-                    </li>
-                    <li><strong><kbd>F8</kbd></strong><span> Hasar logları gibi bilgileri gösterir.</span></li>
-                    <li><strong><kbd>TAB</kbd></strong><span
-                        > Oyuncu listesini ve skorlarını görebilirsiniz.</span></li>
-                    <li><strong><kbd>Q</kbd></strong><span> Elinizdeki silahı yere atmanızı sağlar.</span></li>
-                    <li><strong><kbd>C</kbd></strong><span> Dedektif/Hain mağazasını açar.</span></li>
-                    <li><strong><kbd>X</kbd></strong><span> Oyun içerisinden sesli konuşmanızı sağlar.</span></li>
-                    <li><strong><kbd>SHIFT</kbd></strong><span> Hainlerin birbiriyle konuşmasını sağlar.</span>
-                    </li>
-                    <li><strong><kbd>I</kbd></strong><span> Envanterinizi açmanızı sağlar.</span></li>
-                    <li><strong><kbd>M</kbd></strong><span> Genel menüyü açar.</span></li>
-                    <li><strong><kbd>Y</kbd></strong><span> Oyun içerisinden Yazılı Sohbet açmanızı sağlar.</span></li>
+                <ul id="tusUL" style="list-style-type: '- '">
+                    <?php foreach ($tttKeyboard as $shortcut): ?>
+                        <li>
+                            <strong>
+                                <?php foreach ($shortcut['key'] as $key): ?>
+                                    <kbd><?php echo $key; ?></kbd>
+                                    <?php if (next($shortcut['key'])) echo ' + '; ?>
+                                <?php endforeach; ?>
+                            </strong>
+                            <span><?php echo $shortcut['description']; ?></span>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <br>
             <div>
                 <h2 class="standartcolor" id="chat">Sohbet ve İletişim</h2>
-                <div>
-                    <ul id="chatTabsContent" style="list-style-type: '- ">
-                        <li><strong>/PM &lt;İsim&gt;:</strong><span> Belirli bir kullanıcıya özel mesaj atmanızı
-                        sağlar.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/PM Ozgur Sunucu
-                                hakkında bir şey sorabilir
-                                miyim?</code></li>
+                <br>
+                <ul id="chatTabs">
+                    <?php
+                    $tabId = 0;
+
+                    foreach ($tttCommand as $command) {
+                        ?>
+                        <li id="<?= 'command-' . $tabId ?>" class="command-item">
+                            <strong><?= implode(' veya ', $command['name']) ?></strong>
+                            <i class="text-warning-emphasis">
+                                <?= implode(' ', array_map(fn($p) => $p !== null ? "&lt;{$p}&gt;" : '', $command['params'])) ?>
+                            </i> :
+                            <span><?= $command['description'] ?></span><br>
+                            <em class="text-success-emphasis">Örnek:</em><br>
+                            <code><?= $command['example'] ?></code>
+                        </li>
                         <hr>
-                        <li><strong>@&lt;Mesaj&gt;:
-                            </strong><span> Yetkili sohbete mesaj yazar.</span><br><em
-                                    class="text-success-emphasis">Örnek:</em><br><code>@Vuenx hile gibi
-                                izliyebilir misiniz?
-                            </code></li>
-                        <hr>
-                        <li><strong>!menu:
-                            </strong><span> Genel menüyü açar</span><br><em
-                                    class="text-success-emphasis">Örnek:</em><br><code>!menu
-                            </code></li>
-                        <hr>
-                        <li><strong>!report:
-                            </strong><span> Son sizi vuran oyuncuyu raporlar</span><br><em
-                                    class="text-success-emphasis">Örnek:</em><br><code>!report
-                            </code></li>
-                        <br>
-                    </ul>
-                </div>
+                        <?php
+                        $tabId++;
+                    }
+                    ?>
+                </ul>
             </div>
+
             <br>
             <div>
                 <h2 class="standartcolor" id="dil">Oyunun dilini Türkçe yapamıyor muyum?</h2>
@@ -149,7 +145,7 @@
                     erişebilirsiniz. Silahlarınız sağ alt kısımda gözükür</p>
 
                 <div class="col-6 mx-auto text-center">
-                    <img src="<?= $baseUrl ?>/assets/image/ttt_silahbar.png" alt="Silahlar" class="img-fluid">
+                    <img src="<?= $baseUrl ?>/assets/image/ttt_silahbar.png" alt="Silahlar" class="img-zoom img-fluid">
                 </div>
             </div>
             <br>
@@ -159,7 +155,7 @@
                     taşıyabilirsiniz.</p>
 
                 <div class="col-6 mx-auto text-center">
-                    <img src="<?= $baseUrl ?>/assets/image/ttt_magneto.png" alt="Magneto Stick" class="img-fluid">
+                    <img src="<?= $baseUrl ?>/assets/image/ttt_magneto.png" alt="Magneto Stick" class="img-zoom img-fluid">
                 </div>
             </div>
             <br>

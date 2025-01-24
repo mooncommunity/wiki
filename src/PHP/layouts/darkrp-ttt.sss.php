@@ -12,7 +12,7 @@
             <div class="content-ref-box">
                 <p>
                     <a id="baslarkenBox"
-                       href="<?= $baseUrl ?>/<?= $darkRPContent ? 'darkrp-baslarken' : ($tttContent ? 'ttt-baslarken' : '') ?>#gerekli-eklentiler-ve-ayarlar"
+                       href="<?= $baseUrl ?>/<?= $darkRPContent ? 'darkrp-baslarken' : ($tttContent ? 'ttt-baslarken' : '') ?>#workshop"
                        target="_blank">
                         <i class="<?= $darkRPContent ? 'fa-regular fa-hand' : ($tttContent ? 'fa-solid fa-graduation-cap' : '') ?>"></i>
                         <?= $darkRPContent ? 'DarkRP' : ($tttContent ? 'TTT' : '') ?>
@@ -28,7 +28,9 @@
 
             <div class="alert alert-danger" role="alert">
                 <span><strong>Missing Map</strong> Hatası alıyor iseniz <span
-                            class="text-primary-emphasis">Özel İçerikleri indirme</span>
+                            class="text-primary-emphasis" data-bs-toggle="collapse"
+                            data-bs-target="#collapseErrorContentDownload"
+                            aria-expanded="true" style="cursor: pointer;">Özel İçerikleri indirme</span>
                 göz atınız.</span>
             </div>
 
@@ -114,7 +116,8 @@
                         <div class="accordion-body">
                             <div class="row">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_ozellikler.png"
+                                         alt="Steam Ayarları"
                                          class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
@@ -127,7 +130,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_yuklu_dosyalar.png"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
                                          class="img-fluid img-zoom">
                                 </div>
@@ -153,7 +156,8 @@
                         <div class="accordion-body">
                             <div class="row">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_ozellikler.png"
+                                         alt="Steam Ayarları"
                                          class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
@@ -165,7 +169,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_yuklu_dosyalar.png"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
                                          class="img-fluid img-zoom">
                                 </div>
@@ -203,7 +207,8 @@
                                 </div>
                                 <br>
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_ozellikler.png"
+                                         alt="Steam Ayarları"
                                          class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
@@ -215,7 +220,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_yuklu_dosyalar.png"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
                                          class="img-fluid img-zoom">
                                 </div>
@@ -244,7 +249,8 @@
                         <div class="accordion-body">
                             <div class="row">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_ozellikler.png"
+                                         alt="Steam Ayarları"
                                          class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
@@ -256,7 +262,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_yuklu_dosyalar.png"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
                                          class="img-fluid img-zoom">
                                 </div>
@@ -277,22 +283,22 @@
         </div>
         <br>
         <div>
-            <h3 class="standartcolor" id="brokendownload">Steam'de Garry's Mod indirirken 'Bozuk İndirme' hatası
+            <h3 class="standartcolor" id="steambrokendownload">Steam'de Garry's Mod indirirken 'Bozuk İndirme' hatası
                 alıyorum, nasıl
                 çözebilirim?</h3>
-            <div class="accordion" id="brokendownloadAccordion">
+            <div class="accordion" id="steambrokendownloadAccordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed text-success-emphasis" type="button"
                                 data-bs-toggle="collapse"
-                                data-bs-target="#brokendownloadcollapse1" aria-expanded="false"
-                                aria-controls="brokendownloadcollapse1">
-                            Önbelleği Temizleme
+                                data-bs-target="#steambrokendownloadcollapse1" aria-expanded="false"
+                                aria-controls="steambrokendownloadcollapse1">
+                            Steam İndirme Önbelleği Temizleme
                         </button>
                     </h2>
-                    <div id="brokendownloadcollapse1" class="accordion-collapse collapse"
-                         aria-labelledby="brokendownloadheading1"
-                         data-bs-parent="#brokendownloadAccordion">
+                    <div id="steambrokendownloadcollapse1" class="accordion-collapse collapse"
+                         aria-labelledby="steambrokendownloadheading1"
+                         data-bs-parent="#steambrokendownloadAccordion">
                         <div class="accordion-body">
                             <div class="row">
                                 <br>
@@ -327,14 +333,14 @@
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed text-primary-emphasis" type="button"
                                 data-bs-toggle="collapse"
-                                data-bs-target="#brokendownloadcollapse2" aria-expanded="false"
-                                aria-controls="brokendownloadcollapse2">
-                            İndirme Bölgesi Değiştirme
+                                data-bs-target="#steambrokendownloadcollapse2" aria-expanded="false"
+                                aria-controls="steambrokendownloadcollapse2">
+                            Steam İndirme Bölgesi Değiştirme
                         </button>
                     </h2>
-                    <div id="brokendownloadcollapse2" class="accordion-collapse collapse"
-                         aria-labelledby="brokendownloadheading2"
-                         data-bs-parent="#brokendownloadAccordion">
+                    <div id="steambrokendownloadcollapse2" class="accordion-collapse collapse"
+                         aria-labelledby="steambrokendownloadheading2"
+                         data-bs-parent="#steambrokendownloadAccordion">
                         <div class="accordion-body">
                             <div class="row">
                                 <br>
@@ -359,6 +365,76 @@
                                             <li>İndirmeler sekmesine gidin.</li>
                                             <li>"İndirme bölgesini" değiştiriniz</li>
                                         </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <h3 class="standartcolor" id="steambrokendisk">Steam'de Garry's Mod indirirken 'Disk Yazma' hatası
+                alıyorum, nasıl
+                çözebilirim?</h3>
+            <div class="accordion" id="steambrokendiskAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-warning-emphasis" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#steambrokendiskcollapse1" aria-expanded="false"
+                                aria-controls="steambrokendiskcollapse1">
+                            Disk Onarma
+                        </button>
+                    </h2>
+                    <div id="steambrokendiskcollapse1" class="accordion-collapse collapse"
+                         aria-labelledby="steambrokendiskheading1"
+                         data-bs-parent="#steambrokendiskAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <br>
+                                <div class="col-md-6 text-center">
+                                    <img src="<?= $baseUrl ?>/assets/image/windows_disk_onarma.png"
+                                         alt="C: Diski özellikler"
+                                         class="img-fluid img-zoom">
+                                </div>
+                                <div class="col-md-6">
+                                    <ol>
+                                        <li>Oyunun kurulu olduğu sürücüye gidiniz.</li>
+                                        <li>Sağ tıklayınız ve "Özellikler" basınız.</li>
+                                        <li>"Araçlar" sekmesine geliniz ve "Denetle" diyiniz.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-danger-emphasis" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#steambrokendiskcollapse2" aria-expanded="false"
+                                aria-controls="steambrokendiskcollapse2">
+                            Disk Alan var mı? / Salt Okunur Modda mı?
+                        </button>
+                    </h2>
+                    <div id="steambrokendiskcollapse2" class="accordion-collapse collapse"
+                         aria-labelledby="steambrokendiskheading2"
+                         data-bs-parent="#steambrokendiskAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <br>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <ol>
+                                            <li>Yeterli Alan Olduğuna Emin Olunuz.</li>
+                                            <li>Eğer SSD kullanıyorsanız Yazma Ömrü dolmuş olabilir.</li>
+                                            <li>Eğer HDD kullanıyorsanız donanımsal/yazılımsal olarak Bad Sector oluşmuş
+                                                olabilir
+                                            </li>
+                                        </ol>
+                                        <p>Daha fazla bilgi için lütfen arama motorlarını Kullanınız.</p>
                                     </div>
                                 </div>
                             </div>
@@ -407,6 +483,29 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-purple" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseErrorMenuChromium" aria-expanded="true">
+                            Chromium Betasında mısınız?
+                        </button>
+                    </h2>
+                    <div id="collapseErrorMenuChromium" class="accordion-collapse collapse"
+                         data-bs-parent="#errorMenuAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <br>
+                                <div class="col">
+                                    <p>Modern dünya şartları gereği ve sunucuya eklenen eklentilerden dolayı oyunu
+                                        chromium da kullanmalısınız. Eğer <a class="no-text-decoration"
+                                                                             href='<?= $baseUrl ?>/<?= $darkRPContent ? "darkrp" : "ttt" ?>-baslarken/chromium'>Chromium
+                                            betasına</a> geçmediyseniz geçmeniz gerekmektedir.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
                         <button class="accordion-button collapsed text-primary-emphasis" type="button"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapseErrorMenuSystemReq" aria-expanded="true">
@@ -417,7 +516,11 @@
                          data-bs-parent="#errorMenuAccordion">
                         <div class="accordion-body">
                             <div class="row">
-                                <p>Bilgisayarınız <a href="https://store.steampowered.com/app/4000/Garrys_Mod/" target="_blank">Garry's mod</a> sistem gereksinimlerini karşılamıyor ise sorun bundan kaynaklı olabilir. Bilgisayarınızda düzgün çalışabilmesi için en az önerilen sistem gereksinimlerine sahip olduğundan emin olunuz. </p>
+                                <p>Bilgisayarınız <a href="https://store.steampowered.com/app/4000/Garrys_Mod/"
+                                                     target="_blank">Garry's mod</a> sistem gereksinimlerini
+                                    karşılamıyor ise sorun bundan kaynaklı olabilir. Bilgisayarınızda düzgün
+                                    çalışabilmesi için en az önerilen sistem gereksinimlerine sahip olduğundan emin
+                                    olunuz. </p>
                             </div>
                         </div>
                     </div>
@@ -435,7 +538,8 @@
                         <div class="accordion-body">
                             <div class="row">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_ozellikler.png"
+                                         alt="Steam Ayarları"
                                          class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
@@ -448,7 +552,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_yuklu_dosyalar.png"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
                                          class="img-fluid img-zoom">
                                 </div>
@@ -457,6 +561,27 @@
                                         <li>Yüklü Dosyalar sekmesine gidin.</li>
                                         <li>"Oyun dosyaların bütünlüğünü doğrula" butonuna tıklayın.</li>
                                     </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-primary" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseErrorMenuAltTab" aria-expanded="true">
+                            Alt-tab atarak girmeyi deneyin
+                        </button>
+                    </h2>
+                    <div id="collapseErrorMenuAltTab" class="accordion-collapse collapse"
+                         data-bs-parent="#errorMenuAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <br>
+                                <div class="col">
+                                    <p>Kesin bilinmemekle birlikte <kbd>alt</kbd> + <kbd>tab</kbd> atarak girince bazı
+                                        oyuncularda bu sorun düzeliyor.</p>
                                 </div>
                             </div>
                         </div>
@@ -475,7 +600,8 @@
                         <div class="accordion-body">
                             <div class="row">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_ozellikler.png"
+                                         alt="Steam Ayarları"
                                          class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
@@ -487,7 +613,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_yuklu_dosyalar.png"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
                                          class="img-fluid img-zoom">
                                 </div>
@@ -516,7 +642,8 @@
                         <div class="accordion-body">
                             <div class="row">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_ozellikler.png"
+                                         alt="Steam Ayarları"
                                          class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
@@ -528,7 +655,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_yuklu_dosyalar.png"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
                                          class="img-fluid img-zoom">
                                 </div>
@@ -566,7 +693,8 @@
                                 </div>
                                 <br>
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_ozellikler.png"
+                                         alt="Steam Ayarları"
                                          class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
@@ -578,7 +706,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_yuklu_dosyalar.png"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
                                          class="img-fluid img-zoom">
                                 </div>
@@ -607,7 +735,8 @@
                         <div class="accordion-body">
                             <div class="row">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_ayarlar.png" alt="Steam Ayarları"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_ozellikler.png"
+                                         alt="Steam Ayarları"
                                          class="img-fluid img-zoom">
                                 </div>
                                 <div class="col-md-6">
@@ -619,7 +748,7 @@
                             </div>
                             <div class="row mt-3">
                                 <div class="col-md-6 text-center">
-                                    <img src="<?= $baseUrl ?>/assets/image/steam_yuklu_dosyalar.png"
+                                    <img src="<?= $baseUrl ?>/assets/image/steam_gmod_yuklu_dosyalar.png"
                                          alt="Steam Yüklü Dosyalar"
                                          class="img-fluid img-zoom">
                                 </div>
@@ -644,6 +773,10 @@
                     your GPU" hatası
                     alıyorum?</b></h3>
             <ul style="list-style-type: '- '">
+                <li>Oyunu <a
+                            href="<?= $baseUrl ?>/<?= $darkRPContent ? "darkrp" : ($tttContent ? "ttt" : "") ?>-baslarken/chromium">Chromium</a>
+                    betasına aldığınıza emin olunuz.
+                </li>
                 <li>
                     <a href="https://support.microsoft.com/tr-tr/topic/en-son-directx-s%C3%BCr%C3%BCm%C3%BCn%C3%BC-y%C3%BCkleme-d1f5ffa5-dae2-246c-91b1-ee1e973ed8c2#:~:text=DirectX%2C%20Windows'da%20bulunan%2C,%C3%A7al%C4%B1%C5%9Fmas%C4%B1n%C4%B1%20sa%C4%9Flayan%20bir%20bile%C5%9Fen%20k%C3%BCmesidir."
                        target="_blank">DirectX</a> güncel olduğundan emin olunuz.
@@ -651,6 +784,118 @@
                 <li>Ekran kartınızın sürücü güncel olduğundan emin olunuz</li>
                 <li>Garry's Mod Sistem gereksinimlerini karşıladığından emin olunuz.</li>
             </ul>
+        </div>
+        <br>
+        <div>
+            <h3 class="standartcolor" id="vacnetwork"><b>"Steam VAC sunucularına bağlanılamadı."</b></h3>
+            <ul style="list-style-type: '- '">
+                <li><a href="https://store.steampowered.com/stats/?snr=100601___" target="_blank"
+                       class="no-text-decoration">Steam sunucularında</a> sorun olup olmadığını kontrol ediniz.
+                </li>
+                <li>Güvenlik duvarınızın engellemediğinden emin olunuz.</li>
+                <li>Modem/Router/Firewall Steam VAC sunucularına bağlanmaya izin verdiğinden emin olunuz.</li>
+            </ul>
+            <p>Daha fazlası için <a href="https://help.steampowered.com/tr/faqs/view/669A-2F68-D1D1-A5EC"
+                                    target="_blank" class="no-text-decoration">Steam Destek</a> sayfasına göz atınız.
+            </p>
+        </div>
+        <br>
+        <div>
+            <h3 class="standartcolor" id="connectfailed">"Failed To Connect After 6 Retries" nasıl çözebilirim?</h3>
+            <div class="accordion" id="connectfailedAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-success-emphasis" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#connectfailedcollapse1" aria-expanded="false"
+                                aria-controls="connectfailedcollapse1">
+                            Sunucu Açık mı?
+                        </button>
+                    </h2>
+                    <div id="connectfailedcollapse1" class="accordion-collapse collapse"
+                         aria-labelledby="connectfailedheading1"
+                         data-bs-parent="#connectfailedAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <br>
+                                <div class="col">
+                                    <p>Sunucumuza restart atıldığı sırada girmiş olabilirsiniz. Sunucu listesini kontrol
+                                        edin eğer sunucu listede gözükmüyor ise restart atılmış olabilir.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-warning" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#connectfailedcollapse2" aria-expanded="false"
+                                aria-controls="connectfailedcollapse2">
+                            İnternet Bağlantınızı Kontrol Ediniz
+                        </button>
+                    </h2>
+                    <div id="connectfailedcollapse2" class="accordion-collapse collapse"
+                         aria-labelledby="connectfailedheading2"
+                         data-bs-parent="#connectfailedAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <br>
+                                <div class="col">
+                                    <p>Stabil olmıyan internet bağlantısı sorun yaratıcaktır. İnternet bağlantınız
+                                        stabil olduğundan emin olunuz. VPN var ise kapatınız.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-danger" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#connectfailedcollapse3" aria-expanded="false"
+                                aria-controls="connectfailedcollapse3">
+                            Modem/Router Yeniden Başlatınız
+                        </button>
+                    </h2>
+                    <div id="connectfailedcollapse3" class="accordion-collapse collapse"
+                         aria-labelledby="connectfailedheading3"
+                         data-bs-parent="#connectfailedAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <br>
+                                <div class="col">
+                                    <p>Modem/Router yeniden başlatınız ve 10 dakika bekleyin ardından tekrar giriş
+                                        yapmayı deneyiniz.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-purple" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#connectfailedcollapse4" aria-expanded="false"
+                                aria-controls="connectfailedcollapse4">
+                            Steam Sunucuları Çalışıyor mu?
+                        </button>
+                    </h2>
+                    <div id="connectfailedcollapse4" class="accordion-collapse collapse"
+                         aria-labelledby="connectfailedheading4"
+                         data-bs-parent="#connectfailedAccordion">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <br>
+                                <div class="col">
+                                    <p>Steam Sunucularında problem oluşmuş olabilir Steam VAC Sunucuları ile iletişim
+                                        kuramıyorsanız ondanda kaynaklanabilir.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <br>
         <div>
@@ -951,6 +1196,7 @@ exec config_default.cfg
         <div>
             <h2 class="standartcolor" id="erisim">Erişim</h2>
             <p>Erişim sorunları burada yer almaktadır.</p>
+            <br>
             <div>
                 <h3 class="standartcolor" id="yurtdisi"><b>Yurtdışından bağlanıyorum, sunucuya nasıl katılırım?</b></h3>
                 <p>MoonGaming™ Discord sunucusuna gelip ticket açmanız gerekmektedir.</p>
@@ -976,6 +1222,7 @@ exec config_default.cfg
     <div>
         <h2 class="standartcolor" id="oyun">Oyun Deneyimi</h2>
         <p>Oyun deneyiminizi iyileştircek bilgi edinebilceğiniz kısımlar burada yer almaktadır.</p>
+        <br>
         <div>
             <h3 class="standartcolor" id="sunucutus">
                 <b><?= $darkRPContent ? "F1, F2, F3, F4, M, T" : ($tttContent ? "F1, F8, M, I" : "") ?> gibi

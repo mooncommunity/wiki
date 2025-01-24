@@ -38,245 +38,270 @@
 
         <br>
         <div>
-            <h2 class="standartcolor" id="tus">Temel Kısayollar</h2>
+            <h2 class="standartcolor" id="tus">Kısayollar</h2>
             <br>
-            <ul id="tusUL" style="list-style-type: '- ">
-                <li><strong><kbd>F1</kbd></strong><span> FPS görünümü ve üçüncü şahıs (third-person) kamera görünümü arasında geçiş yapabilirsiniz.</span>
-                </li>
-                <li><strong><kbd>F2</kbd></strong><span> Sahip olduğunuz araçlara arkadaşlarınızı ekleyebilir, ev kiralayabilirsiniz (Kapıya bakıp yapmalısınız), evinize arkadaşlarınızı ekleyebilirsiniz. </span>
-                </li>
-                <li><strong><kbd>F3</kbd></strong><span> Araç içinde iseniz plaka değişimi yapmanızı sağlar. Ek olarak araçta değilseniz fare imlecinizi belirtir. </span>
-                </li>
-                <li><strong><kbd>F4</kbd></strong><span> Meslek, sevkiyat ve varlıklar menüsüne erişebilirsiniz.</span>
-                </li>
-                <li><strong><kbd>TAB</kbd></strong><span> Oyuncu listesi ve durumlarına bakabilirsiniz.
-                </span></li>
-                <li><strong><kbd>M</kbd></strong><span>Oyunun haritasının küçültülmüş halini gösterir. (Yokuş altına inince/Çıkınca harita değişir) </span>
-                </li>
-                <li><strong><kbd>T</kbd></strong><span> Teslim olmanızı sağlar. Eğer teslim olduysanız da elinizi indirmenizi sağlar. </span>
-                </li>
-                <li><strong><kbd>I</kbd></strong><span> Envanterinizi açmanızı sağlar.</span></li>
-                <li><strong><kbd>X</kbd></strong><span> Oyun içerisinden sesli konuşmanızı sağlar.</span></li>
-                <li><strong><kbd>Y</kbd></strong><span> Oyun içerisinden Yazılı Sohbet açmanızı sağlar.</span></li>
+            <ul class="nav nav-tabs" id="chatTabs" role="tablist">
+                <?php
+                $tabId = 0;
+
+                foreach ($darkrpKeyboard as $category => $details) {
+                    $class = $details['class'];
+                    $fonticon = $details['iclass'];
+                    $activeClass = $tabId === 0 ? 'active' : '';
+                    ?>
+                    <li class="nav-item">
+                        <a class="nav-link <?= $class ?> <?= $activeClass ?>" id="<?= 'keyboard-' . $tabId ?>-tab"
+                           data-bs-toggle="tab" href="#<?= 'keyboard-' . $tabId ?>" role="tab"><i
+                                    class="<?= $fonticon ?>"></i> <?= $category ?></a>
+                    </li>
+                    <?php
+                    $tabId++;
+                }
+                ?>
             </ul>
+
+            <div class="tab-content" id="chatTabsContent">
+                <?php
+                $tabId = 0;
+
+                foreach ($darkrpKeyboard as $category => $details) {
+                    $activeClass = $tabId === 0 ? 'show active' : '';
+                    ?>
+                    <div class="tab-pane fade <?= $activeClass ?>" id="<?= 'keyboard-' . $tabId ?>" role="tabpanel">
+                        <br>
+                        <ul id="tusUL" style="list-style-type: '- '">
+                            <?php
+                            foreach ($details['keyboard'] as $shortcut) {
+                                ?>
+                                <li>
+                                    <strong>
+                                        <?php foreach ($shortcut['key'] as $key): ?>
+                                            <kbd><?php echo $key; ?></kbd>
+                                            <?php if (next($shortcut['key'])) echo ' + '; ?>
+                                        <?php endforeach; ?>
+                                    </strong>
+                                    <span><?php echo $shortcut['description']; ?></span>
+                                </li>
+                                <hr>
+                                <?php
+                            }
+                            ?>
+                        </ul>
+                        <br>
+                    </div>
+                    <?php
+                    $tabId++;
+                }
+                ?>
+            </div>
         </div>
         <br>
         <div>
             <h2 class="standartcolor" id="chat">Sohbet ve İletişim</h2>
             <br>
             <ul class="nav nav-tabs" id="chatTabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link darkrpgenel active" id="general-tab" data-bs-toggle="tab" href="#general"
-                       role="tab">Genel</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link darkrplegal" id="legal-tab" data-bs-toggle="tab" href="#legal" role="tab">Devlet
-                        Çalışanı</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link darkrpesnaf" id="esnaf-tab" data-bs-toggle="tab" href="#esnaf" role="tab">Esnaf
-                        ve Siviller</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link darkrpillegal" id="illegal-tab" data-bs-toggle="tab" href="#illegal"
-                       role="tab">Yasadışı Organizasyonlar</a>
-                </li>
+                <?php
+                $tabId = 0;
+
+                foreach ($darkrpCommand as $category => $details) {
+                    $class = $details['class'];
+                    $fonticon = $details['iclass'];
+                    $activeClass = $tabId === 0 ? 'active' : '';
+                    ?>
+                    <li class="nav-item">
+                        <a class="nav-link <?= $class ?> <?= $activeClass ?>" id="<?= 'command-' . $tabId ?>-tab"
+                           data-bs-toggle="tab" href="#<?= 'command-' . $tabId ?>" role="tab"><i
+                                    class="<?= $fonticon ?>"></i> <?= $category ?></a>
+                    </li>
+                    <?php
+                    $tabId++;
+                }
+                ?>
             </ul>
 
             <div class="tab-content" id="chatTabsContent">
-                <div class="tab-pane fade show active" id="general" role="tabpanel">
-                    <br>
-                    <ul style="list-style-type: '— ';">
-                        <li><strong>// veya /ooc &lt;Mesaj&gt;:</strong><span> Oyun dışında genel konuşmalar yapmak
-                            için kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>//
-                                Etraf error gözüküyor nasıl çözebilirim?</code></li>
-                        <hr>
-                        <li><strong>/looc &lt;Mesaj&gt;:</strong><span> Lokal OOC sohbeti yapmanızı
-                            sağlar.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/looc
-                                Arkadaşlar rol ortasında hatalı emote atmayın lütfen</code></li>
-                        <hr>
-                        <li><strong>/reklam veya /advert &lt;Mesaj&gt;:</strong><span> IC (In-Character) reklamlar ve
-                            duyurular
-                            yapmanızı sağlar.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/reklam
-                                Şehirde yeni açılan Moon AVM
-                                bekleriz!</code></li>
-                        <hr>
-                        <li><strong>!asay &lt;Mesaj&gt;:</strong><span> Yetkili sohbete mesaj
-                            yazar</span><br><em class="text-success-emphasis">Örnek:</em><br><code>!asay
-                                Duvar sokağında MassRDM yapan biri var izliyebilir misiniz?</code>
-                        </li>
-                        <hr>
-                        <li><strong>/pm &lt;Kişi&gt;:</strong><span> Belirli bir kullanıcıya özel mesaj atmanızı
-                            sağlar.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/pm Ozgur
-                                MoonGiller Sunucu hakkında bir şey
-                                sorabilir
-                                miyim?</code></li>
-                        <hr>
-                        <li>
-                            <strong>/me:</strong><span> Karakterinizin yaptığı eylemleri anlatmak için kullanılır.</span><br><em
-                                    class="text-success-emphasis">Örnek:</em><br><code>/me
-                                masaya oturur</code></li>
-                        <hr>
-                        <li><strong>/dropmoney &lt;Miktar&gt;:</strong><span> Yere belirtiğiniz miktarda para
-                            atar.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/dropmoney
-                                1000</code></li>
-                        <hr>
-                        <li><strong>/drop:</strong><span> Elinizde atılabilir silah var ise yere atmanızı
-                            sağlar.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/drop</code>
-                        </li>
-                        <hr>
-                        <li><strong>/calladmin &lt;Sebep&gt;:</strong><span> Yetkili çağırmak için
-                            kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/calladmin
-                                Duvar arasına sıkıştım çekebilir misin?</code></li>
-                        <hr>
-                        <li><strong>/write &lt;Yazı&gt;:</strong><span> Döküman yazmak için
-                            kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/write
-                                Michael MoonGiller aklı dengesi yerinde değildir.</code></li>
-                        <hr>
-                        <li><strong>/check &lt;Kişi&gt;
-                                &lt;Miktar&gt;:</strong><span> Çek yazmak için kullanılır.</span><br><em
-                                    class="text-success-emphasis">Örnek:</em><br><code>/check
-                                'Kardelen MoonGiller' 1000</code></li>
-                        <hr>
-                        <li><strong>!menu:</strong><span> Genel menüyü
-                            açar.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>!menu</code>
-                        </li>
-                        <hr>
-                        <li><strong>!parti</span></strong><span> Parti menüsünü
-                            açar.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>!parti</code>
-                        </li>
-                        <hr>
-                        <li><strong>/job &lt;metin&gt;:</strong><span> Oyuncu Karakteriniz altındaki yazıyı değiştirmenizi
-                            sağlar</span>
-                            <br><em class="text-success-emphasis">Örnek:</em><br><code>/job Asayiş Polis Memuru</code>
-                        </li>
+                <?php
+                $tabId = 0;
+
+                foreach ($darkrpCommand as $category => $details) {
+                    $activeClass = $tabId === 0 ? 'show active' : '';
+                    ?>
+                    <div class="tab-pane fade <?= $activeClass ?>" id="<?= 'command-' . $tabId ?>" role="tabpanel">
+                        <?php
+                        if (isset($details['alert'])) {
+                            $alertClass = $details['alert']['class'];
+                            $alertText = $details['alert']['text'];
+                            ?>
+                            <br>
+                            <div class="alert <?= $alertClass ?>" role="alert"><?= $alertText ?></div>
+                            <?php
+                        }
+                        ?>
                         <br>
-                    </ul>
-                </div>
-
-                <div class="tab-pane fade" id="legal" role="tabpanel">
-                    <br>
-                    <ul style="list-style-type: '— '">
-                        <li><strong>/911 &lt;Mesaj&gt;:</strong><span> 911 Hattına mesaj
-                            gönderir.<br><em class="text-success-emphasis">Örnek:</em><br><code>/911 Karakolda ağır silahlı adamlar var
-                                desteğe
-                                ihtiyacım var</span></code></li>
-                        <hr>
-                        <li><strong>/t &lt;Mesaj&gt;:</strong><span> Telsizin frekansındaki diğer kişilere mesajınız
-                            gönderir.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/t 92-61
-                                konuşuyor just caddesindeki dönerci
-                                önüne
-                                takviye unsur talebimiz mevcut efendim</code></li>
-                        <hr>
-                        <li><strong>/broadcast &lt;Mesaj&gt;:</strong><span> Belediye Başkanı iken duyuru
-                            gönderir.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/broadcast Artan
-                                suç nedeniyle sokağa çıkma
-                                yasağı
-                                başlatılacaktır.</code></li>
-                        <hr>
-                        <li><strong>/lockdown:</strong><span> Belediye Başkanı iken sokağa çıkma yasağı
-                            başlatır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/lockdown</code>
-                        </li>
-                        <hr>
-                        <li><strong>/unlockdown:</strong><span> Belediye Başkanı iken sokağa çıkma yasağını
-                            bitirir.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/unlockdown</code>
-                        </li>
-                        <hr>
-                        <li><strong>/lottery:</strong><span> Belediye Başkanı iken piyango başlatmak için
-                            kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/lottery</code>
-                        </li>
-                        <hr>
-                        <div class="alert alert-info" role="alert">
-                            <span>Warrant ve Wanted işlemleri için GBT Tablet kullanmanız önerilir.</span>
-                        </div>
+                        <ul style="list-style-type: '— '">
+                            <?php
+                            foreach ($details['commands'] as $command) {
+                                $commandNames = implode(' veya ', $command['name']);
+                                $params = implode(' ', array_map(fn($p) => $p !== null ? "&lt;{$p}&gt;" : '', $command['params']));
+                                $description = $command['description'];
+                                $example = $command['example'];
+                                ?>
+                                <li>
+                                    <strong><?= $commandNames ?></strong> <i
+                                            class="text-warning-emphasis"> <?= $params ?></i> :
+                                    <span> <?= $description ?></span><br>
+                                    <em class="text-success-emphasis">Örnek:</em><br>
+                                    <code><?= $example ?></code>
+                                </li>
+                                <hr>
+                                <?php
+                            }
+                            ?>
+                        </ul>
                         <br>
-                        <li><strong>/warrant</strong><span> Aranma izni çıkarmak için
-                            kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/warrant
-                                'Micheal MoonGiller' 'Yasadışı
-                                Madde
-                                Şüphesi'</code></li>
-                        <hr>
-                        <li><strong>/unwarrant</span></strong><span> Aranma iznini iptal etmek için
-                            kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/unwarrant
-                                'Micheal MoonGiller'</code></li>
-                        <hr>
-                        <li><strong>/wanted:</strong><span> İllegal eylem sergilediği kesinleşen oyuncu için
-                            kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/wanted 'Hasan
-                                MoonGiller' 'Banka
-                                Soygunu'</code></li>
-                        <hr>
-                        <li><strong>/unwanted:</strong><span> Aranıyor iptal etmek için
-                            kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/unwanted
-                                'Hasan MoonGiller'</code>
-                        </li>
-                        <hr>
-                        <li><strong>/baskin:</strong><span> Baskın
-                            başlatır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>/baskin</code>
-                        </li>
-                        <hr>
-                        <li><strong>/baskinbitir:</strong><span> Baskını
-                            bitirir.</span><br><em
-                                    class="text-success-emphasis">Örnek:</em><br><code>/baskinbitir</code></li>
-                    </ul>
-                    <br>
-                </div>
-
-                <div class="tab-pane fade" id="illegal" role="tabpanel">
-                    <br>
-                    <ul style="list-style-type: '— '">
-                        <li><strong>/channel &lt;Numara&gt;:
-                            </strong><span> Kanalınızı belirtiğiniz numara ile değiştirir.</span><br><em
-                                    class="text-success-emphasis">Örnek:</em><br><code>/channel
-                                5</code></li>
-                        <hr>
-                        <li><strong>/radio
-                                &lt;Mesaj&gt;:
-                            </strong><span
-                            > Bulunduğunuz kanala mesaj gönderir.</span><br><em
-                                    class="text-success-emphasis">Örnek:</em><br><code>/radio
-                                Burada
-                                hareketlilik var</code></li>
-                        <hr>
-                        <li><strong>/mug:</strong><span> Oyun içerisinde oyuncu soymak için kullanılır.</span><br><em
-                                    class="text-success-emphasis">Örnek:</em><br><code>/mug</code></li>
-                        <hr>
-                        <li><strong>/soygun:</strong><span> Oyun içerisinde soygun başlatmak için kullanılır. (Arama
-                            çalma,
-                            illegal baskını)</span><br><em
-                                    class="text-success-emphasis">Örnek:</em><br><code>/soygun</code></li>
-                        <hr>
-                        <li><strong>/soygunbitir:</strong><span> Oyun içerisinde soygun bitirmek için
-                            kullanılır.</span><br><em
-                                    class="text-success-emphasis">Örnek:</em><br><code>/soygunbitir</code></li>
-                        <hr>
-                        <li><strong>!asay isyan:</strong><span> Sokağa çıkma yasağında isyan etmek için
-                            kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>!asay
-                                isyan</code></li>
-                        <hr>
-                        <li><strong>!asay +1:</strong><span> Toplu eylemlerde eylem gerçekleştirdiğinizi
-                            belirtmek
-                            için kullanılır.</span><br><em class="text-success-emphasis">Örnek:</em><br><code>!asay
-                                +1</code></li>
-                        <hr>
-                        <li><strong>!dondur:</strong><span> Para Basma Makineleri, Saksılarınızı dondurur. <strong>Dondurmayı
-                                geri açmanın komutu
-                                bulunmamaktadır.</strong><br><em
-                                        class="text-success-emphasis">Örnek:</em><br><code>!dondur</code></li>
-                    </ul>
-                    <br>
-                </div>
-
-                <div class="tab-pane fade" id="esnaf" role="tabpanel">
-                    <br>
-                    <ul style="list-style-type: '— '">
-                        <li><strong>/balikbug:</strong><span> Balıkçıda Oltanız Bug girdiğinde kullanabilceğiniz
-                                komut.</span>
-                            <br><em class="text-success-emphasis">Örnek:</em><br><code>/balikbug</code></li>
-                    </ul>
-                    <br>
-                </div>
+                    </div>
+                    <?php
+                    $tabId++;
+                }
+                ?>
             </div>
         </div>
+        <br>
+        <div>
+            <h2 class="standartcolor" id="meslek">Meslek Nasıl Seçebilirim?</h2>
+            <p><kbd>F4</kbd> tuşuna bastığınızda meslek seçiminizi gerçekleştirebilirsin.</p>
+
+            <div class="container">
+                <?php foreach ($darkrpJobs as $categoryName => $categoryData): ?>
+                    <?php
+                    $buttonClass = match ($categoryName) {
+                        'legal' => 'darkrplegal',
+                        'esnaf' => 'darkrpesnaf',
+                        'illegal' => 'darkrpillegal',
+                        'yetkili' => 'darkrpgenel',
+                        default => '',
+                    };
+                    ?>
+                    <button type="button" class="btn active <?= $buttonClass ?> text-center" style="margin-right: 1rem; margin-bottom: 1rem;"
+                            data-bs-toggle="modal" data-bs-target="#<?= htmlspecialchars($categoryName) ?>JobsModal">
+                        <?= ucfirst($categoryData['name']) ?>
+                    </button>
+                <?php endforeach; ?>
+
+                <?php foreach ($darkrpJobs as $categoryName => $categoryData): ?>
+                    <div class="modal fade" id="<?= htmlspecialchars($categoryName) ?>JobsModal" tabindex="-1"
+                         aria-labelledby="<?= htmlspecialchars($categoryName) ?>JobsLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-purple"
+                                        id="<?= htmlspecialchars($categoryName) ?>JobsLabel">
+                                        <?= ucfirst($categoryData['name']) ?>
+                                    </h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="accordion" id="<?= htmlspecialchars($categoryName) ?>accordionJobs">
+                                        <?php foreach ($categoryData['jobs'] as $index => $job): ?>
+                                            <?php
+                                            $isEGM = ($job['title'] === 'Emniyet Genel Müdürü');
+                                            $isSivil = in_array($job['title'], [
+                                                'Milli Istihbarat Teskilatı Personeli',
+                                                'Milli Istihbarat Teskilatı Müsteşarı',
+                                                'Sivil Polis'
+                                            ]);
+                                            $isBaronOrSefir = ($job['title'] === 'Baron' || $job['title'] === 'Sefir');
+
+                                            $JobClass = '';
+                                            $JobColor = '';
+
+                                            if ($categoryName === "legal") {
+                                                $JobClass = $isEGM ? 'text-primary' : ($isSivil ? 'text-danger' : 'text-primary-emphasis');
+                                            } elseif ($categoryName === "esnaf") {
+                                                $JobColor = "var(--darkrp-job-green-border)";
+                                            } elseif ($categoryName === "yetkili") {
+                                                $JobClass = 'text-secondary';
+                                            } elseif ($categoryName === "illegal") {
+                                                $JobClass = $isBaronOrSefir ? 'text-danger' : 'text-danger-emphasis';
+                                            }
+
+                                            $isVip = (isset($job['vip']) && $job['vip'] === 1);
+                                            $isVipPlus = (isset($job['vip']) && $job['vip'] === 2);
+                                            ?>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button <?= $index === 0 ? '' : 'collapsed' ?>"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapse<?= htmlspecialchars($categoryName . $index) ?>"
+                                                            aria-expanded="<?= $index === 0 ? 'true' : 'false' ?>"
+                                                            aria-controls="collapse<?= htmlspecialchars($categoryName . $index) ?>">
+                                            <span class="<?= htmlspecialchars($JobClass) ?>"
+                                                  style="<?= $JobColor ? 'color:' . htmlspecialchars($JobColor) : '' ?>">
+                                                <?= htmlspecialchars($job['title']) ?>
+                                            </span>
+                                                        <?php if ($isVip): ?>
+                                                            <span style="padding-left: 1%; color: #16bb00">[VIP]</span>
+                                                        <?php endif; ?>
+                                                        <?php if ($isVipPlus): ?>
+                                                            <span style="padding-left: 1%; color: #16bb00">[VIP+]</span>
+                                                        <?php endif; ?>
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse<?= htmlspecialchars($categoryName . $index) ?>"
+                                                     class="accordion-collapse collapse <?= $index === 0 ? 'show' : '' ?>"
+                                                     aria-labelledby="heading<?= htmlspecialchars($index) ?>"
+                                                     data-bs-parent="#<?= htmlspecialchars($categoryName) ?>accordionJobs">
+                                                    <div class="accordion-body">
+                                                        <?php if (!empty($job["close"])): ?>
+                                                            <div class="alert alert-danger" role="alert">
+                                                                Bu meslek şu anda kullanılmamaktadır. Yani bu mesleğe
+                                                                geçemezsiniz.
+                                                            </div>
+                                                        <?php endif; ?>
+                                                        <p><?= htmlspecialchars($job['description']) ?></p>
+                                                        <?php if (!empty($job['requirejobs']) || !empty($job['requireORjobs'])): ?>
+                                                            <h5 class="text-primary-emphasis">Nasıl bu mesleğe
+                                                                geçebilirim?</h5>
+                                                            <?php if (!empty($job['requirejobs'])): ?>
+                                                                <p>
+                                                                    İlk
+                                                                    önce <?= implode(', ', array_map(fn($job) => '<b>' . htmlspecialchars($job) . '</b>', $job['requirejobs'])) ?>
+                                                                    mesleğinde deneyim kazanman gerekiyor.
+                                                                </p>
+                                                            <?php endif; ?>
+                                                            <?php if (!empty($job['requireORjobs'])): ?>
+                                                                <p>
+                                                                    İlk
+                                                                    önce <?= implode(' veya ', array_map(fn($job) => '<b>' . htmlspecialchars($job) . '</b>', $job['requireORjobs'])) ?>
+                                                                    mesleğinde deneyim kazanman gerekiyor.
+                                                                </p>
+                                                            <?php endif; ?>
+                                                        <?php endif; ?>
+                                                        <?php if (!empty($job['whitelist'])): ?>
+                                                            <small class="text-light">
+                                                                Bu meslek whitelistlidir. Daha fazla bilgi için <a
+                                                                        href="<?= htmlspecialchars($baseUrl) ?>/darkrp-baslarken/sss#basvuru"
+                                                                        style="text-decoration: none">Sıkça Sorulan
+                                                                    Sorular - Başvurular</a> bakınız.
+                                                            </small>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+
+        </div>
+
         <br>
         <div>
             <h2 class="standartcolor" id="weaponslot">Oyundaki tüm silahlarım nerede?</h2>
@@ -292,7 +317,28 @@
         </div>
         <br>
         <div>
-            <h2 class="standartcolor" id="build">Build</h2>
+            <h2 class="standartcolor" id="silah"><b>Silah Nereden Alabilirim?</b></h2>
+            <p>Aşağıdaki mesleklerde olan kişilerden alabilirsin:</p>
+            <p>Kırmızı renkli meslekler, Sadece ithal silah üretip satabiliyorlar. Silah ruhsatı kapsamında değillerdir.
+                Silah ruhsatı kapsamındaki silahlar, yeşil renkli mesleklerde bulunur. <a class="no-text-decoration"
+                                                                                          href="https://moonrp.com/oyunkurallari"
+                                                                                          target="_blank">Daha fazla
+                    bilgi için oyun kurallarına göz atınız.</a></p>
+            <ul style="list-style-type: '— '">
+                <?php foreach ($darkrpJobs as $category => $data): ?>
+                    <?php foreach ($data['jobs'] as $job): ?>
+                        <?php if (isset($job["gunshop"]) && $job["gunshop"]): ?>
+                            <li class="<?= $category === 'legal' ? 'text-primary-emphasis' : ($category === 'esnaf' ? 'text-success' : 'text-danger') ?>">
+                                <?= htmlspecialchars($job['title']) ?>
+                            </li>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h2 class="standartcolor" id="build">Nasıl Build Yapabilirim?</h2>
             <br>
             <p><kbd>Q</kbd> Tuşuna basarak eşyalara göz atabilirsiniz. Her eşyayı çıkartamayabilirsiniz
                 bazı eşyalar
@@ -301,7 +347,8 @@
                 eşyaları
                 kullanabilirsiniz.</p>
             <div>
-                <img src="<?= $baseUrl ?>/assets/image/darkrp_qmenu.png" alt="" class="img-fluid img-zoom mx-auto d-block">
+                <img src="<?= $baseUrl ?>/assets/image/darkrp_qmenu.png" alt=""
+                     class="img-fluid img-zoom mx-auto d-block">
             </div>
         </div>
         <br>
@@ -466,7 +513,7 @@
                             <div class="accordion-body">
                                 <div class="video-container">
                                     <video src="<?= $baseUrl ?>/assets/video/darkrp_toolgun_button.mp4"
-                                           class="player img-fluid col-12" controls muted autoplay loop></video>
+                                           class="player img-fluid col-12" controls muted loop></video>
                                     <div class="yt-player ratio ratio-16x9" style="display: none;">
                                         <iframe width="560" height="315"
                                                 src="https://www.youtube.com/embed/iRZgtwDin9Y?si=nz-XEMMpx1pMuNfg"
@@ -513,7 +560,7 @@
                             <div class="accordion-body">
                                 <div class="video-container">
                                     <video src="<?= $baseUrl ?>/assets/video/darkrp_toolgun_keypad.mp4"
-                                           class="player img-fluid col-12" controls muted autoplay loop></video>
+                                           class="player img-fluid col-12" controls muted loop></video>
                                     <div class="yt-player ratio ratio-16x9" style="display: none;">
                                         <iframe width="560" height="315"
                                                 src="https://www.youtube.com/embed/8swMXC5T0M8?si=QO8olTUtUtzxuTi4"
@@ -557,10 +604,107 @@
                             <div class="accordion-body">
                                 <div class="video-container">
                                     <video src="<?= $baseUrl ?>/assets/video/darkrp_toolgun_isik.mp4"
-                                           class="player img-fluid col-12" controls muted autoplay loop></video>
+                                           class="player img-fluid col-12" controls muted loop></video>
                                     <div class="yt-player ratio ratio-16x9" style="display: none;">
                                         <iframe width="560" height="315"
                                                 src="https://www.youtube.com/embed/PPWvGxTN5po?si=EE2Q3Cd-lilWJPdF"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <br>
+        <div>
+            <h4 class="standartcolor" id="toolgun-kopyalayici">Kopyalayıcı ile Buildimi nasıl kopyalarım?</h4>
+            <div class="row">
+                <div class="col-12">
+                    <p>Kopyalayıcı ile Kare bir alan oluşturmamız gerekiyor.</p>
+                    <ol>
+                        <li>İlk önce <kbd>Q</kbd> basın. Ardından Sağ taraftan Kopyalayıcı Seçiniz.</li>
+                        <li>Tool Gun ile Birinci Alanı(POS 1) seçmek için ateş edelim.</li>
+                        <li>Tool Gun ile İkinci Alanı(POS 2) seçmek için ateş edelim.</li>
+                        <li>Daha Sonra istediğimiz eşyaları kapsayıp kapsamadığını kontrol edelim.</li>
+                        <li><kbd>Q</kbd> Basarak kopyaladığımız kareye bir isim verelim ve "Kaydet" basalım.</li>
+                    </ol>
+                    <p>Eğer buildinizi arkadaşlarınızla paylaşmak istiyor iseniz <a class="no-text-decoration"
+                                                                                    href="<?= $baseUrl ?>/darkrp-baslarken/sss#kopyalayici">DarkRP
+                            Başlarken - Sıkça Sorulan Sorular</a> ziyaret ediniz.</p>
+                </div>
+                <div class="accordion" id="accordion-toolgun-kopyalayici">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-purple" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-toolgun-kopyalayici">
+                                Video Örnek
+                            </button>
+                        </h2>
+                        <div id="collapse-toolgun-kopyalayici" class="accordion-collapse collapse"
+                             data-bs-parent="#accordion-toolgun-kopyalayici">
+                            <div class="accordion-body">
+                                <div class="video-container">
+                                    <video src="<?= $baseUrl ?>/assets/video/darkrp_toolgun_kopyalayici.mp4"
+                                           class="player img-fluid col-12" controls muted loop></video>
+                                    <div class="yt-player ratio ratio-16x9" style="display: none;">
+                                        <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/ted--pBOB5A"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <br>
+        <div>
+            <h4 class="standartcolor" id="toolgun-kopyalayici1">Kopyalayıcı ile Buildimi nasıl yapıştırırım?</h4>
+            <div class="row">
+                <div class="col-12">
+                    <ol>
+                        <li>İlk önce <kbd>Q</kbd> basın. Ardından Sağ taraftan Kopyalayıcı Seçiniz.</li>
+                        <li>Sağ taraftan buildimizi bulalım.</li>
+                        <li>Kopyaladığımız konumda oluşması için "Orjinal Konuma Yapıştır" işaretliyelim.</li>
+                        <li>Daha sonra <i class="fa-solid fa-cube"></i> resmine tıklıyalım.</li>
+                        <li>Sol Click basalım.</li>
+                    </ol>
+                    <p>Eğer buildinizi arkadaşlarınızla paylaşmak istiyor iseniz <a class="no-text-decoration"
+                                                                                    href="<?= $baseUrl ?>/darkrp-baslarken/sss#kopyalayici">DarkRP
+                            Başlarken - Sıkça Sorulan Sorular</a> ziyaret ediniz.</p>
+                </div>
+                <div class="accordion" id="accordion-toolgun-kopyalayici1">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-purple" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-toolgun-kopyalayici1">
+                                Video Örnek
+                            </button>
+                        </h2>
+                        <div id="collapse-toolgun-kopyalayici1" class="accordion-collapse collapse"
+                             data-bs-parent="#accordion-toolgun-kopyalayici1">
+                            <div class="accordion-body">
+                                <div class="video-container">
+                                    <video src="<?= $baseUrl ?>/assets/video/darkrp_toolgun_kopyalayici1.mp4"
+                                           class="player img-fluid col-12" controls muted loop></video>
+                                    <div class="yt-player ratio ratio-16x9" style="display: none;">
+                                        <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/j01eGKNlrmY"
                                                 title="YouTube video player" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                 referrerpolicy="strict-origin-when-cross-origin"
@@ -628,268 +772,58 @@
         </div>
         <br>
         <div>
+            <h2 class="standartcolor" id="kiyafet">Kıyafet Nasıl Değiştirebilirim?</h2>
+            <p>Kıyafetleriniz tamamen değiştirmek mümkün değildir, MoonShop gidip dolap ve girişteki Ortadaki NPC
+                Kullanarak Kıyafetinizi veya Oyuncu Modelinizi değiştirebilirsiniz.</p>
+        </div>
+        <br>
+        <div>
             <h2 class="standartcolor" id="phone">Telefon nasıl kullanırım?</h2>
             <br>
             <div class="accordion" id="phoneAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button text-danger" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsePhoneGlobal" aria-expanded="true"
-                                aria-controls="collapsePhoneGlobal">
-                            Genel Bilgilendirme
-                        </button>
-                    </h2>
-                    <div id="collapsePhoneGlobal" class="accordion-collapse collapse show"
-                         data-bs-parent="#phoneAccordion">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-10 col-12">
-                                    <br>
-                                    <p>Karakterinizin birinci silah slotunda yer almaktadır.</p>
-                                    <p class="text-primary-emphasis">Fare ile telefonda gezinebilirsiniz. Eğer
-                                        fareyi oynattığınızda
-                                        karakteriniz
-                                        hareket ediyorsa, sol tıklamaya basıp tekrar deneyiniz.</p>
-                                    <p class="text-teal">Karakterinizi tekrar hareket ettirmek için telefonu ekranın
-                                        dışına doğru
-                                        sürükleyiniz.</p>
-                                </div>
-                                <div class="col-md-2 col-12">
-                                    <img src="<?= $baseUrl ?>/assets/image/darkrp_telefon.png"
-                                         style="align-items: center;" alt="Telefon"
-                                         class="img-fluid img-zoom mx-auto d-block">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsePhoneCamera" aria-expanded="true"
-                                aria-controls="collapsePhoneCamera">
-                            Kamera
-                        </button>
-                    </h2>
-                    <div id="collapsePhoneCamera" class="accordion-collapse collapse"
-                         data-bs-parent="#phoneAccordion">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-10 col-12">
-                                    <p>Oyun içerisinde fotoğraf çekmenizi sağlar</p>
-                                    <p class="text-primary-emphasis"><i
-                                                class="fa-solid fa-rotate-right"></i>
-                                        resmine basarak kameranızın ön kemaraya ve ya arka kameraya
-                                        çevirebilirsiniz.</p>
-                                </div>
-                                <div class="col-md-2 col-12">
-                                    <img src="<?= $baseUrl ?>/assets/image/darkrp_telefon_kamera.png"
-                                         style="align-items: center;" alt="Telefon - Kamera"
-                                         class="img-fluid img-zoom mx-auto d-block">
+                <?php foreach ($darkrpPhoneApps as $index => $app): ?>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button <?php echo isset($app['first']) && $app['first'] ? 'text-danger' : 'collapsed'; ?>"
+                                    type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePhone<?php echo $index; ?>"
+                                    aria-expanded="<?php echo isset($app['first']) && $app['first'] ? 'true' : 'false'; ?>"
+                                    aria-controls="collapsePhone<?php echo $index; ?>">
+                                <?php echo htmlspecialchars($app['name']); ?>
+                            </button>
+                        </h2>
+                        <div id="collapsePhone<?php echo $index; ?>"
+                             class="accordion-collapse collapse<?php echo isset($app['first']) && $app['first'] ? ' show' : ''; ?>"
+                             data-bs-parent="#phoneAccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-10 col-12">
+                                        <?php
+                                        $descriptionClasses = [
+                                            '',
+                                            'text-primary-emphasis',
+                                            'text-teal',
+                                            'text-danger-emphasis',
+                                        ];
+                                        foreach ($app['description'] as $descIndex => $desc):
+                                            $class = isset($descriptionClasses[$descIndex]) ? $descriptionClasses[$descIndex] : '';
+                                            ?>
+                                            <p class="<?php echo $class; ?>"><?php echo $desc; ?></p>
+                                        <?php endforeach; ?>
+                                    </div>
+                                    <div class="col-md-2 col-12">
+                                        <img src="<?php echo htmlspecialchars($app['image']); ?>"
+                                             style="align-items: center;"
+                                             alt="<?php echo htmlspecialchars($app['name']); ?>"
+                                             class="img-fluid img-zoom mx-auto d-block">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsePhoneGaleri" aria-expanded="false"
-                                aria-controls="collapsePhoneGaleri">
-                            Galeri
-                        </button>
-                    </h2>
-                    <div id="collapsePhoneGaleri" class="accordion-collapse collapse"
-                         data-bs-parent="#phoneAccordion">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-10 col-12">
-                                    <p>Çektiğiniz fotoğraflar burada yer almaktadır.</p>
-                                    <p class="text-primary-emphasis">
-                                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                                        simgesine basarak X'e (eski adıyla Twitter) yüklemek üzere buluta
-                                        yükleyebilirsiniz.
-                                    </p>
-                                </div>
-                                <div class="col-md-2 col-12">
-                                    <img src="<?= $baseUrl ?>/assets/image/darkrp_telefon_galeri.png"
-                                         style="align-items: center;" alt="Telefon - Galeri"
-                                         class="img-fluid img-zoom mx-auto d-block">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsePhoneTwitter" aria-expanded="false"
-                                aria-controls="collapsePhoneTwitter">
-                            X (Twitter)
-                        </button>
-                    </h2>
-                    <div id="collapsePhoneTwitter" class="accordion-collapse collapse"
-                         data-bs-parent="#phoneAccordion">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-10 col-12">
-                                    <p>Oyun içi sosyal medya platformudur. Konuşulan paylaşılan
-                                        içerikler IC olarak değerlendirilir.</p>
-                                    <p class="text-primary-emphasis">
-                                        <i class="fa-solid fa-paperclip"></i>
-                                        simgesine basarak buluttaki fotoğrafını paylaşabilirsin.
-                                    </p>
-                                    <p class="text-teal">
-                                        <i class="fa-regular fa-paper-plane"></i>
-                                        simgesine basarak yazdığın mesajı gönderebilirsin.
-                                    </p>
-                                </div>
-                                <div class="col-md-2 col-12">
-                                    <img src="<?= $baseUrl ?>/assets/image/darkrp_telefon_twitter.png"
-                                         style="align-items: center;" alt="Telefon - X(Twitter)"
-                                         class="img-fluid img-zoom mx-auto d-block">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsePhonePapara" aria-expanded="false"
-                                aria-controls="collapsePhonePapara">
-                            Papara
-                        </button>
-                    </h2>
-                    <div id="collapsePhonePapara" class="accordion-collapse collapse"
-                         data-bs-parent="#phoneAccordion">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-10 col-12">
-                                    <p>ATM Gitmeden dakikalar içinde arkadaşına para
-                                        gönderebilirsin.</p>
-                                    <p class="text-primary-emphasis">Buradan ayrıca bankadaki paranı kontrol
-                                        edebilirsin!</p>
-                                </div>
-                                <div class="col-md-2 col-12">
-                                    <img src="<?= $baseUrl ?>/assets/image/darkrp_telefon_papara.png"
-                                         style="align-items: center;" alt="Telefon - Papara"
-                                         class="img-fluid img-zoom mx-auto d-block">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsePhoneMessage" aria-expanded="false"
-                                aria-controls="collapsePhoneMessage">
-                            Mesajlar
-                        </button>
-                    </h2>
-                    <div id="collapsePhoneMessage" class="accordion-collapse collapse"
-                         data-bs-parent="#phoneAccordion">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-10 col-12">
-                                    <p>Arkadaşınıza buradan mesaj gönderebilir ve ya
-                                        arıyabilirsiniz.</p>
-                                    <p class="text-danger-emphasis">Arkadaşınızı aramadan önce mesajlara girip daha
-                                        sonra <i class="fa-solid fa-phone"></i> resmine tıklamalısnıız
-                                    </p>
-                                </div>
-                                <div class="col-md-2 col-12">
-                                    <img src="<?= $baseUrl ?>/assets/image/darkrp_telefon_mesajlar.png"
-                                         style="align-items: center;" alt="Telefon - Mesajlar"
-                                         class="img-fluid img-zoom mx-auto d-block">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsePhoneBorsa" aria-expanded="false"
-                                aria-controls="collapsePhoneBorsa">
-                            Borsa
-                        </button>
-                    </h2>
-                    <div id="collapsePhoneBorsa" class="accordion-collapse collapse"
-                         data-bs-parent="#phoneAccordion">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-10 col-12">
-                                    <p>Canlı borsa takibi yapabilirsiniz.</p>
-                                    <p class="text-primary-emphasis">BTC, AVAX, ETH , USDT, DOGE, SOL canlı olarak
-                                        telefondan takip edebileceksin!</p>
-                                </div>
-                                <div class="col-md-2 col-12">
-                                    <img src="<?= $baseUrl ?>/assets/image/darkrp_telefon_borsa.png"
-                                         style="align-items: center;" alt="Telefon - Borsa"
-                                         class="img-fluid img-zoom mx-auto d-block">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsePhoneCalc" aria-expanded="false"
-                                aria-controls="collapsePhoneCalc">
-                            Hesap Makinesi
-                        </button>
-                    </h2>
-                    <div id="collapsePhoneCalc" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-10 col-12">
-                                    <p>Basit matematik işlemleri gerçekleştirebilirsiniz.</p>
-                                    <p class="text-primary-emphasis">Toplama, çıkarma, çarpma , bölme gibi işlemler
-                                        yapmak daha kolay artık!</p>
-                                </div>
-                                <div class="col-md-2 col-12">
-                                    <img src="<?= $baseUrl ?>/assets/image/darkrp_telefon_hesapmak.png"
-                                         style="align-items: center;" alt="Telefon - Hesap Makinesi"
-                                         class="img-fluid img-zoom mx-auto d-block">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapsePhoneSettings" aria-expanded="false"
-                                aria-controls="collapsePhoneSettings">
-                            Ayarlar
-                        </button>
-                    </h2>
-                    <div id="collapsePhoneSettings" class="accordion-collapse collapse"
-                         data-bs-parent="#phoneAccordion">
-                        <div class="accordion-body">
-                            <div class="row">
-                                <div class="col-md-10 col-12">
-                                    <p>Telefonun renk ayarlarını buradan değiştirebilirsiniz.</p>
-                                </div>
-                                <div class="col-md-2 col-12">
-                                    <img src="<?= $baseUrl ?>/assets/image/darkrp_telefon_ayarlar.png"
-                                         style="align-items: center;" alt="Telefon - Hesap Makinesi"
-                                         class="img-fluid img-zoom mx-auto d-block">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
+
         </div>
         <br>
         <div>
@@ -966,31 +900,50 @@
             <br>
             <p>Daha fazla XP kazanmak için şu yollar mevcuttur:</p>
             <ul style='list-style-type: "> "'>
-                <li><strong class="text-primary">[MG] Etiketi</span></strong> Steam hesabınızın profil
+                <li><strong class="text-primary">[MG] Etiketi :</span></strong> Steam hesabınızın profil
                     ismi düzenleme kısmına gidin. Profilinizi düzenleyerek profil adınızın sonuna [MG]
                     ekleyin; bu sayede alacağınız XP miktarı artacaktır.
                 </li>
-                <li><strong class="text-success">İmam</span></strong> Oyunda kendinizi imam
+                <li><strong class="text-success">İmam :</span></strong> Oyunda kendinizi imam
                     üfletebilirsiniz. Bu, size ölene kadar veya oyundan çıkana kadar %25 daha fazla XP
                     kazandıracaktır.
                 </li>
-                <li><strong class="text-danger">Happy Hours:</strong> Oyunda 18:00 - 24:00 arasında
+                <li><strong class="text-danger">Happy Hours :</strong> Oyunda 18:00 - 24:00 arasında
                     geçerli olan 2x XP fırsatıdır.
                 </li>
-                <li><strong class="text-warning">Etüt merkezi</span></strong> Geçici olarak öğrenme
+                <li><strong class="text-warning">Etüt merkezi :</span></strong> Geçici olarak öğrenme
                     becerilerinizi geliştirir.
                 </li>
-                <li><strong class="text-info">Üretim:</strong> Bitki Yetiştiriciliği ve Para Basma Makinesi başarıyla tamamlandığında, <kbd>E</kbd> tuşuna basarak XP kazanabilirsiniz.</li>
-                <li><strong class="text-primary">Baskın:</strong> Baskınlarda ele geçirilen
+                <li><strong class="text-info">Üretim :</strong> Bitki Yetiştiriciliği ve Para Basma Makinesi başarıyla
+                    tamamlandığında, <kbd>E</kbd> tuşuna basarak XP kazanabilirsiniz.
+                </li>
+                <li><strong class="text-primary">Baskın :</strong> Baskınlarda ele geçirilen
                     araçlardan kazanabilirsiniz. <span
                             class="text-secondary">(Baskın süresi boyunca)</span></li>
-                <li><strong class="text-secondary">VIP, VIP+ Satın Alma:</strong> VIP veya VIP+ alarak XP
+                <li><strong class="text-secondary">VIP, VIP+ Satın Alma :</strong> VIP veya VIP+ alarak XP
                     değerlerinizi, VIP ya da VIP+ süreniz boyunca artırabilirsiniz.
                 </li>
-                <li><strong class="text-success">2x/4x Etkinlikler:</span></strong> Bazı saatlerde üstadlar tarafından
+                <li><strong class="text-success">2x/4x Etkinlikler :</span></strong> Bazı saatlerde üstadlar tarafından
                     x2/x4 XP açılmaktadır.
                 </li>
-                <li><strong class="text-danger">Eşyalar:</strong> XP eşyaları satın alabilirsiniz.</li>
+                <li><strong class="text-danger">Eşyalar :</strong> XP eşyaları satın alabilirsiniz.</li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h2 class="standartcolor" id="money">Para Nasıl Kazanırım?</h2>
+            <br>
+            <ul style='list-style-type: "- "'>
+                <li><strong class="text-primary">Maaş :</span></strong> Devlet Çalışanı ile Esnaf ve Siviller
+                    kategorisinde meslekler 15 dakikada bir maaş alırlar.
+                </li>
+                <li><strong class="text-success">Ticaret :</span></strong> Esnaf ve Siviller kategorisinde yer alan bazı
+                    meslekler <kbd>F4</kbd> üzerinden sevkiyat kısmından tüketiciler için eşya çıkartmaktadır. Bunlardan
+                    Kurallar çerçevesinde belli kazançlar sağlıyabilirsiniz.
+                </li>
+                <li><strong class="text-danger">Üretim :</strong> Yasadışı Organizasyonlar <kbd>F4</kbd> den
+                    Varlıklardan çıkardıkları üretim eşyalarıyla çaba göstererek para kazanabilir.
+                </li>
             </ul>
         </div>
         <br>
@@ -1072,6 +1025,17 @@
                                         <li class="list-group-item">
                                             <strong class="<?= $item['class'] ?>"><?= $item['name'] ?>
                                                 :</strong> <?= $item['description'] ?>
+                                            <?php if (isset($item['box']) || isset($item['custombox'])) {
+                                                if (isset($item['box']) && $item['box']) {
+                                                    $BoxStatus = "Kutulardan Çıkar.";
+                                                } else {
+                                                    $BoxStatus = "Kutulardan Çıkmaz.";
+                                                }
+                                                ?>
+                                                <span class="text-purple"> <?= isset($item['custombox']) ? $item['custombox'] : $BoxStatus ?></span>
+                                                <?php
+                                            }
+                                            ?>
                                         </li>
                                     <?php endforeach; ?>
                                 </ul>

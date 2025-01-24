@@ -16,7 +16,7 @@ $tttContent = true;
                     indiriniz.</p>
                 <div class="content-ref-box">
                     <p>
-                        <a id="cssBox" href="<?= $baseUrl; ?>/content">
+                        <a id="cssBox" href="<?= $baseUrl; ?> /css">
                             <i class="fa-solid fa-cubes"></i> CS:S Content Nasıl İndiririm?
                         </a>
                     </p>
@@ -32,7 +32,7 @@ $tttContent = true;
             <br>
             <div>
                 <h3 class="standartcolor" id="bunny"><b>Otomatik Bunny Nasıl Yaparım?</b></h3>
-                <p>I Tuşu ile envanterinizi açınız daha sonrasında ayarlardan otomatik bunny aktif ediniz.</p>
+                <p><kbd>I</kbd> Tuşu ile envanterinizi açınız daha sonrasında ayarlardan otomatik bunny aktif ediniz.</p>
             </div>
         </div>
         <br>

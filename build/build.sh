@@ -13,4 +13,4 @@ fi
 
 $ContainerRun build $BuildFormat -t hofmann-convert-release -f convert.Dockerfile .
 
-$ContainerRun run --rm -v "$(pwd)/../:/app" hofmann-convert-release sh -c /app/build/.build
+$ContainerRun run --rm -v "$(pwd)/../:/app" hofmann-convert-release sh -c "dos2unix /app/build/.build && /app/build/.build"

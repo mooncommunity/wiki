@@ -19,6 +19,12 @@ if (isset($PAGE_DESCRIPTION)) {
     $header_description = "Oyuncular için kapsamlı bilgiler ve ipuçları sunar. Oyun modları, stratejiler ve topluluk kaynaklarıyla oyun deneyiminizi geliştirin.";
 }
 
+if (isset($PAGE_KEYWORDS)) {
+    $header_keywords = $PAGE_KEYWORDS;
+} else {
+    $header_keywords = "MoonRP, MoonGaming, DarkRP, TTT, DarkRolePlay, FiveM, GTA, GTA5, Grand Theft Auto, Garry's Mod, GMod";
+}
+
 if (isset($PAGE_OG_IMAGE_LOCAL) && $PAGE_OG_IMAGE_LOCAL === true) {
     if (isset($PAGE_OG_IMAGE) && !empty($PAGE_OG_IMAGE)) {
         $header_og_image = $baseUrl . $PAGE_OG_IMAGE;
@@ -44,7 +50,8 @@ if (isset($PAGE_OG_IMAGE_LOCAL) && $PAGE_OG_IMAGE_LOCAL === true) {
 
     <meta name="description"
           content="<?= $header_description ?>">
-    <meta name="keywords" content="MoonRP, MoonGaming, mg, DarkRP, TTT, DarkRolePlay, garrysmod, gmod">
+    <meta name="keywords"
+          content="<?= $header_keywords ?>">
 
     <meta property="og:title" content="<?= $header_title ?>">
     <meta property="og:description"
@@ -61,7 +68,7 @@ if (isset($PAGE_OG_IMAGE_LOCAL) && $PAGE_OG_IMAGE_LOCAL === true) {
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= $baseUrl; ?>/assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
